@@ -81,53 +81,6 @@ footer.l-footer {
 .l-region--sidebar-first {
   .block {
     margin-bottom: 20px;
-
-    #book-block-menu-1 {
-      ul.menu {
-        list-style-type: none;
-        list-style-image: none;
-        margin: 0 0 0 0px;
-        padding: 0;
-
-        ul.menu {
-          margin: 0 0 0 0px;
-          a {
-            width: 284px;
-          }
-
-          ul.menu {
-            margin-left: 10px;
-            a {
-              width: 274px;
-            }
-          }
-        }
-
-        li {
-          list-style-type: none;
-          list-style-image: none;
-          margin: 0;
-          padding: 0;
-
-          a {
-            display: block;
-            width: 284px;
-            margin: 0 0 2px 0;
-            padding: 5px;
-            text-decoration: none;
-            background-color: #1957c7;
-            color: white;
-            font-weight: bold;
-            @include border-radius(2px);
-
-            &:hover {
-              background-color: gold;
-              color: black;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
