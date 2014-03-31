@@ -76,7 +76,8 @@ form#search-block-form div.form-item-search-block-form {
     border: none;
     vertical-align: baseline;
     position: absolute;
-    top: 0px; }
+    top: 0px;
+    padding: 1px 5px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000334}}
 form#search-block-form #edit-actions {
   height: 25px;

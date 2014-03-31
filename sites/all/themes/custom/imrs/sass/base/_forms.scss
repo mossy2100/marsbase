@@ -23,11 +23,11 @@ form#search-block-form {
       width: 229px;
       height: 25px;
       @include border-radius(3px);
-//      border: solid 1px black;
       border: none;
       vertical-align: baseline;
       position: absolute;
       top: 0px;
+      padding: 1px 5px;
     }
   }
 
