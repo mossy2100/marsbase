@@ -1,0 +1,31 @@
+table.book-navigation__links {
+  width: 100%;
+
+  a.book-navigation__previous {
+    text-align: left;
+  }
+
+  td.td-book-navigation__up {
+    text-align: centre;
+  }
+
+  td.td-book-navigation__next {
+    text-align: right;
+  }
+
+  a {
+    margin-bottom: 10px;
+    color: black;
+    background-color: #F6D0A1;
+    @include border-radius(3px);
+    float: none;
+    text-decoration: none;
+    padding: 3px;
+    width: auto;
+
+    &:hover {
+      color: white;
+      background-color: orange;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+name = Debug (dbg)
+description = Provides dbg(), println(), and other useful debug-related functions.
+core = 7.x
+package = Astro Multimedia

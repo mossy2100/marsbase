@@ -1,0 +1,53 @@
+@mixin button {
+  @include background-image(linear-gradient(white, silver));
+  border: none;
+  @include box-sizing(border-box);
+  height: 25px;
+  @include border-radius(3px);
+  font-size: 12px;
+}
+
+@mixin button-hover {
+  @include background-image(linear-gradient(yellow, gold));
+}
+
+form#search-block-form {
+  div.form-item-search-block-form {
+    height: 25px;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+
+    #edit-search-block-form--2 {
+      @include box-sizing(border-box);
+      width: 229px;
+      height: 25px;
+      @include border-radius(3px);
+//      border: solid 1px black;
+      border: none;
+      vertical-align: baseline;
+      position: absolute;
+      top: 0px;
+    }
+  }
+
+  #edit-actions {
+    height: 25px;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+
+    #edit-submit {
+      @include button;
+      width: 50px;
+      vertical-align: baseline;
+      position: absolute;
+      top: 0px;
+      left: 230px;
+
+      &:hover {
+        @include button-hover;
+      }
+    }
+  }
+}

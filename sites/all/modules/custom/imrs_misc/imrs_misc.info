@@ -1,0 +1,4 @@
+name = IMRS Miscellaneous
+description = Miscellaneous stuff for IMRS website.
+core = 7.x
+package = Astro Multimedia

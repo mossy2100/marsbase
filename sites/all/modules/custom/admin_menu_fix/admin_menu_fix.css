@@ -1,0 +1,18 @@
+/* Hide the shortcuts */
+#admin-menu li.admin-menu-shortcuts { 
+  display: none;
+}
+
+/* Hide the additional admin_menu added when an admin page is displayed in the overlay. */
+.overlay #admin-menu {
+  display: none;
+}
+
+#admin-menu li {
+  font-size: 12px;
+}
+
+#admin-menu,
+#admin-menu .dropdown {
+  line-height: 14px;
+}

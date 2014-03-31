@@ -1,0 +1,216 @@
+<?php
+/**
+ * Debugging functions.
+ *
+ * Requires strings.php.
+ */
+
+/**
+ * The current debug mode.
+ */
+$_dbg_mode = FALSE;
+
+/**
+ * The saved debug mode.
+ */
+$_dbg_mode_saved = FALSE;
+
+/**
+ * Get the debug mode.
+ *
+ * @return bool
+ */
+function dbg_get_mode() {
+  global $_dbg_mode;
+  return $_dbg_mode;
+}
+
+/**
+ * Set the debug mode.
+ *
+ * @param bool $mode
+ */
+function dbg_set_mode($mode) {
+  global $_dbg_mode;
+  $_dbg_mode = (bool) $mode;
+}
+
+/**
+ * Remember the debug mode.
+ */
+function dbg_save_mode() {
+  global $_dbg_mode, $_dbg_mode_saved;
+  $_dbg_mode_saved = $_dbg_mode;
+}
+
+/**
+ * Restore the debug mode.
+ */
+function dbg_restore_mode() {
+  global $_dbg_mode, $_dbg_mode_saved;
+  $_dbg_mode = $_dbg_mode_saved;
+}
+
+/**
+ * Switch the debug mode on.
+ */
+function dbg_on() {
+  dbg_set_mode(TRUE);
+}
+
+/**
+ * Switch the debug mode off.
+ */
+function dbg_off() {
+  dbg_set_mode(FALSE);
+}
+
+/**
+ * Begin printing a debug message.
+ */
+function dbg_begin_print() {
+  print "<pre class='debug' style='white-space: pre-wrap'>\n";
+}
+
+/**
+ * End printing a debug message.
+ */
+function dbg_end_print() {
+  print "</pre>\n";
+}
+
+/**
+ * Debug all defined variables.
+ *
+ * @global bool $_dbg_mode
+ */
+function dbg_all() {
+  global $_dbg_mode;
+  if ($_dbg_mode) {
+    dbg_begin_print();
+    $vars = get_defined_vars();
+    foreach ($vars as $var) {
+      dbg($var);
+    }
+    dbg_end_print();
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Main debugging functions.
+
+/**
+ * Print the contents of a variable as a string, wrapped in <pre> tags.
+ * THIS IS THE PRIMARY DEBUG FUNCTION.
+ *
+ * @param mixed $value
+ * @param string $func_name
+ */
+function dbg($value, $func_name = '') {
+  global $_dbg_mode;
+  if ($_dbg_mode) {
+    dbg_begin_print();
+    if ($func_name != '') {
+      echo "<b>$func_name:</b> ";
+    }
+    // Requires strings.php:
+    echo var_to_string($value);
+    dbg_end_print();
+  }
+}
+
+/**
+ * Echo a string if in debug mode.
+ *
+ * @param mixed $str
+ */
+function dbg_echo($str) {
+  global $_dbg_mode;
+  if ($_dbg_mode) {
+    echo $str . "<br>\n";
+  }
+}
+
+/**
+ * Devel-debug an SQL query.
+ *
+ * @param Query $query
+ * @param string $target
+ */
+function dpm_query($query, $target = 'default') {
+  dpm(query_to_string($query, $target));
+}
+
+/**
+ * Display previous functions called using dbg().
+ */
+function dbg_backtrace() {
+  dbg(debug_backtrace());
+}
+
+/**
+ * Display previous functions called using dpm().
+ */
+function dpm_backtrace() {
+  dbg_dpm(debug_backtrace());
+}
+
+/**
+ * Outputs a variable to the log file.
+ *
+ * @param mixed $value
+ * @param string $func_name
+ */
+function dbg_log($value, $func_name = '') {
+  $log_filename = '/tmp/dbg.log';
+  $fh = fopen($log_filename, 'a');
+
+  // Generate the next line:
+  $line = date('Y-m-d H:i:s - ');
+  if ($func_name != '') {
+    $line .= $func_name . ': ';
+  }
+  $line .= var_to_string($value) . "\n";
+
+  fwrite($fh, $line);
+  fclose($fh);
+}
+
+/**
+ * Do a dbg_echo() with a watchdog().
+ *
+ * NB: DON'T CALL THIS FUNCTION dbg_watchdog()!!! because it would be interpreted as an implementation of hook_watchdog().
+ * Yes, I did this initially.
+ */
+function dbg_watch($type, $message, $variables = array(), $severity = WATCHDOG_NOTICE, $link = NULL) {
+  dbg_echo($message);
+  watchdog($type, $message, $variables, $severity, $link);
+}
+
+/**
+ * Print a variable to the 'message' area of the page.
+ * Same as dpm() but works for anon users.
+ *
+ * Uses drupal_set_message().
+ *
+ * @param $input
+ *   An arbitrary value to output.
+ * @param $name
+ *   Optional name for identifying the output.
+ * @param $type
+ *   Optional message type for drupal_set_message(), defaults to 'status'.
+ * @return
+ *   The unaltered input value.
+ */
+function dbg_dpm($input, $name = NULL, $type = 'status') {
+  // We do not want to krumo() strings and integers and such
+  if (merits_krumo($input)) {
+    $export = (isset($name) ? $name . ' => ' : '') . krumo_ob($input);
+  }
+  else {
+    $export = dprint_r($input, TRUE, $name, 'print_r');
+  }
+
+  drupal_set_message($export, $type);
+  return $input;
+}

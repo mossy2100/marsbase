@@ -1,0 +1,32 @@
+name = IMRS Theme
+description = Omega subtheme for International Mars Research Station
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/imrs.normalize.css
+stylesheets[all][] = css/imrs.hacks.css
+stylesheets[all][] = css/imrs.styles.css
+stylesheets[all][] = css/imrs.no-query.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/imrs.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer

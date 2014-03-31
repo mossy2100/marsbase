@@ -1,0 +1,242 @@
+<?php
+/**
+ * Makes some improvements to the Administration Menu provided by admin_menu, including:
+ *   - Hides the default Add Content and Find Content links.
+ *   - Hides the admin menu in the overlay.
+ *   - Add content links for all content types
+ *   - Find content links for all content types
+ *   - Copies Configuration > People to People > Configuration
+ *   - Removes duplicate items under Menus section
+ *
+ * @author Shaun Moss
+ * @version 2011-08-28
+ */
+
+/**
+ * Implements hook_init()
+ */
+function admin_menu_fix_init() {
+  // CSS:
+  drupal_add_css(drupal_get_path('module', 'admin_menu_fix') . '/admin_menu_fix.css');
+  // JS:
+  drupal_add_js('sites/all/libraries/jquery/jquery.style.js');
+  drupal_add_js(drupal_get_path('module', 'admin_menu_fix') . '/admin_menu_fix.js');
+}
+
+/**
+ * Implements hook_menu().
+ */
+function admin_menu_fix_menu() {
+  $items = array();
+  $items['admin/content/find'] = array(
+    'title' => 'Find content',
+    'description' => 'Find and manage content, filtered by type.',
+    'page callback' => 'admin_menu_fix_find_content',
+    'page arguments' => array(3),
+    'access arguments' => array('access content overview'),
+    'type' => MENU_CALLBACK,
+  );
+//  $items['admin/config/mail'] = array(
+//    'title' => 'Mail',
+//    'description' => 'Administer mail settings',
+//    'page callback' => 'system_admin_menu_block_page',
+//    'access arguments' => array('access administration pages'),
+//    'file' => 'system.admin.inc',
+//    'file path' => drupal_get_path('module', 'system'),
+//  );
+  return $items;
+}
+
+/**
+ * Implements hook_admin_menu_output_alter().
+ */
+function admin_menu_fix_admin_menu_output_alter(&$content) {
+
+  /////////////////////////////////////////////////////////
+  // Add "Find content" items:
+
+  // Find the top-level menu item called "Content":
+  $i = NULL;
+  foreach ($content['menu'] as $key => $value) {
+    if (is_array($value) && array_key_exists('#href', $value) && $value['#href'] == 'admin/content') {
+      $i = $key;
+      break;
+    }
+  }
+
+  if ($i !== NULL) {
+    // Add a menu item "Find content":
+    $j = count($content['menu'][$i]) - 1;
+    $content['menu'][$i][$j] = array(
+      '#title' => t('Find content'),
+      '#href' => 'admin/content/node',
+    );
+
+    // Add submenu links for each content type:
+    $types = _node_types_build()->names;
+    foreach ($types as $type => $name) {
+      $content['menu'][$i][$j][] = array(
+        '#title' => $name,
+        '#href' => 'admin/content/find/' . str_replace('_', '-', $type),
+        '#options' => array('alias' => TRUE),
+      );
+    }
+
+    // If the domain access module is installed there may be a top-level menu item called "Affiliated Content".
+    // Look for it:
+    $k = NULL;
+    foreach ($content['menu'] as $key => $value) {
+      if (is_array($value) && array_key_exists('#href', $value) && $value['#href'] == 'admin/domain/content') {
+        $k = $key;
+        break;
+      }
+    }
+    // If found, move it under Content.
+    if ($k !== NULL) {
+      $content['menu'][$i][] = $content['menu'][$k];
+      unset($content['menu'][$k]);
+    }
+
+    // Set the order of the menu items:
+    $n = 3;
+    foreach ($content['menu'][$i] as &$item) {
+      if (is_array($item) && isset($item['#href'])) {
+        if ($item['#href'] == 'node/add') {
+          $item['#weight'] = 1;
+        }
+        elseif ($item['#href'] == 'admin/content/node') {
+          $item['#weight'] = 2;
+        }
+        else {
+          $item['#weight'] = $n++;
+        }
+      }
+    }
+  }
+
+  /////////////////////////////////////////////////////////
+  // Copy "Configuration > People" to "People > Configuration":
+
+  // Find the top-level menu item called "Configuration":
+  $i = NULL;
+  foreach ($content['menu'] as $key => $value) {
+    if (is_array($value) && array_key_exists('#href', $value) && $value['#href'] == 'admin/config') {
+      $i = $key;
+      break;
+    }
+  }
+
+  if ($i !== NULL) {
+    // Find the "People" item within the "Configuration" section:
+    $j = NULL;
+    foreach ($content['menu'][$i] as $key => $value) {
+      if (is_array($value) && array_key_exists('#href', $value) && $value['#href'] == 'admin/config/people') {
+        $j = $key;
+        break;
+      }
+    }
+
+    if ($j !== NULL) {
+      // Find the top-level menu item called "People":
+      $k = NULL;
+      foreach ($content['menu'] as $key => $value) {
+        if (is_array($value) && array_key_exists('#href', $value) && $value['#href'] == 'admin/people') {
+          $k = $key;
+          break;
+        }
+      }
+
+      // Copy the submenu:
+      if ($k !== NULL) {
+        $submenu = $content['menu'][$i][$j];
+        $submenu['#title'] = t('Configuration');
+        $content['menu'][$k][] = $submenu;
+      }
+    }
+  }
+
+  // Make user account fields easier to get to:
+  if (isset($content['menu']['admin/people'][0]['admin/config/people/accounts']['admin/config/people/accounts/fields'])) {
+    $content['menu']['admin/people']['admin/config/people/accounts/fields'] = $content['menu']['admin/people'][0]['admin/config/people/accounts']['admin/config/people/accounts/fields'];
+  }
+
+  // Make user account fields display easier to get to:
+  if (isset($content['menu']['admin/people'][0]['admin/config/people/accounts']['admin/config/people/accounts/display'])) {
+    $content['menu']['admin/people']['admin/config/people/accounts/display'] = $content['menu']['admin/people'][0]['admin/config/people/accounts']['admin/config/people/accounts/display'];
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Move 'Advanced Help' under 'Help'.
+
+  // Find the top-level menu item called "Help":
+  $i = NULL;
+  foreach ($content['menu'] as $key => $value) {
+    if (is_array($value) && array_key_exists('#href', $value) && $value['#href'] == 'admin/help') {
+      $i = $key;
+      break;
+    }
+  }
+
+  if ($i !== NULL) {
+    // Look for the Advanced Menu in the top-level menu:
+    foreach ($content['menu'] as $key => $value) {
+      if (is_array($value) && array_key_exists('#href', $value) && $value['#href'] == 'admin/advanced_help') {
+        $content['menu'][$i][] = $value;
+        unset($content['menu'][$key]);
+      }
+    }
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Put all the email-related menu items together.
+//  $content['menu']['admin/config']['admin/config/mail'] = array();
+//  _admin_menu_fix_copy_mail_items($content['menu']['admin/config']['admin/config/mail'], $content['menu']);
+}
+
+/**
+ * Show the "Find content" page, with the content type filter set or reset.
+ *
+ * @param string $type
+ * @return string The HTML
+ */
+function admin_menu_fix_find_content($type) {
+  // Update the filter parameters in the session:
+  if ($type) {
+    $_SESSION['node_overview_filter'] = array(
+      0 => array(
+        0 => 'type',
+        1 => str_replace('-', '_', $type),
+      ),
+    );
+  }
+  else {
+    $_SESSION['node_overview_filter'] = array();
+  }
+
+  // Go to the normal Content page:
+  drupal_goto('admin/content/node');
+}
+
+///**
+// * Look for email-related items and move them to a common menu.
+// *
+// * @param array $menu
+// * @param array $branch
+// */
+//function _admin_menu_fix_copy_mail_items(&$menu, $branch) {
+//  // Add more paths here as we become aware of them.
+//  $paths = array(
+//    'admin/config/development/maillog',
+//    'admin/config/development/reroute_email',
+//    'admin/config/system/mailsystem',
+//    'admin/config/system/mimemail',
+//  );
+//  foreach ($branch as $key => $value) {
+//    if (in_array($key, $paths)) {
+//      $menu[$key] = $value;
+//    }
+//    if ($key[0] != '#' && is_array($value)) {
+//      _admin_menu_fix_copy_mail_items($menu, $value);
+//    }
+//  }
+//}

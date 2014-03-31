@@ -1,0 +1,77 @@
+.node--book--full .field--name-body table {
+  td, th {
+    padding: 5px;
+    border: solid 1px silver;
+    border-collapse: collapse;
+  }
+}
+
+table#hardware-table {
+  p {
+    margin: 0;
+  }
+
+  tr.hardware-rockets {
+    background-color: #fefcdc;
+  }
+
+  tr.hardware-capsules {
+    background-color: #e5ffe2;
+  }
+
+  tr.hardware-satellites {
+    background-color: #ffecd4;
+  }
+
+  tr.hardware-custom {
+    background-color: #ffddf1;
+  }
+
+  tr.hardware-rovers {
+    background-color: #d3e2fe;
+  }
+
+  tr.hardware-habs {
+    background-color: #ccffff;
+  }
+}
+
+table#schedule {
+  th, td {
+    ul {
+      margin: 0;
+      padding: 0 0 0 20px;
+    }
+  }
+}
+
+table#crew-roles,
+table#colour-coding {
+  th {
+    background-color: #eee;
+    text-align: center;
+  }
+
+  tr.eng-flight {
+  }
+
+  tr.eng-mech {
+    background-color: #0d7eff;
+  }
+
+  tr.eng-chem {
+    background-color: #b439ff;
+  }
+
+  tr.sci-geol {
+    background-color: #ff2800;
+  }
+
+  tr.sci-biol {
+    background-color: #00bc00;
+  }
+
+  tr.sci-med {
+    background-color: #fff500;
+  }
+}

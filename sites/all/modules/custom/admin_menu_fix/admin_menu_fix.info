@@ -1,0 +1,4 @@
+name = Administration Menu Fix
+description = Fixes a couple of issues with admin_menu, specifically the lack of "Add content" links.
+core = 7.x
+package = Astro Multimedia
