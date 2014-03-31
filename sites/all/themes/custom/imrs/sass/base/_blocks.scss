@@ -8,13 +8,14 @@
 
     ul.menu {
       margin: 0 0 0 0px;
-      a {
+      li, a {
         width: 284px;
       }
 
       ul.menu {
         margin-left: 10px;
-        a {
+
+        li, a {
           width: 274px;
         }
       }
@@ -23,16 +24,32 @@
     li {
       list-style-type: none;
       list-style-image: none;
-      margin: 0;
       padding: 0;
+      margin: 0;
+
+      &.collapsed > a {
+        background: #1957c7 url('../images/small-white-triangle-right.png') right center no-repeat;
+
+        &:hover {
+          background-image: url('../images/small-black-triangle-right.png');
+        }
+      }
+
+      &.expanded > a {
+        background: #1957c7 url('../images/small-white-triangle-down.png') right center no-repeat;
+
+        &:hover {
+          background-image: url('../images/small-black-triangle-down.png');
+        }
+      }
 
       a {
         display: block;
         width: 284px;
+        background-color: #1957c7;
         margin: 0 0 2px 0;
         padding: 5px;
         text-decoration: none;
-        background-color: #1957c7;
         color: white;
         font-weight: bold;
         @include border-radius(2px);
