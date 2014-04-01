@@ -61,6 +61,15 @@
       }
     }
   }
+
+  // Hide the arrow on the top menu item:
+  & > ul.menu > li.first > a {
+    background-image: none;
+
+    &:hover {
+      background-image: none;
+    }
+  }
 }
 
 #block-block-2 {
