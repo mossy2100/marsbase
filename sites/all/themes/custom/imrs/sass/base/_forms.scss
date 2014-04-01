@@ -31,13 +31,13 @@ form#search-block-form {
     }
   }
 
-  #edit-actions {
+  .form-actions {
     height: 25px;
     display: inline-block;
     margin: 0;
     position: relative;
 
-    #edit-submit {
+    .form-submit {
       @include button;
       width: 50px;
       vertical-align: baseline;

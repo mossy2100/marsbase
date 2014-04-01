@@ -1,12 +1,12 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/Cellar\/ruby\/2\.0\.0-p247\/lib\/ruby\/gems\/2\.0\.0\/gems\/singularitygs-1\.1\.2\/stylesheets\/singularitygs\/helpers\/_box-sizing\.scss}line{font-family:\0000334}}
-form#search-block-form div.form-item-search-block-form #edit-search-block-form--2, form#search-block-form #edit-actions #edit-submit {
+form#search-block-form div.form-item-search-block-form #edit-search-block-form--2, form#search-block-form .form-actions .form-submit {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   *behavior: url('../behaviors/box-sizing/boxsizing.php'); }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/Cellar\/ruby\/2\.0\.0-p247\/lib\/ruby\/gems\/2\.0\.0\/gems\/toolkit-1\.3\.8\/stylesheets\/toolkit\/_box-sizing\.scss}line{font-family:\0000336}}
-form#search-block-form div.form-item-search-block-form #edit-search-block-form--2, form#search-block-form #edit-actions #edit-submit {
+form#search-block-form div.form-item-search-block-form #edit-search-block-form--2, form#search-block-form .form-actions .form-submit {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -153,13 +153,13 @@ form#search-block-form div.form-item-search-block-form {
     top: 0px;
     padding: 1px 5px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000334}}
-form#search-block-form #edit-actions {
+form#search-block-form .form-actions {
   height: 25px;
   display: inline-block;
   margin: 0;
   position: relative; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000340}}
-  form#search-block-form #edit-actions #edit-submit {
+  form#search-block-form .form-actions .form-submit {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #c0c0c0));
     background-image: -webkit-linear-gradient(#ffffff, #c0c0c0);
     background-image: -moz-linear-gradient(#ffffff, #c0c0c0);
@@ -179,7 +179,7 @@ form#search-block-form #edit-actions {
     top: 0px;
     left: 230px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000348}}
-    form#search-block-form #edit-actions #edit-submit:hover {
+    form#search-block-form .form-actions .form-submit:hover {
       background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffff00), color-stop(100%, #ffd700));
       background-image: -webkit-linear-gradient(#ffff00, #ffd700);
       background-image: -moz-linear-gradient(#ffff00, #ffd700);
