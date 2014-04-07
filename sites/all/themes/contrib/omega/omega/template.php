@@ -448,6 +448,15 @@ function omega_theme_registry_alter(&$registry) {
 
   // Add a preprocessor for initializing default variables to every layout.
   foreach (array_keys(_omega_theme_layouts()) as $hook) {
+
+    // SM: Added by me to suppress warnings:
+    if (!is_array($registry[$hook]['preprocess functions'])) {
+      $registry[$hook]['preprocess functions'] = [];
+    }
+    if (!is_array($registry[$hook]['process functions'])) {
+      $registry[$hook]['process functions'] = [];
+    }
+
     $registry[$hook]['preprocess functions'] = array_diff($registry[$hook]['preprocess functions'], array('template_preprocess'));
 
     array_unshift($registry[$hook]['process functions'], '_omega_preprocess_default_layout_variables');
