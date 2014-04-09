@@ -96,3 +96,20 @@
     display: none;
   }
 }
+
+#block-block-4 {
+  @include border-radius(10px);
+  background-color: forestgreen;
+  margin-top: 10px;
+  width: 284px;
+  padding: 10px;
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    width: auto;
+    margin-top: 5px;
+  }
+}

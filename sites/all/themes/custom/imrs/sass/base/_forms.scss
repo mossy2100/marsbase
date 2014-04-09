@@ -1,14 +1,36 @@
 @mixin button {
   @include background-image(linear-gradient(white, silver));
-  border: none;
   @include box-sizing(border-box);
-  height: 25px;
   @include border-radius(3px);
+  border: none;
+  height: 25px;
   font-size: 12px;
 }
 
 @mixin button-hover {
   @include background-image(linear-gradient(yellow, gold));
+}
+
+.form-submit {
+  @include button;
+
+  &:hover {
+    @include button-hover;
+  }
+}
+
+input[type=text],
+input.form-text {
+  @include box-sizing(border-box);
+  height: 25px;
+  padding: 1px 5px;
+  border: none;
+  @include border-radius(3px);
+}
+
+.form-item .description,
+.form-actions .description {
+  font-size: 10px;
 }
 
 form#search-block-form {
@@ -19,15 +41,10 @@ form#search-block-form {
     position: relative;
 
     #edit-search-block-form--2 {
-      @include box-sizing(border-box);
       width: 229px;
-      height: 25px;
-      @include border-radius(3px);
-      border: none;
       vertical-align: baseline;
       position: absolute;
       top: 0px;
-      padding: 1px 5px;
     }
   }
 
@@ -38,16 +55,46 @@ form#search-block-form {
     position: relative;
 
     .form-submit {
-      @include button;
       width: 50px;
       vertical-align: baseline;
       position: absolute;
       top: 0px;
       left: 230px;
+    }
+  }
+}
 
-      &:hover {
-        @include button-hover;
-      }
+#block-mailchimp-lists-imrs-news {
+  background-color: red;
+  @include border-radius(10px);
+  padding: 10px;
+  width: 284px;
+
+  h2 {
+    margin: 0 0 5px 0;
+  }
+
+  #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-email {
+    width: 264px;
+  }
+
+  #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-fname,
+  #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-lname {
+    width: 130px;
+  }
+
+  .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME,
+  .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-LNAME {
+    display: inline-block;
+  }
+
+  span.form-required {
+    color: black;
+  }
+
+  .form-item-mailchimp-lists-mailchimp-imrs-news-subscribe {
+    .description {
+      margin-top: 5px;
     }
   }
 }
