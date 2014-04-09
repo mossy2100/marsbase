@@ -3,6 +3,7 @@ var abbreviations = {
   "ATV": "All-Terrain Vehicle",
   "AWESOM": "Autonomous Water Extraction from the Surface Of Mars",
   "CEO": "Chief Executive Officer",
+  "CH4": "Methane",
   "CME": "Coronal Mass Ejection",
   "CNSA": "China National Space Administration",
   "COTS": "Commercial Off The Shelf",
@@ -29,9 +30,11 @@ var abbreviations = {
   "JAXA": "Japan Aerospace Exploration Agency",
   "KARI": "Korea Aerospace Research Institute",
   "L5CS": "L5 Communications Satellite",
+  "LH2": "Liquid Hydrogen",
   "LEO": "Low Earth Orbit",
   "LFTR": "Liquid Fluoride Thorium Reactor",
   "LION": "Landing with Inertial and Optical Navigation",
+  "LOX": "Liquid Oxygen",
   "LPS": "Local Positioning System",
   "MARS": "Mars Analog Research Station",
   "MAV": "Mars Ascent Vehicle",
@@ -44,13 +47,25 @@ var abbreviations = {
   "MTH": "Mars Transit Habitat",
   "MTV": "Mars Transfer Vehicle",
   "NASA": "National Aeronautics and Space Administration",
+  "NTR": "Nuclear Thermal Rocket",
   "PHP-M": "Permanent Human Presence on Mars",
   "RCS": "Reaction Control System",
   "ROI": "Return On Investment",
+  "RP1": "Rocket Propellant 1",
+  "RWGS": "Reverse Water Gas Shift",
   "SLS": "Space Launch System",
   "TRL": "Technology Readiness Level",
   "USA": "United States of America",
   "VTOL": "Vertical Take-Off and Landing"
+};
+
+var compounds = {
+  "Ar": "argon",
+  "CH4": "methane",
+  "H2": "hydrogen",
+  "H2O": "water",
+  "O2": "oxygen",
+  "N2": "nitrogen"
 };
 
 (function($) {
