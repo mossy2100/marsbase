@@ -1,5 +1,13 @@
+.block {
+  input[type=text],
+  input.form-text {
+    border: none;
+  }
+}
+
 #book-block-menu-1,
-#block-system-navigation {
+#block-system-navigation,
+#block-system-user-menu {
   ul.menu {
     list-style-type: none;
     list-style-image: none;
@@ -72,6 +80,13 @@
   }
 }
 
+#block-system-navigation,
+#block-system-user-menu {
+  h2 {
+    display: none;
+  }
+}
+
 #block-block-2 {
   img {
     width: 284px;
@@ -91,12 +106,6 @@
   }
 }
 
-#block-system-navigation {
-  h2 {
-    display: none;
-  }
-}
-
 #block-block-4 {
   @include border-radius(10px);
   background-color: forestgreen;
@@ -111,12 +120,5 @@
   img {
     width: auto;
     margin-top: 5px;
-  }
-}
-
-.block {
-  input[type=text],
-  input.form-text {
-    border: none;
   }
 }
