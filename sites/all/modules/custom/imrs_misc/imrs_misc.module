@@ -12,7 +12,6 @@ function imrs_misc_init() {
   dbg_on();
 
   drupal_add_js(drupal_get_path('module', 'imrs_misc'). '/imrs_misc.js');
-//  drupal_add_js("/sites/all/libraries/jquery/autoabbr/autoabbr.js");
   drupal_add_js("sites/all/libraries/jquery/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js");
   drupal_add_css("sites/all/libraries/jquery/jquery-ui-1.10.4.custom/css/smoothness/jquery-ui-1.10.4.custom.css");
 }
@@ -28,39 +27,11 @@ function imrs_misc_wysiwyg_editor_settings_alter(&$settings, $context) {
   $settings['allowedContent'] = TRUE;
 }
 
-///**
-// * Implements hook_ds_fields_info().
-// *
-// * @param string $entity_type
-// * @return array
-// */
-//function imrs_misc_ds_fields_info($entity_type) {
-//  $fields = [];
-//  $fields['node']['html_file'] = array(
-//    'title' => t('HTML file'),
-//    'field_type' => DS_FIELD_TYPE_FUNCTION,
-//    'function' => 'imrs_misc_html_file_field',
-//  );
-//  if (isset($fields[$entity_type])) {
-//    return [$entity_type => $fields[$entity_type]];
-//  }
-//  return;
-//}
-//
-///**
-// * Generate HTML for HTML file field.
-// *
-// * @param array $field
-// * @return string
-// */
-//function imrs_misc_html_file_field($field) {
-//  $path = $field['entity']->field_path_to_html[LANGUAGE_NONE][0]['value'];
-//  if (!$path) {
-//    return '';
-//  }
-//  $path = DRUPAL_ROOT . "/sites/default/files/" . ltrim($path, '/');
-//  if (!file_exists($path)) {
-//    return "ERROR: File $path not found.";
-//  }
-//  return file_get_contents($path);
-//}
+/**
+ * Implement hook_menu_alter().
+ */
+function imrs_misc_menu_alter(&$items) {
+  // Remove register and password forms so no-one can join:
+  unset($items['user/register']);
+  unset($items['user/password']);
+}

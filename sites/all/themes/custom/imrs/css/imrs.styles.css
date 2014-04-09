@@ -130,6 +130,11 @@ input.form-text {
     width: auto;
     margin-top: 5px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003119}}
+.block input[type=text],
+.block input.form-text {
+  border: none; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\000031}}
 table.book-navigation__links {
   width: 100%; }
@@ -189,7 +194,7 @@ input[type=text],
 input.form-text {
   height: 25px;
   padding: 1px 5px;
-  border: none;
+  border: solid 1px silver;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;

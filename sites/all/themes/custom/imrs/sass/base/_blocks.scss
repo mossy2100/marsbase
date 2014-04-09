@@ -113,3 +113,10 @@
     margin-top: 5px;
   }
 }
+
+.block {
+  input[type=text],
+  input.form-text {
+    border: none;
+  }
+}

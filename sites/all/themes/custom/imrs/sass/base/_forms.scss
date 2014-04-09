@@ -24,7 +24,7 @@ input.form-text {
   @include box-sizing(border-box);
   height: 25px;
   padding: 1px 5px;
-  border: none;
+  border: solid 1px silver;
   @include border-radius(3px);
 }
 
