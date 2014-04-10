@@ -3,7 +3,6 @@ var abbreviations = {
   "ATV": "All-Terrain Vehicle",
   "AWESOM": "Autonomous Water Extraction from the Surface Of Mars",
   "CEO": "Chief Executive Officer",
-  "CH4": "Methane",
   "CME": "Coronal Mass Ejection",
   "CNSA": "China National Space Administration",
   "COTS": "Commercial Off The Shelf",
@@ -30,6 +29,7 @@ var abbreviations = {
   "JAXA": "Japan Aerospace Exploration Agency",
   "KARI": "Korea Aerospace Research Institute",
   "L5CS": "L5 Communications Satellite",
+  "LCH4": "Liquid Methane",
   "LH2": "Liquid Hydrogen",
   "LEO": "Low Earth Orbit",
   "LFTR": "Liquid Fluoride Thorium Reactor",
@@ -59,28 +59,52 @@ var abbreviations = {
   "VTOL": "Vertical Take-Off and Landing"
 };
 
-var compounds = {
+var formulae = {
   "Ar": "argon",
   "CH4": "methane",
+  "CO2": "carbon dioxode",
   "H2": "hydrogen",
   "H2O": "water",
   "O2": "oxygen",
   "N2": "nitrogen"
 };
 
+
 (function($) {
 
-  function autoAbbr() {
-    var bookPage = $('.node--book--full');
-    var abbr, html;
-    if (bookPage.length) {
-      // Replace any abbreviations:
-      html = bookPage.html();
-      for (abbr in abbreviations) {
-        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + abbreviations[abbr] + "'>" + abbr + "</abbr>");
+  function markupAbbreviations(el) {
+    if (el.nodeType == 3) {
+      var abbr, abbrWithSubscripts;
+      el = $(el);
+
+      var text = el.text();
+      var html;
+
+      if (text) {
+        html = text;
+
+        // Replace any abbreviations:
+        for (abbr in abbreviations) {
+          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + abbreviations[abbr] + "'>" + abbr + "</abbr>");
+        }
+
+        // Replace any chemical formulae:
+        for (abbr in formulae) {
+          // Wrap every sequence of digits in <sub> tags:
+          abbrWithSubscripts = abbr.replace(/(\d+)/g, "<sub>$1</sub>");
+          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + formulae[abbr] + "'>" + abbrWithSubscripts + "</abbr>");
+        }
+
+        if (html != text) {
+          el.replaceWith(html);
+        }
       }
-      bookPage.html(html);
     }
+
+    // Recurse into children:
+    $(el).contents().each(function(i, el) {
+      markupAbbreviations(el);
+    });
   }
 
   function init() {
@@ -92,7 +116,11 @@ var compounds = {
       },
       show: false
     });
-    autoAbbr();
+
+    var bookPages = $('article.node--book--full');
+    if (bookPages.length) {
+      markupAbbreviations(bookPages.get(0));
+    }
   }
 
   $(init);
