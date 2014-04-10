@@ -56,6 +56,7 @@ var abbreviations = {
   "SLS": "Space Launch System",
   "TRL": "Technology Readiness Level",
   "USA": "United States of America",
+  "VASIMR": "Variable Specific Impulse Magnetoplasma Rocket",
   "VTOL": "Vertical Take-Off and Landing"
 };
 
