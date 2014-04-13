@@ -28,6 +28,7 @@ var abbreviations = {
   "ISRU": "In Situ Resource Utilisation",
   "ISS": "International Space Station",
   "ISWP": "In Situ Water Production",
+  "IVA": "Intra-Vehicular Activity",
   "JAXA": "Japan Aerospace Exploration Agency",
   "KARI": "Korea Aerospace Research Institute",
   "L5CS": "L5 Communications Satellite",

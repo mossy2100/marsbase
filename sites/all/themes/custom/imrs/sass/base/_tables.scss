@@ -3,14 +3,14 @@
     padding: 5px;
     border: solid 1px silver;
     border-collapse: collapse;
+
+    p {
+      margin: 0;
+    }
   }
 }
 
 table#hardware-table {
-  p {
-    margin: 0;
-  }
-
   tr.hardware-rockets {
     background-color: #fefcdc;
   }
