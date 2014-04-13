@@ -4,7 +4,7 @@
   @include border-radius(3px);
   border: none;
   height: 25px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @mixin button-hover {
@@ -30,7 +30,7 @@ input.form-text {
 
 .form-item .description,
 .form-actions .description {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 form#search-block-form {
@@ -41,7 +41,7 @@ form#search-block-form {
     position: relative;
 
     #edit-search-block-form--2 {
-      width: 229px;
+      width: 219px;
       vertical-align: baseline;
       position: absolute;
       top: 0px;
@@ -55,11 +55,12 @@ form#search-block-form {
     position: relative;
 
     .form-submit {
-      width: 50px;
+      width: 60px;
+      height: 25px;
       vertical-align: baseline;
       position: absolute;
       top: 0px;
-      left: 230px;
+      left: 220px;
     }
   }
 }
