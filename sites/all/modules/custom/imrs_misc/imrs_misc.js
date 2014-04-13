@@ -63,13 +63,12 @@ var abbreviations = {
 var formulae = {
   "Ar": "argon",
   "CH4": "methane",
-  "CO2": "carbon dioxode",
+  "CO2": "carbon dioxide",
   "H2": "hydrogen",
   "H2O": "water",
   "O2": "oxygen",
   "N2": "nitrogen"
 };
-
 
 (function($) {
 
