@@ -56,12 +56,14 @@ var abbreviations = {
   "RCS": "Reaction Control System",
   "ROI": "Return On Investment",
   "RP1": "Rocket Propellant 1",
+  "RTG": "Radioisotope thermoelectric generator",
   "RWGS": "Reverse Water Gas Shift",
   "SLS": "Space Launch System",
   "TRL": "Technology Readiness Level",
   "USA": "United States of America",
   "VASIMR": "Variable Specific Impulse Magnetoplasma Rocket",
-  "VTOL": "Vertical Take-Off and Landing"
+  "VTOL": "Vertical Take-Off and Landing",
+  "WAVAR": "Water Vapour Adsorption Reactor"
 };
 
 var formulae = {
