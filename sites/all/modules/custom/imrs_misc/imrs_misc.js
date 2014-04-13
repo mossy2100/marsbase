@@ -56,7 +56,7 @@ var abbreviations = {
   "RCS": "Reaction Control System",
   "ROI": "Return On Investment",
   "RP1": "Rocket Propellant 1",
-  "RTG": "Radioisotope thermoelectric generator",
+  "RTG": "Radioisotope Thermoelectric Generator",
   "RWGS": "Reverse Water Gas Shift",
   "SLS": "Space Launch System",
   "TRL": "Technology Readiness Level",
