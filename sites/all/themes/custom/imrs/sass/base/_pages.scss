@@ -155,10 +155,6 @@ table.mission-days {
   }
 }
 
-abbr {
-  font-size: inherit;
-}
-
 // Links
 a:link,
 a:visited {
@@ -175,4 +171,20 @@ a:focus,
 a:active {
   color: blue;
   text-decoration: none;
+}
+
+.ui-tooltip {
+  font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+div.ui-tooltip {
+  background-color: #ffeeaa;
+  background-image: none;
+  border-color: orange;
+}
+
+div.ui-tooltip-content {
+  background-color: transparent;
 }
