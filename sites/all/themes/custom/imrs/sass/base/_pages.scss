@@ -158,25 +158,26 @@ table.mission-days {
 // Links
 a:link,
 a:visited {
-  color: blue;
-  text-decoration: none;
+  color: royalblue;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: blue;
+  color: orange;
   text-decoration: underline;
 }
 
 a:focus,
 a:active {
   color: blue;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .ui-tooltip {
   font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
   font-size: 14px;
   line-height: 14px;
+  max-width: 500px;
 }
 
 div.ui-tooltip {
@@ -187,4 +188,8 @@ div.ui-tooltip {
 
 div.ui-tooltip-content {
   background-color: transparent;
+}
+
+span.highlight {
+  background-color: yellow;
 }

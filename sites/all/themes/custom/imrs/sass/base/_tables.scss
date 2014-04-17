@@ -1,4 +1,6 @@
 .node--book--full .field--name-body table {
+  margin: auto;
+
   td, th {
     padding: 5px;
     border: solid 1px silver;
@@ -7,6 +9,20 @@
     p {
       margin: 0;
     }
+
+    &.num {
+      text-align: right;
+    }
+  }
+
+  th,
+  tr.total td {
+    background-color: #bdc0bf;
+    font-weight: bold;
+  }
+
+  caption {
+    font-style: italic;
   }
 }
 
@@ -53,6 +69,7 @@ table#colour-coding {
   }
 
   tr.eng-flight {
+    background-color: white;
   }
 
   tr.eng-mech {
@@ -74,4 +91,8 @@ table#colour-coding {
   tr.sci-med {
     background-color: #fff500;
   }
+}
+
+table#hab-atmo {
+  width: 250px;
 }
