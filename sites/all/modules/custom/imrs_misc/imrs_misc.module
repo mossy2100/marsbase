@@ -11,6 +11,7 @@ function imrs_misc_init() {
 
   dbg_on();
 
+  drupal_add_js(drupal_get_path('module', 'imrs_misc'). '/acronyms.js');
   drupal_add_js(drupal_get_path('module', 'imrs_misc'). '/imrs_misc.js');
   drupal_add_js("sites/all/libraries/jquery/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js");
   drupal_add_css("sites/all/libraries/jquery/jquery-ui-1.10.4.custom/css/smoothness/jquery-ui-1.10.4.custom.css");
