@@ -71,6 +71,7 @@ var abbreviations = {
   "RWGS": "Reverse Water Gas Shift",
   "SLS": "Space Launch System",
   "SMAC": "Spacecraft Maximum Allowable Concentrations",
+  "SP": "Special Publication",
   "TEI": "Trans Earth Injection",
   "TMI": "Trans Mars Injection",
   "TRL": "Technology Readiness Level",
