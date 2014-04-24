@@ -56,7 +56,7 @@ var abbreviations = {
   "MARS": "Mars Analog Research Station",
   "MAV": "Mars Ascent Vehicle",
   "MC": "Mission Control",
-  "MCOS": "Mars Communications and Observation Satellite",
+  "MCOS": "Mars Communication and Observation Satellite",
   "MDRS": "Mars Desert Research Station",
   "MGS": "Mars Global Surveyor",
   "MLLV": "Medium Lift Launch Vehicle",
