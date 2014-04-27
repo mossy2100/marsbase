@@ -1,5 +1,6 @@
 var abbreviations = {
   "AEB": "Brazilian Space Agency",
+  "AG": "Artificial Gravity",
   "ATV": "All-Terrain Vehicle",
   "AWESOM": "Autonomous Water Extraction from the Surface Of Mars",
   "BP": "Bundle Protocol",
@@ -51,6 +52,8 @@ var abbreviations = {
   "LEO": "Low Earth Orbit",
   "LFTR": "Liquid Fluoride Thorium Reactor",
   "LION": "Landing with Inertial and Optical Navigation",
+  "LOC": "Loss Of Crew",
+  "LOM": "Loss Of Mission",
   "LOX": "Liquid Oxygen",
   "LPS": "Local Positioning System",
   "MARS": "Mars Analog Research Station",
@@ -69,6 +72,7 @@ var abbreviations = {
   "MTH": "Mars Transit Habitat",
   "MTV": "Mars Transfer Vehicle",
   "NASA": "National Aeronautics and Space Administration",
+  "NDS": "NASA Docking System",
   "NTR": "Nuclear Thermal Rocket",
   "PHP-M": "Permanent Human Presence on Mars",
   "PLSS": "Personal Life Support System",
