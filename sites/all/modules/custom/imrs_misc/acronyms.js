@@ -52,6 +52,7 @@ var abbreviations = {
   "LEO": "Low Earth Orbit",
   "LFTR": "Liquid Fluoride Thorium Reactor",
   "LION": "Landing with Inertial and Optical Navigation",
+  "LNG": "Liquid Natural Gas",
   "LOC": "Loss Of Crew",
   "LOM": "Loss Of Mission",
   "LOX": "Liquid Oxygen",
