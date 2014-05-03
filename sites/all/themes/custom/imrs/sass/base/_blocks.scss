@@ -1,7 +1,8 @@
-.block {
-  input[type=text],
-  input.form-text {
-    border: none;
+aside.l-region--sidebar-first,
+aside.l-region--sidebar-second {
+  div.block,
+  nav.block {
+    margin-bottom: 15px;
   }
 }
 
@@ -54,15 +55,15 @@
       a {
         display: block;
         width: 284px;
-        background-color: #1957c7;
+        background-color: orange;
+        color: black;
         margin: 0 0 2px 0;
         padding: 5px;
         text-decoration: none;
-        color: white;
         font-weight: bold;
         @include border-radius(2px);
 
-        &:hover {
+        &:hover, &.active {
           background-color: gold;
           color: black;
         }
@@ -77,6 +78,19 @@
     &:hover {
       background-image: none;
     }
+  }
+}
+
+#block-search-form {
+  height: 25px;
+
+  h2 {
+    margin: 0;
+  }
+
+  input[type=text],
+  input.form-text {
+    border-color: royalblue;
   }
 }
 
@@ -108,8 +122,7 @@
 
 #block-block-4 {
   @include border-radius(10px);
-  background-color: forestgreen;
-  margin-top: 10px;
+  background-color: royalblue;
   width: 284px;
   padding: 10px;
 
@@ -120,5 +133,28 @@
   img {
     width: auto;
     margin-top: 5px;
+  }
+}
+
+#block-imrs-misc-contents {
+  background-color: white;
+  padding: 10px;
+  @include border-radius(5px);
+  border: solid 1px black;
+  color: black;
+  font-size: 13px;
+
+  h2 {
+    margin: 3px 0 7px;
+  }
+
+  a {
+    &.active {
+      color: orange;
+    }
+
+    &:hover {
+      color: red;
+    }
   }
 }

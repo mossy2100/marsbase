@@ -40,7 +40,7 @@
     <table class="book-navigation__links">
       <tr>
       <?php if ($prev_url): ?>
-        <td width="45%" class="td-book-navigation__previous">
+        <td class="td-book-navigation__previous">
           <a href="<?php print $prev_url; ?>" class="book-navigation__previous" title="<?php print t('Go to previous page'); ?>"><?php print '&larr;&nbsp;' . $prev_title; ?></a>
         </td>
       <?php endif; ?>
@@ -50,7 +50,7 @@
         </td>
       <?php endif; ?>
       <?php if ($next_url): ?>
-        <td width="45%" class="td-book-navigation__next">
+        <td class="td-book-navigation__next">
           <a href="<?php print $next_url; ?>" class="book-navigation__next" title="<?php print t('Go to next page'); ?>"><?php print $next_title . '&nbsp;&rarr;'; ?></a>
         </td>
       <?php endif; ?>

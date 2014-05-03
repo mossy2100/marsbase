@@ -2,13 +2,14 @@
   @include background-image(linear-gradient(white, silver));
   @include box-sizing(border-box);
   @include border-radius(3px);
-  border: none;
+  border: solid 1px silver;
   height: 25px;
   font-size: 14px;
 }
 
 @mixin button-hover {
   @include background-image(linear-gradient(yellow, gold));
+  border-color: gold;
 }
 
 .form-submit {
@@ -24,7 +25,14 @@ input.form-text {
   @include box-sizing(border-box);
   height: 25px;
   padding: 1px 5px;
-  border: solid 1px silver;
+}
+
+input[type=text],
+input.form-text,
+textarea,
+select {
+  border: solid 1px skyblue;
+  background-color: aliceblue;
   @include border-radius(3px);
 }
 

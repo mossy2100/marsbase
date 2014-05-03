@@ -1,7 +1,7 @@
 table.book-navigation__links {
   width: 100%;
 
-  a.book-navigation__previous {
+  td.book-navigation__previous {
     text-align: left;
   }
 
@@ -20,8 +20,9 @@ table.book-navigation__links {
     @include border-radius(3px);
     float: none;
     text-decoration: none;
-    padding: 3px;
+    padding: 2px 5px;
     width: auto;
+    font-size: 13px;
 
     &:hover {
       color: white;

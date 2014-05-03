@@ -36,3 +36,65 @@ function imrs_misc_menu_alter(&$items) {
   unset($items['user/register']);
   unset($items['user/password']);
 }
+
+/**
+ * Implements hook_block_info().
+ */
+function imrs_misc_block_info() {
+  $blocks = [];
+  $blocks['contents'] = [
+    'info' => t('IMRS Book Contents'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+    'properties' => [
+      'administrative' => FALSE,
+    ]
+  ];
+  return $blocks;
+}
+
+/**
+ * Generate the TOC subblock for the given level.
+ *
+ * @param int $level
+ * @param int $plid
+ * @param string $parent_section
+ * @return string
+ */
+function _imrs_misc_toc($level = 0, $plid = 0, $parent_section = '') {
+  $html = '';
+  $q2 = "select * from menu_links where plid=$plid and menu_name='book-toc-1' order by weight";
+  $rs2 = db_query($q2);
+  if ($rs2->rowCount()) {
+    $html .= "<div id='section-level-$level'>";
+    $n = 1;
+    foreach ($rs2 as $rec2) {
+      $section_number = $plid ? ($parent_section . $n . '.') : '';
+      $section = $plid ? ($section_number . ' ') : '';
+      $margin = $plid ? ($level * 10 - 10) : 3;
+//      $options = (current_path() == $rec2->link_path) ? ['attributes' => ['class' => ['active']]] : [];
+      $options = [];
+      $html .= "<div class='section-item' style='margin-left:{$margin}px'>";
+      $html .= "<div class='section-link'>{$section}". l($rec2->link_title, $rec2->link_path, $options) . "</div>";
+      $html .= _imrs_misc_toc($level + 1, $rec2->mlid, $section_number);
+      $html .= "</div>"; // section
+      $n++;
+    }
+    $html .= "</div>";
+  }
+  return $html;
+}
+
+/**
+ * Implements hook_block_view().
+ *
+ * @param string $delta
+ * @return string
+ */
+function imrs_misc_block_view($delta = '') {
+  $block = [];
+  if ($delta == 'contents') {
+    $block['subject'] = 'Contents';
+    $block['content'] = _imrs_misc_toc();
+  }
+  return $block;
+}
