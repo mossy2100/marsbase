@@ -53,6 +53,10 @@ header.l-header {
   }
 }
 
+.element-invisible {
+  margin: 0;
+}
+
 div.l-content {
   background-color: white;
   color: black;
@@ -63,7 +67,7 @@ div.l-content {
 
   ul.breadcrumb {
     padding: 0;
-    margin: 10px 0;
+    margin: 5px 0 15px;
 
     li {
       display: inline;
