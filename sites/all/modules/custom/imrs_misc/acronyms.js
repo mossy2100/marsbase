@@ -1,3 +1,26 @@
+
+var formulae = {
+  "Ar": "argon",
+  "C": "carbon",
+  "CH4": "methane",
+  "CH3OH": "methanol",
+  "CO": "carbon monoxide",
+  "CO2": "carbon dioxide",
+  "H": "hydrogen",
+  "H2": "hydrogen",
+  "H2O": "water",
+  "Kr": "krypton",
+  "O": "oxygen",
+  "O2": "oxygen",
+  "O3": "ozone",
+  "N2": "nitrogen",
+  "Ne": "neon",
+  "NH3": "ammonia",
+  "NO": "nitric oxide",
+  "NO2": "nitrogen dioxide",
+  "Xe": "xenon"
+};
+
 var abbreviations = {
   "AEB": "Brazilian Space Agency",
   "AG": "Artificial Gravity",
@@ -100,26 +123,4 @@ var abbreviations = {
   "VTOL": "Vertical Take-Off and Landing",
   "WAVAR": "Water Vapour Adsorption Reactor",
   "ZPB": "Zero Prebreathe"
-};
-
-var formulae = {
-  "Ar": "argon",
-  "C": "carbon",
-  "CH4": "methane",
-  "CH3OH": "methanol",
-  "CO": "carbon monoxide",
-  "CO2": "carbon dioxide",
-  "H": "hydrogen",
-  "H2": "hydrogen",
-  "H2O": "water",
-  "Kr": "krypton",
-  "O": "oxygen",
-  "O2": "oxygen",
-  "O3": "ozone",
-  "N2": "nitrogen",
-  "Ne": "neon",
-  "NH3": "ammonia",
-  "NO": "nitric oxide",
-  "NO2": "nitrogen dioxide",
-  "Xe": "xenon"
 };

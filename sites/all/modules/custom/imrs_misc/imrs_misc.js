@@ -11,16 +11,16 @@
       if (text) {
         html = text;
 
-        // Replace any abbreviations:
-        for (abbr in abbreviations) {
-          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + abbreviations[abbr] + "'>" + abbr + "</abbr>");
-        }
-
         // Replace any chemical formulae:
         for (abbr in formulae) {
           // Wrap every sequence of digits in <sub> tags:
           abbrWithSubscripts = abbr.replace(/(\d+)/g, "<sub>$1</sub>");
           html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + formulae[abbr] + "'>" + abbrWithSubscripts + "</abbr>");
+        }
+
+        // Replace any abbreviations:
+        for (abbr in abbreviations) {
+          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + abbreviations[abbr] + "'>" + abbr + "</abbr>");
         }
 
         if (html != text) {
