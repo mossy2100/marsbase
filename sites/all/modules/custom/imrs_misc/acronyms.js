@@ -45,7 +45,7 @@ var abbreviations = {
   "IVA": "Intra-Vehicular Activity",
   "JAXA": "Japan Aerospace Exploration Agency",
   "KARI": "Korea Aerospace Research Institute",
-  "L5RS": "Lagrangian point 5 Relay Satellite",
+  "LCRS": "Lagrangian point 5 (L5) Communications Relay Satellite",
   "LCH4": "Liquid Methane",
   "LED": "Light-Emitting Diode",
   "LH2": "Liquid Hydrogen",
