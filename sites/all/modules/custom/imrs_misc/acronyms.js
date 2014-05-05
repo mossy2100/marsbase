@@ -57,6 +57,7 @@ var abbreviations = {
   "LOM": "Loss Of Mission",
   "LOX": "Liquid Oxygen",
   "LPS": "Local Positioning System",
+  "LZ": "Landing Zone",
   "MARS": "Mars Analog Research Station",
   "MAV": "Mars Ascent Vehicle",
   "MC": "Mission Control",
