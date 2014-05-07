@@ -108,6 +108,7 @@ var abbreviations = {
   "RP1": "Rocket Propellant 1",
   "RTG": "Radioisotope Thermoelectric Generator",
   "RWGS": "Reverse Water Gas Shift",
+  "SHLLV": "Super Heavy Lift Launch Vehicle",
   "SLS": "Space Launch System",
   "SMAC": "Spacecraft Maximum Allowable Concentrations",
   "SN": "Space Network",
