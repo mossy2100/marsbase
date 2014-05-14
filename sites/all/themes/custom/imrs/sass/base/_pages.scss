@@ -1,5 +1,5 @@
 html {
-  background: #f6d0a1 url('../images/mars-landscape.jpg') repeat-x scroll bottom center;
+  background: $mars-orange url('../images/mars-landscape.jpg') repeat-x scroll bottom center;
   color: white;
 }
 
@@ -57,7 +57,7 @@ header.l-header {
 div.l-content {
   background-color: white;
   color: black;
-  @include border-radius(10px);
+  @include border-radius(5px);
   border: solid 1px black;
   padding: 10px;
   min-height: 1000px;
@@ -132,24 +132,6 @@ figure {
   margin-top: 30px;
 }
 
-// Links
-a:link,
-a:visited {
-  color: royalblue;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: red;
-  text-decoration: underline;
-}
-
-a:focus,
-a:active {
-  color: blue;
-  text-decoration: underline;
-}
-
 .ui-tooltip {
   font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
   font-size: 14px;
@@ -158,9 +140,10 @@ a:active {
 }
 
 div.ui-tooltip {
-  background-color: #ffeeaa;
+  background-color: $mars-red;
+  color: white;
   background-image: none;
-  border-color: orange;
+  border-color: $indian-orange;
 }
 
 div.ui-tooltip-content {

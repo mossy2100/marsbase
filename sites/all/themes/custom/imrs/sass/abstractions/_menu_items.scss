@@ -1,0 +1,13 @@
+@mixin menu-item {
+  border: solid 1px $earth-blue;
+  background-color: $light-blue;
+  color: white;
+  @include border-radius(5px);
+}
+
+@mixin reverse-menu-item {
+  border: solid 1px $light-blue;
+  background-color: $earth-blue;
+  color: white;
+  @include border-radius(5px);
+}

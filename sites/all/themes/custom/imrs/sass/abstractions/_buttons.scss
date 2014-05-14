@@ -1,0 +1,14 @@
+@mixin button {
+  @include background-image(linear-gradient(white, silver));
+  @include box-sizing(border-box);
+  @include border-radius(3px);
+  border: solid 1px silver;
+  height: 25px;
+  font-size: 14px;
+}
+
+@mixin button-hover {
+  @include background-image(linear-gradient($canada-red, $mars-red));
+  border-color: $mars-red;
+  color: white;
+}

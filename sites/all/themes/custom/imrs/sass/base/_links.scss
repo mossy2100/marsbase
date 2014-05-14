@@ -1,0 +1,18 @@
+a, a:link {
+  color: $earth-blue;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: $mars-blue;
+}
+
+a:focus,
+a:active,
+a.active {
+  color: $indian-orange;
+}
+
+a:hover {
+  color: $canada-red;
+}

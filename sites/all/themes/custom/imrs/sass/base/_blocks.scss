@@ -15,53 +15,22 @@ aside.l-region--sidebar-second {
     margin: 0 0 0 0px;
     padding: 0;
 
-    ul.menu {
-      margin: 0 0 0 0px;
-
-      ul.menu {
-        margin-left: 10px;
-
-        li, a {
-          width: 274px;
-        }
-      }
-    }
-
     li {
       list-style-type: none;
       list-style-image: none;
       padding: 0;
       margin: 0;
 
-      &.collapsed > a {
-        background: #1957c7 url('../images/small-white-triangle-right.png') right center no-repeat;
-
-        &:hover {
-          background-image: url('../images/small-black-triangle-right.png');
-        }
-      }
-
-      &.expanded > a {
-        background: #1957c7 url('../images/small-white-triangle-down.png') right center no-repeat;
-
-        &:hover {
-          background-image: url('../images/small-black-triangle-down.png');
-        }
-      }
-
       a {
+        @include reverse-menu-item;
         display: block;
-        background-color: orange;
-        color: black;
         margin: 0 0 2px 0;
         padding: 5px;
         text-decoration: none;
         font-weight: bold;
-        @include border-radius(2px);
 
         &:hover, &.active {
-          background-color: gold;
-          color: black;
+          @include menu-item;
         }
       }
     }
@@ -79,11 +48,6 @@ aside.l-region--sidebar-second {
 
 #block-search-form {
   height: 25px;
-
-  input[type=text],
-  input.form-text {
-    border-color: royalblue;
-  }
 }
 
 #block-system-navigation,
@@ -109,8 +73,7 @@ aside.l-region--sidebar-second {
 }
 
 #block-block-4 {
-  @include border-radius(10px);
-  background-color: royalblue;
+  @include reverse-menu-item;
   padding: 10px;
 
   p {
@@ -134,14 +97,48 @@ aside.l-region--sidebar-second {
   h2 {
     margin: 3px 0 7px;
   }
+}
 
-  a {
-    &.active {
-      color: orange;
+#block-mailchimp-lists-imrs-news {
+  @include reverse-menu-item;
+  padding: 10px;
+
+  h2 {
+    margin: 0 0 5px 0;
+  }
+
+  .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-EMAIL,
+  #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-email {
+    width: 100%;
+  }
+
+  .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME {
+    display: inline-block;
+    float: left;
+    width: 48%;
+
+    #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-fname {
+      width: 100%;
     }
+  }
 
-    &:hover {
-      color: red;
+  .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-LNAME {
+    display: inline-block;
+    float: right;
+    width: 50%;
+
+    #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-lname {
+      width: 100%;
+    }
+  }
+
+  span.form-required {
+    color: black;
+  }
+
+  .form-item-mailchimp-lists-mailchimp-imrs-news-subscribe {
+    .description {
+      margin-top: 5px;
     }
   }
 }

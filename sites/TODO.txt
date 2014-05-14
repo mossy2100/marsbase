@@ -1,7 +1,3 @@
-Update bat charts to show:
-- MCOS instead of ICOS.
-- BS 330-DS and BA 330-MDS.
-
 Update MEV page to include information about the drill and tracks.
 
 Create separate Marssuits page and bring information across from other pages, plus add new information about BioSuit features and wearable technology.

@@ -15,8 +15,8 @@ table.book-navigation__links {
 
   a {
     margin-bottom: 1em;
-    color: black;
-    background-color: #F6D0A1;
+    color: white;
+    background-color: $light-blue;
     @include border-radius(3px);
     float: none;
     text-decoration: none;
@@ -26,7 +26,7 @@ table.book-navigation__links {
 
     &:hover {
       color: white;
-      background-color: orange;
+      background-color: $canada-red;
     }
   }
 }
