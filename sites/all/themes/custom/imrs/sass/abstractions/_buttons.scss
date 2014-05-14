@@ -1,14 +1,16 @@
 @mixin button {
-  @include background-image(linear-gradient(white, silver));
+  @include background-image(linear-gradient($mars-orange, $indian-orange));
+  border: solid 1px $indian-orange;
+  color: black;
+
   @include box-sizing(border-box);
   @include border-radius(3px);
-  border: solid 1px silver;
   height: 25px;
   font-size: 14px;
 }
 
 @mixin button-hover {
   @include background-image(linear-gradient($canada-red, $mars-red));
-  border-color: $mars-red;
+  border: solid 1px $mars-red;
   color: white;
 }
