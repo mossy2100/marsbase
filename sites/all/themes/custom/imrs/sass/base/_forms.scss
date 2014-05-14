@@ -86,18 +86,29 @@ form#search-block-form {
     margin: 0 0 5px 0;
   }
 
+  .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-EMAIL,
   #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-email {
-    width: 264px;
+    width: 100%;
   }
 
-  #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-fname,
-  #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-lname {
-    width: 130px;
+  .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME {
+    display: inline-block;
+    float: left;
+    width: 48%;
+
+    #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-fname {
+      width: 100%;
+    }
   }
 
-  .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME,
   .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-LNAME {
     display: inline-block;
+    float: right;
+    width: 50%;
+
+    #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-lname {
+      width: 100%;
+    }
   }
 
   span.form-required {
