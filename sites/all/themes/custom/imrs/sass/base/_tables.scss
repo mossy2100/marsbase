@@ -26,6 +26,21 @@
   }
 }
 
+table.mission-days {
+  td {
+    padding: 5px;
+  }
+
+  tr.total {
+    border: solid 1px black;
+    border-width: 1px 0 1px 0;
+
+    td {
+      font-weight: bold;
+    }
+  }
+}
+
 table#hardware-table {
   tr.hardware-rockets {
     background-color: #fefcdc;

@@ -2,7 +2,7 @@ aside.l-region--sidebar-first,
 aside.l-region--sidebar-second {
   div.block,
   nav.block {
-    margin-bottom: 15px;
+    margin-bottom: 1em;
   }
 }
 
@@ -17,9 +17,6 @@ aside.l-region--sidebar-second {
 
     ul.menu {
       margin: 0 0 0 0px;
-      li, a {
-        width: 284px;
-      }
 
       ul.menu {
         margin-left: 10px;
@@ -54,7 +51,6 @@ aside.l-region--sidebar-second {
 
       a {
         display: block;
-        width: 284px;
         background-color: orange;
         color: black;
         margin: 0 0 2px 0;
@@ -98,11 +94,7 @@ aside.l-region--sidebar-second {
 }
 
 #block-block-2 {
-  img {
-    width: 284px;
-    height: 284px;
-    max-width: 284px;
-  }
+  text-align: center;
 
   p {
     margin-top: 0;
@@ -119,7 +111,6 @@ aside.l-region--sidebar-second {
 #block-block-4 {
   @include border-radius(10px);
   background-color: royalblue;
-  width: 284px;
   padding: 10px;
 
   p {

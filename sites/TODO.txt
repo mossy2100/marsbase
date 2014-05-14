@@ -1,2 +1,11 @@
-Update bat charts to show MCOS instead of ICOS.
-Also, show BS 330-DS and BA 330-MDS.
+Update bat charts to show:
+- MCOS instead of ICOS.
+- BS 330-DS and BA 330-MDS.
+
+Update MEV page to include information about the drill and tracks.
+
+Create separate Marssuits page and bring information across from other pages, plus add new information about BioSuit features and wearable technology.
+
+Green Dragon - need a schematic that excludes ISPP.
+
+MAV - need to provide two versions, one that uses H2 from Earth, one that uses locally produced H2O.
