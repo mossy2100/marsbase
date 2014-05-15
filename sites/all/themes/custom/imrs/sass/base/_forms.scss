@@ -17,13 +17,9 @@ input[type=text],
 input.form-text,
 textarea,
 select {
-  border: solid 1px $light-blue;
+  border: solid 1px $mars-blue;
   background-color: $pale-blue;
   @include border-radius(3px);
-
-  &:hover {
-    border-color: $mars-blue;
-  }
 }
 
 .form-item .description,

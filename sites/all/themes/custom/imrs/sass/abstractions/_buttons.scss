@@ -1,7 +1,7 @@
 @mixin button {
-  @include background-image(linear-gradient($mars-orange, $indian-orange));
-  border: solid 1px $indian-orange;
-  color: black;
+  @include background-image(linear-gradient($light-blue, $mars-blue));
+  border: solid 1px $mars-blue;
+  color: white;
 
   @include box-sizing(border-box);
   @include border-radius(3px);

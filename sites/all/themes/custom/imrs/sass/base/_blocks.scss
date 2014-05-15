@@ -22,7 +22,7 @@ aside.l-region--sidebar-second {
       margin: 0;
 
       a {
-        @include reverse-menu-item;
+        @include menu-item;
         display: block;
         margin: 0 0 2px 0;
         padding: 5px;
@@ -69,11 +69,13 @@ aside.l-region--sidebar-second {
   h2 {
     font-size: 22px;
     margin-top: 0;
+    font-style: italic;
+    text-shadow: 1px 1px 2px #222;
   }
 }
 
 #block-block-4 {
-  @include reverse-menu-item;
+  @include menu-item;
   padding: 10px;
 
   p {
@@ -100,11 +102,16 @@ aside.l-region--sidebar-second {
 }
 
 #block-mailchimp-lists-imrs-news {
-  @include reverse-menu-item;
+  @include menu-item;
+  color: black;
   padding: 10px;
 
   h2 {
     margin: 0 0 5px 0;
+  }
+
+  h2.block__title {
+    color: white;
   }
 
   .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-EMAIL,

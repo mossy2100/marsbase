@@ -1,10 +1,8 @@
-a, a:link {
+a,
+a:link,
+a:visited {
   color: $mars-blue;
   text-decoration: underline;
-}
-
-a:visited {
-  color: $earth-blue;
 }
 
 a:focus,
