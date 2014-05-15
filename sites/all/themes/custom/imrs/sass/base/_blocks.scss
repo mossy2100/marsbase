@@ -29,19 +29,16 @@ aside.l-region--sidebar-second {
         text-decoration: none;
         font-weight: bold;
 
-        &:hover, &.active {
-          @include menu-item;
+        &.active {
+          background-color: $indian-orange;
+          border-color: $canada-red;
+        }
+
+        &:hover {
+          background-color: $canada-red;
+          border-color: $mars-red;
         }
       }
-    }
-  }
-
-  // Hide the arrow on the top menu item:
-  & > ul.menu > li.first > a {
-    background-image: none;
-
-    &:hover {
-      background-image: none;
     }
   }
 }
