@@ -43,7 +43,7 @@ aside.l-region--sidebar-second nav.block {
     #block-system-user-menu ul.menu li a {
       background-color: #80b6ff;
       border: solid 1px #00207f;
-      color: white;
+      color: black;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
@@ -54,43 +54,44 @@ aside.l-region--sidebar-second nav.block {
       padding: 5px;
       text-decoration: none;
       font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000335}}
       #book-block-menu-1 ul.menu li a.active,
       #block-system-navigation ul.menu li a.active,
       #block-system-user-menu ul.menu li a.active {
         background-color: #ff9933;
         border-color: red; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000340}}
       #book-block-menu-1 ul.menu li a:hover,
       #block-system-navigation ul.menu li a:hover,
       #block-system-user-menu ul.menu li a:hover {
         background-color: red;
-        border-color: #cc1425; }
+        border-color: #cc1425;
+        color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000350}}
 #block-search-form {
   height: 25px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000356}}
 #block-system-navigation h2,
 #block-system-user-menu h2 {
   display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000361}}
 #block-block-2 {
   text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000364}}
   #block-block-2 p {
     margin-top: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000370}}
 #block-block-3 h2 {
   font-size: 22px;
   margin-top: 0;
   font-style: italic;
   text-shadow: 1px 1px 2px #222; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000378}}
 #block-block-4 {
   background-color: #80b6ff;
   border: solid 1px #00207f;
@@ -101,15 +102,15 @@ aside.l-region--sidebar-second nav.block {
   -o-border-radius: 5px;
   border-radius: 5px;
   padding: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000382}}
   #block-block-4 p {
     margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000386}}
   #block-block-4 img {
     width: auto;
     margin-top: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000392}}
 #block-imrs-misc-contents {
   background-color: white;
   padding: 10px;
@@ -121,11 +122,11 @@ aside.l-region--sidebar-second nav.block {
   border: solid 1px black;
   color: black;
   font-size: 13px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003100}}
   #block-imrs-misc-contents h2 {
     margin: 3px 0 7px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003105}}
 #block-mailchimp-lists-imrs-news {
   background-color: #80b6ff;
   border: solid 1px #00207f;
@@ -137,33 +138,33 @@ aside.l-region--sidebar-second nav.block {
   border-radius: 5px;
   color: black;
   padding: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003110}}
   #block-mailchimp-lists-imrs-news h2 {
     margin: 0 0 5px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003114}}
   #block-mailchimp-lists-imrs-news h2.block__title {
     color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003119}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-EMAIL,
   #block-mailchimp-lists-imrs-news #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-email {
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003123}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME {
     display: inline-block;
     float: left;
     width: 48%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003128}}
     #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-fname {
       width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003133}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-LNAME {
     display: inline-block;
     float: right;
     width: 50%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003138}}
     #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-LNAME #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-lname {
       width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003148}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-subscribe .description {
     margin-top: 5px; }
 
@@ -449,94 +450,102 @@ div.ui-tooltip-content {
 span.highlight {
   background-color: yellow; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\000032}}
 .node--book--full .field--name-body table {
-  margin: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\000034}}
+  margin: auto;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\000036}}
+  .node--book--full .field--name-body table tr.odd {
+    background-color: #e5f1ff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000310}}
+  .node--book--full .field--name-body table tr.even {
+    background-color: #f7f7f7; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000314}}
   .node--book--full .field--name-body table td, .node--book--full .field--name-body table th {
     padding: 5px;
-    border: solid 1px silver;
+    border: solid 1px #00207f;
     border-collapse: collapse; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000319}}
     .node--book--full .field--name-body table td p, .node--book--full .field--name-body table th p {
       margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000323}}
     .node--book--full .field--name-body table td.num, .node--book--full .field--name-body table th.num {
       text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000329}}
   .node--book--full .field--name-body table th,
   .node--book--full .field--name-body table tr.total td {
-    background-color: #bdc0bf;
+    background-color: #80b6ff;
+    color: white;
     font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000335}}
   .node--book--full .field--name-body table caption {
     font-style: italic; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000342}}
 table.mission-days td {
   padding: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000346}}
 table.mission-days tr.total {
   border: solid 1px black;
   border-width: 1px 0 1px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000350}}
   table.mission-days tr.total td {
     font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000357}}
 table#hardware-table tr.hardware-rockets {
   background-color: #fefcdc; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000361}}
 table#hardware-table tr.hardware-capsules {
   background-color: #e5ffe2; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000365}}
 table#hardware-table tr.hardware-satellites {
   background-color: #ffecd4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000369}}
 table#hardware-table tr.hardware-custom {
   background-color: #ffddf1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000373}}
 table#hardware-table tr.hardware-rovers {
   background-color: #d3e2fe; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000377}}
 table#hardware-table tr.hardware-habs {
   background-color: #ccffff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000384}}
 table#schedule th ul, table#schedule td ul {
   margin: 0;
   padding: 0 0 0 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000393}}
 table#crew-roles th,
 table#colour-coding th {
   background-color: #eee;
   text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000398}}
 table#crew-roles tr.eng-flight,
 table#colour-coding tr.eng-flight {
   background-color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\00003102}}
 table#crew-roles tr.eng-mech,
 table#colour-coding tr.eng-mech {
   background-color: #0d7eff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\00003106}}
 table#crew-roles tr.eng-chem,
 table#colour-coding tr.eng-chem {
   background-color: #b439ff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\00003110}}
 table#crew-roles tr.sci-geol,
 table#colour-coding tr.sci-geol {
   background-color: #ff2800; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\00003114}}
 table#crew-roles tr.sci-biol,
 table#colour-coding tr.sci-biol {
   background-color: #00bc00; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\00003118}}
 table#crew-roles tr.sci-med,
 table#colour-coding tr.sci-med {
   background-color: #fff500; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\00003123}}
 table#hab-atmo {
   width: 250px; }

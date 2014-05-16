@@ -22,7 +22,10 @@ aside.l-region--sidebar-second {
       margin: 0;
 
       a {
-        @include menu-item;
+        background-color: $light-blue;
+        border: solid 1px $earth-blue;
+        color: black;
+        @include border-radius(5px);
         display: block;
         margin: 0 0 2px 0;
         padding: 5px;
@@ -37,6 +40,7 @@ aside.l-region--sidebar-second {
         &:hover {
           background-color: $canada-red;
           border-color: $mars-red;
+          color: white;
         }
       }
     }

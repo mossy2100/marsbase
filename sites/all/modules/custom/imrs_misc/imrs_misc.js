@@ -11,16 +11,21 @@
       if (text) {
         html = text;
 
-        // Replace any chemical formulae:
-        for (abbr in formulae) {
+        // Replace any formulae for chemical elements:
+        for (abbr in Drupal.settings.elements) {
+          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.elements[abbr] + "'>" + abbr + "</abbr>");
+        }
+
+        // Replace any formulae for chemical compounds:
+        for (abbr in Drupal.settings.compounds) {
           // Wrap every sequence of digits in <sub> tags:
           abbrWithSubscripts = abbr.replace(/(\d+)/g, "<sub>$1</sub>");
-          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + formulae[abbr] + "'>" + abbrWithSubscripts + "</abbr>");
+          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.compounds[abbr] + "'>" + abbrWithSubscripts + "</abbr>");
         }
 
         // Replace any abbreviations:
-        for (abbr in abbreviations) {
-          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + abbreviations[abbr] + "'>" + abbr + "</abbr>");
+        for (abbr in Drupal.settings.acronyms) {
+          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.acronyms[abbr] + "'>" + abbr + "</abbr>");
         }
 
         if (html != text) {

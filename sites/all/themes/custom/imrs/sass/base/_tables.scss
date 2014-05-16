@@ -1,28 +1,40 @@
-.node--book--full .field--name-body table {
-  margin: auto;
+.node--book--full .field--name-body {
+  table {
+    margin: auto;
+    width: 100%;
 
-  td, th {
-    padding: 5px;
-    border: solid 1px silver;
-    border-collapse: collapse;
-
-    p {
-      margin: 0;
+    tr.odd {
+      background-color: $pale-blue;
     }
 
-    &.num {
-      text-align: right;
+    tr.even {
+      background-color: #f7f7f7;
     }
-  }
 
-  th,
-  tr.total td {
-    background-color: #bdc0bf;
-    font-weight: bold;
-  }
+    td, th {
+      padding: 5px;
+      border: solid 1px $earth-blue;
+      border-collapse: collapse;
 
-  caption {
-    font-style: italic;
+      p {
+        margin: 0;
+      }
+
+      &.num {
+        text-align: right;
+      }
+    }
+
+    th,
+    tr.total td {
+      background-color: $light-blue;
+      color: white;
+      font-weight: bold;
+    }
+
+    caption {
+      font-style: italic;
+    }
   }
 }
 
