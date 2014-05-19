@@ -73,6 +73,8 @@ function imrs_update_copy_body() {
   foreach ($rs as $rec) {
     echobr();
     $node = node_load($rec->nid);
+    dbg($node);
+    exit;
 
     $body = $node->body['value'];
     if ($body) {
