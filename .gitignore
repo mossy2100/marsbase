@@ -1,14 +1,11 @@
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
 
-# Ignore paths that contain user-generated content.
-sites/*/files
-sites/*/private
-
-# Don't ignore special content:
-!sites/default/files/doc/*
-!sites/default/files/html/*
-!sites/default/files/images/*
+# Ignore paths that contain app-generated content.
+sites/default/files/ctools
+sites/default/files/js
+sites/default/files/prepro
+sites/default/files/styles
 
 # Ignore PhpStorm files
 .idea
