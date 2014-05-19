@@ -194,7 +194,7 @@ function imrs_misc_acronyms() {
     'JAXA' => 'Japan Aerospace Exploration Agency',
     'JSA' => 'Job Safety Analysis',
     'KARI' => 'Korea Aerospace Research Institute',
-    'LCRS' => 'Lagrangian point 5 (L5) Communications Relay Satellite',
+    'L5RS' => 'Lagrangian point 5 Relay Satellite',
     'LCH4' => 'Liquid Methane',
     'LED' => 'Light-Emitting Diode',
     'LEO' => 'Low Earth Orbit',
@@ -416,18 +416,18 @@ function imrs_misc_form_book_node_form_submit($form, &$form_state) {
         // Update the HTML file:
         $result = file_put_contents($path, $html);
         if ($result === FALSE) {
-          drupal_set_message("The HTML file could not be updated. Make sure the $dir directory is writable by the web server.", 'error');
+          drupal_set_message("The HTML file <i>$file</i> could not be updated. Make sure the directory <i>$dir</i> is writable by the web server.", 'error');
         }
         else {
-          drupal_set_message("The HTML file was updated with the contents of the editor.");
+          drupal_set_message("The HTML file <i>$file</i> was updated with the contents of the editor.");
         }
       }
       else {
-        drupal_set_message("The HTML file was not updated because the HTML hadn't changed.");
+        drupal_set_message("The HTML file <i>$file</i> was not updated because the HTML hadn't changed.");
       }
     }
     else {
-      drupal_set_message("The HTML file was not updated because the editor was empty.", 'warning');
+      drupal_set_message("The HTML file <i>$file</i> was not updated because the editor was empty.", 'warning');
     }
   }
 }
