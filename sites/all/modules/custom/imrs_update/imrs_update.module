@@ -80,6 +80,7 @@ function imrs_update_copy_body() {
     if ($body) {
       $node->field_html_editor[LANGUAGE_NONE][0]['value'] = $body;
       $node->field_html_editor[LANGUAGE_NONE][0]['format'] = $node->body[LANGUAGE_NONE][0]['format'];
+      node_save($node);
     }
 
   }
