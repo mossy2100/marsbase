@@ -73,13 +73,13 @@ function imrs_update_copy_body() {
   foreach ($rs as $rec) {
     echobr();
     $node = node_load($rec->nid);
-    dbg($node);
-    exit;
+//    dbg($node);
+//    exit;
 
-    $body = $node->body['value'];
+    $body = $node->body[LANGUAGE_NONE][0]['value'];
     if ($body) {
       $node->field_html_editor[LANGUAGE_NONE][0]['value'] = $body;
-      $node->field_html_editor[LANGUAGE_NONE][0]['format'] = $node->body['format'];
+      $node->field_html_editor[LANGUAGE_NONE][0]['format'] = $node->body[LANGUAGE_NONE][0]['format'];
     }
 
   }
