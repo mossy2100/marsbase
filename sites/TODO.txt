@@ -1,7 +1,17 @@
-Update MEV page to include information about the drill and tracks.
+NEXT: Update all references.
+
+Update MEV page to include information about tracks.
 
 Create separate Marssuits page and bring information across from other pages, plus add new information about BioSuit features and wearable technology.
+
+Move airlock information to the Air section, or create a separate airlock page.
+
+Create a specific page to discuss planetary protection.
+
+Create a specific page to discuss radiation.
 
 Green Dragon - need a schematic that excludes ISPP.
 
 MAV - need to provide two versions, one that uses H2 from Earth, one that uses locally produced H2O.
+
+JavaScript - check code to scroll past admin menu. Instead, check offset of targeted element, and scroll it past the admin menu only if necessary.
