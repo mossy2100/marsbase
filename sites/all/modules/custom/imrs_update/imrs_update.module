@@ -1,0 +1,84 @@
+<?php
+/**
+ * Database update scripts.
+ *
+ * @file imrs_update.module
+ * @author Shaun Moss (shaun@astromultimedia.com, skype:mossy2100)
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function imrs_update_menu() {
+  $items = array();
+  $items['update/%'] = array(
+    'page callback' => 'imrs_update_marshall',
+    'page arguments' => array(1),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * General purpose function for marshalling calls to update functions.
+ * Saves me having to create an entry in hook_menu() every time.
+ *
+ * @param string $callback
+ * @return string
+ */
+function imrs_update_marshall($callback) {
+  $fn = 'imrs_update_' . str_replace('-', '_', $callback);
+  if (function_exists($fn)) {
+    return $fn();
+  }
+  drupal_set_message("Invalid callback $callback", 'error');
+  return '';
+}
+
+function imrs_update_html_fields() {
+  $q = db_select('node')
+    ->fields('node', ['nid'])
+    ->condition('type', 'book');
+  $rs = $q->execute();
+  foreach ($rs as $rec) {
+    echobr();
+    $node = node_load($rec->nid);
+    if ($node->field_html_file[LANGUAGE_NONE][0]['value']) {
+      echobr("This node already has an HTML file: " . $node->field_html_file[LANGUAGE_NONE][0]['value']);
+      continue;
+    }
+
+    // Look for matching HTML file:
+    $file = drupal_get_path_alias("node/$rec->nid") . '.html';
+    echobr("Looking for $file");
+    $dir = imrs_misc_html_dir();
+    $path = "$dir/$file";
+    if (file_exists($path)) {
+      echobr("Update HTML file to: " . $file);
+      $node->field_html_file[LANGUAGE_NONE][0]['value'] = $file;
+      node_save($node);
+    }
+    else {
+      echobr("Matching HTML file not found.");
+    }
+  }
+}
+
+function imrs_update_copy_body() {
+  $q = db_select('node')
+    ->fields('node', ['nid'])
+    ->condition('type', 'book');
+  $rs = $q->execute();
+  foreach ($rs as $rec) {
+    echobr();
+    $node = node_load($rec->nid);
+
+    $body = $node->body['value'];
+    if ($body) {
+      $node->field_html_editor[LANGUAGE_NONE][0]['value'] = $body;
+      $node->field_html_editor[LANGUAGE_NONE][0]['format'] = $node->body['format'];
+    }
+
+  }
+}

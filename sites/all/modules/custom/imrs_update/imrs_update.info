@@ -1,0 +1,4 @@
+name = IMRS Update
+description = Contains database update scripts.
+core = 7.x
+package = IMRS

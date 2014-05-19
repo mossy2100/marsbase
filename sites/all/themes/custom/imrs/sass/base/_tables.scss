@@ -1,4 +1,4 @@
-.node--book--full .field--name-body {
+.node--book--full .field {
   table {
     margin: auto;
     width: 100%;
@@ -92,6 +92,7 @@ table#crew-roles,
 table#colour-coding {
   th {
     background-color: #eee;
+    color: black;
     text-align: center;
   }
 

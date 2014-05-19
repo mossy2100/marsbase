@@ -17,6 +17,7 @@ function imrs_misc_init() {
     'elements' => imrs_misc_elements(),
     'compounds' => imrs_misc_compounds(),
     'acronyms' => imrs_misc_acronyms(),
+    'references' => imrs_misc_references(),
   ], 'setting');
 
   drupal_add_js("sites/all/libraries/jquery/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js");
@@ -273,6 +274,11 @@ function imrs_misc_acronyms() {
   ];
 }
 
+/**
+ * Generate the HTML with tables for chemical elements and compounds, and acronyms.
+ *
+ * @return string
+ */
 function imrs_misc_abbr_table() {
   $elements = imrs_misc_elements();
   $header = ['Symbol', 'Element'];
@@ -312,4 +318,166 @@ function imrs_misc_abbr_table() {
     <h2>Acronyms</h2>
     $acronym_table
     ";
+}
+
+/**
+ * Return an array of references.
+ *
+ * @return array
+ */
+function imrs_misc_references() {
+  return [
+    'ACIKMESE' => "B. Acikmese, J. Casoliva, and J. M. Carson III, “G-FOLD: A Real-Time Implementable Fuel Optimal Large Divert Guidance Algorithm for Planetary Pinpoint Landing,” Concepts and Approaches for Mars Exploration, 2012.",
+    'BONIN' => "G. Bonin, “Reaching Mars for Less: The Reference Mission Design of the MarsDrive Consortium,” 25th International Space Development Conference, Los Angeles, California, May 2006.",
+    'CAMPBELL' => "P. D. Campbell, “Internal Atmospheric Pressure and Composition for Planet Surface Habitats and Extravehicular Mobility Units,” Lockheed Engineering and Sciences Company, Contract NAS9-17900, Job Order K1-ETB, Report No. JSC-25003, for NASA Man-Systems Division, 1991.",
+    'COOPER' => "C. Cooper, W. Hofstetter, J. A. Hoffman, and E. F. Crawley, “Assessment of architectural options for surface power generation and energy storage on human Mars missions,” Acta Astronaut., vol. 66, no. 7–8, pp. 1106–1112, Apr 2010.",
+    'DELAUNE' => "J. Delaune, G. Le Besnerais, M. Sanfourche, T. Voirin, C. Bourdarias, and J. Farges, “Optical Terrain Navigation for Pinpoint Landing: Image Scale and Position-Guided Landmark Matching,” Proceedings of the 35th Annual Guidance and Control Conference, 2012.",
+    'DUFFIELD' => "B. E. Duffield, “Advanced Life Support Requirements Document,” JSC-38571, Revision C, National Aeronautics and Space Administration, Lyndon B. Johnson Space Center, Houston, Texas, 2003.",
+    'ETHRIDGE' => "E. C. Ethridge and W. F. Kaukler, “Microwave Extraction of Volatiles for Mars Science and ISRU,” AIAA Aerospace Sciences Meeting, 2012.",
+    'FOGG' => "M. J. Fogg, “The Utility of Geothermal Energy on Mars,” J. Br. Interplanet. Soc., vol. 49, pp. 403–422, 1996.",
+    'GAGE' => "D. Gage, “Mars Base First: A Program-level Optimization for Human Mars Exploration”, J. Cosmol., vol 12, pp. 3904-3911, 2010.",
+    'GROVER' => "M. R. Grover, M. O. Hilstad, L. M. Elias, K. G. C. M. A. Schneider, C. S. Hoffman, S. Adan-Plaza, and A. P. Bruckner, “Extraction of Atmospheric Water on Mars in Support of the Mars Reference Mission,” MAR 98-062, Proceedings of the Founding Convention of the Mars Society: Part II, ed. R. M. Zubrin and M. Zubrin, Boulder, CO, pp. 659-679, August 13-16, 1998.",
+    'HANFORD' => "A. J. Hanford, “Advanced Life Support Baseline Values and Assumptions Document,” NASA Johnson Space Centre, 2004.",
+    'HOFFMAN' => "S. J. Hoffman and D. I. Kaplan, “Human Exploration of Mars: The Reference Mission of the NASA Mars Exploration Study Team,” NASA Spec. Publ., vol. 6107, no. July, pp. 98–036, 1998.",
+    'INTERBARTOLO' => "M. A. Interbartolo III, G. B. Sanders, L. Oryshchyn, K. Lee, H. Vaccaro, E. Santiago-Maldonado, and Anthony C. Muscatello, “Prototype Development of an Integrated Mars Atmosphere and Soil-Processing System,” J. Aerosp. Eng., vol 26, SPECIAL ISSUE: In Situ Resource Utilization, pp. 57–66, 2013.",
+    'SMAC' => "JSC 20584, “Spacecraft Maximum Allowable Concentrations For Aairborne Contaminants,” Toxicology Group, Medical Operations Branch, Medical Sciences Division, Space and Life Sciences Directorate, NASA, Johnson Space Center, June 1999.",
+    'LARSON' => "W. J. Larson and L. K. Pranke, “Human Spaceflight: Mission Analysis and Design (Space Technology Series),” McGraw-Hill, 1999.",
+    'KARCZ' => "J. S. Karcz, S. M. Davis, M. J. Aftosmis, G. A. Allen, N. M. Bakhtian, A. A. Dyakonov, K. T. Edquist, B. J. Glass, A. A. Gonzales, J. L. Heldmann, L. G. Lemke, M. M. Marinova, C. P. Mckay, C. R. Stoker, P. D. Wooster, and K. A. Zarchi, “Red Dragon: Low-Cost Access to the Surface of Mars Using Commercial Capabilities,” Concepts and Approaches for Mars Exploration, 2012.",
+    'KOZICKI' => "J. Kozicki and J. Kozicka, “Human friendly architectural design for a small Martian base,” Adv. Sp. Res., vol. 48, no. 12, Dec 2011.",
+    'LANSDORP' => "B. Lansdorp, A. A. Wielders, “Mars One Communications System,” http://www.mars-one.com/en/communications-system (Retrieved 2013-11-07).",
+    'MASG' => "Mars Architecture Steering Group, “NASA Human Exploration of Mars: Design Reference Architecture 5.0,” 2009.",
+    'RHINEHART' => "R. Rhinehart, “Soylent - Free Your Body,” https://campaign.soylent.me/soylent-free-your-body (Retrieved 2013-10-15)",
+    'ROUEN' => "M. Rouen, “EVA Project Roadmap Plan, Advanced EVA Research and Development,” EVA Project Office, 18 Nov, 1996.",
+    'STOKER' => "C. R. Stoker, A. Davila, S. Davis, B. Glass, A. Gonzales, J. Heldmann, J. Karcz, L. Lemke, and G. Sanders, “Ice Dragon: A Mission to Address Science and Human Exploration Objectives on Mars,” Concepts and Approaches for Mars Exploration, 2012.",
+    'WIELDERS' => "A. Wielders, B. Lansdorp, S. Flinkenflögel, B. Versteeg, N. Kraft, E. Vaandrager, M. Wagensveld, A. Dogra, B. Casagrande and N. Aziz, “Mars One: Creating a human settlement on Mars,” European Planetary Science Congress 2013, vol. 8, 2013.",
+    'WILLSON' => "D. Willson and J. D. A. Clarke, “A Practical Architecture for Exploration-Focused Manned Mars Missions Using Chemical Propulsion, Solar Power Generation and In-Situ Resource Utilisation,” J. Br. Interplanet. Soc., vol. 58, pp. 181–196, 2005.",
+    'ZUBRIN' => "R. M. Zubrin, D. A. Baker, and O. Gwynne, “Mars direct - A simple, robust, and cost effective architecture for the Space Exploration Initiative,” 29th Aerosp. Sci. Meet. AIAA, 1991.",
+  ];
+}
+
+/**
+ * Generate the HTML for the list of references.
+ *
+ * @return string
+ */
+function imrs_misc_ref_list() {
+  $references = imrs_misc_references();
+  $html = '';
+  $i = 1;
+  foreach ($references as $reference) {
+    $html .= "<p id='ref{$i}'>[$i] $reference</p>";
+    $i++;
+  }
+  return $html;
+}
+
+function imrs_misc_html_dir() {
+  return DRUPAL_ROOT . "/sites/default/files/html";
+}
+
+function imrs_misc_form_book_node_form_alter(&$form, &$form_state) {
+  // Populate the select form:
+  $form['field_html_file'][LANGUAGE_NONE]['#options'] = ['' => '-- Select --'];
+  $dir = imrs_misc_html_dir();
+  $files = scandir($dir);
+  foreach ($files as $file) {
+    $path = "$dir/$file";
+    if (is_file($path) && pathinfo($path, PATHINFO_EXTENSION) == 'html') {
+      $form['field_html_file'][LANGUAGE_NONE]['#options'][$file] = $file;
+    }
+  }
+
+  // Select the value:
+  $file = $form['#node']->field_html_file[LANGUAGE_NONE][0]['value'];
+  $form['field_html_file'][LANGUAGE_NONE]['#default_value'] = $file;
+
+  // Set the value of the body field to the contents of the HTML file:
+  if ($file) {
+    $path = "$dir/$file";
+    $form['field_html_editor'][LANGUAGE_NONE][0]['#default_value'] = file_get_contents($path);
+  }
+
+  // Add a submit handler:
+  $form['#submit'][] = 'imrs_misc_form_book_node_form_submit';
+}
+
+function imrs_misc_form_book_node_form_submit($form, &$form_state) {
+  $html = $form_state['values']['field_html_editor'][LANGUAGE_NONE][0]['value'];
+  $file = $form_state['values']['field_html_file'][LANGUAGE_NONE][0]['value'];
+  if (!$file) {
+    drupal_set_message("The HTML file was not updated because none was selected.", 'warning');
+  }
+  else {
+    if ($html) {
+      $dir = imrs_misc_html_dir();
+      $path = "$dir/$file";
+      $orig_html = file_get_contents($path);
+      if ($html != $orig_html) {
+        // Update the HTML file:
+        $result = file_put_contents($path, $html);
+        if ($result === FALSE) {
+          drupal_set_message("The HTML file could not be updated. Make sure the $dir directory is writable by the web server.", 'error');
+        }
+        else {
+          drupal_set_message("The HTML file was updated with the contents of the editor.");
+        }
+      }
+      else {
+        drupal_set_message("The HTML file was not updated because the HTML hadn't changed.");
+      }
+    }
+    else {
+      drupal_set_message("The HTML file was not updated because the editor was empty.", 'warning');
+    }
+  }
+}
+
+//function imrs_misc_ds_fields_info($entity_type) {
+//  $fields = [];
+//  $fields['node']['html_file'] = [
+//    'title' => t('Rendered HTML File'),
+//    'field_type' => DS_FIELD_TYPE_FUNCTION,
+//    'function' => 'ibis_misc_html_file_field',
+//  ];
+//  if (isset($fields[$entity_type])) {
+//    return [$entity_type => $fields[$entity_type]];
+//  }
+//  return;
+//}
+//
+//function ibis_misc_html_file_field($field) {
+////  dpm($field);
+//  $file = $field['entity']->field_html_file[LANGUAGE_NONE][0]['value'];
+//  if ($file) {
+//    $dir = imrs_misc_html_dir();
+//    $path = "$dir/$file";
+//    return file_exists($path) ? file_get_contents($path) : "FILE $path NOT FOUND.";
+//  }
+//  dpm($field);
+////  return $field['entity']->field_html_editor[LANGUAGE_NONE][0]['value'];
+//}
+
+function imrs_misc_node_view($node, $view_mode, $langcode) {
+  if ($node->type != 'book' || $view_mode != 'full') {
+    return;
+  }
+
+  // Compare the HTML in the database with the HTML in the file:
+  $file = $node->field_html_file[LANGUAGE_NONE][0]['value'];
+  if ($file) {
+    $dir = imrs_misc_html_dir();
+    $path = "$dir/$file";
+    if (file_exists($path)) {
+      $file_html = file_get_contents($path);
+      $db_html = $node->field_html_editor[LANGUAGE_NONE][0]['value'];
+      if ($file_html && $file_html != $db_html) {
+        // The file has been updated, so update the database:
+        $node->field_html_editor[LANGUAGE_NONE][0]['value'] = $file_html;
+        node_save($node);
+
+        // Update the content:
+        $node->content['field_html_editor'][0]['#markup'] = $file_html;
+      }
+    }
+  }
 }
