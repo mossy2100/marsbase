@@ -6,9 +6,9 @@ sites/*/files
 sites/*/private
 
 # Don't ignore special content:
-!sites/default/files/doc
-!sites/default/files/html
-!sites/default/files/images
+!sites/default/files/doc/
+!sites/default/files/html/
+!sites/default/files/images/
 
 # Ignore PhpStorm files
 .idea
