@@ -26,20 +26,20 @@
 
 <h3>Mars One</h3>
 
-<p> The solution planned by <a href="http://www.mars-one.com/" target="_blank">Mars One</a> </span>(Lansdorp and Wielders, 2013) to provide almost 100% connectivity between Earth and the Mars One settlement is a very good one, and uses two communications satellites:</p>
+<p>The solution planned by <a href="http://www.mars-one.com/" target="_blank">Mars One</a> (Lansdorp and Wielders, 2013) to provide almost 100% connectivity between Earth and the Mars One settlement is a very good one, and uses two communications satellites:</p>
 
 <ol>
-  <li>
-    <p>An areostationary satellite above the base, which functions as a communications relay during the Martian night.</p>
-  </li>
-  <li>
-    <p><span>A satellite at Earth&rsquo;s L5 Lagrangian point (i.e. sharing Earth&rsquo;s orbit, but trailing by 60&deg;), which serves to relay communications around the Sun during solar conjunction.</span></p>
-  </li>
+	<li>
+		<p>An areostationary satellite above the base, which functions as a communications relay during the Martian night.</p>
+	</li>
+	<li>
+		<p><span>A satellite at Earth&rsquo;s L5 Lagrangian point (i.e. sharing Earth&rsquo;s orbit, but trailing by 60&deg;), which serves to relay communications around the Sun during solar conjunction.</span></p>
+	</li>
 </ol>
 
 <p>This is the solution adopted in this architecture, where they are referred to as MCOS and L5RS. It is quite possible that, if Mars One is successful, their satellites could also be used by IMRS, or vice versa.</p>
 
-<h3 >MCOS (Mars Communication and Observation Satellite)</h3>
+<h3>MCOS (Mars Communication and Observation Satellite)</h3>
 
 <p>The plan is to place a dedicated satellite in an areostationary orbit above the base. This is an equatorial orbit with an altitude of 17,033km and the same longitude as the base. The proposed satellite is named MCOS, and will be able to provide a communications link between IMRS and Earth almost 100% of the time (except for solar conjunction). It will also provide continuous observation of the base, which will be invaluable for Mission Control and media back on Earth.</p>
 
@@ -49,11 +49,11 @@
 
 <p>Although MCOS will provide the base with typical internet services, it will not use TCP/IP, the protocols used for most internet services on Earth. All the satellites, spacecraft, habitats, vehicles and spacesuits involved in the mission will use BP (Bundle Protocol) developed for DTN (Delay/Disruption Tolerant Networking). This is an alternative internet protocol suited to situations where delays and disruptions to communications are expected, such as space missions. One of the functions of the ISS has been to develop and improve this technology.</p>
 
-<p>MCOS would include a high resolution colour camera comparable to HiRISE, thereby providing the capability for MC to monitor the base from orbit. This would be especially important in case of emergency, or as a potential backup if the communication link breaks. Such a camera may be either cheaper or technologically superior to the $40M HiRISE camera due to evolution in CCD and other relevant technology.</p>
+<p>MCOS would include a high resolution colour camera comparable to HiRISE, thereby providing the capability for MCC to monitor the base from orbit. This would be especially important in case of emergency, or as a potential backup if the communication link breaks. Such a camera may be either cheaper or technologically superior to the $40M HiRISE camera due to evolution in CCD and other relevant technology.</p>
 
 <p>MCOS will also provide real-time HD video from space. Current efforts by <a href="http://www.urthecast.com/" target="_blank">UrtheCast</a> to provide live HD video of Earth from the ISS will be instructive in the design of such a system.</p>
 
-<h3 >L5RS (Lagrangian point 5 Relay Satellite)</h3>
+<h3>L5RS (Lagrangian point 5 Relay Satellite)</h3>
 
 <p>This is the less critical of the two satellites, and may perhaps be considered optional. The cost of not installing the L5RS will be that Earth-Mars communications will be interrupted by the Sun for approximately two weeks out of every 26 months, as now. This is probably acceptable. However, if this satellite is installed, it will benefit not only the IMRS but all deep space missions.</p>
 
