@@ -16,3 +16,8 @@
 #admin-menu .dropdown {
   line-height: 14px;
 }
+
+/* Remove the margin and use padding instead (see admin_menu_fix.js) so it works in IE8. */
+body.admin-menu {
+  margin-top: 0 !important;
+}

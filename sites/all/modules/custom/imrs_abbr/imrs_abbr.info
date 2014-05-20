@@ -1,0 +1,4 @@
+name = IMRS Abbreviations
+description = Abbreviations and references for marsbase.org.
+core = 7.x
+package = Astro Multimedia

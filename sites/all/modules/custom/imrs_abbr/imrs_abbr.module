@@ -1,0 +1,300 @@
+<?php
+/**
+ * @file imrs_abbr.module
+ * @author Shaun Moss (shaun@astromultimedia.com, skype:mossy2100)
+ * @since 15-Feb-2014 20:19
+ */
+
+function imrs_abbr_init() {
+  drupal_add_js(drupal_get_path('module', 'imrs_abbr'). '/imrs_abbr.js');
+  drupal_add_js([
+    'elements' => imrs_abbr_elements(),
+    'compounds' => imrs_abbr_compounds(),
+    'acronyms' => imrs_abbr_acronyms(),
+    'references' => imrs_abbr_references(),
+  ], 'setting');
+
+  // Add custom jQuery UI JS/CSS to support tooltips:
+  drupal_add_js("sites/all/libraries/jquery/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js");
+  drupal_add_css("sites/all/libraries/jquery/jquery-ui-1.10.4.custom/css/smoothness/jquery-ui-1.10.4.custom.css");
+}
+
+/**
+ * Array of chemical element abbreviations.
+ *
+ * @return array
+ */
+function imrs_abbr_elements() {
+  return [
+    'Ar' => 'argon',
+    'C' => 'carbon',
+    'H' => 'hydrogen',
+    'Kr' => 'krypton',
+    'O' => 'oxygen',
+    'N' => 'nitrogen',
+    'Ne' => 'neon',
+    'Xe' => 'xenon',
+  ];
+}
+
+/**
+ * Array of chemical compound abbreviations.
+ *
+ * @return array
+ */
+function imrs_abbr_compounds() {
+  return [
+    'CH4' => 'methane',
+    'CH3OH' => 'methanol',
+    'CO' => 'carbon monoxide',
+    'CO2' => 'carbon dioxide',
+    'H2' => 'hydrogen',
+    'H2O' => 'water',
+    'O2' => 'oxygen',
+    'O3' => 'ozone',
+    'N2' => 'nitrogen',
+    'NH3' => 'ammonia',
+    'NO' => 'nitric oxide',
+    'NO2' => 'nitrogen dioxide',
+  ];
+}
+
+/**
+ * Array of acronyms.
+ *
+ * @return array
+ */
+function imrs_abbr_acronyms() {
+  return [
+    'AEB' => 'Agência Espacial Brasileira (Brazilian Space Agency)',
+    'AG' => 'Artificial Gravity',
+    'ATV' => 'All-Terrain Vehicle',
+    'AWESOM' => 'Autonomous Water Extraction from the Surface Of Mars',
+    'BP' => 'Bundle Protocol',
+    'BPS' => 'Ballistic Protection System',
+    'CCD' => 'Charge-Coupled Device',
+    'CDR' => 'Commander',
+    'CEO' => 'Chief Executive Officer',
+    'CIGS' => 'Copper Indium Gallium Selenide',
+    'CME' => 'Coronal Mass Ejection',
+    'CNSA' => 'China National Space Administration',
+    'COTS' => 'Commercial Off The Shelf',
+    'CSA' => 'Canadian Space Agency',
+    'DCS' => 'Decompression Sickness',
+    'DRA' => 'Design Reference Architecture',
+    'DRM' => 'Design Reference Mission',
+    'DS' => 'Deep Space',
+    'DSN' => 'Deep Space Network',
+    'DTN' => 'Delay/Disruption Tolerant Networking',
+    'ECLSS' => 'Environment Control and Life Support System',
+    'EDL' => 'Entry, Descent and Landing',
+    'EELV' => 'Evolved Expendable Launch Vehicle',
+    'EHA' => 'Extra-Habitat Activity',
+    'EOI' => 'Earth Orbit Insertion',
+    'EOR' => 'Earth Orbit Rendezvous',
+    'ERV' => 'Earth Return Vehicle',
+    'ESA' => 'European Space Agency',
+    'ETO' => 'Earth To Orbit',
+    'EVA' => 'Extra-Vehicular Activity',
+    'FMARS' => 'Flashline Mars Arctic Research Station',
+    'G-FOLD' => 'Guidance for Fuel Optimal Large Diverts',
+    'GNC' => 'Guidance, Navigation and Control',
+    'GPS' => 'Global Positioning System',
+    'H2L' => 'Humans to Luna',
+    'H2M' => 'Humans to Mars',
+    'HD' => 'High Definition',
+    'HiRISE' => 'High Resolution Imaging Science Experiment',
+    'HLLV' => 'Heavy Lift Launch Vehicle',
+    'ICT' => 'Information and Communications Technology',
+    'IMRS' => 'International Mars Research Station',
+    'IP' => 'Internet Protocol',
+    'ISA' => 'Iranian Space Agency',
+    'ISAP' => 'In Situ Air Production',
+    'ISEP' => 'In Situ Electricity Production',
+    'ISFP' => 'In Situ Food Production',
+    'ISPP' => 'In Situ Propellant Production',
+    'ISRO' => 'Indian Space Research Organisation',
+    'ISRU' => 'In Situ Resource Utilisation',
+    'ISS' => 'International Space Station',
+    'ISWP' => 'In Situ Water Production',
+    'IT' => 'Information Technology',
+    'IVA' => 'Intra-Vehicular Activity',
+    'JAXA' => 'Japan Aerospace Exploration Agency',
+    'JSA' => 'Job Safety Analysis',
+    'KARI' => 'Korea Aerospace Research Institute',
+    'L5RS' => 'Lagrangian point 5 Relay Satellite',
+    'LCH4' => 'Liquid Methane',
+    'LED' => 'Light-Emitting Diode',
+    'LEO' => 'Low Earth Orbit',
+    'LFTR' => 'Liquid Fluoride Thorium Reactor',
+    'LH2' => 'Liquid Hydrogen',
+    'LION' => 'Landing with Inertial and Optical Navigation',
+    'LNG' => 'Liquid Natural Gas',
+    'LMO' => 'Low Mars Orbit',
+    'LOC' => 'Loss Of Crew',
+    'LOM' => 'Loss Of Mission',
+    'LOX' => 'Liquid Oxygen',
+    'LPS' => 'Local Positioning System',
+    'LZ' => 'Landing Zone',
+    'MARS' => 'Mars Analog Research Station',
+    'MAS' => 'Mars Activity Suit',
+    'MAV' => 'Mars Ascent Vehicle',
+    'MCC' => 'Mission Control Centre',
+    'MCOS' => 'Mars Communication and Observation Satellite',
+    'MCP' => 'Mechanical Counter-Pressure',
+    'MDRS' => 'Mars Desert Research Station',
+    'MDS' => 'Modified Deep Space',
+    'MER' => 'Mars Exploration Rover',
+    'MEV' => 'Mars Exploration Vehicle',
+    'MGS' => 'Mars Global Surveyor',
+    'MIT' => 'Massachusetts Institute of Technology',
+    'MLLV' => 'Medium Lift Launch Vehicle',
+    'MOI' => 'Mars Orbit Insertion',
+    'MOLA' => 'Mars Orbiting Laser Altimeter',
+    'MOR' => 'Mars Orbit Rendezvous',
+    'MRO' => 'Mars Reconnaissance Orbiter',
+    'MSA' => 'Mars Society Australia',
+    'MSH' => 'Mars Surface Habitat',
+    'MSL' => 'Mars Science Laboratory',
+    'MTH' => 'Mars Transit Habitat',
+    'MTV' => 'Mars Transfer Vehicle',
+    'NASA' => 'National Aeronautics and Space Administration',
+    'NDS' => 'NASA Docking System',
+    'NTR' => 'Nuclear Thermal Rocket',
+    'OMS' => 'Orbital Manoeuvring System',
+    'OTE' => 'Orbit To Earth',
+    'OTM' => 'Orbit To Mars',
+    'PHP-L' => 'Permanent Human Presence on Luna',
+    'PHP-M' => 'Permanent Human Presence on Mars',
+    'PLSS' => 'Personal Life Support System',
+    'PV' => 'Photovoltaic',
+    'RCS' => 'Reaction Control System',
+    'RH' => 'Relative Humidity',
+    'RLS' => 'Reusable Launch System',
+    'ROI' => 'Return On Investment',
+    'RP1' => 'Rocket Propellant 1',
+    'RPS' => 'Radiation Protection System',
+    'RTG' => 'Radioisotope Thermoelectric Generator',
+    'RWGS' => 'Reverse Water Gas Shift',
+    'SAS' => 'Space Activity Suit',
+    'SCUBA' => 'Self-Contained Underwater Breathing Apparatus',
+    'SHLLV' => 'Super Heavy Lift Launch Vehicle',
+    'SLS' => 'Space Launch System',
+    'SMAC' => 'Spacecraft Maximum Allowable Concentrations',
+    'SN' => 'Space Network',
+    'SP' => 'Special Publication',
+    'SGR' => 'Stirling Radioisotope Generator',
+    'TBD' => 'To Be Determined',
+    'TCP' => 'Transmission Control Protocol',
+    'TDRS' => 'Tracking and Data Relay Satellite',
+    'TDRSS' => 'Tracking and Data Relay Satellite System',
+    'TEI' => 'Trans Earth Injection',
+    'TMI' => 'Trans Mars Injection',
+    'TPS' => 'Thermal Protection System',
+    'TRL' => 'Technology Readiness Level',
+    'USA' => 'United States of America',
+    'UV' => 'Ultra-Violet',
+    'VASIMR' => 'Variable Specific Impulse Magnetoplasma Rocket',
+    'VTOL' => 'Vertical Take-Off and Landing',
+    'WAVAR' => 'Water Vapour Adsorption Reactor',
+    'ZPB' => 'Zero Prebreathe',
+    'ZPS' => 'Zero Prebreathe Spacesuit',
+  ];
+}
+
+/**
+ * Generate the HTML with tables for chemical elements and compounds, and acronyms.
+ *
+ * @return string
+ */
+function imrs_abbr_table() {
+  $elements = imrs_abbr_elements();
+  $header = ['Symbol', 'Element'];
+  $rows = [];
+  foreach ($elements as $abbr => $element) {
+    $rows[] = [$abbr, $element];
+  }
+  $element_table = theme('table', ['header' => $header, 'rows' => $rows, 'sticky' => FALSE]);
+
+  $compounds = imrs_abbr_compounds();
+  $header = ['Formula', 'Compound'];
+  $rows = [];
+  foreach ($compounds as $abbr => $compound) {
+    $rows[] = [$abbr, $compound];
+  }
+  $compound_table = theme('table', ['header' => $header, 'rows' => $rows, 'sticky' => FALSE]);
+
+  $acronyms = imrs_abbr_acronyms();
+  $header = ['Acronym', 'Meaning'];
+  $rows = [];
+  foreach ($acronyms as $abbr => $acronym) {
+    $rows[] = [$abbr, $acronym];
+  }
+  $acronym_table = theme('table', ['header' => $header, 'rows' => $rows, 'sticky' => FALSE]);
+
+  return "
+    <h2>Chemical Elements</h2>
+    $element_table
+
+    <p>&nbsp;</p>
+
+    <h2>Chemical Compounds</h2>
+    $compound_table
+
+    <p>&nbsp;</p>
+
+    <h2>Acronyms</h2>
+    $acronym_table
+    ";
+}
+
+/**
+ * Array of references.
+ *
+ * @return array
+ */
+function imrs_abbr_references() {
+  return [
+    'ACIKMESE' => "B. Acikmese, J. Casoliva, and J. M. Carson III, “G-FOLD: A Real-Time Implementable Fuel Optimal Large Divert Guidance Algorithm for Planetary Pinpoint Landing,” Concepts and Approaches for Mars Exploration, 2012.",
+    'BONIN' => "G. Bonin, “Reaching Mars for Less: The Reference Mission Design of the MarsDrive Consortium,” 25th International Space Development Conference, Los Angeles, California, May 2006.",
+    'CAMPBELL' => "P. D. Campbell, “Internal Atmospheric Pressure and Composition for Planet Surface Habitats and Extravehicular Mobility Units,” Lockheed Engineering and Sciences Company, Contract NAS9-17900, Job Order K1-ETB, Report No. JSC-25003, for NASA Man-Systems Division, 1991.",
+    'COOPER' => "C. Cooper, W. Hofstetter, J. A. Hoffman, and E. F. Crawley, “Assessment of architectural options for surface power generation and energy storage on human Mars missions,” Acta Astronaut., vol. 66, no. 7–8, pp. 1106–1112, Apr 2010.",
+    'DELAUNE' => "J. Delaune, G. Le Besnerais, M. Sanfourche, T. Voirin, C. Bourdarias, and J. Farges, “Optical Terrain Navigation for Pinpoint Landing: Image Scale and Position-Guided Landmark Matching,” Proceedings of the 35th Annual Guidance and Control Conference, 2012.",
+    'DUFFIELD' => "B. E. Duffield, “Advanced Life Support Requirements Document,” JSC-38571, Revision C, National Aeronautics and Space Administration, Lyndon B. Johnson Space Center, Houston, Texas, 2003.",
+    'ETHRIDGE' => "E. C. Ethridge and W. F. Kaukler, “Microwave Extraction of Volatiles for Mars Science and ISRU,” AIAA Aerospace Sciences Meeting, 2012.",
+    'FOGG' => "M. J. Fogg, “The Utility of Geothermal Energy on Mars,” J. Br. Interplanet. Soc., vol. 49, pp. 403–422, 1996.",
+    'GAGE' => "D. Gage, “Mars Base First: A Program-level Optimization for Human Mars Exploration”, J. Cosmol., vol 12, pp. 3904-3911, 2010.",
+    'GROVER' => "M. R. Grover, M. O. Hilstad, L. M. Elias, K. G. C. M. A. Schneider, C. S. Hoffman, S. Adan-Plaza, and A. P. Bruckner, “Extraction of Atmospheric Water on Mars in Support of the Mars Reference Mission,” MAR 98-062, Proceedings of the Founding Convention of the Mars Society: Part II, ed. R. M. Zubrin and M. Zubrin, Boulder, CO, pp. 659-679, August 13-16, 1998.",
+    'HANFORD' => "A. J. Hanford, “Advanced Life Support Baseline Values and Assumptions Document,” NASA Johnson Space Centre, 2004.",
+    'HOFFMAN' => "S. J. Hoffman and D. I. Kaplan, “Human Exploration of Mars: The Reference Mission of the NASA Mars Exploration Study Team,” NASA Spec. Publ., vol. 6107, no. July, pp. 98–036, 1998.",
+    'INTERBARTOLO' => "M. A. Interbartolo III, G. B. Sanders, L. Oryshchyn, K. Lee, H. Vaccaro, E. Santiago-Maldonado, and Anthony C. Muscatello, “Prototype Development of an Integrated Mars Atmosphere and Soil-Processing System,” J. Aerosp. Eng., vol 26, SPECIAL ISSUE: In Situ Resource Utilization, pp. 57–66, 2013.",
+    'SMAC' => "JSC 20584, “Spacecraft Maximum Allowable Concentrations For Aairborne Contaminants,” Toxicology Group, Medical Operations Branch, Medical Sciences Division, Space and Life Sciences Directorate, NASA, Johnson Space Center, June 1999.",
+    'LARSON' => "W. J. Larson and L. K. Pranke, “Human Spaceflight: Mission Analysis and Design (Space Technology Series),” McGraw-Hill, 1999.",
+    'KARCZ' => "J. S. Karcz, S. M. Davis, M. J. Aftosmis, G. A. Allen, N. M. Bakhtian, A. A. Dyakonov, K. T. Edquist, B. J. Glass, A. A. Gonzales, J. L. Heldmann, L. G. Lemke, M. M. Marinova, C. P. Mckay, C. R. Stoker, P. D. Wooster, and K. A. Zarchi, “Red Dragon: Low-Cost Access to the Surface of Mars Using Commercial Capabilities,” Concepts and Approaches for Mars Exploration, 2012.",
+    'KOZICKI' => "J. Kozicki and J. Kozicka, “Human friendly architectural design for a small Martian base,” Adv. Sp. Res., vol. 48, no. 12, Dec 2011.",
+    'LANSDORP' => "B. Lansdorp, A. A. Wielders, “Mars One Communications System,” http://www.mars-one.com/en/communications-system (Retrieved 2013-11-07).",
+    'MASG' => "Mars Architecture Steering Group, “NASA Human Exploration of Mars: Design Reference Architecture 5.0,” 2009.",
+    'RHINEHART' => "R. Rhinehart, “Soylent - Free Your Body,” https://campaign.soylent.me/soylent-free-your-body (Retrieved 2013-10-15)",
+    'ROUEN' => "M. Rouen, “EVA Project Roadmap Plan, Advanced EVA Research and Development,” EVA Project Office, 18 Nov, 1996.",
+    'STOKER' => "C. R. Stoker, A. Davila, S. Davis, B. Glass, A. Gonzales, J. Heldmann, J. Karcz, L. Lemke, and G. Sanders, “Ice Dragon: A Mission to Address Science and Human Exploration Objectives on Mars,” Concepts and Approaches for Mars Exploration, 2012.",
+    'WIELDERS' => "A. Wielders, B. Lansdorp, S. Flinkenflögel, B. Versteeg, N. Kraft, E. Vaandrager, M. Wagensveld, A. Dogra, B. Casagrande and N. Aziz, “Mars One: Creating a human settlement on Mars,” European Planetary Science Congress 2013, vol. 8, 2013.",
+    'WILLSON' => "D. Willson and J. D. A. Clarke, “A Practical Architecture for Exploration-Focused Manned Mars Missions Using Chemical Propulsion, Solar Power Generation and In-Situ Resource Utilisation,” J. Br. Interplanet. Soc., vol. 58, pp. 181–196, 2005.",
+    'ZUBRIN' => "R. M. Zubrin, D. A. Baker, and O. Gwynne, “Mars direct - A simple, robust, and cost effective architecture for the Space Exploration Initiative,” 29th Aerosp. Sci. Meet. AIAA, 1991.",
+  ];
+}
+
+/**
+ * Generate the HTML for the references page.
+ *
+ * @return string
+ */
+function imrs_abbr_ref_list() {
+  $references = imrs_abbr_references();
+  $html = '';
+  $i = 1;
+  foreach ($references as $reference) {
+    $html .= "<p id='ref{$i}'>[$i] $reference</p>";
+    $i++;
+  }
+  return $html;
+}

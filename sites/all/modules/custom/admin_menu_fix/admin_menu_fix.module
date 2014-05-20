@@ -18,8 +18,8 @@
 function admin_menu_fix_init() {
   // CSS:
   drupal_add_css(drupal_get_path('module', 'admin_menu_fix') . '/admin_menu_fix.css');
+
   // JS:
-  drupal_add_js('sites/all/libraries/jquery/jquery.style.js');
   drupal_add_js(drupal_get_path('module', 'admin_menu_fix') . '/admin_menu_fix.js');
 }
 
