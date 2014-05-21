@@ -277,6 +277,7 @@ function imrs_abbr_references() {
     'RHINEHART' => "R. Rhinehart, “Soylent - Free Your Body,” https://campaign.soylent.me/soylent-free-your-body (Retrieved 2013-10-15)",
     'ROUEN' => "M. Rouen, “EVA Project Roadmap Plan, Advanced EVA Research and Development,” EVA Project Office, 18 Nov, 1996.",
     'STOKER' => "C. R. Stoker, A. Davila, S. Davis, B. Glass, A. Gonzales, J. Heldmann, J. Karcz, L. Lemke, and G. Sanders, “Ice Dragon: A Mission to Address Science and Human Exploration Objectives on Mars,” Concepts and Approaches for Mars Exploration, 2012.",
+    'WAMELINK' => "G. W. W. Wamelink, &ldquo;Growing plants on Mars: Wageningen UR goes extraterrestrial&rdquo;, Wageningen UR, https://www.wageningenur.nl/en/show/Growing-plants-on-Mars-Wageningen-UR-goes-extraterrestrial.htm, 2013",
     'WIELDERS' => "A. Wielders, B. Lansdorp, S. Flinkenflögel, B. Versteeg, N. Kraft, E. Vaandrager, M. Wagensveld, A. Dogra, B. Casagrande and N. Aziz, “Mars One: Creating a human settlement on Mars,” European Planetary Science Congress 2013, vol. 8, 2013.",
     'WILLSON' => "D. Willson and J. D. A. Clarke, “A Practical Architecture for Exploration-Focused Manned Mars Missions Using Chemical Propulsion, Solar Power Generation and In-Situ Resource Utilisation,” J. Br. Interplanet. Soc., vol. 58, pp. 181–196, 2005.",
     'ZUBRIN' => "R. M. Zubrin, D. A. Baker, and O. Gwynne, “Mars direct - A simple, robust, and cost effective architecture for the Space Exploration Initiative,” 29th Aerosp. Sci. Meet. AIAA, 1991.",

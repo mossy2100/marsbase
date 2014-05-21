@@ -204,36 +204,3 @@ function imrs_misc_node_view($node, $view_mode, $langcode) {
     }
   }
 }
-
-//function imrs_misc_ds_fields_info($entity_type) {
-//  $fields = [];
-//  $fields['node']['html_file'] = [
-//    'title' => t('Rendered HTML File'),
-//    'field_type' => DS_FIELD_TYPE_FUNCTION,
-//    'function' => 'ibis_misc_html_file_field',
-//  ];
-//  if (isset($fields[$entity_type])) {
-//    return [$entity_type => $fields[$entity_type]];
-//  }
-//  return;
-//}
-//
-//function ibis_misc_html_file_field($field) {
-////  dpm($field);
-//  $file = $field['entity']->field_html_file[LANGUAGE_NONE][0]['value'];
-//  if ($file) {
-//    $dir = imrs_misc_html_dir();
-//    $path = "$dir/$file";
-//    return file_exists($path) ? file_get_contents($path) : "FILE $path NOT FOUND.";
-//  }
-//  dpm($field);
-////  return $field['entity']->field_html_editor[LANGUAGE_NONE][0]['value'];
-//}
-
-function imrs_misc_abbr_table() {
-  return imrs_abbr_table();
-}
-
-function imrs_misc_ref_list() {
-  return imrs_abbr_ref_list();
-}
