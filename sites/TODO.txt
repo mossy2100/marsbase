@@ -1,4 +1,7 @@
-NEXT: Update all references.
+NEXT: Test all references then upload.
+Do a new newsletter update.
+
+
 
 Update MEV page to include information about tracks.
 

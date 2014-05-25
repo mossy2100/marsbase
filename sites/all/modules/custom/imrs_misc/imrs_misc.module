@@ -143,7 +143,7 @@ function imrs_misc_form_book_node_form_alter(&$form, &$form_state) {
  * @param array $form_state
  */
 function imrs_misc_form_book_node_form_submit($form, &$form_state) {
-  $html = $form_state['values']['field_html_editor'][LANGUAGE_NONE][0]['value'];
+  $html = simpleNewlines($form_state['values']['field_html_editor'][LANGUAGE_NONE][0]['value']);
   $file = $form_state['values']['field_html_file'][LANGUAGE_NONE][0]['value'];
   if (!$file) {
     drupal_set_message("The HTML file was not updated because none was selected.", 'warning');
