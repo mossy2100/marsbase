@@ -11,18 +11,23 @@ function imrs_abbr_markup_abbreviations(el) {
 
     var text = el.text();
     var html;
+//    var addAbbrTag = location.pathname != '/acronyms-and-abbreviations';
+    var addAbbrTag = true;
 
     if (text) {
       html = text;
 
-      // Replace any formulae for chemical elements:
-      for (abbr in Drupal.settings.elements) {
-        if (abbr.length > 1) {
-          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.elements[abbr][0] + "'>" + abbr + "</abbr>");
+      // Add <abbr> tags to chemical elements:
+      if (addAbbrTag) {
+        for (abbr in Drupal.settings.elements) {
+          // Skip those with only one letter for now, 'C' in particular has multiple uses.
+          if (abbr.length > 1) {
+            html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.elements[abbr][0] + "'>" + abbr + "</abbr>");
+          }
         }
       }
 
-      // Replace any formulae for chemical compounds:
+      // Add <abbr> and <sub> tags to chemical compounds:
       for (abbr in Drupal.settings.compounds) {
         // Skip 'CO' when it means Colorado:
         if (abbr == 'CO' && location.pathname == '/references') {
@@ -31,20 +36,31 @@ function imrs_abbr_markup_abbreviations(el) {
 
         // Wrap every sequence of digits in <sub> tags:
         abbrWithSubscripts = abbr.replace(/(\d+)/g, "<sub>$1</sub>");
-        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.compounds[abbr[0]] + "'>" + abbrWithSubscripts + "</abbr>");
+
+        // Add <abbr> tags if necessary:
+        if (addAbbrTag) {
+          abbrWithSubscripts = "<abbr title='" + Drupal.settings.compounds[abbr][0] + "'>" + abbrWithSubscripts + "</abbr>";
+        }
+
+        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), abbrWithSubscripts);
       }
 
-      // Replace any abbreviations:
-      for (abbr in Drupal.settings.acronyms) {
-        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.acronyms[abbr] + "'>" + abbr + "</abbr>");
+      // Add <abbr> tags to acronyms:
+      if (addAbbrTag) {
+        for (abbr in Drupal.settings.acronyms) {
+          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.acronyms[abbr][0] + "'>" + abbr + "</abbr>");
+        }
       }
 
       // Replace any references:
       i = 1;
       for (abbr in Drupal.settings.references) {
-        html = html.replace("[" + abbr + "]", "<sup title='" + Drupal.settings.references[abbr] + "'>[<a href='/references#ref" + i + "'>" + i + "</a>]</sup>");
+        html = html.replace("[" + abbr + "]", "<sup title='" + Drupal.settings.references[abbr].ref + "'>[<a href='/references#ref" + i + "'>" + i + "</a>]</sup>");
         i++;
       }
+
+      // Remove any '~~' strings, which is used to break acronyms in acronyms to prevent double-encoding:
+      html = html.replace('~~', '');
 
       if (html != text) {
         el.replaceWith(html);

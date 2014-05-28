@@ -5,7 +5,7 @@ var $j = jQuery.noConflict();
  *
  * @returns int
  */
-function admin_menu_fix_admin_menu_height() {
+function adminMenuFixHeight() {
   if ($j('#admin-menu').size()) {
     return $j('#admin-menu').outerHeight();
   }
@@ -15,9 +15,9 @@ function admin_menu_fix_admin_menu_height() {
 /**
  * Adjust the body top margin to fit the admin menu.
  */
-function admin_menu_fix_adjust_admin_menu_margin() {
+function adminMenuFixAdjustMargin() {
   if ($j('#admin-menu').size()) {
-    $j('body').css('padding-top', admin_menu_fix_admin_menu_height() + 'px');
+    $j('body').css('padding-top', adminMenuFixHeight() + 'px');
   }
 }
 
@@ -25,13 +25,14 @@ function admin_menu_fix_adjust_admin_menu_margin() {
  * If there's a fragment, scroll the document if necessary to prevent the desired item from being blocked by the
  * admin menu.
  */
-function admin_menu_fix_scroll_to_element() {
+function adminMenuFixScrollToElement() {
   // Check if there's a fragment in the URI:
   if (!location.hash) {
     return;
   }
 
   var el = $j(location.hash);
+//  console.log( el.offset());
 
   var elementOffset = el.offset().top;
 //  console.log("elementOffset: " + elementOffset);
@@ -39,7 +40,7 @@ function admin_menu_fix_scroll_to_element() {
   var documentScroll = $j(document).scrollTop();
 //  console.log("documentScroll: " + documentScroll);
 
-  var adminMenuHeight = admin_menu_fix_admin_menu_height();
+  var adminMenuHeight = adminMenuFixHeight();
 //  console.log("adminMenuHeight: " + adminMenuHeight);
 
   if (elementOffset < (documentScroll + adminMenuHeight)) {
@@ -49,23 +50,13 @@ function admin_menu_fix_scroll_to_element() {
   }
 }
 
-///**
-// * Initialise the admin menu.
-// */
-//$j(function() {
-//  // Adjust the body top margin to fit the admin menu now and on window resize:
-//  admin_menu_fix_adjust_admin_menu_margin();
-//  $j(window).resize(admin_menu_fix_adjust_admin_menu_margin);
-//
-//  // If there's a fragment in the URI, scroll to the specified element:
-//  admin_menu_fix_scroll_to_element();
-//});
-
 Drupal.admin.behaviors.admin_menu_fix = function() {
   // Adjust the body top margin to fit the admin menu now and on window resize:
-  admin_menu_fix_adjust_admin_menu_margin();
-  $j(window).resize(admin_menu_fix_adjust_admin_menu_margin);
+  adminMenuFixAdjustMargin();
+  $j(window).resize(adminMenuFixAdjustMargin);
 
   // If there's a fragment in the URI, scroll to the specified element:
-  admin_menu_fix_scroll_to_element();
+  setTimeout(function() {
+    adminMenuFixScrollToElement();
+  }, 100);
 };

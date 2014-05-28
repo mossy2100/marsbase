@@ -21,6 +21,7 @@ function imrs_abbr_init() {
 
 /**
  * Sort an array by the length of the keys.
+ * Shorter keys will come first.
  *
  * @param array $array
  * @return bool
@@ -74,7 +75,11 @@ function imrs_abbr_element_table() {
   $header = ['Symbol', 'Element', 'Description'];
   $rows = [];
   foreach ($elements as $abbr => $element) {
-    $rows[] = [$abbr, $element[0], $element[1]];
+    $rows[] = [
+      ['data' => $abbr, 'class' => 'abbr'],
+      $element[0],
+      $element[1]
+    ];
   }
   return theme('table', ['header' => $header, 'rows' => $rows, 'sticky' => FALSE]);
 }
@@ -111,7 +116,11 @@ function imrs_abbr_compound_table() {
   $header = ['Symbol', 'Compound', 'Description'];
   $rows = [];
   foreach ($compounds as $abbr => $compound) {
-    $rows[] = [$abbr, $compound[0], $compound[1]];
+    $rows[] = [
+      ['data' => $abbr, 'class' => 'abbr'],
+      $compound[0],
+      $compound[1]
+    ];
   }
   return theme('table', ['header' => $header, 'rows' => $rows, 'sticky' => FALSE]);
 }
@@ -128,7 +137,7 @@ function imrs_abbr_acronyms() {
     'ATV' => ['All Terrain Vehicle', "Quad bike suited for driving on rough terrain, such as on Mars."],
     'AWESOM' => ['Autonomous Water Extraction from the Surface Of Mars', "Method proposed for extracting water from the Martian regolith using a mobile robot."],
     'BP' => ['Bundle Protocol', "Internet communications protocol designed for DTN’s."],
-    'BPS' => ['Ballistic Protection System', "System, technology or device for providing protection against projectiles (e.g. micrometeorites). See RPS, TPS."],
+    'BPS' => ['Ballistic Protection System', "Spacecraft or habitat subsystem that provides protection against projectiles such as micrometeorites."],
     'CCD' => ['Charge-Coupled Device', "Component used in digital cameras for detecting light."],
     'CDR' => ['Commander', "Person in charge of a mission."],
     'CEO' => ['Chief Executive Officer', "Senior executive position in a company."],
@@ -161,7 +170,7 @@ function imrs_abbr_acronyms() {
     'H2M' => ['Humans to Mars', "Space mission that sends humans to Mars."],
     'HD' => ['High Definition', "Camera, image or video with high resolution."],
     'HiRISE' => ['High Resolution Imaging Science Experiment', "Camera on the M?? capable of high resolution colour images."],
-    'HLLV' => ['Heavy Lift Launch Vehicle', "Rocket capable of carrying between x and y tonnes to orbit."],
+    'HLLV' => ['Heavy Lift Launch Vehicle', "Rocket capable of lifting between 20 and 50 tonnes to LEO."],
     'ICT' => ['Information and Communications Technology', "Computer hardware and software, networking, antennas and communications satellites."],
     'IMRS' => ['International Mars Research Station', "Mars base to be developed by the world’s leading space agencies and made available to all nations for science and engineering research."],
     'IP' => ['Internet Protocol', "Communications protocol developed for the Internet."],
@@ -206,7 +215,7 @@ function imrs_abbr_acronyms() {
     'µg' => ['Microgravity', "Weightlessness, also called “zero gravity”."],
     'MGS' => ['Mars Global Surveyor', "NASA spacecraft in Mars orbit."],
     'MIT' => ['Massachusetts Institute of Technology', "University in Massachusetts, USA, known for developing breakthrough technologies."],
-    'MLLV' => ['Medium Lift Launch Vehicle', "Rocket capable of transporting from about x to y tonnes to Earth orbit."],
+    'MLLV' => ['Medium Lift Launch Vehicle', "Rocket capable of lifting between 2 and 20 tonnes to LEO."],
     'MOI' => ['Mars Orbit Insertion', "Orbital manoeuvre that moves a spacecraft into Mars orbit."],
     'MOLA' => ['Mars Orbiting Laser Altimeter', "Instrument onboard MGS that measures the topography of Mars."],
     'MOR' => ['Mars Orbit Rendezvous', "When two spacecraft meet and dock in Mars orbit."],
@@ -218,7 +227,7 @@ function imrs_abbr_acronyms() {
     'MTO' => ['Mars To Orbit', "Movement from the surface of Mars to Mars orbit."],
     'MTV' => ['Mars Transfer Vehicle', "Vehicle to carry humans from Earth to Mars."],
     'NASA' => ['National Aeronautics and Space Administration', "Space agency of the USA."],
-    'NDS' => ['NASA Docking System', "Universal docking system used on the ISS, Soyuz, Dragon, BA 330 and other spacecraft."],
+    'NDS' => ['NA~~SA Docking System', "Universal docking system used on the ISS, Soyuz, Dragon, BA 330 and other spacecraft."],
     'NTR' => ['Nuclear Thermal Rocket', "Rocket with a propulsion system that uses nuclear fission to superheat reaction mass."],
     'OMS' => ['Orbital Manoeuvring System', "System for manoeuvring a spacecraft in orbit."],
     'OTE' => ['Orbit To Earth', "Movement from Earth orbit to the surface of Earth."],
@@ -232,33 +241,33 @@ function imrs_abbr_acronyms() {
     'RH' => ['Relative Humidity', "Amount of water vapour in the atmosphere expressed as a degree of saturation."],
     'RLS' => ['Reusable Launch System', "Rocket that can be reused multiple times."],
     'ROI' => ['Return On Investment', "What you get back from an investment in a project or business."],
-    'RP1' => 'Rocket Propellant 1',
-    'RPS' => 'Radiation Protection System',
-    'RTG' => 'Radioisotope Thermoelectric Generator',
-    'RWGS' => 'Reverse Water Gas Shift',
-    'SAS' => 'Space Activity Suit',
-    'SCUBA' => 'Self-Contained Underwater Breathing Apparatus',
-    'SHLLV' => 'Super Heavy Lift Launch Vehicle',
-    'SLS' => 'Space Launch System',
-    'SMAC' => 'Spacecraft Maximum Allowable Concentrations',
-    'SN' => 'Space Network',
-    'SP' => 'Special Publication',
-    'SGR' => 'Stirling Radioisotope Generator',
-    'TBD' => 'To Be Determined',
-    'TCP' => 'Transmission Control Protocol',
-    'TDRS' => 'Tracking and Data Relay Satellite',
-    'TDRSS' => 'Tracking and Data Relay Satellite System',
-    'TEI' => 'Trans Earth Injection',
-    'TMI' => 'Trans Mars Injection',
-    'TPS' => 'Thermal Protection System',
-    'TRL' => 'Technology Readiness Level',
-    'USA' => 'United States of America',
-    'UV' => 'Ultra-Violet',
-    'VASIMR' => 'Variable Specific Impulse Magnetoplasma Rocket',
-    'VTOL' => 'Vertical Take-Off and Landing',
-    'WAVAR' => 'Water Vapour Adsorption Reactor',
-    'ZPB' => 'Zero Prebreathe',
-    'ZPS' => 'Zero Prebreathe Spacesuit',
+    'RP-1' => ['Rocket Propellant-1 or Refined Petroleum-1', "Highly refined form of kerosene used as rocket fuel."],
+    'RPS' => ['Radiation Protection System', "Spacecraft or habitat subsystem that provides protection from radiation."],
+    'RTG' => ['Radioisotope Thermoelectric Generator', "Generator that converts heat produced by radioactive decay into electricity."],
+    'RWGS' => ['Reverse Water Gas Shift', "Chemical reaction that reacts CO2 with H2 to produce CO and H2O."],
+    'SAS' => ['Space Activity Suit', "Original concept for a mechanical counterpressure spacesuit."],
+    'SCUBA' => ['Self-Contained Underwater Breathing Apparatus', "Equipment to enable breathing when diving underwater."],
+    'SHLLV' => ['Super Heavy Lift Launch Vehicle', "Rocket capable of lifting more than 50 tonnes to LEO."],
+    'SLS' => ['Space Launch System', "Space Shuttle-derived SHHLV currently in development by NASA."],
+    'SMAC' => ['Spacecraft Maximum Allowable Concentration', "Maximum concentration of a substance in a spacecraft or habitat atmosphere."],
+    'SN' => ['Space Network', "Network of satellites and ground stations that support communications with spacecraft close to Earth."],
+    'SOP' => ['Standard Operating Procedure', "Detailed instructions for performing some action or task."],
+    'SP' => ['Special Publication', "Publication that is special (esp. NASA)."],
+    'SGR' => ['Stirling Radioisotope Generator', "Stirling engine powered by a large radioisotope heater unit."],
+    'SSTO' => ['Single Stage To Orbit', "Rocket that can reach orbit with only one stage."],
+    'TBD' => ['To Be Determined', "Something that hasn’t been decided yet."],
+    'TCP' => ['Transmission Control Protocol', "Internet protocol that ensures reliable data communication."],
+      'TDRSS' => ['Tracking and Data Relay Satellite System', "Network of communications satellites and ground stations used by NASA for space communications."],
+    'TEI' => ['Trans-Earth Injection', "Orbital manoeuvre that places a spacecraft on a trajectory towards Earth."],
+    'TMI' => ['Trans-Mars Injection', "Orbital manoeuvre that places a spacecraft on a trajectory towards Mars."],
+    'TPS' => ['Thermal Protection System', "Spacecraft or habitat subsystem that provides protection from the temperature extremes of the external space environment."],
+    'TRL' => ['Technology Readiness Level', "Level of maturity of a technology, and an assessment of its suitability for space applications."],
+    'UV' => ['Ultraviolet', "Electromagnetic radiation with a frequency higher than visible light, but lower than X-rays."],
+    'VASIMR' => ['Variable Specific Impulse Magnetoplasma Rocket', "Spacecraft propulsion technology that uses radio waves to to produce a plasma, which is then accelerate using magnetic fields."],
+    'VTOL' => ['Vertical Take-Off and Landing', "Refers to aircraft or spacecraft that can take-off, hover and land vertically."],
+    'WAVAR' => ['WAter Vapour Adsorption Reactor', "Device for extracting water from the Martian atmosphere."],
+    'ZPB' => ['Zero Prebreathe', "When no time is required for prebreathing before EVA, usually because of the spacesuit technology."],
+    'ZPS' => ['Zero Prebreathe Spacesuit', "Spacesuit providing a high enough pressure that prebreathing is not required."],
   ];
 }
 
@@ -272,7 +281,7 @@ function imrs_abbr_acronym_table() {
   $header = ['Symbol', 'Acronym', 'Description'];
   $rows = [];
   foreach ($acronyms as $abbr => $acronym) {
-    $rows[] = [$abbr, $acronym[0], $acronym[1]];
+    $rows[] = [['data' => $abbr, 'class' => 'abbr'], $acronym[0], $acronym[1]];
   }
   return theme('table', ['header' => $header, 'rows' => $rows, 'sticky' => FALSE]);
 }
