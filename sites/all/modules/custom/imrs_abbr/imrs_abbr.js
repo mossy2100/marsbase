@@ -11,19 +11,15 @@ function imrs_abbr_markup_abbreviations(el) {
 
     var text = el.text();
     var html;
-//    var addAbbrTag = location.pathname != '/acronyms-and-abbreviations';
-    var addAbbrTag = true;
 
     if (text) {
       html = text;
 
       // Add <abbr> tags to chemical elements:
-      if (addAbbrTag) {
-        for (abbr in Drupal.settings.elements) {
-          // Skip those with only one letter for now, 'C' in particular has multiple uses.
-          if (abbr.length > 1) {
-            html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.elements[abbr][0] + "'>" + abbr + "</abbr>");
-          }
+      for (abbr in Drupal.settings.elements) {
+        // Skip those with only one letter for now, 'C' in particular has multiple uses.
+        if (abbr.length > 1) {
+          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.elements[abbr][0] + "'>" + abbr + "</abbr>");
         }
       }
 
@@ -37,19 +33,15 @@ function imrs_abbr_markup_abbreviations(el) {
         // Wrap every sequence of digits in <sub> tags:
         abbrWithSubscripts = abbr.replace(/(\d+)/g, "<sub>$1</sub>");
 
-        // Add <abbr> tags if necessary:
-        if (addAbbrTag) {
-          abbrWithSubscripts = "<abbr title='" + Drupal.settings.compounds[abbr][0] + "'>" + abbrWithSubscripts + "</abbr>";
-        }
+        // Add <abbr> tags:
+        abbrWithSubscripts = "<abbr title='" + Drupal.settings.compounds[abbr][0] + "'>" + abbrWithSubscripts + "</abbr>";
 
         html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), abbrWithSubscripts);
       }
 
       // Add <abbr> tags to acronyms:
-      if (addAbbrTag) {
-        for (abbr in Drupal.settings.acronyms) {
-          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.acronyms[abbr][0] + "'>" + abbr + "</abbr>");
-        }
+      for (abbr in Drupal.settings.acronyms) {
+        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.acronyms[abbr][0] + "'>" + abbr + "</abbr>");
       }
 
       // Replace any references:
