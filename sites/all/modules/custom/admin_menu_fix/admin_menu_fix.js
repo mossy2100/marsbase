@@ -50,13 +50,15 @@ function adminMenuFixScrollToElement() {
   }
 }
 
-Drupal.admin.behaviors.admin_menu_fix = function() {
-  // Adjust the body top margin to fit the admin menu now and on window resize:
-  adminMenuFixAdjustMargin();
-  $j(window).resize(adminMenuFixAdjustMargin);
+if (Drupal && Drupal.admin && Drupal.admin.behaviors) {
+  Drupal.admin.behaviors.admin_menu_fix = function() {
+    // Adjust the body top margin to fit the admin menu now and on window resize:
+    adminMenuFixAdjustMargin();
+    $j(window).resize(adminMenuFixAdjustMargin);
 
-  // If there's a fragment in the URI, scroll to the specified element:
-  setTimeout(function() {
-    adminMenuFixScrollToElement();
-  }, 100);
+    // If there's a fragment in the URI, scroll to the specified element:
+    setTimeout(function() {
+      adminMenuFixScrollToElement();
+    }, 100);
+  }
 };
