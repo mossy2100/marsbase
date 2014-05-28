@@ -18,19 +18,20 @@ function imrs_abbr_markup_abbreviations(el) {
       // Replace any formulae for chemical elements:
       for (abbr in Drupal.settings.elements) {
         if (abbr.length > 1) {
-          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.elements[abbr] + "'>" + abbr + "</abbr>");
+          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.elements[abbr][0] + "'>" + abbr + "</abbr>");
         }
       }
 
       // Replace any formulae for chemical compounds:
       for (abbr in Drupal.settings.compounds) {
+        // Skip 'CO' when it means Colorado:
         if (abbr == 'CO' && location.pathname == '/references') {
           continue;
         }
 
         // Wrap every sequence of digits in <sub> tags:
         abbrWithSubscripts = abbr.replace(/(\d+)/g, "<sub>$1</sub>");
-        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.compounds[abbr] + "'>" + abbrWithSubscripts + "</abbr>");
+        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.compounds[abbr[0]] + "'>" + abbrWithSubscripts + "</abbr>");
       }
 
       // Replace any abbreviations:
