@@ -471,25 +471,51 @@ function imrs_abbr_references() {
     ],
     'RHINEHART' => [
       'ref' => "R. Rhinehart, “Soylent - Free Your Body,” https://campaign.soylent.me/soylent-free-your-body (Retrieved 2013-10-15)",
+      'pdf' => 'Soylent.pdf',
+      'links' => [
+        'http://www.soylent.me/',
+        'http://crowdtilt.soylent.me/',
       ],
-    'ROUEN' => [
-      'ref' => "M. Rouen, “EVA Project Roadmap Plan, Advanced EVA Research and Development,” EVA Project Office, 18 Nov, 1996.",
-      ],
+    ],
     'STOKER' => [
       'ref' => "C. R. Stoker, A. Davila, S. Davis, B. Glass, A. Gonzales, J. Heldmann, J. Karcz, L. Lemke, and G. Sanders, “Ice Dragon: A Mission to Address Science and Human Exploration Objectives on Mars,” Concepts and Approaches for Mars Exploration, 2012.",
-      ],
+      'pdf' => 'Stoker - 2012 - Ice Dragon - A Mission to Address Science and Human Exploration Objectives on Mars.pdf',
+      'links' => [
+        'http://www.mendeley.com/research/ice-dragon-mission-address-science-human-exploration-objectives-mars/',
+        'https://www.researchgate.net/publication/258676196_Ice_Dragon_A_Mission_to_Address_Science_and_Human_Exploration_Objectives_on_Mars',
+        'http://adsabs.harvard.edu/abs/2012LPICo1679.4176S',
+        'http://nix.nasa.gov/search.jsp?R=20120016811&qs=N%3D4294966753%2B4294941275%2B4294965619',
+      ]
+    ],
     'WAMELINK' => [
-      'ref' => "G. W. W. Wamelink, &ldquo;Growing plants on Mars: Wageningen UR goes extraterrestrial&rdquo;, Wageningen UR, https://www.wageningenur.nl/en/show/Growing-plants-on-Mars-Wageningen-UR-goes-extraterrestrial.htm, 2013",
-      ],
+      'ref' => "G. W. W. Wamelink, &ldquo;Growing plants on Mars: Wageningen UR goes extraterrestrial&rdquo;, Wageningen UR, https://www.wageningenur.nl/en/show/Growing-plants-on-Mars-Wageningen-UR-goes-extraterrestrial.htm, 2013, Retrieved 2014-06-09",
+      'pdf' => 'Wamelink - Growing plants on Mars.pdf',
+      'links' => [
+        'https://www.wageningenur.nl/en/show/Growing-plants-on-Mars-Wageningen-UR-goes-extraterrestrial.htm',
+      ]
+    ],
     'WIELDERS' => [
       'ref' => "A. Wielders, B. Lansdorp, S. Flinkenflögel, B. Versteeg, N. Kraft, E. Vaandrager, M. Wagensveld, A. Dogra, B. Casagrande and N. Aziz, “Mars One: Creating a human settlement on Mars,” European Planetary Science Congress 2013, vol. 8, 2013.",
-      ],
+      'pdf' => 'Wielders - 2013 - Mars One - Creating a Human Settlement on Mars.pdf',
+    ],
     'WILLSON' => [
       'ref' => "D. Willson and J. D. A. Clarke, “A Practical Architecture for Exploration-Focused Manned Mars Missions Using Chemical Propulsion, Solar Power Generation and In-Situ Resource Utilisation,” J. Br. Interplanet. Soc., vol. 58, pp. 181–196, 2005.",
-      ],
+      'pdf' => 'Willson - 2006 - A Practical Architecture for Exploration-Focused Manned Mars Missions.pdf',
+      'links' => [
+        'http://www.nssa.com.au/ocs/viewabstract.php?id=119&cf=7',
+        'http://www.astronautix.com/craft/marsoz.htm',
+        'http://marssociety.org.au/project/mars-oz',
+      ]
+    ],
     'ZUBRIN' => [
       'ref' => "R. M. Zubrin, D. A. Baker, and O. Gwynne, “Mars direct - A simple, robust, and cost effective architecture for the Space Exploration Initiative,” 29th Aerosp. Sci. Meet. AIAA, 1991.",
-      ],
+      'pdf' => 'Zubrin - 1991 - Mars Direct - A Simple, Robust, and Cost Effective Architecture for the Space Exploration Initiative.pdf',
+      'links' => [
+        'https://www.researchgate.net/publication/4702054_Mars_direct_-_A_simple_robust_and_cost_effective_architecture_for_the_Space_Exploration_Initiative',
+        'http://en.wikipedia.org/wiki/Mars_Direct',
+        'http://www.astronautix.com/craft/marirect.htm',
+      ]
+    ],
   ];
 }
 
