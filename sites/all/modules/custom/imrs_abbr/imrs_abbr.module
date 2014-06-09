@@ -11,7 +11,7 @@ function imrs_abbr_init() {
     'elements' => sort_by_key_length(imrs_abbr_elements()),
     'compounds' => sort_by_key_length(imrs_abbr_compounds()),
     'acronyms' => sort_by_key_length(imrs_abbr_acronyms()),
-    'references' => sort_by_key_length(imrs_abbr_references()),
+    'references' => imrs_abbr_references(),
   ], 'setting');
 
   // Add custom jQuery UI JS/CSS to support tooltips:
