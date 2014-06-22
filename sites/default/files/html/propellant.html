@@ -1,105 +1,222 @@
-<h2>Fuel options</h2>
+<h2>Propellant</h2>
 
-<h3>Earth surface to orbit</h3>
+<h3>ISPP (In Situ Propellant Production)</h3>
 
-<p>The current engines&nbsp;used by SpaceX and many other modern rockets utilise LOX/RP-1 as propellant. However, as mentioned, SpaceX are currently developing an LOX/LCH4 rocket engine named Raptor that may potentially be used for Earth launches.</p>
+<p>The benefits of ISPP is the reason ISRU concepts for Mars first started being developed.</p>
 
-<p>&nbsp;</p>
+<p>When <i>Mars Direct</i> was being created by Robert Zubrin and David Baker at Martin Marietta during the 1990&rsquo;s, they realised it would be much easier to land an unfuelled ERV on the surface of Mars. A fully-fuelled MAV would be tens of tonnes heavier than an unfuelled one, and would thus require a far more complex and expensive EDL system, perhaps requiring technological development that would push back the mission by years. <i>Mars Direct</i> showed that if the methalox propellant for Mars ascent is manufactured at Mars, the resulting mass saving could potentially reduce the cost of a human mission to Mars as much as a factor of eight.</p>
 
-<h3>In space (Earth orbit to Mars orbit and Mars orbit to Earth orbit)</h3>
-
-<p>Many chemical propulsion systems designed for interplanetary transport use LOX/LH2 as propellant due to its high specific impulse. However, for <em>Adeona</em> this may be less than ideal, as she must carry the crew to Mars, and then back again after loitering on Mars orbit for 18 months. Hydrogen is notoriously difficult to store for long periods in space, especially in the vacuum of space, as it leaks away, or &ldquo;boils off&rdquo;. A typical boil-off rate for hydrogen in space is about 3.8% per month, therefore, if <em>Adeona</em>&nbsp;uses LOX/LH2 propellant, a non-trivial additional quantity of hydrogen would be required to compensate for this. In spite of this, the chemical propulsion version of the transportation systems designed for NASA&rsquo;s DRA currently specify RL10B-2 engines from Pratt and Whitney Rocketdyne for the MTV, which use LOX/LH2.</p>
-
-<p>Because of the long period <em>Adeona</em> must wait on orbit it may be preferable to use a storable propellant such as mono-methyl hydrazine and nitrogen tetroxide, like SpaceX&rsquo;s SuperDraco engines. However, it remains to be seen if this is practical. It may even use LOX/LCH4. It&rsquo;s likely as settlement of Mars progresses that methane engines will become more common, as it offers a range of advantages including the fact that it can be manufactured on Mars and at other locations in the Solar System relatively simply.</p>
-
-<p>At this stage more exotic propulsion methods such as nuclear thermal rockets, ion propulsion, VASIMR, plasma thrusters, etc., are not under consideration for use in Blue Dragon. However, that may change if they can be shown to be superior in terms of cost, safety and performance. Chemical propulsion has a high TRL, is comparatively cheap, and more exotic or expensive propulsion systems are not required for human missions to Mars. The DRA includes two alternative designs for transportation systems, namely chemical propulsion and NTR&rsquo;s (Nuclear Thermal Rockets). Although NTR&rsquo;s may provide a thrust around twice that of any chemical propulsion system, they would be much more costly (unavailable as COTS products), take longer to develop, are arguably much more dangerous, may be difficult to get approved, and would also require long-term cryogenic storage of liquid hydrogen.</p>
+<p>The <i>Mars Semi-Direct</i> variation introduced a Mars Ascent Vehicle instead of an Earth Return Vehicle. The MAV only needs to ascend from the surface of Mars to Mars orbit, rather than travel all the way back to Earth. This means the amount of fuel to be made at Mars is significantly less, the energy requirements for the MAV are lower, and thus the landed MAV will be correspondingly lighter. <i>Blue Dragon</i> incorporates this idea.</p>
 
 <p>&nbsp;</p>
 
-<h3>Mars orbit to surface, and Earth orbit to surface</h3>
+<h3><b>Don&rsquo;t bring hydrogen from Earth</b></h3>
 
-<p>SpaceX Dragon and DragonRider capsules designed for ground landings on Earth will include eight SuperDraco engines, which use a hypergolic storable propellant (mono-methyl hydrazine as fuel and nitrogen tetroxide as oxidiser). It seems likely they would use the same engines for Mars.</p>
+<p>In <i>Mars Direct</i> and <i>Semi-Direct</i> sufficient H2 is brought from Earth to manufacture the required propellant. Hydrogen is the lightest fraction of the propellant, yet also the most difficult to obtain from local Martian resources. The H2 is reacted with CO2 obtained from the Martian atmosphere in order to produce CH4 and O2, which are liquified and stored cryogenically.&nbsp;Additional O2 is obtained from CO2 via RWGS, which produces H2O that is then electrolysed to H2 and O2.</p>
 
-<p>As for the MAV and Surface Hab, the DRA goes into some detail about how masses of this scale (20+ tonnes) could be landed on Mars, with the following conclusion:</p>
+<p>In contrast, the DRA describes two different options, either no ISRU at all, i.e. all the CH4 and O2 required for ascent is brought from Earth, or an ISRU option wherein the methane is brought from Earth but the O2 is manufactured locally from atmospheric CO2.</p>
 
-<blockquote>
-  <p><em>The reference EDL architecture that was ultimately selected for this study was a hypersonic aeroassist entry system, with a mid lift-to-drag ratio (L/D) aeroshell that was ejected at low supersonic Mach numbers. An LOX/LCH4-fuelled propulsion system was used for deorbit delta-V maneuvers, RCS control during the entry phase, and final terminal descent to the surface.</em></p>
-</blockquote>
+<p><i>Blue Dragon</i> is somewhat more ambitious in that none of the propellant is brought from Earth. H2 is obtained from locally-available water extracted from the surrounding regolith. This is one of the most important and ambitious differences in the architecture. Collected H2O is electrolysed into H2 and O2, with the H2 being reacted with CO2 to produce CH4 and O2, as in Mars Direct, and the O2 from the water kept as additional oxidiser.</p>
 
-<p>Therefore, LOX/LCH4 engines are proposed for all aspects of Mars EDL. To manage costs, ideally we will have access to a COTS engine for this purpose; however, at present there are no methane-fuelled engines that would be suitable, and it therefore may be necessary to develop a new engine. Alternatively, we may consider something like SpaceX SuperDraco engines.</p>
-
-<p>&nbsp;</p>
-
-<h3>Mars surface to orbit</h3>
-
-<p>The MAV&rsquo;s ascent stage carries the crew from Mars surface to orbit. These will use LOX/LCH4 propellant produced from local Martian resources, as described below in the section on ISPP. One candidate engine may be the new Raptor engine currently in development by SpaceX, as this may well be reason for its development.</p>
-
-<p>&nbsp;</p>
-
-<h2>ISPP (In Situ Propellant Production)</h2>
-
-<p>It is for this reason that ISRU concepts were first developed for Mars. A fully-fuelled MAV weighs considerably (tens of tonnes) more than a dry one, which would require a far more elaborate and expensive EDL system. It has been shown that if the majority of the LOX/LCH4 propellant for Mars ascent is manufactured at Mars, the resulting mass saving could potentially reduce the cost of a human mission to Mars as much as a factor of eight [ZUBRIN].</p>
-
-<p>The ISPP process currently envisaged for the MAV closely parallels that described in the Mars Direct architecture. The main differences are:</p>
+<p>Although obtaining water from the regolith is a technical challenge, it&rsquo;s certainly an achievable one. Since the development of <i>Mars Direct</i> and the DRA, considerable research has been conducted into how water can be obtained from the Martian environment, at NASA and elsewhere. There are important benefits to this strategy:</p>
 
 <ol>
-  <li>As in the DRA and Mars Semi-Direct, only enough propellant needs to be manufactured to carry to the MAV, not all the way back to Earth as in Mars Direct.</li>
-  <li>An important goal of Blue Dragon precursor missions (2015-2030) is to develop the capability to obtain water from regolith. If this effort is successful then the MAV will not carry H2 from Earth but will obtain instead it, and O2 from locally-produced water.</li>
+	<li>If we don&rsquo;t have to bring any H2 from Earth, the mass of the landed MAV is reduced by the mass of the H2 and the associated tankage, including the additional H2 and tankage necessary to compensate for boil-off. As discussed in the section on propulsion systems, there are a range of non-trivial problems associated with storing and transporting H2 in space.</li>
+	<li>Making methalox from brought H2 and local CO2 doesn&rsquo;t produce quite enough O2 for optimal combustion. For this reason, in <i>Mars Direct</i> additional O2 is produced from CO2 using the RWGS reaction. However, by using local H2O instead of brought H2, electrolysis of the water produces plenty of surplus O2, which means there&rsquo;s no need for a RWGS circuit.</li>
 </ol>
 
-<p>In the DRA, CH4 is brought from Earth and O2 is manufactured at Mars. In Mars Direct, H2, which represents the lightest fraction of the propellant yet also the most difficult to obtain from local Martian resources, is carried from Earth. This is reacted with CO2 obtained from the Martian atmosphere in order to produce CH4 and O2, which are liquified and stored cryogenically.&nbsp;Additional O2 is obtained from CO2 via RWGS, which produces H2O that is then electrolysed to H2 and O2.</p>
+<p>There are two potential sources of water on Mars. Accessing it is discussed further in the section on ISWP.</p>
 
-<p>In Blue Dragon H2 will ideally be obtained from water extracted from the surrounding regolith, which is electrolysed into H2 and O2. It has been shown that a useful fraction of the water frozen in the top layer of regolith can be liberated using microwave radiation [ETHRIDGE].</p>
+<ol>
+	<li>The <b>atmosphere</b> contains a small amount of water vapour, which can be collected using WAVAR equipment. The quantity of water that could be obtained in this way would be insufficient for ISPP, but a WAVAR-type device is still useful for drying atmospheric CO2.</li>
+	<li>The <b>regolith</b> holds up to about 60% water, depending primarily on latitude, with the dirt becoming wetter with increasing latitude. As discussed in the section on <i>Location</i>, an approximate useful latitude to obtain sufficient water from the ground is around 45&deg;N, where the concentration is about 10% water.</li>
+</ol>
 
-<p>The optimal stoichiometric ratio for LOX/LCH4 bipropellant is 3.5. The DRA specifies a fuel requirement of 21,490kg of CH4 (for two ascent stages), therefore - assuming, for now, that we accept this amount - the amount of LOX required is 75,215kg.</p>
+<p>Research has shown that a useful fraction of the water frozen in the top layer of regolith may be liberated using microwave radiation. A mobile robot equipped with a SRG (Stirling Radioisotope Generator) could potentially explore the local area around the MAV and use both microwaves and heat to liberate water from the regolith, capture it via condensation onto a cold surface, and deliver it to the MAV. This idea has been named AWESOM (Autonomous Water Extraction from the Surface Of Mars) and is described further in the section on ISWP.</p>
 
-<p>If the decision is made to use local water then the MAV design in Blue Dragon will be somewhat different than the one proposed in the DRA:</p>
+<p>&nbsp;</p>
 
-<ul>
-  <li>It will bring no hydrogen from Earth, and therefore no associated storage tanks</li>
-  <li>It will include an AWESOM rover</li>
-  <li>It will be topped with a modified DragonRider</li>
-</ul>
+<h3><b>Process</b></h3>
 
-<p>Despite these differences, until the exact fuel requirements for this MAV are calculated figures from the DRA are used below.</p>
-
-<p>The process is as follows:</p>
-
-<p><strong>Step 1:</strong> On arrival at Mars, the AWESOM robot is deployed. It&rsquo;s first task is to unroll a solar blanket out of the descent stage of the MAV, providing power to the ISPP system.</p>
-
-<p><strong>Step 2:</strong> CO2 is obtained from the Martian atmosphere by filtering out dust, removing water via zeolite adsorption, and freezing the CO2 out of the remaining gas mix, enabling it to be separated from the remaining gases. The small amount of water captured by zeolite adsorption is sent to the water tank.</p>
-
-<p><strong>Step 3:</strong> The AWESOM rover traverses back and forth across a nearby patch of ground, heating and microwaving the regolith below and collecting the released water. At the end of each sol, the rover returns to the MAV to deliver its payload of water. The rover will require some form of LPS so it knows what ground it has already covered.</p>
-
-<p><strong>Step 4:</strong> Water is separated into hydrogen and oxygen gas via electrolysis:</p>
+<p>The ISPP process is as follows:</p>
 
 <blockquote>
-  <p>2 H2O(l) &rarr; 2 H2(g) + O2(g)</p>
+	<p><b>Step 1:</b> On arrival at Mars, the AWESOM robot is deployed. It&rsquo;s first task is to unroll a solar blanket out from the descent stage of the MAV, providing power to the ISPP system.</p>
+
+	<p><b>Step 2:</b> CO2 is obtained from the Martian atmosphere by inhaling, filtering out dust, removing water via zeolite adsorption, and freezing the CO2 out of the remaining gas mix, enabling it to be separated from the remaining gases. The small amount of water captured by zeolite adsorption is sent to the water tank.</p>
+
+	<p><b>Step 3:</b> The AWESOM rover traverses back and forth across the nearby ground, heating and microwaving the regolith underneath it and collecting the released water. Whenever its tank is full, the rover returns to the MAV to deliver its payload of water. The rover will require some form of LPS and/or computer vision system so it knows what ground it&rsquo;s already covered.</p>
+
+	<p><b>Step 4:</b> Water is separated into H2 and O2 via electrolysis:</p>
+
+	<blockquote>2 H2O(l) &rarr; 2 H2(g) + O2(g)</blockquote>
+
+	<p>The O2 is stored cryogenically as LOX.</p>
+
+	<p><b>Step 5:</b> CH4 is produced by reacting CO2 obtained from the Martian atmosphere with H2 produced in step 3, via the Sabatier reaction:</p>
+
+	<blockquote>CO2(g) + 4 H2(g) &rarr; CH4(g) + 2 H2O(v)</blockquote>
+
+	<p>The Sabatier reaction occurs at high temperatures, optimally around 600K. H2O produced by the reaction is stored in the water tank, and is used by the electrolysis unit to produce more H2 and O2.</p>
 </blockquote>
-
-<p>The O2 is stored cryogenically as LOX.</p>
-
-<p><strong>Step 5:</strong> CH4 is produced by reacting CO2 obtained from the Martian atmosphere with H2 produced in step 3, via the Sabatier reaction:</p>
-
-<blockquote>
-  <p>CO2(g) + 4 H2(g) &rarr; CH4(g) + 2 H2O(v)</p>
-</blockquote>
-
-<p>The Sabatier reaction occurs at high temperatures, optimally around 600K. Water produced by the reaction is stored in the water tank, and is used by the electrolysis unit to produce more hydrogen and oxygen.</p>
 
 <figure><a class="colorbox" href="/sites/default/files/images/MAV ISPP schematic.png" title="MAV ISPP Schematic"><img alt="MAV ISPP Schematic" src="/sites/default/files/images/MAV%20ISPP%20schematic_0.png" style="width: 300px; height: 131px;" title="Click to embiggen" /></a>
 
-  <figcaption>MAV ISPP Schematic</figcaption>
+	<figcaption>MAV ISPP Schematic</figcaption>
 </figure>
 
-<p>Combining the reactions in step 3 and 4, the overall result is:</p>
+<p>&nbsp;</p>
+
+<h3><b>Requirements</b></h3>
+
+<p>The amount of methalox necessary to make depends primarily on the mass of the payload.</p>
+
+<p>The top section of the MAV, where the passengers and samples (payload) will sit, is currently envisaged as being comprised of a modified Dragon capsule. The capsule will not need the SuperDraco landing engines, or the associated tankage or fuel, although it will still need the small Draco RCS thrusters for manoeuvring in space. Neither will it require a heat shield or landing legs, since it never lands (at least, not in a controlled fashion).</p>
+
+<p>The dry mass of a Dragon V2 is unknown, but the dry mass of a &ldquo;version 1&rdquo; Dragon, which doesn&rsquo;t have landing engines, associated tankage, or landing legs, is 4,200kg including the trunk. This figure should suffice for a BOTE (Back Of The Envelope) calculation.</p>
+
+<p>The heat shield is made of PICA-X and has a thickness of about 8cm. The density of PICA-X is very low, and removal of the heat shield only saves about 230kg. So we can estimate about 4 tonnes for the basic DragonRider.</p>
+
+<p>Added to this is the ascent stage mass, which incorporates the methalox engines and tankage. A rough guess as to what this might weigh is about 10 tonnes. In all likelihood, due to developments in additive manufacturing and nanostructured materials over the next 20 years, a much lower mass will be possible. However, let&rsquo;s start with this estimate and see what we get.</p>
+
+<p>The payload mass is about 1 tonne:</p>
 
 <blockquote>
-  <p>CO2(g) + 2 H2O(g) &rarr; CH4(g) + 2 O2(g)</p>
+	<table>
+		<tbody>
+			<tr>
+				<td>6 humans</td>
+				<td class="num qtr">360kg</td>
+			</tr>
+			<tr>
+				<td>6 marssuits</td>
+				<td class="num qtr">300kg</td>
+			</tr>
+			<tr>
+				<td>Samples of rocks and dirt</td>
+				<td class="num qtr">~300kg</td>
+			</tr>
+			<tr class="total">
+				<td>Total</td>
+				<td class="num qtr">~1t</td>
+			</tr>
+		</tbody>
+	</table>
 </blockquote>
 
-<p>59.1 tonnes of CO2 combined with 48.4 tonnes of water (a total of 107.5 tonnes) will produce 21.5 tonnes of CH4 and 86 tonnes of O2. This gives us a surplus of nearly 11 tonnes of O2 that may be used to supplement air supplies for the Hab or the Rover.</p>
+<p>This gives us a total dry mass to launch from Mars of about 15 tonnes:</p>
 
-<p>The Martian atmosphere is approximately 96% CO2, therefore obtaining 59.1 tonnes of CO2 requires processing about 61.6 tonnes of atmosphere. The density of the atmosphere at the surface of Mars is about 0.02kg/m<sup>3</sup>, so this is about 3.1 million cubic metres of atmosphere.</p>
+<blockquote>
+	<table>
+		<tbody>
+			<tr>
+				<td>DragonRider</td>
+				<td class="num qtr">~4t</td>
+			</tr>
+			<tr>
+				<td>Ascent stage</td>
+				<td class="num qtr">~10t</td>
+			</tr>
+			<tr>
+				<td>Payload</td>
+				<td class="num qtr">~1t</td>
+			</tr>
+			<tr class="total">
+				<td>Total</td>
+				<td class="num qtr">~15t</td>
+			</tr>
+		</tbody>
+	</table>
+</blockquote>
 
-<p>If our goal is for the MAV to be fully fuelled within 20 months (the time difference between the arrival of the MAV at Mars and the departure of the crew from Earth), that means processing about 103kg (5,130m<sup>3</sup>) of atmosphere per day. It remains to be seen how achievable this is. There is 44 months between the arrival and departure of the MAV, therefore a slower processing rate may still be acceptable.</p>
+<p>We must next estimate the Isp (specific impulse) of the ascent engines. For the purposes of launching from Mars, because the air pressure is so low we can use figures for Isp in a vacuum instead of Isp at sea level. Historically, Isp for methalox engines has ranged from 320-380s. The Raptor engine will have an Isp(vac) of 363s. Since the Raptor will be the state-of-the-art, and new methalox engines developed for the MAV may well be derived from this design, let&rsquo;s use this figure.</p>
+
+<p>To calculate the propellant mass, we plug these values into the rocket equation:</p>
+
+<blockquote>∆v = v<sub>e</sub> ln(m<sub>i</sub> / m<sub>f</sub>)</blockquote>
+
+<p>Where:</p>
+
+<blockquote>∆v is the change in velocity<br />
+	v<sub>e</sub> is the effective exhaust velocity<br />
+	m<sub>i</sub> is the initial mass<br />
+	m<sub>f</sub> is the final mass</blockquote>
+
+<p>The mass of the consumed propellant (mp) is the difference between the initial and final mass:</p>
+
+<blockquote>m<sub>p</sub> = m<sub>i</sub> - m<sub>f</sub></blockquote>
+
+<p>Solving for m<sub>p</sub>:</p>
+
+<blockquote>∆v = v<sub>e</sub> ln((m<sub>f</sub> + m<sub>p</sub>) / m<sub>f</sub>)<br />
+	m<sub>p</sub> = m<sub>f </sub>(e<sup>∆v/ve</sup> - 1)</blockquote>
+
+<p>The ∆v from Mars surface to LMO (Low Mars Orbit) is 4,100m/s.</p>
+
+<p>The exhaust velocity (v<sub>e</sub>) can be calculated from the Isp:</p>
+
+<blockquote>v<sub>e</sub> = Isp * g<sub>0</sub></blockquote>
+
+<p>Where g<sub>0</sub> is &ldquo;standard gravity&rdquo;, i.e. gravity at sea level on Earth: 9.80665m/s<sup>2</sup>. This gives an effective exhaust velocity of 3,560m/s.</p>
+
+<p>Therefore:</p>
+
+<blockquote>m<sub>p</sub> = m<sub>f</sub> * 2.1625</blockquote>
+
+<p>m<sub>f</sub>, the final or dry mass, we&rsquo;ve estimated at about 15 tonnes. This gives a propellant mass of about 32.4 tonnes. The stoichiometric ratio for methalox is 1:3.5, therefore, we require about 7.2 tonnes of CH4 and about 25.2 tonnes of O2. Note that this is less than one third the CH4 that needs to be produced for <em>Mars Direct</em> (24 tonnes).</p>
+
+<p>Combining the reactions in step 3 and 4 gives:</p>
+
+<blockquote>CO2(g) + 2 H2O(g) &rarr; CH4(g) + 2 O2(g)</blockquote>
+
+<p>Approximate atomic masses of reactants and products are shown in the table below. Atomic mass units are denoted by &#39;u&#39;:</p>
+
+<table border="1" cellpadding="2" cellspacing="0" style="width: 300px;">
+	<tbody>
+		<tr>
+			<th colspan="2">Reactants</th>
+			<th colspan="2">Products</th>
+		</tr>
+		<tr>
+			<td>CO2</td>
+			<td>44u</td>
+			<td>CH4</td>
+			<td>16u</td>
+		</tr>
+		<tr>
+			<td>2 H2O</td>
+			<td>36u</td>
+			<td>2 O2</td>
+			<td>64u</td>
+		</tr>
+		<tr>
+			<td><b>Total</b></td>
+			<td><b>80u</b></td>
+			<td><b>Total</b></td>
+			<td><b>80u</b></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>To calculate the masses of CH4 and H2O required to make 7.2 tonnes of CH4, we can use a multiplication factor of 7.2t/16u = 0.45t/u. Therefore, we need</p>
+
+<blockquote>0.45t/u * 44u = <b>19.8t CO2</b><br />
+	0.45t/u * 36u = <b>16.2t H2O</b></blockquote>
+
+<p>This will produce:</p>
+
+<blockquote>0.45t/u * 16u = <b>7.2t CH4</b><br />
+	0.45t/u * 64u = <b>28.8t O2</b></blockquote>
+
+<p>As we only need 25.2 tonnes of O2 for the bipropellant, this gives us a surplus of 3.6 tonnes of O2 that may be used to supplement air supplies for the Hab or the Rover.</p>
+
+<p>The Martian atmosphere is approximately 96% CO2, therefore obtaining 19.8 tonnes of CO2 requires processing about 20.6 tonnes of atmosphere. The density of the atmosphere at the surface of Mars is about 0.02kg/m<sup>3</sup>, so this is about 1 million cubic metres of atmosphere.</p>
+
+<p>If our goal is for the MAV to be fully fuelled within 600 days, which is roughly the time difference between the arrival of the MAV at Mars and the departure of the crew from Earth, this will require processing about 34.3kg (1,717m<sup>3</sup>) of atmosphere per day. It remains to be seen how achievable this is. In actuality, we have 44 months between the arrival and departure of the MAV, therefore a slower processing rate is possible, and may still be acceptable. However, we would then be sending the crew to Mars without there being a fully-fuelled MAV ready on the surface, which increases risk.</p>
+
+<p>Note that the amount of 7.2 tonnes CH4 is less than one third of the quantity that needs to be produced for <i>Mars Direct</i> (24 tonnes), although it is slightly more than the amount shown in the DRA (6567kg). However, the DRA also states:</p>
+
+<blockquote><em>It should be noted that the amount of O2 and CH4 that was required for ascent propulsion can vary depending on lander size and payload. The amount that is specified in the table should not be considered exact. Propellant quantity calculated were based on a notional two-stage Mars ascent vehicle of 40 t (wet mass) with a total ascent delta-V of 5625m/s and using pump-fed LO2/CH4 engines with a mixture ratio of 3.5:1 and Isp of 369 seconds.</em></blockquote>
+
+<p>The <i>Blue Dragon</i> MAV for which these calculations have been made has an approximate wet mass of 47.4t, which is probably much higher than it needs to be. The same disclaimer can be made here as in the DRA: calculations made here are approximations only. Designs will vary and evolve, which will affect mass and propellant requirements.
+</p>

@@ -136,6 +136,7 @@ function imrs_abbr_acronyms() {
     'AG' => ['Artificial Gravity', "False sensation of gravity, usually produced by centripetal force."],
     'ATV' => ['All Terrain Vehicle', "Quad bike suited for driving on rough terrain, such as on Mars."],
     'AWESOM' => ['Autonomous Water Extraction from the Surface Of Mars', "Method proposed for extracting water from the Martian regolith using a mobile robot."],
+    'BOTE' => ['Back Of The Envelope', "Describes a quick calculation, usually by an engineer, to get a rough estimate."],
     'BP' => ['Bundle Protocol', "Internet communications protocol designed for DTN’s."],
     'BPS' => ['Ballistic Protection System', "Spacecraft or habitat subsystem that provides protection against projectiles such as micrometeorites."],
     'CCD' => ['Charge-Coupled Device', "Component used in digital cameras for detecting light."],

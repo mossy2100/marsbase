@@ -1,3 +1,8 @@
 Changes since newsletter #3
 ===========================
 Updated page about SpaceX Dragon.
+Updated communications page.
+Added page about timekeeping.
+Updated MAV page.
+Added new propulsion systems page.
+Updated propellant page.
