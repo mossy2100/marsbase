@@ -229,6 +229,7 @@ function imrs_abbr_acronyms() {
     'MTV' => ['Mars Transfer Vehicle', "Vehicle to carry humans from Earth to Mars."],
     'NASA' => ['National Aeronautics and Space Administration', "Space agency of the USA."],
     'NDS' => ['NA~~SA Docking System', "Universal docking system used on the ISS, Soyuz, Dragon, BA 330 and other spacecraft."],
+    'NERVA' => ['Nuclear Engine for Rocket Vehicle Application', 'An American program to develop a thermal nuclear propulsion system for interplanetary crewed missions.'],
     'NTR' => ['Nuclear Thermal Rocket', "Rocket with a propulsion system that uses nuclear fission to superheat reaction mass."],
     'OMS' => ['Orbital Manoeuvring System', "System for manoeuvring a spacecraft in orbit."],
     'OTE' => ['Orbit To Earth', "Movement from Earth orbit to the surface of Earth."],
