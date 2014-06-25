@@ -1,6 +1,5 @@
 .node--book--full .field {
   table {
-    margin: auto;
     width: 100%;
 
     tr.odd {
@@ -46,10 +45,10 @@
   }
 
   table.equation-table {
-    margin-left: 40px;
     width: auto;
+    margin-left: 40px;
 
-    &, td, th, tr, tbody, thead {
+    td, th, tr, tbody, thead {
       border: none;
       padding: 0;
       margin: 0;
