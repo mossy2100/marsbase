@@ -62,6 +62,10 @@ function imrs_abbr_elements() {
       'oxygen',
       "An essential element for life, and extremely abundant. Most often found in water, air as (O2), and in rocks as metal oxides."
     ],
+    'Pu' => [
+      'plutonium',
+      "A radioactive metal often used as power source in mobile robots and spacecraft."
+    ],
   ];
 }
 
