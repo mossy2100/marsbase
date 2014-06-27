@@ -272,6 +272,7 @@ function imrs_abbr_acronyms() {
     'VASIMR' => ['Variable Specific Impulse Magnetoplasma Rocket', "Spacecraft propulsion technology that uses radio waves to to produce a plasma, which is then accelerate using magnetic fields."],
     'VTOL' => ['Vertical Take-Off and Landing', "Refers to aircraft or spacecraft that can take-off, hover and land vertically."],
     'WAVAR' => ['WAter Vapour Adsorption Reactor', "Device for extracting water from the Martian atmosphere."],
+    'WRS' => ['Water Recovery System', "The water recycling system in the Destiny module on the ISS."],
     'ZPB' => ['Zero Prebreathe', "When no time is required for prebreathing before EVA, usually because of the spacesuit technology."],
     'ZPS' => ['Zero Prebreathe Spacesuit', "Spacesuit providing a high enough pressure that prebreathing is not required."],
   ];

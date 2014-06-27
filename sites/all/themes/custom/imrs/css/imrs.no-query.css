@@ -459,7 +459,7 @@ span.highlight {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/_MY\%20STUFF\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\000032}}
 .node--book--full .field table {
-  width: 100%; }
+  width: auto; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/_MY\%20STUFF\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_tables\.scss}line{font-family:\000035}}
   .node--book--full .field table tr.odd {
     background-color: #e5f1ff; }
