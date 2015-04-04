@@ -86,6 +86,7 @@ aside.l-region--sidebar-second {
   }
 }
 
+#block-block-5,
 #block-block-6 {
   @include blue-block;
   padding: 10px;
@@ -155,10 +156,6 @@ aside.l-region--sidebar-second {
       width: 100%;
     }
   }
-
-//  span.form-required {
-//    color: black;
-//  }
 
   .form-item-mailchimp-lists-mailchimp-imrs-news-subscribe {
     .description {
