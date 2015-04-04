@@ -163,3 +163,20 @@ span.highlight {
     }
   }
 }
+
+#where-to-buy {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+
+  th {
+    background-color: $table-header;
+    text-align: center;
+  }
+
+  td, th {
+    padding: 5px;
+    border: solid 1px $table-border;
+  }
+}

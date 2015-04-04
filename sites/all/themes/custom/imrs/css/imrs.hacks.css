@@ -1,12 +1,12 @@
 @media all and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/imrs\.hacks\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/_MY\%20STUFF\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/imrs\.hacks\.scss}line{font-family:\000033}}
   #toolbar, #admin-menu {
     display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/imrs\.hacks\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/_MY\%20STUFF\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/imrs\.hacks\.scss}line{font-family:\000038}}
   html body.toolbar, html body.admin-menu {
     padding-top: 0 !important;
     margin-top: 0 !important; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/MSRO\/Blue\%20Dragon\%20and\%20IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/imrs\.hacks\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/RESEARCH\/MARS\/_MY\%20STUFF\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/imrs\.hacks\.scss}line{font-family:\0000315}}
 #cboxLoadedContent img {
   max-width: none; }

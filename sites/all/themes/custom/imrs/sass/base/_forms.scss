@@ -17,8 +17,8 @@ input[type=text],
 input.form-text,
 textarea,
 select {
-  border: solid 1px $mars-blue;
-  background-color: $pale-blue;
+  border: solid 1px $table-border;
+  background-color: $table-header;
   @include border-radius(3px);
 }
 
@@ -60,5 +60,11 @@ form#search-block-form {
       top: 0px;
       right: 0px;
     }
+  }
+}
+
+#mailchimp-lists-user-subscribe-form-imrs-news {
+  .form-submit {
+    width: 100%;
   }
 }

@@ -1,3 +1,9 @@
+@mixin blue-block {
+  background-color: $light-blue;
+  color: white;
+  @include border-radius(5px);
+}
+
 aside.l-region--sidebar-first,
 aside.l-region--sidebar-second {
   div.block,
@@ -8,7 +14,7 @@ aside.l-region--sidebar-second {
 
 #book-block-menu-1,
 #block-system-navigation,
-#block-system-user-menu {
+#block-system-main-menu {
   ul.menu {
     list-style-type: none;
     list-style-image: none;
@@ -22,25 +28,15 @@ aside.l-region--sidebar-second {
       margin: 0;
 
       a {
-        background-color: $light-blue;
-        border: solid 1px $earth-blue;
-        color: black;
-        @include border-radius(5px);
+        @include button;
         display: block;
-        margin: 0 0 2px 0;
-        padding: 5px;
+        margin: 0 0 5px 0;
         text-decoration: none;
         font-weight: bold;
 
-        &.active {
-          background-color: $indian-orange;
-          border-color: $canada-red;
-        }
-
+        &.active,
         &:hover {
-          background-color: $canada-red;
-          border-color: $mars-red;
-          color: white;
+          @include button-hover;
         }
       }
     }
@@ -52,7 +48,7 @@ aside.l-region--sidebar-second {
 }
 
 #block-system-navigation,
-#block-system-user-menu {
+#block-system-main-menu {
   h2 {
     display: none;
   }
@@ -76,8 +72,9 @@ aside.l-region--sidebar-second {
 }
 
 #block-block-4 {
-  @include menu-item;
+  @include blue-block;
   padding: 10px;
+  text-align: center;
 
   p {
     margin: 0;
@@ -86,6 +83,25 @@ aside.l-region--sidebar-second {
   img {
     width: auto;
     margin-top: 5px;
+  }
+}
+
+#block-block-6 {
+  @include blue-block;
+  padding: 10px;
+  text-align: center;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .block__content {
+    background-color: white;
+    padding: 10px;
   }
 }
 
@@ -103,7 +119,7 @@ aside.l-region--sidebar-second {
 }
 
 #block-mailchimp-lists-imrs-news {
-  @include menu-item;
+  @include blue-block;
   color: black;
   padding: 10px;
 
@@ -149,4 +165,18 @@ aside.l-region--sidebar-second {
       margin-top: 5px;
     }
   }
+}
+
+#book-cover {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+p#outside-us {
+  margin-top: 10px;
+  color: black;
+  font-style: italic;
+  background-color: $pale-grey;
+  padding: 5px;
+  @include border-radius(3px);
 }

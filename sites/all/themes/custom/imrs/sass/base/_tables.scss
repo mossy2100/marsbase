@@ -3,16 +3,20 @@
     width: auto;
 
     tr.odd {
-      background-color: $pale-blue;
+      background-color: white;
     }
 
     tr.even {
-      background-color: #f7f7f7;
+      background-color: $pale-grey;
+    }
+
+    th {
+      background-color: $table-header;
     }
 
     td, th {
       padding: 5px;
-      border: solid 1px $earth-blue;
+      border: solid 1px $table-border;
       border-collapse: collapse;
 
       p {
@@ -34,7 +38,7 @@
 
     th,
     tr.total td {
-      background-color: $light-blue;
+      background-color: $table-header;
       color: white;
       font-weight: bold;
     }

@@ -1,12 +1,11 @@
 @mixin button {
-  @include background-image(linear-gradient($light-blue, $mars-blue));
-  border: solid 1px $mars-blue;
-  color: white;
-
+  @include background-image(linear-gradient($mars-orange, $indian-orange));
+  color: black;
+  border: solid 1px $indian-orange;
   @include box-sizing(border-box);
   @include border-radius(3px);
-  height: 25px;
   font-size: 14px;
+  padding: 5px 10px;
 }
 
 @mixin button-hover {

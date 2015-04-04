@@ -7,12 +7,7 @@
 ##
 
 # Default to development if environment is not set.
-saved = environment
-if (environment.nil?)
-  environment = :development
-else
-  environment = saved
-end
+environment = :development
 
 # Location of the theme's resources.
 css_dir = "css"
