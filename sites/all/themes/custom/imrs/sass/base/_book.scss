@@ -278,6 +278,10 @@ ol, ul, li {
   margin: 1em 0;
 }
 
+ol, ul {
+  padding-left: 30px;
+}
+
 li {
   margin-left: 3em;
   text-align: justify;
@@ -467,4 +471,8 @@ figcaption {
   img.size-1, img.flag {
     width: 0.5in;
   }
+}
+
+.book-navigation {
+  display: none;
 }
