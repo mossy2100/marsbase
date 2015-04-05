@@ -1,0 +1,170 @@
+<p>The architecture calls for a very capable, multi-purpose pressurised Mars rover, known as the MEV (Mars Exploration Vehicle) or, simply &ldquo;the Rover&rdquo;. This versatile vehicle will be central to the surface mission from beginning to end. Being a rather large and heavy vehicle weighing several tonnes, the intention is to deliver this separately using a Falcon Heavy, which is capable of delivering up to about 13 tonnes to the surface of Mars.</p>
+
+<p>The Rover will perform a variety of functions:</p>
+
+<ol>
+	<li>
+		<p>On arrival, the Rover will explore the surrounding environment finding safe pathways between base components, namely the Surface Hab, the <em>Pern-1</em> LZ, and the MAV.</p>
+	</li>
+	<li>
+		<p>The Rover may assist the MAV and the Hab in deployment of their photovoltaic blankets (unless this can be more effectively achieved using the AWESOM rover or other mobile robot).</p>
+	</li>
+	<li>
+		<p>The Rover will pick up the crew from <em>Pern-1</em> when they first arrive, then transport them to the Hab.</p>
+	</li>
+	<li>
+		<p>If an earth-moving attachment is included, the Rover can clear makeshift roads between different areas of the base.</p>
+	</li>
+	<li>
+		<p>The Rover will be used on a regular basis, perhaps several times per week, for exploring the surrounding terrain.</p>
+	</li>
+	<li>
+		<p>At the end of the surface mission, the Rover will carry the crew and their samples from the Surface Hab to the MAV.</p>
+	</li>
+	<li>
+		<p>It can be used as an emergency &ldquo;lifeboat&rdquo; in the event of an ECLSS failure in the Surface Hab (and if the backup Hab is unavailable).</p>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h2>Design</h2>
+
+<p>The design of the MEV still needs to be done, but this page outlines some of the core requirements that will drive it.</p>
+
+<p>Many designs have been proposed for Mars pressurised rovers. These images help to give an indication of what the MEV may look like. This is the Manchu Rover by <a href="http://davinci-marsdesign.blogspot.fr" target="_blank">Da Vinci Mars Design</a>:</p>
+
+<figure><a class="colorbox" href="/sites/default/files/images/manchu-rover.png" title="Manchu Rover"><img alt="Manchu Rover" src="/sites/default/files/images/manchu-rover_0.png" style="width: 300px; height: 254px;" title="Click to embiggen" /></a>
+
+	<figcaption>Manchu Rover</figcaption>
+</figure>
+
+<p>This is the &ldquo;Marsupial Rover&rdquo; design by David Willson and Jonathan Clarke from MSA, which forms part of their MARS-Oz architecture:</p>
+
+<figure><a class="colorbox" href="/sites/default/files/images/marsupial_section_drawing.JPG"><img alt="Marsupial Rover" src="/sites/default/files/images/marsupial_section_drawing_0.JPG" style="width: 300px; height: 124px;" title="Click to embiggen" /></a>
+
+	<figcaption>Marsupial Rover</figcaption>
+</figure>
+
+<p>This is NASA&rsquo;s current prototype for a lunar vehicle known as the &ldquo;small pressurized rover&rdquo;, which will no doubt inform their future designs for Mars pressurised vehicles.</p>
+
+<figure><a class="colorbox" href="/sites/default/files/images/smallpressurizedrover-1.jpg" title="Small Pressurized Rover"><img alt="Small Pressurized Rover" src="/sites/default/files/images/smallpressurizedrover-1_0.jpg" style="width: 300px; height: 213px;" title="Click to embiggen" /></a>
+
+	<figcaption>Small Pressurized Rover</figcaption>
+</figure>
+
+<p>&nbsp;</p>
+
+<h2>Capacity</h2>
+
+<p>Since the Rover will pick up the whole crew from the LZ of <em>Pern-1</em> on their arrival, and again transport the whole crew to the MAV for their departure, it must have capacity for the entire crew of six. However, carrying six will be exception rather than the norm. A typical excursion for the purpose of exploration will probably only involve 2-4 crew members. Nonetheless, because standing may be difficult after spending 4-6 months in &micro;g, it is necessary to provide some kind of seating for all six crew; for example, two large seats in the front section for the driver and navigator (or &ldquo;pilot&rdquo; and &ldquo;co-pilot&rdquo;), and four smaller seats in the back section.</p>
+
+<p>&nbsp;</p>
+
+<h2>Communications</h2>
+
+<p>Naturally, the Rover will have radio communications. It will constantly report its current position and condition to the Hab, where the control room is located. This information will include the internal atmospheric pressure and constituents, internal temperature, and supplies of oxygen, buffer gas, water, food, and electrical energy. In this way the Rover can be monitored remotely, whether occupied or not. Astronauts at the Hab will have real-time awareness of the Rover&rsquo;s condition at all times, including while other crew members are out exploring.</p>
+
+<p>Although the delay-tolerant communications protocol BP is required for deep space communications, for communications between the Rover and the Hab ordinary TCP/IP and wifi technology may be employed to provide internet services in the Rover.</p>
+
+<p>&nbsp;</p>
+
+<h2>Power system</h2>
+
+<p>The Rover will most likely be solar-electric, with electric motors and high-efficiency PV panels on the roof. The vehicle will be fitted with an electricity regulator that will preferentially use solar energy, with surplus energy being stored in batteries or graphene supercapacitors.</p>
+
+<p>Electric vehicle technology is currently receiving considerable investment by the automobile industry, and advancing rapidly. Battery technology in particular has improved considerably in recent years, especially since the emergence of <a href="http://www.teslamotors.com/" target="_blank">Tesla Motors</a>.</p>
+
+<p>These batteries or supercapacitors will provide additional power when necessary, for example, at times of low solar energy (i.e. at dusk or at times of high dust), or when the earth-moving bucket is attached, heavy lifting is required, transporting cargo or navigating difficult terrain. When the Rover is not in use, solar energy will charge the batteries or supercapacitors. Although it should rarely be necessary, since, for safety, the Rover should not be used in low visibility, it should be able to operate from 100% battery power if necessary.</p>
+
+<p>&nbsp;</p>
+
+<h2>Airlock and dust mitigation</h2>
+
+<p>Unlike some modern pressurised Mars rover designs, this Rover will not have suitports, for several reasons:</p>
+
+<ol>
+	<li>
+		<p>These are too bulky to wear in the DragonRider capsule.</p>
+	</li>
+	<li>The Rover must have capacity for the entire crew and it would be impractical to include six suitports.</li>
+	<li>
+		<p>The intention is to use Mechanical Counter Pressure spacesuits, which are not compatible with suitports.</p>
+	</li>
+</ol>
+
+<p>Instead, the Rover will have an airlock. In the interests of efficiently balancing time and volume, this airlock will accommodate up to two people at once, as this will be the most common excursion crew size, and crew members can help clean each other&rsquo;s suits during ingress (see below). For the full crew to enter or exit, as is necessary at the beginning and end of the surface mission, the airlock will therefore need to be used three times to transfer all six crew members.</p>
+
+<p>For more information on this topic, refer to the page about <a href="/marssuits-and-airlocks">marssuits and airlocks</a>.</p>
+
+<p>&nbsp;</p>
+
+<h2>Marssuit support</h2>
+
+<p>The intention is that the astronauts will be able to wear their marssuits inside the vehicle, since they will need to be wearing them before entering and after exiting the vehicle. However, the Rover will also include racks along one wall for hanging up PLSS backpacks and helmets, and sockets for plugging suit batteries into for recharging from either the Rover&rsquo;s batteries or its solar panels.</p>
+
+<p>The Rover will be capable of supporting extended, multi-sol excursions to more distant locations. In this case, storage for marssuits as well as drawers for casual clothes will be provided, along with fold-down bunks.</p>
+
+<p>&nbsp;</p>
+
+<h2>Robot arms and manipulators</h2>
+
+<p>The Rover is actually a robot, and will have two powerful arms, one on each side, which can be controlled from within the vehicle, from the Hab, or remotely from MCC.</p>
+
+<p>The arms will have grippers that may be used for several purposes:</p>
+
+<ul>
+	<li>
+		<p>Picking up samples of dust and rock, and placing these in sample boxes along the sides of the Rover.</p>
+	</li>
+	<li>
+		<p>Picking up heavy pieces of equipment or cargo so they can be relocated. For example, carrying cargo from Red Dragon resupply capsules back to the Surface Hab.</p>
+	</li>
+	<li>
+		<p>Gripping and moving the earth-moving bucket, should that be included.</p>
+	</li>
+</ul>
+
+<figure><a class="colorbox" href="/sites/default/files/images/robot_arm-jpg.jpg" title="Industrial robot arm"><img alt="Industrial robot arm" src="/sites/default/files/images/robot_arm-jpg_0.jpg" style="width: 300px; height: 300px;" title="Click to embiggen" /></a>
+
+	<figcaption>Industrial robot arm</figcaption>
+</figure>
+
+<p>&nbsp;</p>
+
+<h2>Earth-moving capability</h2>
+
+<p>It may be possible for the Rover to include an earth-moving attachment, which can be used for clearing makeshift roads, piling loose regolith on a habitat for additional radiation protection and thermal insulation (not that that should be necessary with the BA 330 modules), or uncovering deeper layers of regolith for the purpose of scientific study.</p>
+
+<p>This equipment should be easily attached or detached. A bucket similar to that found on a front-end loader could be fitted with handles that can be gripped by the Rover&rsquo;s two arms.</p>
+
+<p>One issue with this feature is that the Rover needs to remain stable while using it. If it&rsquo;s too light in the back end then carrying the bucket could cause it to tip forwards, particularly if loaded with dirt. This problem may be addressed by distributing the bulk of the vehicle&rsquo;s mass (for example, battery packs and ECLSS) towards the rear of the vehicle, as in an ordinary bobcat or front-end loader. Another approach is to use tracks instead of wheels.</p>
+
+<figure><a class="colorbox" href="/sites/default/files/images/frontloader.jpg" title="Front-end loader"><img alt="Front-end loader" src="/sites/default/files/images/frontloader_0.jpg" style="width: 300px; height: 225px;" title="Click to embiggen" /></a>
+
+	<figcaption>Front-end loader</figcaption>
+</figure>
+
+<p>&nbsp;</p>
+
+<h2>Drill</h2>
+
+<p>The Rover will be fitted with a drill suitable for taking core samples. This feature supports the science objectives of the mission, including the search for water, volatiles and biological life, and the investigation of subsurface mineralogy.</p>
+
+<p>The purpose and design of the drill are based on the core objectives of the Ice Dragon mission [STOKER], which proposes to land a Red Dragon capsule that contained within it two drills for taking core samples. The Ice Dragon mission was designed to address three main questions:</p>
+
+<ol>
+	<li>Is there life on Mars?</li>
+	<li>Are there viable and accessible resources for humans?</li>
+	<li>Is it safe to land humans on Mars?</li>
+</ol>
+
+<p>The mission proposed to answer questions 1 and 2 by studying subsurface ground ice, and question 3 by testing the Red Dragon landing system, which, as discussed, could potentially be used to land a crew of astronauts on Mars (a feature that the Blue Dragon architecture relies on).</p>
+
+<p>The value of investigating subsurface ice is described as follows:</p>
+
+<blockquote><i>The subsurface environment provides protection from radiation to shield organic and biologic compounds from destruction. The ice-rich substrate is also ideal for preserving organic and biologic molecules and provides a source of H2O for any biologic activity. Examination of martian ground ice can test the hypotheses of whether ground ice supports habitable conditions, that ground ice can preserve and accumulate organic compounds, and that ice contains biomolecules that show past or present biological activity on Mars. Furthermore, water on Mars, in the form of ground ice and hydrated minerals may provide a valuable resource to enable long-term human exploration. Water can provide the raw materials for rocket propellant, other fuels, and life support consumables for future human Mars missions.</i></blockquote>
+
+<p>Despite being possibly the best mission proposal currently on offer, Ice Dragon was rejected by NASA in favour of the Mars 2020 Rover. However, the goals of the Ice Dragon mission remain entirely relevant, and can easily be incorporated into the Blue Dragon missions. The inclusion of a drill in the Rover makes it possible to study subsurface ground ice, and the Red Dragon EDL system is tested multiple times by delivery of cargo and crew.</p>
+
+<figure><a class="colorbox" href="/sites/default/files/images/Ice Dragon diagram.png" title="Ice Dragon capsule"><img alt="Ice Dragon capsule" src="/sites/default/files/images/Ice%20Dragon%20diagram_0.png" style="width: 300px; height: 455px;" title="Click to embiggen" /></a></figure>

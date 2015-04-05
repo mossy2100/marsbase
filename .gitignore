@@ -2,10 +2,12 @@
 sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
-sites/*/files
-sites/*/private
+sites/default/files
 
-# Protect media files
+# Protect media files.
+!sites/default/files/doc
 !sites/default/files/doc/**
+!sites/default/files/html
 !sites/default/files/html/**
+!sites/default/files/images
 !sites/default/files/images/**
