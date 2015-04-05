@@ -4,3 +4,8 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+# Protect media files
+!sites/default/files/doc/**
+!sites/default/files/html/**
+!sites/default/files/images/**

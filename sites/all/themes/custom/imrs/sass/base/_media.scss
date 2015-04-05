@@ -2,6 +2,11 @@ img, media {
   max-width: 100%;
 }
 
+#book-cover {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
 @media all and (max-width: 500px) {
   #book-cover {
     float: none;

@@ -107,26 +107,26 @@ footer.l-footer {
     display: none;
   }
 }
-
-figure {
-  margin: 0px auto;
-  width: 314px;
-  text-align: center;
-  border: solid 1px #ccc;
-  @include border-radius(3px);
-  background-color: #eee;
-  padding: 5px;
-
-  img {
-    @include box-shadow(#888 2px 2px 4px);
-  }
-
-  figcaption {
-    text-align: center;
-    font-style: italic;
-    margin: 5px 0 0 0;
-  }
-}
+//
+//figure {
+//  margin: 0px auto;
+//  width: 314px;
+//  text-align: center;
+//  border: solid 1px #ccc;
+//  @include border-radius(3px);
+//  background-color: #eee;
+//  padding: 5px;
+//
+//  img {
+//    @include box-shadow(#888 2px 2px 4px);
+//  }
+//
+//  figcaption {
+//    text-align: center;
+//    font-style: italic;
+//    margin: 5px 0 0 0;
+//  }
+//}
 
 .book-navigation {
   margin-top: 30px;

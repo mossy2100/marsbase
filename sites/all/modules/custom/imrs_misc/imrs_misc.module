@@ -197,6 +197,11 @@ function imrs_misc_node_view($node, $view_mode, $langcode) {
         // The file has been updated, so update the database:
         $node->field_html_editor[LANGUAGE_NONE][0]['value'] = $file_html;
         $node->field_html_editor[LANGUAGE_NONE][0]['format'] = 'full_html';
+
+        // Need to disable pathauto otherwise the alias will get regenerated.
+        $node->path['pathauto'] = FALSE;
+
+        // Save the node.
         node_save($node);
 
         // Update the content:

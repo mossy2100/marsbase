@@ -1,0 +1,32 @@
+table.book-navigation__links {
+  width: 100%;
+
+  td.book-navigation__previous {
+    text-align: left;
+  }
+
+  td.td-book-navigation__up {
+    text-align: centre;
+  }
+
+  td.td-book-navigation__next {
+    text-align: right;
+  }
+
+  a {
+    margin-bottom: 1em;
+    background-color: $light-blue;
+    color: black;
+    @include border-radius(3px);
+    float: none;
+    text-decoration: none;
+    padding: 2px 5px;
+    width: auto;
+    font-size: 13px;
+
+    &:hover {
+      background-color: $canada-red;
+      color: white;
+    }
+  }
+}

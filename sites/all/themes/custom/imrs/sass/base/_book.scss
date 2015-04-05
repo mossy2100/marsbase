@@ -1,32 +1,470 @@
-table.book-navigation__links {
+/******************************************************************************/
+/* Base styles */
+
+p {
+  margin: 1em 0;
+  text-align: justify;
+}
+
+body.title-page h1,
+h2, h3, h4, h5 {
+  margin: 2em 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Museo, Verdana, Arial, Helvetica;
+}
+
+sub, sup {
+  line-height: 0;
+}
+
+sub, sup, small, .small {
+  font-size: 75%;
+}
+
+h4 {
+  font-size: 125%;
+}
+
+h3 {
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 175%;
+}
+
+h1 {
+  font-size: 200%;
+  margin: 0;
+}
+
+big, .big {
+  font-size: 300%;
+}
+
+th h1, th h2, th h3, th h4 {
+  margin: 0;
+}
+
+a {
+  color: royalblue;
+  text-decoration: underline;
+}
+
+p, blockquote, li, h1, h2, h3, h4, h5 {
+  line-height: 1.25em;
+}
+
+/******************************************************************************/
+/* Misc useful styles */
+.nomargin {
+  margin: 0 0;
+}
+
+.indent1 {
+  margin-left: 1em;
+}
+
+.indent2 {
+  margin-left: 2em;
+}
+
+.indent3 {
+  margin-left: 3em;
+}
+
+blockquote {
+  margin: 1em 0 1em 2em;
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.highlight {
+  background-color: #fff753
+}
+
+/******************************************************************************/
+/* Table styles */
+
+table {
+  border-collapse: collapse;
+  margin: 1em auto;
+  width: auto;
+}
+
+caption {
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tr.head, th.head {
+  background-color: #dfedff;
+}
+
+tr.total, th.total {
+  background-color: #FFE1BF;
+}
+
+tr.subtitle th, th.subtitle {
+  background-color: #fff;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+tr.bg-silver, th.bg-silver {
+  background-color: #eee;
+}
+
+th {
+  background: none;
+  border: solid 1px #77a;
+  padding: 0.5em;
+  text-align: left;
+  font-weight: normal;
+}
+
+tr.head th,
+tr.total th {
+  font-weight: bold;
+}
+
+th.right {
+  text-align: right;
+}
+
+th p,
+td p {
+  margin: 0;
+}
+
+table.equations {
+  border: none;
+}
+
+table.equations tr {
+  background: none;
+}
+
+table.equations th {
+  border: none;
+}
+
+th.selected {
+  background-color: #d1ffd5;
+}
+
+/******************************************************************************/
+/* Crew slots table */
+
+#crew-slots h4 {
+  margin-top: 0;
+}
+
+#crew-slots h5 {
+  margin-bottom: 0;
+}
+
+#crew-slots th {
+  vertical-align: middle;
+  height: 2em;
+}
+
+#crew-slots th.head {
+  height: auto;
+}
+
+#crew-slots-3-missions th {
+  height: 2em;
+}
+
+#crew-slots-3-missions tr.brave {
+  background-color: #ddd;
+}
+
+/******************************************************************************/
+/* Primary components table */
+
+tr.launch-vehicles {
+  background-color: rgb(254, 252, 212);
+}
+
+tr.space-vehicles {
+  background-color: rgb(254, 211, 237);
+}
+
+tr.surface-vehicles {
+  background-color: rgb(201, 218, 254);
+}
+
+tr.capsules {
+  background-color: rgb(224, 255, 219);
+}
+
+tr.habitats {
+  background-color: rgb(194, 255, 255);
+}
+
+tr.satellites {
+  background-color: rgb(254, 232, 202);
+}
+
+/******************************************************************************/
+/* Crew roles and colours */
+
+#crew-roles th {
+  height: 2.5em;
+}
+
+#crew-roles th.head {
+  text-align: center;
+}
+
+.crew-colour {
+  padding: 3px 5px 1px;
+  border: solid 1px #000;
+  display: inline-block;
+  text-align: center;
+}
+
+.crew-white {
+  background-color: #fff;
+}
+
+.crew-blue {
+  background-color: #4ba2ff
+}
+
+.crew-purple {
+  background-color: #df98fb
+}
+
+.crew-red {
+  background-color: #fe6158
+}
+
+.crew-green {
+  background-color: #99d865
+}
+
+.crew-yellow {
+  background-color: #fff500
+}
+
+/******************************************************************************/
+/* Lists */
+
+ol, ul, li {
+  margin: 1em 0;
+}
+
+li {
+  margin-left: 3em;
+  text-align: justify;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol.lower-alpha {
+  list-style-type: lower-alpha
+}
+
+ol.upper-alpha {
+  list-style-type: upper-alpha
+}
+
+ul {
+  list-style-type: disc
+}
+
+/******************************************************************************/
+/* Equations */
+
+.lhs {
+  display: inline-block;
+  width: 3em;
+  margin-right: 0.2em;
+}
+
+/******************************************************************************/
+/* Figures/images */
+
+figure {
+  width: auto;
+  margin: 2em auto;
+  text-align: center;
+  page-break-inside: avoid;
+}
+
+img {
   width: 100%;
+  text-align: center;
+}
 
-  td.book-navigation__previous {
-    text-align: left;
-  }
+img.size-9 {
+  width: 90%;
+}
 
-  td.td-book-navigation__up {
-    text-align: centre;
-  }
+img.size-8 {
+  width: 80%;
+}
 
-  td.td-book-navigation__next {
-    text-align: right;
+img.size-7 {
+  width: 70%;
+}
+
+img.size-6 {
+  width: 60%;
+}
+
+img.size-5 {
+  width: 50%;
+}
+
+img.size-4 {
+  width: 40%;
+}
+
+img.size-3 {
+  width: 30%;
+}
+
+img.size-2 {
+  width: 20%;
+}
+
+img.size-1 {
+  width: 10%;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 0.2em;
+  text-align: center;
+}
+
+@media print {
+  body {
+    /* To get colours printing correctly from Chrome. */
+    -webkit-print-color-adjust: exact;
+    margin: 0;
+    padding: 0;
+    font-size: 10pt;
+    font-family: Arial, Helvetica;
   }
 
   a {
-    margin-bottom: 1em;
-    background-color: $light-blue;
-    color: black;
-    @include border-radius(3px);
-    float: none;
-    text-decoration: none;
-    padding: 2px 5px;
-    width: auto;
-    font-size: 13px;
+    color: #000;
+  }
 
-    &:hover {
-      background-color: $canada-red;
-      color: white;
-    }
+  body.contents a {
+    text-decoration: none;
+  }
+
+  body.contents p {
+    line-height: 1em;
+  }
+
+  sub, sup, small, .small,
+  table.abbrev th, body.references {
+    font-size: 7.5pt;
+  }
+
+  table.abbrev th sub {
+    font-size: 6pt;
+  }
+
+  table, tr {
+    page-break-inside: avoid;
+  }
+
+  .new-page {
+    page-break-before: always;
+  }
+
+  h4 {
+    font-size: 12.5pt;
+  }
+
+  h3 {
+    font-size: 15pt;
+  }
+
+  h2 {
+    font-size: 17.5pt;
+  }
+
+  h1 {
+    font-size: 20pt;
+  }
+
+  big, .big {
+    font-size: 25pt;
+  }
+
+  figure {
+    margin: 24px auto;
+  }
+
+  img {
+    width: 5in;
+  }
+
+  img.size-9 {
+    width: 4.5in;
+  }
+
+  img.size-8 {
+    width: 4in;
+  }
+
+  img.size-7 {
+    width: 3.5in;
+  }
+
+  img.size-6 {
+    width: 3in;
+  }
+
+  img.size-5 {
+    width: 2.5in;
+  }
+
+  img.size-4 {
+    width: 2in;
+  }
+
+  img.size-3 {
+    width: 1.5in;
+  }
+
+  img.size-2 {
+    width: 1in;
+  }
+
+  img.size-1, img.flag {
+    width: 0.5in;
   }
 }
