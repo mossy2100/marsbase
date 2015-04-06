@@ -15,29 +15,29 @@ function imrs_abbr_markup_abbreviations(el) {
     if (text) {
       html = text;
 
-      // Add <abbr> tags to chemical elements:
-      for (abbr in Drupal.settings.elements) {
-        // Skip those with only one letter for now, 'C' in particular has multiple uses.
-        if (abbr.length > 1) {
-          html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.elements[abbr][0] + "'>" + abbr + "</abbr>");
-        }
-      }
-
-      // Add <abbr> and <sub> tags to chemical compounds:
-      for (abbr in Drupal.settings.compounds) {
-        // Skip 'CO' when it means Colorado:
-        if (abbr == 'CO' && location.pathname == '/references') {
-          continue;
-        }
-
-        // Wrap every sequence of digits in <sub> tags:
-        abbrWithSubscripts = abbr.replace(/(\d+)/g, "<sub>$1</sub>");
-
-        // Add <abbr> tags:
-        abbrWithSubscripts = "<abbr title='" + Drupal.settings.compounds[abbr][0] + "'>" + abbrWithSubscripts + "</abbr>";
-
-        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), abbrWithSubscripts);
-      }
+      //// Add <abbr> tags to chemical elements:
+      //for (abbr in Drupal.settings.elements) {
+      //  // Skip those with only one letter for now, 'C' in particular has multiple uses.
+      //  if (abbr.length > 1) {
+      //    html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.elements[abbr][0] + "'>" + abbr + "</abbr>");
+      //  }
+      //}
+      //
+      //// Add <abbr> and <sub> tags to chemical compounds:
+      //for (abbr in Drupal.settings.compounds) {
+      //  // Skip 'CO' when it means Colorado:
+      //  if (abbr == 'CO' && location.pathname == '/references') {
+      //    continue;
+      //  }
+      //
+      //  // Wrap every sequence of digits in <sub> tags:
+      //  abbrWithSubscripts = abbr.replace(/(\d+)/g, "<sub>$1</sub>");
+      //
+      //  // Add <abbr> tags:
+      //  abbrWithSubscripts = "<abbr title='" + Drupal.settings.compounds[abbr][0] + "'>" + abbrWithSubscripts + "</abbr>";
+      //
+      //  html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), abbrWithSubscripts);
+      //}
 
       // Add <abbr> tags to acronyms:
       for (abbr in Drupal.settings.acronyms) {
