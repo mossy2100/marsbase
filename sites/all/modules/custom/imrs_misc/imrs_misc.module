@@ -194,7 +194,18 @@ function imrs_misc_node_view($node, $view_mode, $langcode) {
       $file_html = file_get_contents($path);
       $db_html = $node->field_html_editor[LANGUAGE_NONE][0]['value'];
       if ($file_html && $file_html != $db_html) {
-        // The file has been updated, so update the database:
+        // The file has been updated.
+
+        // Fix file paths and links.
+        $file_html = str_replace('src="images', 'src="/sites/default/files/images', $file_html);
+        $file_html = preg_replace('/"([a-z0-9]+)\.xhtml/', '"/$1', $file_html);
+        $file_html = preg_replace('/<h2>(\d+)\.(\d+)\./', '<h2 id="section$1-$2">$1.$2.', $file_html);
+        $file_html = preg_replace('/<h3>(\d+)\.(\d+)\.(\d+)\./', '<h3 id="section$1-$2-$3">$1.$2.$3.', $file_html);
+
+        // Update the file.
+        file_put_contents($path, $file_html);
+
+        // Update the database.
         $node->field_html_editor[LANGUAGE_NONE][0]['value'] = $file_html;
         $node->field_html_editor[LANGUAGE_NONE][0]['format'] = 'full_html';
 
