@@ -1010,7 +1010,7 @@ function imrs_abbr_ref_list() {
   foreach ($references as $info) {
     $html .= "<p id='ref{$i}'>[$i] {$info['ref']}";
     if (isset($info['pdf'])) {
-      $html .= " <a href='/sites/default/files/doc/{$info['pdf']}' target='_blank'><img src='/sites/all/themes/custom/imrs/images/icons/pdf-icon-16x16.png' title='PDF'></a>";
+      $html .= " <a href='/sites/default/media/doc/{$info['pdf']}' target='_blank'><img src='/sites/all/themes/custom/imrs/images/icons/pdf-icon-16x16.png' title='PDF'></a>";
     }
     if (isset($info['links'])) {
       foreach ($info['links'] as $link) {

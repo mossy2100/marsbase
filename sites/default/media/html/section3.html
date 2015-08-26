@@ -1,0 +1,232 @@
+<p>The IMRS plan includes a new humans-to-Mars mission architecture that exploits some of the latest developments in space technology such as reusable rockets, capsules that can land on solid ground, inflatable space habitats and mechanical counter-pressure spacesuits. It is modern, practical, comparatively safer than its predecessors, and affordable. Although designed for multiple missions to a single location, which is the plan for IMRS, it would also be practical for missions to discrete locations.</p>
+
+<p>In this document the architecture is described mostly in relation to high-level design choices without going into deep engineering detail.</p>
+
+<p>The name of the architecture, &ldquo;Blue Dragon,&rdquo; was inspired by &ldquo;Red Dragon&rdquo;, the Mars landing system adapted from SpaceX Dragon capsules, as these capsules, which have the potential to safely and accurately land cargo and crews on Mars, provide the fundamental point of difference that enables improvements over the DRA. The architecture connects Mars and Earth; Mars is red, Earth is blue. Also, the dragon in the SpaceX Dragon logo is blue.</p>
+
+<p>Blue Dragon is an evolution of the NASA Human Exploration of Mars - Design Reference Architecture (DRA) 5.0 (ed. Drake 2009). The DRA is arguably the most mature Mars mission architecture currently available, having been iteratively developed by hundreds of qualified people since 1995. Nonetheless, it has the potential to be further improved on the basis of new science, technology and ideas. The changes presented here improve safety, reduce cost, and achieve a superior overall result.</p>
+
+<p>The IMRS program does not have precisely the same goals as the DRA, although they are very similar.</p>
+
+<p>The DRA proposes a series of three more-or-less identical missions to Mars, each to different, scientifically interesting locations, and at these locations to perform exploration and scientific research of Mars; for example, analysing rocks, dust, subsurface ice and the Martian atmosphere, searching for past or extant life, and so on. In addition the DRA program proposes to research ISRU technologies, including production of oxygen, water and food, and strategies for long-term habitation of Mars.</p>
+
+<p>The DRA is like &ldquo;Apollo on Mars&rdquo;, in the sense that each mission in the Apollo program went to a different location on the Moon. Although the scientific research performed at the Apollo sites has been useful for investigation into future settlement of the Moon, none of the Apollo sites were considered as locations of future settlements, because settlement was not the main focus. Although it was hoped by many that Apollo would continue into the Apollo Applications Program and that a permanent human presence would be established on the Moon, for various reasons this never eventuated, and at that time the private sector was not in a position to undertake such a challenge itself.</p>
+
+<p>In the 45 years since Apollo 11 there has been considerable ongoing interest in establishing a lunar settlement, with the Artemis Society and their associated public outreach group the Moon Society being major proponents, along with other enthusiast groups and major space agencies. However, as robotic exploration of Mars has progressed and understanding of the red planet has developed, it&rsquo;s apparent that a much stronger desire has emerged in the space community for settlement of Mars. Despite the emergence of companies such as Moon Express and Golden Spike, private missions such as Inspiration Mars and Mars One are receiving much more attention, as are the Mars settlement plans of companies like SpaceX and Virgin Galactic.</p>
+
+<p>If membership in space enthusiast groups and public interest in missions are any kind of indicators, the number of people supportive of colonisation of Mars far outweighs that of Earth orbit or the Moon. Because of Mars&rsquo;s similarities with Earth, such as a day length of an approximately 24 hours, seasons, weather, a transparent atmosphere, a coloured sky, and familiar-looking terrain highly reminiscent of Earthian deserts, settlement of Mars is far more amenable to the human imagination and therefore has greater appeal. Its abundance of all the elements necessary for life and technological civilisation, including a range of options for energy production, make it a far more attractive and accessible settlement target than any alternative.</p>
+
+<p>As humanity&rsquo;s technical capability develops, interest in settlement of Mars grows steadily. The facts that over 200,000 people applied for a one-way trip to Mars as part of the Mars One initiative, plus the consistent turnout to various international Mars conferences by enthusiasts and industry leaders, are strong indicators of this trend.</p>
+
+<p>Inspiration Mars and Mars One represent the first two of what is likely to be an ongoing series of proposed missions to Mars initiated by private enterprise. These missions have developed from a growing interest in settlement of Mars, and have stimulated yet more interest. More missions will surely follow, both public and private, stimulated by advancements in computing, robotics, materials, space hardware, other branches of science, technology and engineering, and the ongoing evolution of the space economy.</p>
+
+<h2 id="section3-1">3.1. Primary Components</h2>
+
+<p>These are the main hardware items utilised by the architecture.</p>
+
+<table class="new-page" id="primary-components">
+	<tbody>
+		<tr class="head">
+			<th>Type</th>
+			<th>Component</th>
+			<th>Description</th>
+		</tr>
+		<tr class="launch-vehicles">
+			<th class="bold" rowspan="3" valign="middle">Launch vehicles</th>
+			<th>SpaceX Falcon 9</th>
+			<th>Medium lift launch vehicle for launching Dragon capsules and satellites to space.</th>
+		</tr>
+		<tr class="launch-vehicles">
+			<th>SpaceX Falcon Heavy</th>
+			<th>Heavy lift launch vehicle for launching Dragon capsules and surface vehicles to Mars.</th>
+		</tr>
+		<tr class="launch-vehicles">
+			<th>Space Launch System (SLS)</th>
+			<th>Family of heavy and super heavy lift launch vehicles currently in development at NASA, for launching the largest components.</th>
+		</tr>
+		<tr class="space-vehicles">
+			<th class="bold" rowspan="2" valign="middle">Space vehicles</th>
+			<th>Mars Transfer Vehicle (MTV)</th>
+			<th>Spaceship that carries the crew to Mars and back. Comprised of the THAB plus propulsion stack. Also known as <i>Adeona</i>.</th>
+		</tr>
+		<tr class="space-vehicles">
+			<th>Mars Ascent Vehicle (MAV)</th>
+			<th>Vehicle to transport the crew from Mars surface to Mars orbit. Includes ISPP system and <i>Kepler</i>.</th>
+		</tr>
+		<tr class="capsules">
+			<th class="bold" rowspan="4" valign="middle">Capsules</th>
+			<th>Mars Supply Capsule (MSC)</th>
+			<th>Cargo Dragon capsule modified for Mars landing (i.e. Red Dragon), for delivering supplies to the Martian surface.</th>
+		</tr>
+		<tr class="capsules">
+			<th>Earth-Mars Capsule (EMC)</th>
+			<th>Crew Dragon modified for Mars landing, which carries the crew from Earth surface to Earth orbit, then from Mars orbit to Mars surface. Also known as <i>Einstein</i>.</th>
+		</tr>
+		<tr class="capsules">
+			<th>Mars Ascent Capsule (MAC)</th>
+			<th>Modified Crew Dragon which forms the topmost section of the MAV. Also known as <i>Kepler</i>.</th>
+		</tr>
+		<tr class="capsules">
+			<th>Earth Descent Capsule (EDC)</th>
+			<th>Crew Dragon launched from Earth at the end of the mission, which the crew use to land on Earth. Also known as <i>Newton</i>.</th>
+		</tr>
+		<tr class="surface-vehicles">
+			<th class="bold" rowspan="3" valign="middle">Surface vehicles and robots</th>
+			<th>Crewed Adaptable Multipurpose Pressurised Exploration Rover (CAMPER)</th>
+			<th>A pressurised rover for multi-sol excursions on Mars, featuring robotic arms and attachments such as a drill and excavator bucket.</th>
+		</tr>
+		<tr class="surface-vehicles">
+			<th>All Terrain Vehicle (ATV)</th>
+			<th>Unpressurised 4-wheeled vehicle for 1-2 people.</th>
+		</tr>
+		<tr class="surface-vehicles">
+			<th>Autonomous Water Extraction from the Surface Of Mars (AWESOM)</th>
+			<th>Mobile robot that obtains water from permafrost around the base.</th>
+		</tr>
+		<tr class="habitats">
+			<th class="bold" rowspan="2" valign="middle">Habitats</th>
+			<th>Mars Transit Habitat (THAB)</th>
+			<th>Habitat where the crew live and work while <i>en route</i> to and from Mars. Part of the MTV and comprised of a B330 (&ldquo;Deep Space&rdquo; version).</th>
+		</tr>
+		<tr class="habitats">
+			<th>Mars Surface Habitat (SHAB)</th>
+			<th>Habitat where the crew live and work while on the surface of Mars. Comprised of B330 modified for Mars surface.</th>
+		</tr>
+		<tr class="satellites">
+			<th class="bold" rowspan="2" valign="middle">Satellites</th>
+			<th>Heliocentric Laser Communications Relay Satellite (HLCRS)</th>
+			<th>Laser communications relay satellite in heliocentric orbit.</th>
+		</tr>
+		<tr class="satellites">
+			<th>Mars Communications and Observation Satellite (MCOS)</th>
+			<th>Areosynchronous satellite for communication and observation.</th>
+		</tr>
+	</tbody>
+</table>
+
+<h4>Naming</h4>
+
+<p>The first mission to the IMRS is called &ldquo;Alfa Mission&rdquo; and the first crew is called &ldquo;Alfa Crew&rdquo;; the second mission is called &ldquo;Bravo Mission&rdquo; and the second crew is named &ldquo;Bravo Crew&rdquo;; and so on, following the International Radiotelephony Spelling Alphabet. This pattern has been adopted to support clear radio communications between different Mars exploration crews and Earth, which will become increasingly important when multiple missions are underway at the same time.</p>
+
+<p>In order to mitigate acronym overload, friendly names, or at least, more memorable acronyms, are used for some of the components.</p>
+
+<ol>
+	<li>The MTV is a spaceship, and ships, generally speaking, should have a more interesting name than &ldquo;MTV&rdquo;. The first MTV is therefore named &ldquo;Adeona&rdquo;, the Roman goddess of safe return. The name comes from the Latin verb <i>adeo</i>, which means to approach, go to, visit, attend, undertake or undergo, as well as to take possession of one&rsquo;s inheritance. This is appropriate, as Mars is humanity&rsquo;s inheritance, and a safe return is desired for the crew.</li>
+	<li>The crew capsules are named after famous scientists. The name of the specialised Dragon capsule that carries the crew from the surface of Earth to Earth orbit, then from Mars orbit to the surface of Mars, is called &ldquo;Einstein&rdquo;. This name came from Earth-Mars Capsule, or EMC, which is reminiscent of Albert Einstein&rsquo;s famous equation e=mc<sup>2</sup>. The Mars Ascent Capsule is named &ldquo;Kepler&rdquo; after Johannes Kepler, due to his associated with Mars and orbital mechanics, and the Earth Descent Capsule is named &ldquo;Newton&rdquo; after Isaac Newton, due to his associated with gravity. (All of these were male Europeans, but please don&rsquo;t be offended if you aren&rsquo;t male or European &mdash; the names are just for the purpose of this document!)</li>
+	<li>The pressurised rover is known as the Crewed Adaptable Multipurpose Pressurised Exploration Rover, or &ldquo;CAMPER&rdquo;, which alludes to the vehicle&rsquo;s form and function. The robot that collects water from the Martian surface is called &ldquo;AWESOM&rdquo;, which stands for &ldquo;Autonomous Water Extraction from the Surface Of Mars&rdquo;.</li>
+</ol>
+
+<p>Spacecraft names are shown in italics, as per the convention for aquatic ships.</p>
+
+<h2 id="section3-2">3.2. Mission Overview</h2>
+
+<p>The following schedule gives an overview of the proposed first human mission to Mars. Subsequent missions can utilise substantially the same architecture, except predeploying different assets depending on the needs of the base.</p>
+
+<h4>Phase 1: Prepare (now-2030)</h4>
+
+<ol>
+	<li>Improve TRL of the Red Dragon technology, marssuits, B330 habitat modules, and other hardware elements.</li>
+	<li>Develop and construct the SHAB, THAB, MAV, CAMPER, satellites, methalox rocket engines, propellant pods and other major hardware components.</li>
+	<li>Select location for the IMRS.</li>
+	<li>Select and train Alfa Crew.</li>
+	<li>Conduct precursor missions.</li>
+</ol>
+
+<h4>Phase 2: Predeployment (2031)</h4>
+
+<p>As the intention is to send the crew in 2033, the predeployment phase is scheduled for the launch opportunity prior, in 2031.</p>
+
+<figure><img alt="Bat chart - Predeployment" src="/sites/default/media/images/bat-chart-1-predeploy.png" />
+	<figcaption>Bat chart - Predeployment</figcaption>
+</figure>
+
+<ol>
+	<li>Launch the MAV, SHAB and CAMPER, land them safely at IMRS, remotely activate and test. Commence ISRU operations.</li>
+	<li>Pack and launch the Mars Supply Capsules, and send to the IMRS.</li>
+	<li>Launch first MCOS and place in areostationary orbit above IMRS.</li>
+	<li>Launch first HLCRS and place in heliocentric orbit.</li>
+	<li>Use the CAMPER to explore the surrounding terrain and find a suitable LZ (Landing Zone) for <i>Einstein</i>.</li>
+</ol>
+
+<h4>Phase 3: Construct <i>Adeona</i> (~2032)</h4>
+
+<p>Although the construction of <i>Adeona</i> is scheduled here for 2032, it could be done at almost any time before the 2033 launch. The sooner <i>Adeona</i> is built, the sooner she can be used for training missions.</p>
+
+<figure><img alt="Bat chart - MTV construction" src="/sites/default/media/images/bat-chart-2-MTV-construct.png" />
+	<figcaption>Bat chart - MTV construction</figcaption>
+</figure>
+
+<ol>
+	<li>On Earth, inflate and fit out the THAB, and pack with supplies. Run training missions on the ground.</li>
+	<li>Construct the two halves of <i>Adeona</i>, and launch to LEO using SLS 105t Cargo rockets.</li>
+	<li>Assemble <i>Adeona</i> on orbit by connecting the two halves together.</li>
+	<li>Run training missions to&nbsp;<i>Adeona</i>.</li>
+	<li>Launch 10 reusable Falcon Heavies with full methalox propellant pods to <i>Adeona</i>.</li>
+</ol>
+
+<h4>Phase 4: Crew Outbound (2033)</h4>
+
+<figure><img alt="Bat chart - crew outbound phase" src="/sites/default/media/images/bat-chart-3-outbound.png" />
+	<figcaption>Bat chart - crew outbound phase</figcaption>
+</figure>
+
+<ol>
+	<li>Launch the crew to LEO in <i>Einstein</i> atop a Falcon 9.</li>
+	<li><i>Einstein</i> performs EOR (Earth Orbit Rendezvous) with <i>Adeona,</i> and crew transfers into the THAB.</li>
+	<li>With <i>Einstein</i> still docked, <i>Adeona</i> climbs from LEO to HEEO (Highly Elliptical Earth Orbit) in a series of six increasingly elliptical orbits, jettisoning one propellant pod after each burn to reduce mass.</li>
+	<li><i>Adeona</i> performs the TMI (Trans-Mars Injection) burn and flies to Mars on a Hohmann MTO (Mars Transfer Orbit) for ~6 months.</li>
+	<li>Immediately prior to MOI, any unrecyclable waste generated during the outbound trip is jettisoned to reduce mass.</li>
+	<li><i>Adeona</i> performs MOI (Mars Orbit Insertion) and parks on HEMO (Highly Elliptical Mars Orbit).</li>
+	<li>The 7<sup>th</sup> empty propellant pod is jettisoned to reduce mass.</li>
+	<li>The crew prebreathe and don their marssuits in preparation for Mars descent. <i>Adeona</i> is placed in standby mode.</li>
+	<li>The crew transfers from the THAB back into <i>Einstein</i>, and descend to the surface of Mars.</li>
+	<li>Under remote control by the crew, the CAMPER is driven from the SHAB to <i>Einstein</i>&rsquo;s LZ.</li>
+	<li>The crew exit <i>Einstein</i> and step onto the surface of Mars. They enter the CAMPER through its airlock, two at a time.</li>
+	<li>The crew drives the CAMPER to the SHAB.</li>
+	<li>The crew exit the CAMPER through its airlock, and enter the SHAB through its airlock, two at a time.</li>
+</ol>
+
+<h4>Phase 4: Surface Mission (2033-2035)</h4>
+
+<ol>
+	<li>The crew spend 1-2 weeks in the SHAB, setting up their living space, testing systems, and adapting to Mars gravity and the SHAB&rsquo;s atmosphere.</li>
+	<li>The surface mission proceeds for ~18 months. During this time, the AWESOM robot, PV blanket and ISPP modules are moved from the MAV to the SHAB.</li>
+</ol>
+
+<h4>Phase 5: Crew Return (2035)</h4>
+
+<figure><img alt="Bat chart - crew return phase" src="/sites/default/media/images/bat-chart-4-return.png" />
+	<figcaption>Bat chart - crew return phase</figcaption>
+</figure>
+
+<ol>
+	<li>A full systems check is performed on the MAV and <i>Adeona</i>.</li>
+	<li>All samples for Earth return are stowed in <i>Kepler</i>.</li>
+	<li>The SHAB is cleaned and tidied, and placed in standby mode in preparation for arrival of the next crew in ~8 months.</li>
+	<li>The crew transfers to the CAMPER wearing marssuits, drive the CAMPER to the MAV, then transfer to <i>Kepler</i>.</li>
+	<li>The CAMPER is remotely driven back to the SHAB so it won&rsquo;t be damaged by the launch of the MAV.</li>
+	<li>The MAV, with crew, launches from Mars surface.</li>
+	<li>On approach to <i>Adeona</i>&rsquo;s orbit, <i>Kepler</i> separates from the main body of the MAV, which is discarded. It will circle Mars for a while before falling back to the surface; or it could remain on orbit for future reuse.</li>
+	<li><i>Kepler</i> performs MOR (Mars Orbit Rendezvous) with <i>Adeona</i>, and the crew transfers the samples and themselves to the THAB.</li>
+	<li><i>Kepler</i> is undocked and left on Mars orbit for future recovery and reuse.</li>
+	<li>Any surplus contingency food and water is jettisoned to reduce mass.</li>
+	<li><i>Adeona</i> performs TEI (Trans-Earth Injection) and flies back to Earth on a minimum-energy Hohmann MTO for ~6 months.</li>
+	<li>The 8<sup>th</sup> empty propellant pod is jettisoned to reduce mass.</li>
+	<li><i>Adeona</i> performs EOI (Earth Orbit Insertion) to reach HEEO.</li>
+	<li>The 9<sup>th</sup> empty propellant pod is jettisoned to reduce mass.</li>
+	<li><i>Adeona</i> performs an orbital transfer burn to return to LEO.</li>
+	<li>A Falcon 9 with <i>Newton</i> is launched from Earth.</li>
+	<li><i>Newton</i> performs EOR with <i>Adeona</i>.</li>
+	<li>The crew transfers themselves and their samples from the THAB to <i>Newton</i>.</li>
+	<li><i>Newton</i> undocks and performs EDL to Earth surface.</li>
+	<li>The crew and samples are quarantined.</li>
+</ol>
+
+<h4>Phase 6: Recover/Prepare</h4>
+
+<ol>
+	<li>Alfa Crew is debriefed, and commence physical rehabilitation to restore fitness.</li>
+	<li>Charlie Crew is selected and trained. (Bravo Crew will have departed for Mars in the second MTV about 4 months prior to Alfa Crew&rsquo;s return.)</li>
+	<li>Missions are conducted to refurbish and refill <i>Adeona</i> with propellant in preparation for Charlie Mission in 22 months.</li>
+	<li>Additional hardware and supplies sent to the IMRS, such as solar panels, greenhouse modules, replacement parts, etc.</li>
+</ol>

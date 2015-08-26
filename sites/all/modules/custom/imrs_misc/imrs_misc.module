@@ -101,7 +101,7 @@ function imrs_misc_block_view($delta = '') {
  * @return string
  */
 function imrs_misc_html_dir() {
-  return DRUPAL_ROOT . "/sites/default/files/html";
+  return DRUPAL_ROOT . "/sites/default/media/html";
 }
 
 /**
@@ -197,7 +197,12 @@ function imrs_misc_node_view($node, $view_mode, $langcode) {
         // The file has been updated.
 
         // Fix file paths and links.
-        $file_html = str_replace('src="images', 'src="/sites/default/files/images', $file_html);
+        $file_html = str_replace(
+          array(
+            'src="images',
+            'src="/sites/default/files/images'
+          ),
+          'src="/sites/default/media/images', $file_html);
         $file_html = preg_replace('/"([a-z0-9]+)\.xhtml/', '"/$1', $file_html);
         $file_html = preg_replace('/<h2>(\d+)\.(\d+)\./', '<h2 id="section$1-$2">$1.$2.', $file_html);
         $file_html = preg_replace('/<h3>(\d+)\.(\d+)\.(\d+)\./', '<h3 id="section$1-$2-$3">$1.$2.$3.', $file_html);
