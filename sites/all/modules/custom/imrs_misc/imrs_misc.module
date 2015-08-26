@@ -5,12 +5,27 @@
  * @since 15-Feb-2014 20:19
  */
 
+/**
+ * Implements hook_init().
+ */
 function imrs_misc_init() {
   require_once DRUPAL_ROOT . "/sites/all/libraries/star/php/strings.php";
   require_once DRUPAL_ROOT . "/sites/all/libraries/star/php/arrays.php";
   require_once DRUPAL_ROOT . "/sites/all/libraries/star/php/objects.php";
 
   dbg_on();
+}
+
+/**
+ * Implements hook_menu().
+ */
+function imrs_misc_menu() {
+  $items['admin/scale-images'] = array(
+    'page callback' => 'imrs_misc_scale_images',
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
 }
 
 /**
@@ -25,7 +40,7 @@ function imrs_misc_wysiwyg_editor_settings_alter(&$settings, $context) {
 }
 
 /**
- * Implement hook_menu_alter().
+ * Implements hook_menu_alter().
  */
 function imrs_misc_menu_alter(&$items) {
   // Remove register and password forms so no-one can join:
@@ -223,6 +238,36 @@ function imrs_misc_node_view($node, $view_mode, $langcode) {
         // Update the content:
         $node->content['field_html_editor'][0]['#markup'] = $file_html;
       }
+    }
+  }
+}
+
+/**
+ * Scale any images that are wider than 860px to that width.
+ */
+function imrs_misc_scale_images() {
+  $dir = DRUPAL_ROOT . '/sites/default/media/images';
+  $files = scandir($dir);
+  foreach ($files as $file) {
+    echo "<hr>";
+    $path = "$dir/$file";
+    dbg($path);
+    if (is_dir($path)) {
+      echobr("Directory, skipping.");
+      continue;
+    }
+
+    $image = image_load($path);
+    dbg($image);
+
+    if ($image && $image->info['width'] > 860) {
+      echobr("Can scale that bitch.");
+      $result = image_scale($image, 860);
+      dbg($result);
+      dbg($image);
+
+      $dest = str_replace('/sites/default/media/images', '/sites/default/media/images/scaled', $path);
+      image_save($image, $dest);
     }
   }
 }
