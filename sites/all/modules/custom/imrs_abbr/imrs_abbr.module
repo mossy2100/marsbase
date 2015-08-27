@@ -11,8 +11,8 @@
 function imrs_abbr_init() {
   drupal_add_js(drupal_get_path('module', 'imrs_abbr') . '/imrs_abbr.js');
   $abbrev = [
-    'chemicals' => sort_by_key_length_desc(imrs_abbr_chemicals()),
-    'acronyms' => sort_by_key_length_desc(imrs_abbr_acronyms()),
+    'chemicals' => sort_by_key_length(imrs_abbr_chemicals()),
+    'acronyms' => sort_by_key_length(imrs_abbr_acronyms()),
   ];
   drupal_add_js($abbrev, 'setting');
 
@@ -41,78 +41,14 @@ function imrs_abbr_menu() {
  *
  * @return bool
  */
-function sort_by_key_length_desc(array $array) {
+function sort_by_key_length(array $array) {
   uksort($array, function ($a, $b) {
     $len_a = strlen($a);
     $len_b = strlen($b);
-    return ($len_a > $len_b) ? -1 : (($len_a < $len_b) ? 1 : 0);
+    return ($len_a < $len_b) ? -1 : (($len_a > $len_b) ? 1 : 0);
   });
   return $array;
 }
-
-///**
-// * Array of chemical element abbreviations.
-// *
-// * @return array
-// */
-//function imrs_abbr_elements() {
-//  return [
-//    'Ar' => [
-//      'argon',
-//      "A noble gas, non-reactive, but toxic in high concentrations. About 1% of Earth’s atmo, 2% of Mars’. Used in welding."
-//    ],
-//    'C' => [
-//      'carbon',
-//      "One of the most useful and abundant of all elements. Definitive element of organic molecules. Found in wood, plastic, steel, diamond, nanotubes and many other materials."
-//    ],
-//    'H' => [
-//      'hydrogen',
-//      "The lightest and most abundant element in the universe. The main element in stars, commonly found in water and hydrocarbons."
-//    ],
-//    'N' => [
-//      'nitrogen',
-//      "An essential element for life, found in all living things. Comprises about 80% of Earth’s atmosphere."
-//    ],
-//    'O' => [
-//      'oxygen',
-//      "An essential element for life, and extremely abundant. Most often found in water, air as (O2), and in rocks as metal oxides."
-//    ],
-//    'Pu' => [
-//      'plutonium',
-//      "A radioactive metal often used as power source in mobile robots and spacecraft."
-//    ],
-//  ];
-//}
-
-///**
-// * Generate HTML table of elements.
-// *
-// * @return string
-// */
-//function imrs_abbr_element_table() {
-//  $elements = imrs_abbr_elements();
-//  $header = [
-//    'Symbol',
-//    'Element',
-//    'Description'
-//  ];
-//  $rows = [];
-//  foreach ($elements as $abbr => $element) {
-//    $rows[] = [
-//      [
-//        'data' => $abbr,
-//        'class' => 'abbr'
-//      ],
-//      $element[0],
-//      $element[1]
-//    ];
-//  }
-//  return theme('table', [
-//    'header' => $header,
-//    'rows' => $rows,
-//    'sticky' => FALSE
-//  ]);
-//}
 
 /**
  * Array of chemical abbreviations.
@@ -121,52 +57,26 @@ function sort_by_key_length_desc(array $array) {
  */
 function imrs_abbr_chemicals() {
   return [
-    "Ar" => ["argon", "A noble gas, non-reactive, but toxic in high concentrations. About 1% of Earth&rsquo;s atmosphere and 2% of Mars&rsquo;s. Used in welding."],
-    "Pu" => ["plutonium", "A radioactive metal sometimes used as power source in mobile robots and spacecraft."],
-    "CH<sub>4</sub>" => ["methane", "Simplest hydrocarbon, non-toxic, major constituent of natural gas, great fuel."],
-    "CH<sub>3</sub>OH" => ["methanol", "The simplest alcohol. A light, volatile, colourless, flammable liquid that can be used as a fuel or to make other chemicals."],
-    "CO" => ["carbon monoxide", "Toxic gas found in car exhausts. Can be used in fuel cells and iron refining."],
-    "CO<sub>2</sub>" => ["carbon dioxide", "Non-toxic in small concentrations, exhaled by animals and consumed by plants (photosynthesis). Comprises about 96% of the atmospheres of both Mars and Venus."],
-    "H<sub>2</sub>" => ["hydrogen", "The most abundant and lightest gas in the Universe."],
-    "H<sub>2</sub>O" => ["water", "Essential for life, extremely abundant in the Universe, an excellent solvent, we&rsquo;re mostly made of it, Earth is mostly covered in it, you can swim in it, wash with it, throw it on people during Thai New Year, even drink it."],
-    "N<sub>2</sub>" => ["nitrogen", "Non-toxic and a good buffer gas. Comprises about 78% of Earth&rsquo;s atmosphere, 2% of Mars&rsquo;s, 3.5% of Venus&rsquo;s, and 95% of Titan&rsquo;s."],
-    "NH<sub>3</sub>" => ["ammonia", "A metabolism product and important component of fertiliser."],
-    "NO" => ["nitric oxide", "Important biological regulator relevant to neurology, physiology and immunology. Non-toxic, but rapidly oxidises to toxic NO<sub>2</sub> in the atmosphere."],
-    "NO<sub>2</sub>" => ["nitrogen dioxide", "A brown toxic gas and major air pollutant, commonly produced by internal combustion engines."],
-    "O<sub>2</sub>" => ["oxygen", "Inhaled by animals, exhaled by plants. Extremely abundant in the Universe, comprising about 20% of Earth&rsquo;s atmosphere. Most common oxidiser used in rocket propellant."],
-    "O<sub>3</sub>" => ["ozone", "A toxic form of oxygen that absorbs ultra-violet radiation. Found in the upper atmosphere."],
+    "Ar" => "argon",
+    "C" => "carbon",
+    "H" => "hydrogen",
+    "N" => "nitrogen",
+    "O" => "oxygen",
+    "Pu" => "plutonium",
+    "CH<sub>4</sub>" => "methane",
+    "CH<sub>3</sub>OH" => "methanol",
+    "CO" => "carbon monoxide",
+    "CO<sub>2</sub>" => "carbon dioxide",
+    "H<sub>2</sub>" => "hydrogen",
+    "H<sub>2</sub>O" => "water",
+    "N<sub>2</sub>" => "nitrogen",
+    "NH<sub>3</sub>" => "ammonia",
+    "NO" => "nitric oxide",
+    "NO<sub>2</sub>" => "nitrogen dioxide",
+    "O<sub>2</sub>" => "oxygen",
+    "O<sub>3</sub>" => "ozone",
   ];
 }
-
-///**
-// * Generate HTML table of compounds.
-// *
-// * @return string
-// */
-//function imrs_abbr_compound_table() {
-//  $compounds = imrs_abbr_compounds();
-//  $header = [
-//    'Symbol',
-//    'Compound',
-//    'Description'
-//  ];
-//  $rows = [];
-//  foreach ($compounds as $abbr => $compound) {
-//    $rows[] = [
-//      [
-//        'data' => $abbr,
-//        'class' => 'abbr'
-//      ],
-//      $compound[0],
-//      $compound[1]
-//    ];
-//  }
-//  return theme('table', [
-//    'header' => $header,
-//    'rows' => $rows,
-//    'sticky' => FALSE
-//  ]);
-//}
 
 /**
  * Array of acronyms.
@@ -175,443 +85,158 @@ function imrs_abbr_chemicals() {
  */
 function imrs_abbr_acronyms() {
   return [
-    "AEB" => ["Agência Espacial Brasileira", "Brazilian Space Agency."],
-    "AG" => ["Artificial Gravity", "Sensation of gravity, usually produced by centripetal force."],
-    "ASRG" => ["Advanced Stirling Radioisotope Generator", "Stirling engine powered by a large radioisotope heater unit."],
-    "ATV" => ["All Terrain Vehicle", "Quad bike suited for driving on rough terrain, such as on Mars."],
-    "AWESOM" => ["Autonomous Water Extraction from the Surface Of Mars", "Method proposed for extracting water from the Martian regolith using a mobile robot."],
-    "BP" => ["Bundle Protocol", "Internet protocol designed for DTNs."],
-    "CAMPER" => ["Crewed Adaptable Multipurpose Pressurised Exploration Rover", "A pressurised rover for multi-sol excursions on Mars, featuring robotic arms and attachments such as a drill and excavator bucket."],
-    "CCD" => ["Charge-Coupled Device", "Component used in digital cameras for detecting light."],
-    "CEO" => ["Chief Executive Officer", "Senior executive position in a company."],
-    "CIGS" => ["Copper Indium Gallium Selenide", "Semi-conductor material used as a substrate on flexible, thin-film solar cells."],
-    "CME" => ["Coronal Mass Ejection", "Massive burst of electrons, ions and atoms from the Sun&rsquo;s corona into space. Also known as a solar flare."],
-    "CNSA" => ["China National Space Administration", "Space agency of China."],
-    "COSPAR" => ["Committee for Space Research", "Committee that promotes international collaboration with respect to scientific research in space."],
-    "COTS" => ["Commercial Off The Shelf", "Component that can be purchased from a commercial vendor, rather than custom-designed and built from scratch."],
-    "CRISM" => ["Compact Reconnaissance Imaging Spectrometer for Mars", "A visible-infrared spectrometer aboard the Mars Reconnaissance Orbiter searching for mineralogic indications of past and present water on Mars."],
-    "CRS" => ["Communications Relay Satellite", "A satellite that receives and retransmits communication signals."],
-    "CSA" => ["Canadian Space Agency", "Space agency of Canada."],
-    "DCS" => ["Decompression Sickness", "Illness caused by dissolved gases (usually nitrogen) forming bubbles in the blood upon depressurisation."],
-    "DRA" => ["Design Reference Architecture", "NASA&rsquo;s fundamental architecture and assumptions for sending humans to Mars."],
-    "DSN" => ["Deep Space Network", "Worldwide network of large antennas and communication facilities located in California, Spain and Australia, used for tracking interplanetary spacecraft."],
-    "DTN" => ["Delay or Disruption Tolerant Networking", "Approach to computer network architecture where the network may be subject to delays or disruption, such as in space."],
-    "ECLSS" => ["Environment Control and Life Support System", "System for maintaining a vehicle or habitat&rsquo;s environment at the right conditions to support human life."],
-    "EDC" => ["Earth Descent Capsule", "Crew Dragon launched from Earth at the end of the mission, which the crew use to land on Earth. Also known as <i>Newton</i>."],
-    "EDL" => ["Entry Descent and Landing", "Process of landing a spacecraft on a planet with an atmosphere."],
-    "EDRS" => ["European Data Relay System", "Also known as &ldquo;SpaceDataHighway&rdquo;. Collection of satellites in GEO providing high bandwidth laser communications between satellites, spacecraft and ground stations."],
-    "EELV" => ["Evolved Expendable Launch Vehicle", "Expendable launch system program designed to assure access to space for US government launches, and make them more affordable and reliable."],
-    "EMC" => ["Earth-Mars Capsule", "Crew Dragon that carries the crew from Earth surface to Earth orbit, then from Mars orbit to Mars surface. Also known as <i>Einstein</i>."],
-    "EOI" => ["Earth Orbit Insertion", "Orbital manoeuvre that moves a spacecraft into Earth orbit."],
-    "EOR" => ["Earth Orbit Rendezvous", "When two spacecraft meet and dock in Earth orbit."],
-    "EP" => ["Electric Propulsion", "Propulsion method that uses electricity to produce positive ions, which are then expelled using magnetic forces to create thrust."],
-    "ERV" => ["Earth Return Vehicle", "Vehicle to carry humans from Mars to Earth."],
-    "ESA" => ["European Space Agency", "Space agency of Europe, comprised of 20 member nations."],
-    "EVA" => ["Extra-Vehicular Activity", "When an astronaut goes outside a vehicle (e.g. spacecraft or rover) or habitat wearing a spacesuit."],
-    "FMARS" => ["Flashline Mars Arctic Research Station", "MARS at Haughton Crater on Devon Island in the Canadian Arctic."],
-    "G-FOLD" => ["Guidance for Fuel Optimal Large Diverts", "Navigation system that calculates optimised trajectory corrections in real time."],
-    "GNC" => ["Guidance, Navigation and Control", "Spacecraft subsystem responsible for controlling its position and velocity."],
-    "GPS" => ["Global Positioning System", "Navigation system that can pinpoint your location anywhere on Earth."],
-    "GRS" => ["Gamma Ray Spectrometer", "An instrument on Mars Odyssey."],
-    "HD" => ["High Definition", "Camera, image or video with high resolution."],
-    "HEEO" => ["Highly Elliptical Earth Orbit", "An equatorial orbit around Earth with a low perigee (~1000 km) and a high apogee (geostationary altitude or higher)."],
-    "HEMO" => ["Highly Elliptical Mars Orbit", "An equatorial orbit around Mars with a low periareon and a high apoareon."],
-    "HiRISE" => ["High Resolution Imaging Science Experiment", "Camera in Mars orbit sending back beautiful high resolution colour images of Mars."],
-    "HI-SEAS" => ["Hawaii Space Exploration Analog and Simulation", "A MARS on the slopes of the Mauna Loa volcano in Hawaii."],
-    "HLCRS" => ["Heliocentric Laser Communications Relay Satellite", "An LCRS in orbit around the Sun."],
-    "HLLV" => ["Heavy Lift Launch Vehicle", "Rocket capable of lifting between 20 and 50 tonnes to LEO."],
-    "HMM" => ["Human Mars Mission", "Space mission that sends humans to Mars."],
-    "HSF" => ["Human Space Flight", "Any activities involving humans in space."],
-    "IMRS" => ["International Mars Research Station", "Mars base to be developed by the world&rsquo;s leading space agencies and made available to all nations for science and engineering research."],
-    "IP" => ["Internet Protocol", "Communications protocol developed for the Internet."],
-    "ISAP" => ["In Situ Air Production", "Producing breathable air from local resources."],
-    "ISECG" => ["International Space Exploration Coordinating Group", "International consortium of space agencies collaborating on global space exploration policies and strategies."],
-    "ISEP" => ["In Situ Electricity Production", "Producing electrical energy from local resources."],
-    "ISFP" => ["In Situ Food Production", "Producing food from local resources."],
-    "ISPP" => ["In Situ Propellant Production", "Producing rocket propellant from local resources."],
-    "ISRO" => ["Indian Space Research Organisation", "Space agency of India."],
-    "ISRU" => ["In Situ Resource Utilisation", "Making use of local resources."],
-    "ISS" => ["International Space Station", "Space station built by international partners."],
-    "ISWP" => ["In Situ Water Production", "Producing potable water from local resources."],
-    "IT" => ["Information Technology", "Software, hardware and networking."],
-    "ITN" => ["Interplanetary Transport Network", "A collection of gravitationally-determined pathways through the Solar System that require minimum energy for a spacecraft to follow."],
-    "IVA" => ["Intra-Vehicular Activity", "Activity inside a vehicle (e.g. spacecraft or rover) or habitat."],
-    "JAXA" => ["Japan Aerospace Exploration Agency", "Space agency of Japan."],
-    "JSA" => ["Job Safety Analysis", "A process of optimising safety for a work task (such as an EVA) by going through the steps involved, identifying possible hazards, and developing strategies for mitigating these."],
-    "KARI" => ["Korea Aerospace Research Institute", "Space agency of South Korea."],
-    "LCRD" => ["Laser Communications Relay Demonstration", "Mission to demonstrate laser communications between satellites, ground stations and spacecraft, throughout Solar System."],
-    "LCH4" => ["Liquid Methane", "Versatile and inexpensive rocket fuel."],
-    "LCRS" => ["Laser Communications Relay Satellite", "A CRS utilising laser communications."],
-    "LED" => ["Light-Emitting Diode", "Diode that produces coloured light when current is flowing through it, commonly used in consumer electronics."],
-    "LEO" => ["Low Earth Orbit", "Orbit around Earth that is low (e.g. the ISS is in LEO at about 300 km up)."],
-    "LH2" => ["Liquid Hydrogen", "Hydrogen in liquid form, as used in rocket propellant."],
-    "LION" => ["Landing with Inertial and Optical Navigation", "GNC technology that uses landmark recognition to facilitate pinpoint landings on worlds without positioning satellites."],
-    "LLCD" => ["Lunar Laser Communication Demonstration", "Experiment in laser communications between a satellite in lunar orbit (Lunar Atmosphere and Dust Environment Explorer) and a ground station on Earth."],
-    "LNG" => ["Liquid Natural Gas", "Mined gaseous hydrocarbon fossil fuel, comprised mainly of methane."],
-    "LMO" => ["Low Mars Orbit", "Orbit around Mars that is low (e.g. 200 km)."],
-    "LOC" => ["Loss Of Crew", "Something bad that could happen during a mission."],
-    "LOM" => ["Loss Of Mission", "Not as bad as LOC, but still fairly undesirable."],
-    "LOX" => ["Liquid Oxygen", "Oxygen in liquid form, as used in rocket propellant."],
-    "LPS" => ["Local Positioning System", "A navigation system that covers only a small area of land (c.f. GPS), usually defined by three or more signalling beacons."],
-    "LZ" => ["Landing Zone", "Patch of open ground where an aerial or space vehicle can land."],
-    "MAC" => ["Mars Ascent Capsule", "Crew Dragon which forms the topmost section of the MAV. Also known as <i>Kepler</i>."],
-    "MARS" => ["Mars Analogue Research Station", "Base in a Mars analogue environment on Earth where simulated Mars missions are conducted."],
-    "MAV" => ["Mars Ascent Vehicle", "Vehicle to carry people from Mars surface to Mars orbit."],
-    "MCC" => ["Mission Control Centre", "Team and facility on Earth that manage a Mars mission and communicate with the crew."],
-    "MCOS" => ["Mars Communication and Observation Satellite", "Satellite in aerostationary orbit with the same longitude as the IMRS, for maintaining communications link with Earth and watching the base."],
-    "MCP" => ["Mechanical Counter-Pressure", "Type of spacesuit that uses elasticised material instead of gas to provide pressure to an astronaut&rsquo;s body."],
-    "MCT" => ["Mars Colonial Transporter", "A new SHLLV being developed by SpaceX, capable of delivering up to 100 tonnes to the surface of Mars."],
-    "MDRS" => ["Mars Desert Research Station", "MARS near Hanksville in Utah, USA."],
-    "MER" => ["Mars Exploration Rover", "Twin rovers <i>Spirit</i> and <i>Opportunity</i> that have spent many years exploring Mars."],
-    "MGS" => ["Mars Global Surveyor", "NASA spacecraft in Mars orbit."],
-    "MIT" => ["Massachusetts Institute of Technology", "University in Massachusetts, USA, known for developing breakthrough technologies."],
-    "MLI" => ["Multi-Layer Insulation", "Multiple layers of thin sheets of material designed to reduce heat loss by thermal radiation."],
-    "MLLV" => ["Medium Lift Launch Vehicle", "Rocket capable of lifting between 2 and 20 tonnes to LEO."],
-    "MOI" => ["Mars Orbit Insertion", "Orbital manoeuvre that moves a spacecraft into Mars orbit."],
-    "MOLA" => ["Mars Orbiting Laser Altimeter", "Instrument onboard MGS that measures the topography of Mars."],
-    "MOR" => ["Mars Orbit Rendezvous", "When two spacecraft meet and dock in Mars orbit."],
-    "MSA" => ["Mars Society Australia", "Australian branch of the Mars Society."],
-    "MSC" => ["Mars Supply Capsule", "Cargo Dragon used to deliver supplies to the Martian surface."],
-    "MTO" => ["Mars Transfer Orbit", "A Hohmann transfer orbit that connects Earth&rsquo;s orbit with Mars&rsquo;s."],
-    "MTV" => ["Mars Transfer Vehicle", "Vehicle to carry humans from Earth to Mars."],
-    "NASA" => ["National Aeronautics and Space Administration", "Space agency of the USA."],
-    "NDS" => ["NASA Docking System", "Universal docking system used on the ISS, Soyuz, Dragon, B330 and other spacecraft."],
-    "NEP" => ["Nuclear Electric Propulsion", "Form of EP where the electricity is generated from nuclear energy."],
-    "NERVA" => ["Nuclear Engine for Rocket Vehicle Application", "An American program to develop a thermal nuclear propulsion system for interplanetary crewed missions."],
-    "NTR" => ["Nuclear Thermal Rocket", "Rocket with a propulsion system that uses nuclear fission to superheat reaction mass."],
-    "OMS" => ["Orbital Manoeuvring System", "System of thrusters for manoeuvring on orbit."],
-    "OPALS" => ["Optical PAyload for Lasercomm Science", "Experiment in laser communications between ISS and ground stations."],
-    "PHP-M" => ["Permanent Human Presence on Mars", "When there&rsquo;s always one or more people on Mars."],
-    "PLSS" => ["Personal Life Support System", "Part of a spacesuit that maintains a healthy environment for the occupant."],
-    "PT" => ["Physical Training", "Exercise."],
-    "PV" => ["Photovoltaic", "Conversion of light into electricity."],
-    "RCS" => ["Reaction Control System", "System of thrusters that control a spacecraft&rsquo;s orientation in space."],
-    "RH" => ["Relative Humidity", "Amount of water vapour in the atmosphere expressed as a degree of saturation."],
-    "RLS" => ["Reusable Launch System", "Rocket that can be reused multiple times."],
-    "ROI" => ["Return On Investment", "What you get back from an investment in a project or business."],
-    "RP-1" => ["Rocket Propellant-1 <i>or</i> Refined Petroleum-1", "Highly refined form of kerosene used as rocket fuel."],
-    "RTG" => ["Radioisotope Thermoelectric Generator", "Generator that converts heat produced by radioactive decay into electricity."],
-    "RWGS" => ["Reverse Water Gas Shift", "Chemical reaction that reacts CO<sub>2</sub> with H<sub>2 </sub>to produce CO and H<sub>2</sub>O."],
-    "SEP" => ["Solar Electric Propulsion", "Form of EP where the electricity is generated from solar energy."],
-    "SCUBA" => ["Self-Contained Underwater Breathing Apparatus", "Equipment to enable breathing when diving underwater."],
-    "SHAB" => ["Mars Surface Habitat", "Habitat for the surface of Mars."],
-    "SHLLV" => ["Super Heavy Lift Launch Vehicle", "Rocket capable of lifting more than 50 tonnes to LEO."],
-    "SLS" => ["Space Launch System", "Space Shuttle-derived SHLLV currently in development by NASA."],
-    "SN" => ["Space Network", "Network of satellites and ground stations that support communications with spacecraft close to Earth."],
-    "SOEC" => ["Solid Oxide Electrolysis Cell", "A solid oxide fuel cell operated in regenerative mode to separate CO<sub>2</sub> into CO and O<sub>2</sub>."],
-    "SP" => ["Special Publication", "Publication that is special (esp. NASA)."],
-    "SSAU" => ["State Space Agency of Ukraine", "Space agency of Ukraine."],
-    "SSTO" => ["Single Stage To Orbit", "Rocket that can reach orbit with only one stage."],
-    "STEM" => ["Science, Technology, Engineering and Mathematics", "Major educational topics related to space exploration and settlement."],
-    "TCP" => ["Transmission Control Protocol", "Internet protocol that ensures reliable data communication."],
-    "TDRSS" => ["Tracking and Data Relay Satellite System", "Network of communications satellites and ground stations used by NASA for space communications."],
-    "TEI" => ["Trans-Earth Injection", "Orbital manoeuvre that places a spacecraft on a trajectory towards Earth."],
-    "THAB" => ["Mars Transit Habitat", "Habitat for the flight from Earth to Mars and back."],
-    "TMI" => ["Trans-Mars Injection", "Orbital manoeuvre that places a spacecraft on a trajectory towards Mars (see MTO)."],
-    "TRL" => ["Technology Readiness Level", "Level of maturity of a technology, and an assessment of its suitability for space applications."],
-    "TWR" => ["Thrust-to-Weight Ratio", "The ratio between an engine&rsquo;s thrust and its weight in Earth gravity."],
-    "VASIMR" => ["Variable Specific Impulse Magnetoplasma Rocket", "Spacecraft propulsion technology that uses radio waves to to produce a plasma, which is then accelerate using magnetic fields."],
-    "VTOL" => ["Vertical Take-Off and Landing", "Refers to aircraft or spacecraft that can take-off, hover and land vertically."],
-    "WAVAR" => ["WAter Vapour Adsorption Reactor", "Device for extracting water from the Martian atmosphere."],
-    "WRS" => ["Water Recovery System", "A high-efficiency water recycling unit for a space habitat."],
-    "ZPB" => ["Zero Prebreathe", "When no time is required for prebreathing before EVA, usually because of the spacesuit technology."],
-    "ZPS" => ["Zero Prebreathe Spacesuit", "Spacesuit providing a high enough pressure that prebreathing is not required."],
-  ];
-}
-
-///**
-// * Generate HTML table of acronyms.
-// *
-// * @return string
-// */
-//function imrs_abbr_acronym_table() {
-//  $acronyms = imrs_abbr_acronyms();
-//  $header = [
-//    'Symbol',
-//    'Acronym',
-//    'Description'
-//  ];
-//  $rows = [];
-//  foreach ($acronyms as $abbr => $acronym) {
-//    $rows[] = [
-//      [
-//        'data' => $abbr,
-//        'class' => 'abbr'
-//      ],
-//      $acronym[0],
-//      $acronym[1]
-//    ];
-//  }
-//  return theme('table', [
-//    'header' => $header,
-//    'rows' => $rows,
-//    'sticky' => FALSE
-//  ]);
-//}
-
-/**
- * Generate the HTML with tables for chemical elements and compounds, and
- * acronyms.
- *
- * @return string
- */
-function imrs_abbr_table() {
-  return "
-    <p>Numerous acronyms appear in this document; all are listed here for easy
-    reference. They are drawn from several sources:
-    <ul>
-      <li>Space</li>
-      <li>Military</li>
-      <li>Mining</li>
-      <li>Newly invented in this document </li>
-    </ul>
-    To mitigate acronym overload and reduce time spent flicking back and forth to this page, acronyms are expanded on first usage.</p>
-    <p>&nbsp;</p>
-    <h2>Chemical elements</h2>" . imrs_abbr_element_table() . "
-    <p>&nbsp;</p>
-    <h2>Chemical compounds</h2>" . imrs_abbr_compound_table() . "
-    <p>&nbsp;</p>
-    <h2>Acronyms</h2>" . imrs_abbr_acronym_table();
-}
-
-/**
- * Array of references.
- *
- * @return array
- */
-function imrs_abbr_references() {
-  return [
-    'ACIKMESE' => [
-      'ref' => "B. Acikmese, J. Casoliva, and J. M. Carson III, “G-FOLD: A Real-Time Implementable Fuel Optimal Large Divert Guidance Algorithm for Planetary Pinpoint Landing,” Concepts and Approaches for Mars Exploration, 2012.",
-      'pdf' => 'Acikmese, Casoliva, III - 2012 - G-FOLD A Real-Time Implementable Fuel Optimal Large Divert Guidance Algorithm for Planetary Pinpoint La.pdf',
-      'links' => ['http://www.researchgate.net/publication/258676350_G-FOLD_A_Real-Time_Implementable_Fuel_Optimal_Large_Divert_Guidance_Algorithm_for_Planetary_Pinpoint_Landing',],
-    ],
-    'BONIN' => [
-      'ref' => "G. Bonin, “Reaching Mars for Less: The Reference Mission Design of the MarsDrive Consortium,” 25th International Space Development Conference, Los Angeles, California, May 2006.",
-      'pdf' => 'Bonin - 2006 - Reaching Mars for Less.pdf',
-      'links' => [
-        'http://www.mendeley.com/research/reaching-mars-less-reference-mission-design-marsdrive-consortium/',
-        'http://www.researchgate.net/publication/228802804_Reaching_Mars_for_less_The_reference_mission_design_of_the_MarsDrive_Consortium',
-      ],
-    ],
-    'CAMPBELL' => [
-      'ref' => "P. D. Campbell, “Internal Atmospheric Pressure and Composition for Planet Surface Habitats and Extravehicular Mobility Units,” Lockheed Engineering and Sciences Company, Contract NAS9-17900, Job Order K1-ETB, Report No. JSC-25003, for NASA Man-Systems Division, 1991.",
-      'pdf' => 'Campbell - 1991 - Internal Atmospheric Pressure and Composition for Planet Surface Habitats and Extravehicular Mobility Units.pdf',
-      'links' => ['http://ares.jsc.nasa.gov/humanexplore/exploration/exlibrary/docs/eic017.html',],
-    ],
-    'COOPER' => [
-      'ref' => "C. Cooper, W. Hofstetter, J. A. Hoffman, and E. F. Crawley, “Assessment of architectural options for surface power generation and energy storage on human Mars missions,” Acta Astronaut., vol. 66, no. 7–8, pp. 1106–1112, Apr 2010.",
-      'pdf' => 'Cooper - 2009 - Assessment of architectural options for surface power generation and energy storage on human Mars missions.pdf',
-      'links' => [
-        'http://www.mendeley.com/research/assessment-architectural-options-surface-power-generation-energy-storage-human-mars-missions/',
-        'https://www.researchgate.net/publication/223477541_Assessment_of_architectural_options_for_surface_power_generation_and_energy_storage_on_human_Mars_missions',
-      ],
-    ],
-    'DELAUNE' => [
-      'ref' => "J. Delaune, G. Le Besnerais, M. Sanfourche, T. Voirin, C. Bourdarias, and J. Farges, “Optical Terrain Navigation for Pinpoint Landing: Image Scale and Position-Guided Landmark Matching,” Proceedings of the 35th Annual Guidance and Control Conference, 2012.",
-      'pdf' => 'Delaune et al. - 2012 - Optical Terrain Navigation for Pinpoint Landing Image Scale and Position-Guided Landmark Matching.pdf',
-      'links' => ['http://www.mendeley.com/research/optical-terrain-navigation-pinpoint-landing-image-scale-positionguided-landmark-matching/',],
-    ],
-    'DRAKE' => [
-      'ref' => 'B. G. Drake, “Reference Mission Version 3.0 Addendum to the Human Exploration of Mars: The Reference Mission of the NASA Mars Exploration Study Team,” no. June, 1998.',
-      'pdf' => 'NASA 1998-06 Reference Mission Version 3.0 Addendum.pdf',
-      'links' => [
-        'https://www.researchgate.net/publication/260970073_Reference_Mission_Version_3.0_Addendum_to_the_Human_Exploration_of_Mars_The_Reference_Mission_of_the_NASA_Mars_Exploration_Study_Team',
-        'http://ares.jsc.nasa.gov/HumanExplore/Exploration/EXLibrary/docs/MarsRef/addendum/index.htm',
-      ],
-    ],
-    'DRAKE2' => ['ref' => "B. G. Drake, &ldquo;Human exploration of Mars, Design Reference Architecture 5.0 & rdquo;, 2010, p. 100., Mars Architecture Steering Group, NASA / SP–2009–566.",],
-    'DUFFIELD' => [
-      'ref' => "B. E. Duffield, “Advanced Life Support Requirements Document,” JSC-38571, Revision C, National Aeronautics and Space Administration, Lyndon B. Johnson Space Center, Houston, Texas, 2003.",
-      'pdf' => 'Duffield - 2003 - Advanced Life Support Requirements Document.pdf',
-    ],
-    'ETHRIDGE' => [
-      'ref' => "E. C. Ethridge and W. F. Kaukler, “Microwave Extraction of Volatiles for Mars Science and ISRU,” AIAA Aerospace Sciences Meeting, 2012.",
-      'pdf' => 'Ethridge - Microwave Extraction of Volatiles for Mars Science and ISRU.pdf',
-      'links' => ['https://www.researchgate.net/publication/258676377_Microwave_Extraction_of_Volatiles_for_Mars_Science_and_ISRU',],
-    ],
-    'FOGG' => [
-      'ref' => "M. J. Fogg, “The Utility of Geothermal Energy on Mars,” J. Br. Interplanet. Soc., vol. 49, pp. 403–422, 1996.",
-      'pdf' => 'Fogg - 1996 - The Utility of Geothermal Energy on Mars.pdf',
-      'links' => [
-        'https://www.academia.edu/4156745/The_Utility_of_Geothermal_Energy_on_Mars',
-        'https://www.researchgate.net/publication/260843953_The_utility_of_geothermal_energy_on_Mars',
-      ],
-    ],
-    'GAGE' => [
-      'ref' => "D. Gage, “Mars Base First: A Program-level Optimization for Human Mars Exploration”, J. Cosmol., vol 12, pp. 3904-3911, 2010.",
-      'pdf' => 'Gage - 2010 - Mars Base First - A Program-level Optimization for Human Mars Exploration.pdf',
-      'links' => ['http://journalofcosmology.com/Mars103.html',],
-    ],
-    'GROVER' => [
-      'ref' => "M. R. Grover, M. O. Hilstad, L. M. Elias, K. G. C. M. A. Schneider, C. S. Hoffman, S. Adan-Plaza, and A. P. Bruckner, “Extraction of Atmospheric Water on Mars in Support of the Mars Reference Mission,” MAR 98-062, Proceedings of the Founding Convention of the Mars Society: Part II, ed. R. M. Zubrin and M. Zubrin, Boulder, CO, pp. 659-679, August 13-16, 1998.",
-      'pdf' => 'Grover - 1998 - Extraction of Atmospheric Water on Mars.pdf',
-      'links' => [
-        'http://www.mendeley.com/research/extraction-atmospheric-water-mars-support-mars-reference-mission/',
-        'https://www.researchgate.net/publication/234462002_Extraction_of_Atmospheric_Water_on_Mars_for_the_Mars_Reference_Mission',
-      ],
-    ],
-    'HANFORD' => [
-      'ref' => "A. J. Hanford, “Advanced Life Support Baseline Values and Assumptions Document,” NASA Johnson Space Centre, 2004.",
-      'pdf' => 'Hanford - 2006 - Advanced Life Support Baseline Values and Assumptions Document.pdf',
-      'links' => [
-        'http://www.mendeley.com/catalog/advanced-life-support-baseline-values-assumptions-document/',
-        'https://www.researchgate.net/publication/27238000_Advanced_Life_Support--Baseline_Values_and_Assumptions_Document',
-      ],
-    ],
-    'HOFFMAN' => [
-      'ref' => "S. J. Hoffman and D. I. Kaplan, “Human Exploration of Mars: The Reference Mission of the NASA Mars Exploration Study Team,” NASA Spec. Publ., vol. 6107, no. July, pp. 98–036, 1998.",
-      'pdf' => 'NASA 1997-07 The Reference Mission of the NASA Mars Exploration Study Team.pdf',
-      'links' => [
-        'http://en.wikipedia.org/wiki/NASA_Design_Reference_Mission_3.0',
-        'http://ares.jsc.nasa.gov/HumanExplore/Exploration/EXLibrary/docs/MarsRef/contents.htm',
-        'http://www.astronautix.com/craft/dession3.htm',
-      ],
-    ],
-    'INTERBARTOLO' => [
-      'ref' => "M. A. Interbartolo III, G. B. Sanders, L. Oryshchyn, K. Lee, H. Vaccaro, E. Santiago-Maldonado, and Anthony C. Muscatello, “Prototype Development of an Integrated Mars Atmosphere and Soil-Processing System,” J. Aerosp. Eng., vol 26, SPECIAL ISSUE: In Situ Resource Utilization, pp. 57–66, 2013.",
-      'links' => [
-        'http://www.mendeley.com/catalog/prototype-development-integrated-mars-atmosphere-soilprocessing-system/',
-        'http://ascelibrary.org/doi/abs/10.1061/(ASCE)AS.1943-5525.0000214',
-        'http://www.slideshare.net/minterbartolo/prototype-development-of-an-integrated-mars-atmosphere-and-soil-processing-system'
-      ]
-    ],
-    'SMAC' => [
-      'ref' => "JSC 20584, “Spacecraft Maximum Allowable Concentrations For Airborne Contaminants,” Toxicology Group, Medical Operations Branch, Medical Sciences Division, Space and Life Sciences Directorate, NASA, Johnson Space Center, June 1999.",
-      'pdf' => 'JSC 20584 - 1999 - Spacecraft Maximum Allowable Concentrations For Airborne Contaminants.pdf',
-      'links' => ['http://www.nasa.gov/centers/johnson/slsd/about/divisions/hefd/facilities/toxicology-exposure.html',],
-    ],
-    'LARSON' => [
-      'ref' => "W. J. Larson and L. K. Pranke, “Human Spaceflight: Mission Analysis and Design (Space Technology Series),” McGraw-Hill, 1999.",
-      'links' => [
-        'http://www.amazon.com/Human-Spaceflight-Mission-Analysis-Technology/dp/007236811X',
-        'https://www.mcgraw-hill.co.uk/html/0077230280.html',
-      ],
-    ],
-    'KARCZ' => [
-      'ref' => "J. S. Karcz, S. M. Davis, M. J. Aftosmis, G. A. Allen, N. M. Bakhtian, A. A. Dyakonov, K. T. Edquist, B. J. Glass, A. A. Gonzales, J. L. Heldmann, L. G. Lemke, M. M. Marinova, C. P. Mckay, C. R. Stoker, P. D. Wooster, and K. A. Zarchi, “Red Dragon: Low-Cost Access to the Surface of Mars Using Commercial Capabilities,” Concepts and Approaches for Mars Exploration, 2012.",
-      'pdf' => 'Karcz - 2012 - Red Dragon - Low Cost Access to the Surface of Mars Using Commercial Capabilities.pdf',
-      'links' => ['https://www.researchgate.net/publication/258676367_Red_Dragon_Low-Cost_Access_to_the_Surface_of_Mars_Using_Commercial_Capabilities',]
-    ],
-    'KOZICKI' => [
-      'ref' => "J. Kozicki and J. Kozicka, “Human friendly architectural design for a small Martian base,” Adv. Sp. Res., vol. 48, no. 12, Dec 2011.",
-      'pdf' => 'Kozicki - 2011 - Human friendly architectural design for a small Martian base.pdf',
-      'links' => [
-        'http://www.mendeley.com/research/human-friendly-architectural-design-small-martian-base/',
-        'https://www.researchgate.net/publication/251546729_Human_friendly_architectural_design_for_a_small_Martian_base',
-        'http://www.sciencedirect.com/science/article/pii/S0273117711006466',
-      ],
-    ],
-    'LANSDORP' => [
-      'ref' => "B. Lansdorp, A. A. Wielders, “Mars One Communications System,” http://www.mars-one.com/technology/communications-system (Retrieved 2014-05-26).",
-      'pdf' => 'Lansdorp - 2013 - Mars One Communications System.pdf',
-      'links' => ['http://www.mars-one.com/technology/communications-system',]
-    ],
-    'RHINEHART' => [
-      'ref' => "R. Rhinehart, “Soylent - Free Your Body,” https://campaign.soylent.me/soylent-free-your-body (Retrieved 2013-10-15)",
-      'pdf' => 'Soylent.pdf',
-      'links' => [
-        'http://www.soylent.me/',
-        'http://crowdtilt.soylent.me/',
-      ],
-    ],
-    'STOKER' => [
-      'ref' => "C. R. Stoker, A. Davila, S. Davis, B. Glass, A. Gonzales, J. Heldmann, J. Karcz, L. Lemke, and G. Sanders, “Ice Dragon: A Mission to Address Science and Human Exploration Objectives on Mars,” Concepts and Approaches for Mars Exploration, 2012.",
-      'pdf' => 'Stoker - 2012 - Ice Dragon - A Mission to Address Science and Human Exploration Objectives on Mars.pdf',
-      'links' => [
-        'http://www.mendeley.com/research/ice-dragon-mission-address-science-human-exploration-objectives-mars/',
-        'https://www.researchgate.net/publication/258676196_Ice_Dragon_A_Mission_to_Address_Science_and_Human_Exploration_Objectives_on_Mars',
-        'http://adsabs.harvard.edu/abs/2012LPICo1679.4176S',
-        'http://nix.nasa.gov/search.jsp?R=20120016811&qs=N%3D4294966753%2B4294941275%2B4294965619',
-      ]
-    ],
-    'WAMELINK' => [
-      'ref' => "G. W. W. Wamelink, &ldquo;Growing plants on Mars: Wageningen UR goes extraterrestrial&rdquo;, Wageningen UR, https://www.wageningenur.nl/en/show/Growing-plants-on-Mars-Wageningen-UR-goes-extraterrestrial.htm, 2013, Retrieved 2014-06-09",
-      'pdf' => 'Wamelink - Growing plants on Mars.pdf',
-      'links' => ['https://www.wageningenur.nl/en/show/Growing-plants-on-Mars-Wageningen-UR-goes-extraterrestrial.htm',]
-    ],
-    'WIELDERS' => [
-      'ref' => "A. Wielders, B. Lansdorp, S. Flinkenflögel, B. Versteeg, N. Kraft, E. Vaandrager, M. Wagensveld, A. Dogra, B. Casagrande and N. Aziz, “Mars One: Creating a human settlement on Mars,” European Planetary Science Congress 2013, vol. 8, 2013.",
-      'pdf' => 'Wielders - 2013 - Mars One - Creating a Human Settlement on Mars.pdf',
-    ],
-    'WILLSON' => [
-      'ref' => "D. Willson and J. D. A. Clarke, “A Practical Architecture for Exploration-Focused Manned Mars Missions Using Chemical Propulsion, Solar Power Generation and In-Situ Resource Utilisation,” J. Br. Interplanet. Soc., vol. 58, pp. 181–196, 2005.",
-      'pdf' => 'Willson - 2006 - A Practical Architecture for Exploration-Focused Manned Mars Missions.pdf',
-      'links' => [
-        'http://www.nssa.com.au/ocs/viewabstract.php?id=119&cf=7',
-        'http://www.astronautix.com/craft/marsoz.htm',
-        'http://marssociety.org.au/project/mars-oz',
-      ]
-    ],
-    'ZUBRIN' => [
-      'ref' => "R. M. Zubrin, D. A. Baker, and O. Gwynne, “Mars direct - A simple, robust, and cost effective architecture for the Space Exploration Initiative,” 29th Aerosp. Sci. Meet. AIAA, 1991.",
-      'pdf' => 'Zubrin - 1991 - Mars Direct - A Simple, Robust, and Cost Effective Architecture for the Space Exploration Initiative.pdf',
-      'links' => [
-        'https://www.researchgate.net/publication/4702054_Mars_direct_-_A_simple_robust_and_cost_effective_architecture_for_the_Space_Exploration_Initiative',
-        'http://en.wikipedia.org/wiki/Mars_Direct',
-        'http://www.astronautix.com/craft/marirect.htm',
-      ]
-    ],
+    "AEB" => "Agência Espacial Brasileira",
+    "AG" => "Artificial Gravity",
+    "ASRG" => "Advanced Stirling Radioisotope Generator",
+    "ATV" => "All Terrain Vehicle",
+    "AWESOM" => "Autonomous Water Extraction from the Surface Of Mars",
+    "BP" => "Bundle Protocol",
+    "CAMPER" => "Crewed Adaptable Multipurpose Pressurised Exploration Rover",
+    "CCD" => "Charge-Coupled Device",
+    "CEO" => "Chief Executive Officer",
+    "CIGS" => "Copper Indium Gallium Selenide",
+    "CME" => "Coronal Mass Ejection",
+    "CNSA" => "China National Space Administration",
+    "COSPAR" => "Committee for Space Research",
+    "COTS" => "Commercial Off The Shelf",
+    "CRISM" => "Compact Reconnaissance Imaging Spectrometer for Mars",
+    "CRS" => "Communications Relay Satellite",
+    "CSA" => "Canadian Space Agency",
+    "DCS" => "Decompression Sickness",
+    "DRA" => "Design Reference Architecture",
+    "DSN" => "Deep Space Network",
+    "DTN" => "Delay or Disruption Tolerant Networking",
+    "ECLSS" => "Environment Control and Life Support System",
+    "EDC" => "Earth Descent Capsule",
+    "EDL" => "Entry Descent and Landing",
+    "EDRS" => "European Data Relay System",
+    "EELV" => "Evolved Expendable Launch Vehicle",
+    "EMC" => "Earth-Mars Capsule",
+    "EOI" => "Earth Orbit Insertion",
+    "EOR" => "Earth Orbit Rendezvous",
+    "EP" => "Electric Propulsion",
+    "ERV" => "Earth Return Vehicle",
+    "ESA" => "European Space Agency",
+    "EVA" => "Extra-Vehicular Activity",
+    "FMARS" => "Flashline Mars Arctic Research Station",
+    "G-FOLD" => "Guidance for Fuel Optimal Large Diverts",
+    "GNC" => "Guidance, Navigation and Control",
+    "GPS" => "Global Positioning System",
+    "GRS" => "Gamma Ray Spectrometer",
+    "HD" => "High Definition",
+    "HEEO" => "Highly Elliptical Earth Orbit",
+    "HEMO" => "Highly Elliptical Mars Orbit",
+    "HiRISE" => "High Resolution Imaging Science Experiment",
+    "HI-SEAS" => "Hawaii Space Exploration Analog and Simulation",
+    "HLCRS" => "Heliocentric Laser Communications Relay Satellite",
+    "HLLV" => "Heavy Lift Launch Vehicle",
+    "HMM" => "Human Mars Mission",
+    "HSF" => "Human Space Flight",
+    "IMRS" => "International Mars Research Station",
+    "IP" => "Internet Protocol",
+    "ISAP" => "In Situ Air Production",
+    "ISECG" => "International Space Exploration Coordinating Group",
+    "ISEP" => "In Situ Electricity Production",
+    "ISFP" => "In Situ Food Production",
+    "ISPP" => "In Situ Propellant Production",
+    "ISRO" => "Indian Space Research Organisation",
+    "ISRU" => "In Situ Resource Utilisation",
+    "ISS" => "International Space Station",
+    "ISWP" => "In Situ Water Production",
+    "IT" => "Information Technology",
+    "ITN" => "Interplanetary Transport Network",
+    "IVA" => "Intra-Vehicular Activity",
+    "JAXA" => "Japan Aerospace Exploration Agency",
+    "JSA" => "Job Safety Analysis",
+    "KARI" => "Korea Aerospace Research Institute",
+    "LCRD" => "Laser Communications Relay Demonstration",
+    "LCH4" => "Liquid Methane",
+    "LCRS" => "Laser Communications Relay Satellite",
+    "LED" => "Light-Emitting Diode",
+    "LEO" => "Low Earth Orbit",
+    "LH2" => "Liquid Hydrogen",
+    "LION" => "Landing with Inertial and Optical Navigation",
+    "LLCD" => "Lunar Laser Communication Demonstration",
+    "LNG" => "Liquid Natural Gas",
+    "LMO" => "Low Mars Orbit",
+    "LOC" => "Loss Of Crew",
+    "LOM" => "Loss Of Mission",
+    "LOX" => "Liquid Oxygen",
+    "LPS" => "Local Positioning System",
+    "LZ" => "Landing Zone",
+    "MAC" => "Mars Ascent Capsule",
+    "MARS" => "Mars Analogue Research Station",
+    "MAV" => "Mars Ascent Vehicle",
+    "MCC" => "Mission Control Centre",
+    "MCOS" => "Mars Communication and Observation Satellite",
+    "MCP" => "Mechanical Counter-Pressure",
+    "MCT" => "Mars Colonial Transporter",
+    "MDRS" => "Mars Desert Research Station",
+    "MER" => "Mars Exploration Rover",
+    "MGS" => "Mars Global Surveyor",
+    "MIT" => "Massachusetts Institute of Technology",
+    "MLI" => "Multi-Layer Insulation",
+    "MLLV" => "Medium Lift Launch Vehicle",
+    "MOI" => "Mars Orbit Insertion",
+    "MOLA" => "Mars Orbiting Laser Altimeter",
+    "MOR" => "Mars Orbit Rendezvous",
+    "MSA" => "Mars Society Australia",
+    "MSC" => "Mars Supply Capsule",
+    "MTO" => "Mars Transfer Orbit",
+    "MTV" => "Mars Transfer Vehicle",
+    "NASA" => "National Aeronautics and Space Administration",
+    "NDS" => "NASA Docking System",
+    "NEP" => "Nuclear Electric Propulsion",
+    "NERVA" => "Nuclear Engine for Rocket Vehicle Application",
+    "NTR" => "Nuclear Thermal Rocket",
+    "OMS" => "Orbital Manoeuvring System",
+    "OPALS" => "Optical PAyload for Lasercomm Science",
+    "PHP-M" => "Permanent Human Presence on Mars",
+    "PLSS" => "Personal Life Support System",
+    "PT" => "Physical Training",
+    "PV" => "Photovoltaic",
+    "RCS" => "Reaction Control System",
+    "RH" => "Relative Humidity",
+    "RLS" => "Reusable Launch System",
+    "ROI" => "Return On Investment",
+    "RP-1" => "Rocket Propellant-1 <i>or</i> Refined Petroleum-1",
+    "RTG" => "Radioisotope Thermoelectric Generator",
+    "RWGS" => "Reverse Water Gas Shift",
+    "SEP" => "Solar Electric Propulsion",
+    "SCUBA" => "Self-Contained Underwater Breathing Apparatus",
+    "SHAB" => "Mars Surface Habitat",
+    "SHLLV" => "Super Heavy Lift Launch Vehicle",
+    "SLS" => "Space Launch System",
+    "SN" => "Space Network",
+    "SOEC" => "Solid Oxide Electrolysis Cell",
+    "SP" => "Special Publication",
+    "SSAU" => "State Space Agency of Ukraine",
+    "SSTO" => "Single Stage To Orbit",
+    "STEM" => "Science, Technology, Engineering and Mathematics",
+    "TCP" => "Transmission Control Protocol",
+    "TDRSS" => "Tracking and Data Relay Satellite System",
+    "TEI" => "Trans-Earth Injection",
+    "THAB" => "Mars Transit Habitat",
+    "TMI" => "Trans-Mars Injection",
+    "TRL" => "Technology Readiness Level",
+    "TWR" => "Thrust-to-Weight Ratio",
+    "VASIMR" => "Variable Specific Impulse Magnetoplasma Rocket",
+    "VTOL" => "Vertical Take-Off and Landing",
+    "WAVAR" => "WAter Vapour Adsorption Reactor",
+    "WRS" => "Water Recovery System",
+    "ZPB" => "Zero Prebreathe",
+    "ZPS" => "Zero Prebreathe Spacesuit",
   ];
 }
 
 /**
- * Generate the HTML for the references page.
- *
- * @return string
+ * Import abbreviations from the abbrev.html page, and echo as PHP array pairs.
  */
-function imrs_abbr_ref_list() {
-  $references = imrs_abbr_references();
-  $html = '';
-  $i = 1;
-  foreach ($references as $info) {
-    $html .= "<p id='ref{$i}'>[$i] {$info['ref']}";
-    if (isset($info['pdf'])) {
-      $html .= " <a href='/sites/default/media/doc/{$info['pdf']}' target='_blank'><img src='/sites/all/themes/custom/imrs/images/icons/pdf-icon-16x16.png' title='PDF'></a>";
-    }
-    if (isset($info['links'])) {
-      foreach ($info['links'] as $link) {
-        if (strpos($link, 'mendeley') !== FALSE) {
-          $icon = 'mendeley';
-          $title = 'Mendeley';
-        }
-        elseif (strpos($link, 'academia.edu') !== FALSE) {
-          $icon = 'academia';
-          $title = 'Academia.edu';
-        }
-        elseif (strpos($link, 'researchgate') !== FALSE) {
-          $icon = 'researchgate';
-          $title = 'ResearchGate';
-        }
-        elseif (strpos($link, 'wikipedia') !== FALSE) {
-          $icon = 'wikipedia';
-          $title = 'Wikipedia';
-        }
-        elseif (strpos($link, 'amazon') !== FALSE) {
-          $icon = 'amazon';
-          $title = 'Amazon';
-        }
-        else {
-          $icon = 'external-link';
-          $title = 'External link';
-        }
-        $html .= " <a href='$link' target='_blank'><img src='/sites/all/themes/custom/imrs/images/icons/$icon-icon-16x16.png' title='$title'></a>";
-      }
-    }
-    $html .= "</p>";
-    $i++;
-  }
-  return $html;
-}
-
 function imrs_abbr_import() {
   $path = DRUPAL_ROOT . '/sites/default/media/html/abbrev.html';
   $file_html = file_get_contents($path);
   $n = preg_match_all("|<th class=\"bold\">(.*)</th>\s*<th>(.*)</th>\s*<th>(.*)</th>|", $file_html, $matches);
-//  for ($i = 0; $i < 18; $i++) {
-//    echo '"' . htmlspecialchars($matches[1][$i]) . '" => ["' . htmlspecialchars($matches[2][$i]) . '", "' . htmlspecialchars($matches[3][$i]) . '"],<br>';
-//  }
-  for ($i = 18; $i < $n; $i++) {
-    echo '"' . htmlspecialchars($matches[1][$i]) . '" => ["' . htmlspecialchars($matches[2][$i]) . '", "' . htmlspecialchars($matches[3][$i]) . '"],<br>';
+  for ($i = 0; $i < $n; $i++) {
+    echo '"' . htmlspecialchars($matches[1][$i]) . '" => "' . htmlspecialchars($matches[2][$i]) . '",<br>';
   }
 }

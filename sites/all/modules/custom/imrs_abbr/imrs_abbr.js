@@ -5,11 +5,21 @@
 var $j = jQuery.noConflict();
 
 /**
+ * Strip HTML tags from a string.
+ *
+ * @param {string} str
+ * @returns {string}
+ */
+function stripTags(str) {
+  return str.replace(/<\/?[^>]+>/g, '');
+}
+
+/**
  * Remove chemical subscripts from a page.
  *
  * @param page
  */
-function remove_chemical_subscripts(pageElement) {
+function removeChemicalSubscripts(pageElement) {
   var $page = $j(pageElement),
       abbr,
       strippedAbbr,
@@ -18,15 +28,9 @@ function remove_chemical_subscripts(pageElement) {
 
   // Remove subscript tags from all chemical formulae.
   for (abbr in Drupal.settings.chemicals) {
-    strippedAbbr = abbr.replace(/<\/?sub>/g, '');
+    strippedAbbr = stripTags(abbr);
     if (strippedAbbr != abbr) {
-      console.log("Replacing " + abbr + " with " + strippedAbbr);
-      html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), strippedAbbr);
-      if (html != origHtml) {
-        console.log('changed');
-        console.log(html);
-        //break;
-      }
+      html = html.replace(new RegExp(abbr, 'g'), strippedAbbr);
     }
   }
 
@@ -35,9 +39,9 @@ function remove_chemical_subscripts(pageElement) {
   }
 }
 
-function markup_abbreviations(el) {
+function markupAbbrev(el) {
   if (el.nodeType == 3) {
-    var abbr, abbrTag, i;
+    var abbr, abbrTag, strippedAbbr;
     el = $j(el);
 
     // Get the HTML.
@@ -49,20 +53,25 @@ function markup_abbreviations(el) {
 
       // Add <abbr> tags to chemical elements and compounds:
       for (abbr in Drupal.settings.chemicals) {
+        // Skip 1-letter chemical symbols.
+        if (abbr.length == 1) {
+          continue;
+        }
+
         // Skip 'CO' when it means Colorado:
         if (abbr == 'CO' && location.pathname == '/references') {
           continue;
         }
 
         // Add <abbr> tags:
-        abbrTag = "<abbr title='" + Drupal.settings.chemicals[abbr][0] + "'>" + abbr + "</abbr>";
-        console.log(abbrTag);
-        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), abbrTag);
+        abbrTag = "<abbr title='" + Drupal.settings.chemicals[abbr] + "'>" + abbr + "</abbr>";
+        strippedAbbr = stripTags(abbr);
+        html = html.replace(new RegExp("\\b" + strippedAbbr + "\\b", 'g'), abbrTag);
       }
 
       // Add <abbr> tags to acronyms:
       for (abbr in Drupal.settings.acronyms) {
-        abbrTag = "<abbr title='" + Drupal.settings.acronyms[abbr][0] + "'>" + abbr + "</abbr>";
+        abbrTag = "<abbr title='" + Drupal.settings.acronyms[abbr] + "'>" + abbr + "</abbr>";
         html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), abbrTag);
       }
 
@@ -74,7 +83,7 @@ function markup_abbreviations(el) {
 
   // Recurse into children:
   $j(el).contents().each(function(i, el) {
-    markup_abbreviations(el);
+    markupAbbrev(el);
   });
 }
 
@@ -93,8 +102,8 @@ $j(function() {
   var bookPages = $j('.node--book--full');
   if (bookPages.length) {
     var page = bookPages.get(0);
-    remove_chemical_subscripts(page);
-    //markup_abbreviations(page);
+    removeChemicalSubscripts(page);
+    markupAbbrev(page);
   }
 
   // Highlight the desired reference:
