@@ -132,7 +132,7 @@ function imrs_abbr_acronyms() {
     "HLLV" => "Heavy Lift Launch Vehicle",
     "HMM" => "Human Mars Mission",
     "HSF" => "Human Space Flight",
-    "IMLEO" => "International Mass in Low Earth Orbit",
+    "IMLEO" => "Initial Mass in Low Earth Orbit",
     "IMRS" => "International Mars Research Station",
     "IP" => "Internet Protocol",
     "ISAP" => "In Situ Air Production",
