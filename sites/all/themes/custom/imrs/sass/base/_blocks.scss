@@ -86,8 +86,7 @@ aside.l-region--sidebar-second {
   }
 }
 
-#block-block-5,
-#block-block-6 {
+#block-block-5 {
   @include blue-block;
   padding: 10px;
   text-align: center;
@@ -103,6 +102,11 @@ aside.l-region--sidebar-second {
   .block__content {
     background-color: white;
     padding: 10px;
+  }
+
+  a > img {
+    width: auto;
+    height: auto;
   }
 }
 
