@@ -104,9 +104,13 @@ aside.l-region--sidebar-second {
     padding: 10px;
   }
 
-  a > img {
-    width: auto;
-    height: auto;
+  a {
+    > img {
+      width: auto;
+      height: auto;
+      margin: auto;
+      display: block;
+    }
   }
 }
 
