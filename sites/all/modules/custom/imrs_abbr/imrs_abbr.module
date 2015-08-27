@@ -200,7 +200,7 @@ function imrs_abbr_acronyms() {
     "RH" => "Relative Humidity",
     "RLS" => "Reusable Launch System",
     "ROI" => "Return On Investment",
-    "RP-1" => "Rocket Propellant-1 <i>or</i> Refined Petroleum-1",
+    "RP-1" => "Rocket Propellant-1 or Refined Petroleum-1",
     "RTG" => "Radioisotope Thermoelectric Generator",
     "RWGS" => "Reverse Water Gas Shift",
     "SEP" => "Solar Electric Propulsion",

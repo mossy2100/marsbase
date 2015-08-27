@@ -69,13 +69,20 @@ function markupAbbrev(el) {
         html = html.replace(new RegExp("\\b" + strippedAbbr + "\\b", 'g'), abbrTag);
       }
 
-      // Add <abbr> tags to acronyms:
+      // Add <abbr> tags to acronyms.
       for (abbr in Drupal.settings.acronyms) {
-        abbrTag = "<abbr title='" + Drupal.settings.acronyms[abbr] + "'>" + abbr + "</abbr>";
-        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), abbrTag);
+        // Use placeholder titles to avoid nested <abbr> tags.
+        abbrTag = "<abbr title='title" + abbr + "'>" + abbr + "</abbr>";
+        html = html.replace(new RegExp("\\b" + abbr + "(e?s)?\\b", 'g'), abbrTag + '$1');
+      }
+
+      // Replace the <abbr> tag titles.
+      for (abbr in Drupal.settings.acronyms) {
+        html = html.replace(new RegExp('title' + abbr, 'g'), Drupal.settings.acronyms[abbr]);
       }
 
       if (html != text) {
+        html = html.replace('xxx', '');
         el.replaceWith(html);
       }
     }
