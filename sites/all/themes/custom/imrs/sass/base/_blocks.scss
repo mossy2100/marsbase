@@ -180,3 +180,13 @@ p#outside-us {
   padding: 5px;
   @include border-radius(3px);
 }
+
+#contact-icons {
+  margin: 20px 0;
+
+  img {
+    width: auto;
+    height: auto;
+    margin-right: 5px;
+  }
+}

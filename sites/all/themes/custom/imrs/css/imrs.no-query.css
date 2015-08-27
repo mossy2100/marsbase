@@ -207,6 +207,15 @@ p#outside-us {
   -webkit-border-radius: 3px;
   border-radius: 3px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003184}}
+#contact-icons {
+  margin: 20px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003187}}
+  #contact-icons img {
+    width: auto;
+    height: auto;
+    margin-right: 5px; }
+
 /******************************************************************************/
 /* Base styles */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\000034}}
