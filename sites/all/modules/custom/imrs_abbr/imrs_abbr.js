@@ -106,8 +106,8 @@ $j(function() {
     markupAbbrev(page);
   }
 
-  // Highlight the desired reference:
-  if (location.hash) {
-    $j(location.hash).css('background-color', 'yellow');
-  }
+  //// Highlight the desired reference:
+  //if (location.hash) {
+  //  $j(location.hash).css('background-color', 'yellow');
+  //}
 });
