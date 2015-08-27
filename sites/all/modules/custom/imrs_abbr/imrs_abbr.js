@@ -4,55 +4,67 @@
 
 var $j = jQuery.noConflict();
 
-function imrs_abbr_markup_abbreviations(el) {
+/**
+ * Remove chemical subscripts from a page.
+ *
+ * @param page
+ */
+function remove_chemical_subscripts(pageElement) {
+  var $page = $j(pageElement),
+      abbr,
+      strippedAbbr,
+      origHtml = $page.html(),
+      html = origHtml;
+
+  // Remove subscript tags from all chemical formulae.
+  for (abbr in Drupal.settings.chemicals) {
+    strippedAbbr = abbr.replace(/<\/?sub>/g, '');
+    if (strippedAbbr != abbr) {
+      console.log("Replacing " + abbr + " with " + strippedAbbr);
+      html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), strippedAbbr);
+      if (html != origHtml) {
+        console.log('changed');
+        console.log(html);
+        //break;
+      }
+    }
+  }
+
+  if (html != origHtml) {
+    $page.html(html);
+  }
+}
+
+function markup_abbreviations(el) {
   if (el.nodeType == 3) {
-    var abbr, abbrWithSubscripts, i;
+    var abbr, abbrTag, i;
     el = $j(el);
 
+    // Get the HTML.
     var text = el.text();
     var html;
 
     if (text) {
       html = text;
 
-      //// Add <abbr> tags to chemical elements:
-      //for (abbr in Drupal.settings.elements) {
-      //  // Skip those with only one letter for now, 'C' in particular has multiple uses.
-      //  if (abbr.length > 1) {
-      //    html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.elements[abbr][0] + "'>" + abbr + "</abbr>");
-      //  }
-      //}
-      //
-      //// Add <abbr> and <sub> tags to chemical compounds:
-      //for (abbr in Drupal.settings.compounds) {
-      //  // Skip 'CO' when it means Colorado:
-      //  if (abbr == 'CO' && location.pathname == '/references') {
-      //    continue;
-      //  }
-      //
-      //  // Wrap every sequence of digits in <sub> tags:
-      //  abbrWithSubscripts = abbr.replace(/(\d+)/g, "<sub>$1</sub>");
-      //
-      //  // Add <abbr> tags:
-      //  abbrWithSubscripts = "<abbr title='" + Drupal.settings.compounds[abbr][0] + "'>" + abbrWithSubscripts + "</abbr>";
-      //
-      //  html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), abbrWithSubscripts);
-      //}
+      // Add <abbr> tags to chemical elements and compounds:
+      for (abbr in Drupal.settings.chemicals) {
+        // Skip 'CO' when it means Colorado:
+        if (abbr == 'CO' && location.pathname == '/references') {
+          continue;
+        }
+
+        // Add <abbr> tags:
+        abbrTag = "<abbr title='" + Drupal.settings.chemicals[abbr][0] + "'>" + abbr + "</abbr>";
+        console.log(abbrTag);
+        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), abbrTag);
+      }
 
       // Add <abbr> tags to acronyms:
       for (abbr in Drupal.settings.acronyms) {
-        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), "<abbr title='" + Drupal.settings.acronyms[abbr][0] + "'>" + abbr + "</abbr>");
+        abbrTag = "<abbr title='" + Drupal.settings.acronyms[abbr][0] + "'>" + abbr + "</abbr>";
+        html = html.replace(new RegExp("\\b" + abbr + "\\b", 'g'), abbrTag);
       }
-
-      // Replace any references:
-      i = 1;
-      for (abbr in Drupal.settings.references) {
-        html = html.replace("[" + abbr + "]", "<sup title='" + Drupal.settings.references[abbr].ref + "'>[<a href='/references#ref" + i + "'>" + i + "</a>]</sup>");
-        i++;
-      }
-
-      // Remove any '~~' strings, which is used to break acronyms in acronyms to prevent double-encoding:
-      html = html.replace('~~', '');
 
       if (html != text) {
         el.replaceWith(html);
@@ -62,7 +74,7 @@ function imrs_abbr_markup_abbreviations(el) {
 
   // Recurse into children:
   $j(el).contents().each(function(i, el) {
-    imrs_abbr_markup_abbreviations(el);
+    markup_abbreviations(el);
   });
 }
 
@@ -80,7 +92,9 @@ $j(function() {
 
   var bookPages = $j('.node--book--full');
   if (bookPages.length) {
-    imrs_abbr_markup_abbreviations(bookPages.get(0));
+    var page = bookPages.get(0);
+    remove_chemical_subscripts(page);
+    //markup_abbreviations(page);
   }
 
   // Highlight the desired reference:
