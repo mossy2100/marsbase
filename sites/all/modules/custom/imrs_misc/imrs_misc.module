@@ -25,6 +25,13 @@ function imrs_misc_menu() {
     'access arguments' => array('access administration pages'),
     'type' => MENU_CALLBACK,
   );
+  $items['download'] = array(
+    'title' => "Download",
+    'description' => "Download the IMRS book as a PDF (full colour, 77MB)",
+    'page callback' => 'imrs_misc_download',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
   return $items;
 }
 
@@ -270,4 +277,11 @@ function imrs_misc_scale_images() {
       image_save($image, $dest);
     }
   }
+}
+
+/**
+ * Download the book as PDF.
+ */
+function imrs_misc_download() {
+  header("Location: /sites/default/media/doc/Shaun Moss, 2015 - The International Mars Research Station.pdf");
 }
