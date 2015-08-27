@@ -73,7 +73,7 @@ function markupAbbrev(el) {
       for (abbr in Drupal.settings.acronyms) {
         // Use placeholder titles to avoid nested <abbr> tags.
         abbrTag = "<abbr title='title" + abbr + "'>" + abbr + "</abbr>";
-        html = html.replace(new RegExp("\\b" + abbr + "(e?s)?\\b", 'g'), abbrTag + '$1');
+        html = html.replace(new RegExp("(^|[^A-Za-z0-9-])" + abbr + "(e?s)?($|[^A-Za-z0-9-])", 'g'), '$1' + abbrTag + '$2$3');
       }
 
       // Replace the <abbr> tag titles.
@@ -106,15 +106,10 @@ $j(function() {
     show: false
   });
 
-  var bookPages = $j('.node--book--full');
+  var bookPages = $j('.field--name-field-html-editor');
   if (bookPages.length) {
     var page = bookPages.get(0);
     removeChemicalSubscripts(page);
     markupAbbrev(page);
   }
-
-  //// Highlight the desired reference:
-  //if (location.hash) {
-  //  $j(location.hash).css('background-color', 'yellow');
-  //}
 });

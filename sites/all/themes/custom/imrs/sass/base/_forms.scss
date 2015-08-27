@@ -64,7 +64,31 @@ form#search-block-form {
 }
 
 #mailchimp-lists-user-subscribe-form-imrs-news {
+  background-color: white;
+  padding: 5px;
+  @include border-radius(5px);
+
+  .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-EMAIL {
+    margin-bottom: 5px;
+  }
+
   .form-submit {
     width: 100%;
+  }
+
+  .mailchimp-newsletter-wrapper {
+    .form-type-checkbox {
+      label {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#edit-mailchimp-lists-mailchimp-imrs-news-title {
+  font-weight: bold;
+
+  .description {
+    font-weight: normal;
   }
 }

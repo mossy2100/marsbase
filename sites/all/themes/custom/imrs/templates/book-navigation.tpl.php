@@ -41,17 +41,17 @@
       <tr>
       <?php if ($prev_url): ?>
         <td class="td-book-navigation__previous">
-          <a href="<?php print $prev_url; ?>" class="book-navigation__previous" title="<?php print t('Go to previous page'); ?>"><?php print '&larr;&nbsp;' . $prev_title; ?></a>
+          <a href="<?php print $prev_url; ?>" class="book-navigation__previous" title="<?php print t('Go to previous section'); ?>">&larr;&nbsp;<?php print $prev_title; ?></a>
         </td>
       <?php endif; ?>
       <?php if ($parent_url): ?>
-        <td width="10%" class="td-book-navigation__up">
-          <a href="<?php print $parent_url; ?>" class="book-navigation__up" title="<?php print t('Go to parent page'); ?>"><?php print t('up') . '&nbsp;&uarr;'; ?></a>
+        <td class="td-book-navigation__up">
+          <a href="<?php print $parent_url; ?>" class="book-navigation__up" title="<?php print t('Go to Contents'); ?>">Contents&nbsp;&uarr;</a>
         </td>
       <?php endif; ?>
       <?php if ($next_url): ?>
         <td class="td-book-navigation__next">
-          <a href="<?php print $next_url; ?>" class="book-navigation__next" title="<?php print t('Go to next page'); ?>"><?php print $next_title . '&nbsp;&rarr;'; ?></a>
+          <a href="<?php print $next_url; ?>" class="book-navigation__next" title="<?php print t('Go to next section'); ?>"><?php print $next_title; ?>&nbsp;&rarr;</a>
         </td>
       <?php endif; ?>
       </tr>
