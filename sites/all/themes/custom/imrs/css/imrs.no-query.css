@@ -135,9 +135,12 @@ aside.l-region--sidebar-second nav.block {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003102}}
   #block-block-5 .block__content {
     background-color: white;
-    padding: 10px; }
+    padding: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003109}}
 #block-imrs-misc-contents {
   background-color: white;
   padding: 10px;
@@ -147,11 +150,11 @@ aside.l-region--sidebar-second nav.block {
   border: solid 1px black;
   color: black;
   font-size: 13px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003117}}
   #block-imrs-misc-contents h2 {
     margin: 3px 0 7px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003122}}
 #block-mailchimp-lists-imrs-news {
   background-color: #80b6ff;
   color: white;
@@ -160,37 +163,37 @@ aside.l-region--sidebar-second nav.block {
   border-radius: 5px;
   color: black;
   padding: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003127}}
   #block-mailchimp-lists-imrs-news h2 {
     margin: 0 0 5px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003131}}
   #block-mailchimp-lists-imrs-news h2.block__title {
     color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003135}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-EMAIL,
   #block-mailchimp-lists-imrs-news #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-email {
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003140}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME {
     display: inline-block;
     float: left;
     width: 48%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003145}}
     #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-fname {
       width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003150}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-LNAME {
     display: inline-block;
     float: right;
     width: 50%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003155}}
     #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-LNAME #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-lname {
       width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003161}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-subscribe .description {
     margin-top: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003167}}
 p#outside-us {
   margin-top: 10px;
   color: black;
@@ -201,10 +204,10 @@ p#outside-us {
   -webkit-border-radius: 3px;
   border-radius: 3px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003176}}
 #contact-icons {
   margin: 20px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003179}}
   #contact-icons img {
     margin-right: 5px; }
 
