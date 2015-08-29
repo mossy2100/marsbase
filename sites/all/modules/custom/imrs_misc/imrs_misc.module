@@ -278,10 +278,3 @@ function imrs_misc_scale_images() {
     }
   }
 }
-
-/**
- * Download the book as PDF.
- */
-function imrs_misc_download() {
-  header("Location: /sites/default/media/doc/Shaun Moss, 2015 - The International Mars Research Station.pdf");
-}
