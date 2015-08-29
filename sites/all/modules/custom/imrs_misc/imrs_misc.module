@@ -25,13 +25,6 @@ function imrs_misc_menu() {
     'access arguments' => array('access administration pages'),
     'type' => MENU_CALLBACK,
   );
-  $items['download'] = array(
-    'title' => "Download",
-    'description' => "Download the IMRS book as a PDF (full colour, 77MB)",
-    'page callback' => 'imrs_misc_download',
-    'access callback' => TRUE,
-    'type' => MENU_NORMAL_ITEM,
-  );
   return $items;
 }
 
@@ -253,7 +246,8 @@ function imrs_misc_node_view($node, $view_mode, $langcode) {
  * Scale any images that are wider than 860px to that width.
  */
 function imrs_misc_scale_images() {
-  $dir = DRUPAL_ROOT . '/sites/default/media/images';
+  $dir = DRUPAL_ROOT . '/sites/default/media/images/scaled';
+  $max_width = 1500;
   $files = scandir($dir);
   foreach ($files as $file) {
     echo "<hr>";
@@ -264,17 +258,23 @@ function imrs_misc_scale_images() {
       continue;
     }
 
+    // Check it's jpeg.
+    $info = pathinfo($path);
+    if (!in_array(strtolower($info['extension']), ['jpg', 'jpeg'])) {
+      continue;
+    }
+
     $image = image_load($path);
     dbg($image);
 
-    if ($image && $image->info['width'] > 860) {
+    if ($image && $image->info['width'] > $max_width) {
       echobr("Can scale that bitch.");
-      $result = image_scale($image, 860);
+      $result = image_scale($image, $max_width);
       dbg($result);
       dbg($image);
 
-      $dest = str_replace('/sites/default/media/images', '/sites/default/media/images/scaled', $path);
-      image_save($image, $dest);
+      // Save the image.
+      image_save($image);
     }
   }
 }
