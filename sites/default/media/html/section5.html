@@ -1,320 +1,425 @@
-<p>In this section, aspects of the plan related to time are reviewed. This includes the duration and timing of missions, an approximate schedule, and timekeeping during missions.</p>
+<p>In this section, aspects of the plan related to time are reviewed. This includes the duration and
+  timing of missions, an approximate schedule, and timekeeping during missions.</p>
 
 <h2 id="section5-1">5.1. Duration</h2>
 
 <p>There are fundamentally two options for a HMM architecture:</p>
 
 <ol>
-	<li>Opposition-class or &ldquo;short stay&rdquo;</li>
-	<li>Conjunction-class or &ldquo;long stay&rdquo;</li>
+  <li>Opposition-class or “short stay”</li>
+  <li>Conjunction-class or “long stay”</li>
 </ol>
 
 <h3 id="section5-1-1">5.1.1. Opposition-Class Mission</h3>
 
-<figure><img alt="Opposition-class mission" class="size-9" src="/sites/default/media/images/opposition-class-mission.png" />
-	<figcaption>Opposition-class mission</figcaption>
+<figure><img alt="Opposition-class mission" class="size-9"
+  src="/sites/default/media/images/opposition-class-mission.png"/>
+  <figcaption>Opposition-class mission</figcaption>
 </figure>
 
-<p>An opposition-class or &ldquo;short stay&rdquo; mission involves a trip out to Mars, which takes about 6 months when Earth and Mars are optimally aligned. This is followed by a month or so on the surface doing science and exploration, then a launch from Mars and return flight home. However, by this time Mars and Earth will have moved to new positions in their orbits, and will no longer be optimally aligned. The return trip is therefore considerably longer; in fact, more than 1 year. The MTV swings by Venus on the return path, using its gravity to pull the vehicle into the correct trajectory to reach Earth.</p>
+<p>An opposition-class or “short stay” mission involves a trip out to Mars, which takes about 6
+  months when Earth and Mars are optimally aligned. This is followed by a month or so on the surface
+  doing science and exploration, then a launch from Mars and return flight home. However, by this
+  time Mars and Earth will have moved to new positions in their orbits, and will no longer be
+  optimally aligned. The return trip is therefore considerably longer; in fact, more than 1 year.
+  The MTV swings by Venus on the return path, using its gravity to pull the vehicle into the correct
+  trajectory to reach Earth.</p>
 
-<p>Although actual numbers will vary depending on the timing of the launch, trajectory, and propulsion technology, the figures below are indicative of a schedule for a short stay mission with a 30-day surface element (Zubrin &amp; Wagner, 1996).</p>
+<p>Although actual numbers will vary depending on the timing of the launch, trajectory, and
+  propulsion technology, the figures below are indicative of a schedule for a short stay mission
+  with a 30-day surface element (Zubrin &amp; Wagner, 1996).</p>
 
 <table id="opposition-schedule">
-	<tbody>
-		<tr>
-			<th>Outbound flight</th>
-			<th class="right">180 d</th>
-		</tr>
-		<tr>
-			<th>Surface mission</th>
-			<th class="right">30 d</th>
-		</tr>
-		<tr>
-			<th>Return flight</th>
-			<th class="right">430 d</th>
-		</tr>
-		<tr class="total">
-			<th>Total</th>
-			<th class="right">640 d</th>
-		</tr>
-		<tr>
-			<th>Total time in space</th>
-			<th class="right">610 d</th>
-		</tr>
-		<tr>
-			<th>% time on Mars</th>
-			<th class="right">5%</th>
-		</tr>
-		<tr>
-			<th>% time in space</th>
-			<th class="right">95%</th>
-		</tr>
-	</tbody>
+  <tbody>
+  <tr>
+    <th>Outbound flight</th>
+    <th class="right">180 d</th>
+  </tr>
+  <tr>
+    <th>Surface mission</th>
+    <th class="right">30 d</th>
+  </tr>
+  <tr>
+    <th>Return flight</th>
+    <th class="right">430 d</th>
+  </tr>
+  <tr class="total">
+    <th>Total</th>
+    <th class="right">640 d</th>
+  </tr>
+  <tr>
+    <th>Total time in space</th>
+    <th class="right">610 d</th>
+  </tr>
+  <tr>
+    <th>% time on Mars</th>
+    <th class="right">5%</th>
+  </tr>
+  <tr>
+    <th>% time in space</th>
+    <th class="right">95%</th>
+  </tr>
+  </tbody>
 </table>
 
 <h3 id="section5-1-2">5.1.2. Conjunction-Class Mission</h3>
 
-<figure><img alt="Conjunction-class mission" class="size-9" src="/sites/default/media/images/conjunction-class-mission.png" />
-	<figcaption>Conjunction-class mission</figcaption>
+<figure><img alt="Conjunction-class mission" class="size-9"
+  src="/sites/default/media/images/conjunction-class-mission.png"/>
+  <figcaption>Conjunction-class mission</figcaption>
 </figure>
 
-<p>A conjunction-class or &ldquo;long stay&rdquo; mission similarly begins with a trip of approximately 6 months. The crew then remain on the surface while the two planets orbit the Sun along their respective paths until they&rsquo;re again optimally aligned approximately 1.5 years later. The crew then launch and return to Earth, again on a short-duration trajectory of approximately 6 months. The figures shown in the table below are indicative of a long stay mission schedule (Zubrin &amp; Wagner, 1996).</p>
+<p>A conjunction-class or “long stay” mission similarly begins with a trip of approximately 6
+  months. The crew then remain on the surface while the two planets orbit the Sun along their
+  respective paths until they’re again optimally aligned approximately 1.5 years later. The crew
+  then launch and return to Earth, again on a short-duration trajectory of approximately 6 months.
+  The figures shown in the table below are indicative of a long stay mission schedule (Zubrin &amp;
+  Wagner, 1996).</p>
 
 <table>
-	<tbody>
-		<tr>
-			<th>Outbound flight</th>
-			<th class="right">180 d</th>
-		</tr>
-		<tr>
-			<th>Surface mission</th>
-			<th class="right">550 d</th>
-		</tr>
-		<tr>
-			<th>Return flight</th>
-			<th class="right">180 d</th>
-		</tr>
-		<tr class="total">
-			<th>Total</th>
-			<th class="right">910 d</th>
-		</tr>
-		<tr>
-			<th>Total time in space</th>
-			<th class="right">360 d</th>
-		</tr>
-		<tr>
-			<th>% time on Mars</th>
-			<th class="right">60%</th>
-		</tr>
-		<tr>
-			<th>% time in space</th>
-			<th class="right">40%</th>
-		</tr>
-	</tbody>
+  <tbody>
+  <tr>
+    <th>Outbound flight</th>
+    <th class="right">180 d</th>
+  </tr>
+  <tr>
+    <th>Surface mission</th>
+    <th class="right">550 d</th>
+  </tr>
+  <tr>
+    <th>Return flight</th>
+    <th class="right">180 d</th>
+  </tr>
+  <tr class="total">
+    <th>Total</th>
+    <th class="right">910 d</th>
+  </tr>
+  <tr>
+    <th>Total time in space</th>
+    <th class="right">360 d</th>
+  </tr>
+  <tr>
+    <th>% time on Mars</th>
+    <th class="right">60%</th>
+  </tr>
+  <tr>
+    <th>% time in space</th>
+    <th class="right">40%</th>
+  </tr>
+  </tbody>
 </table>
 
 <h3 id="section5-1-3">5.1.3. Comparison</h3>
 
 <p>A short stay mission may at first seem sensible and conservative for an initial mission.</p>
 
-<p>One of the main benefits is that the quantity of supplies to be landed on Mars is greatly reduced, and ISRU would not be required for anything other than propellant. The amount of equipment to be delivered to Mars would also be reduced, as the crew would not have as much time available to do useful work on the surface. Since landing stuff on Mars is one of the most challenging aspects of the mission, this reduces complexity and cost; at least for the surface element. However, this is balanced by the fact that the space element would be more complex.</p>
+<p>One of the main benefits is that the quantity of supplies to be landed on Mars is greatly
+  reduced, and ISRU would not be required for anything other than propellant. The amount of
+  equipment to be delivered to Mars would also be reduced, as the crew would not have as much time
+  available to do useful work on the surface. Since landing stuff on Mars is one of the most
+  challenging aspects of the mission, this reduces complexity and cost; at least for the surface
+  element. However, this is balanced by the fact that the space element would be more complex.</p>
 
-<p>A short stay architecture minimises the length of time that the SHAB, surface vehicles, marssuits and other surface assets would be required, thus reducing the potential for any of these systems to fail during the surface mission. However, the amount of time that the MTV and its systems must be guaranteed for is then maximised.</p>
+<p>A short stay architecture minimises the length of time that the SHAB, surface vehicles, marssuits
+  and other surface assets would be required, thus reducing the potential for any of these systems
+  to fail during the surface mission. However, the amount of time that the MTV and its systems must
+  be guaranteed for is then maximised.</p>
 
-<p>Another argument that could potentially be made in favour of the opposition-class mission is that while we have decades of experience keeping astronauts alive in space, we have zero achieving this on Mars. However, the Martian environment is actually much healthier than interplanetary space, since Mars has only one quarter the radiation and provides a moderate level of gravity. The crew would receive a higher radiation dose on an opposition-class mission, and would be more severely affected by the deleterious effects of microgravity.</p>
+<p>Another argument that could potentially be made in favour of the opposition-class mission is that
+  while we have decades of experience keeping astronauts alive in space, we have zero achieving this
+  on Mars. However, the Martian environment is actually much healthier than interplanetary space,
+  since Mars has only one quarter the radiation and provides a moderate level of gravity. The crew
+  would receive a higher radiation dose on an opposition-class mission, and would be more severely
+  affected by the deleterious effects of microgravity.</p>
 
-<p>Thus, any supposed advantages of a short stay mission are entirely offset by the increased time spent in space, and at the cost of the actual purpose of the mission: to explore Mars.</p>
+<p>Thus, any supposed advantages of a short stay mission are entirely offset by the increased time
+  spent in space, and at the cost of the actual purpose of the mission: to explore Mars.</p>
 
-<p>The conjunction-class architecture is better for astronaut health, while also enabling them to achieve much more on Mars. Although the long stay option increases total mission duration by about 50%, the amount of time spent on Mars increases by a factor of approximately 18, accounting for 60% of the mission duration instead of just 5%. The amount of time spent in space is reduced by more than one third.</p>
+<p>The conjunction-class architecture is better for astronaut health, while also enabling them to
+  achieve much more on Mars. Although the long stay option increases total mission duration by about
+  50%, the amount of time spent on Mars increases by a factor of approximately 18, accounting for
+  60% of the mission duration instead of just 5%. The amount of time spent in space is reduced by
+  more than one third.</p>
 
-<p>Most mission planners therefore agree that a long stay mission profile delivers a far greater ROI, which is why Mars Direct, Mars-Oz, the DRA and numerous other architectures are all based on conjunction-class missions. A 2.5-year mission represents significant risk and technical challenge; but then, so does a 1.75-year mission. If the short stay mission is achievable then so is the long stay one, but the pay-off is considerably greater.</p>
+<p>Most mission planners therefore agree that a long stay mission profile delivers a far greater
+  ROI, which is why Mars Direct, Mars-Oz, the DRA and numerous other architectures are all based on
+  conjunction-class missions. A 2.5-year mission represents significant risk and technical
+  challenge; but then, so does a 1.75-year mission. If the short stay mission is achievable then so
+  is the long stay one, but the pay-off is considerably greater.</p>
 
 <p>Conjunction-class missions carry other important advantages over opposition-class missions:</p>
 
 <ol>
-	<li>The extended surface stay permits replanning of surface activities based on discoveries by the crew.</li>
-	<li>The crew can take a week or two to acclimatise to Mars&rsquo;s gravity and the SHAB&rsquo;s atmosphere, rather than having to begin work immediately.</li>
-	<li>The ∆v is significantly less, reducing propellant requirements, MTV mass, and complexity of on-orbit construction.</li>
-	<li>Conjunction-class missions can be launched at each opportunity on a regular 26-month cycle. Opposition-class missions are much more sensitive to timing, and can only be launched when both Mars and Venus are in the correct positions in their orbits with respect to Earth.</li>
-	<li>Opposition-class missions take the crew close to Venus where solar radiation intensity is double that at Earth, and where warning time in the event of a CME (Coronal Mass Ejection) would be much less.</li>
+  <li>The extended surface stay permits replanning of surface activities based on discoveries by the
+    crew.
+  </li>
+  <li>The crew can take a week or two to acclimatise to Mars’s gravity and the SHAB’s atmosphere,
+    rather than having to begin work immediately.
+  </li>
+  <li>The ∆v is significantly less, reducing propellant requirements, MTV mass, and complexity of
+    on-orbit construction.
+  </li>
+  <li>Conjunction-class missions can be launched at each opportunity on a regular 26-month cycle.
+    Opposition-class missions are much more sensitive to timing, and can only be launched when both
+    Mars and Venus are in the correct positions in their orbits with respect to Earth.
+  </li>
+  <li>Opposition-class missions take the crew close to Venus where solar radiation intensity is
+    double that at Earth, and where warning time in the event of a CME (Coronal Mass Ejection) would
+    be much less.
+  </li>
 </ol>
 
-<p>One advantage of the opposition-class mission, which should perhaps not be trivialised, is that it would afford the opportunity to observe Venus close-up and potentially deploy probes. However, it would be preferable in terms of safety and cost to design separate human missions to Venus optimised for that purpose.</p>
+<p>One advantage of the opposition-class mission, which should perhaps not be trivialised, is that
+  it would afford the opportunity to observe Venus close-up and potentially deploy probes. However,
+  it would be preferable in terms of safety and cost to design separate human missions to Venus
+  optimised for that purpose.</p>
 
 <h2 id="section5-2">5.2. Timing</h2>
 
-<p>Despite being referred to as a conjunction-class mission, the outbound and return journeys occur close to opposition of Mars, when Mars and the Sun are on opposite sides of Earth. This is approximately when Earth and Mars are closest, and occurs, on average, about every 780 days (or 26 months), a period called the <i>Earth-Mars synodic period</i>. Obviously it&rsquo;s quickest to travel between Earth and Mars when the distance is least.</p>
+<p>Despite being referred to as a conjunction-class mission, the outbound and return journeys occur
+  close to opposition of Mars, when Mars and the Sun are on opposite sides of Earth. This is
+  approximately when Earth and Mars are closest, and occurs, on average, about every 780 days (or 26
+  months), a period called the <i>Earth-Mars synodic period</i>. Obviously it’s quickest to travel
+  between Earth and Mars when the distance is least.</p>
 
 <figure><img alt="Approximate timeline for a conjunction-class mission in relation
-    to Mars oppositions" src="/sites/default/media/images/timeline.png" />
-	<figcaption>Approximate timeline for a conjunction-class mission in relation to Mars oppositions</figcaption>
+    to Mars oppositions" src="/sites/default/media/images/timeline.png"/>
+  <figcaption>Approximate timeline for a conjunction-class mission in relation to Mars oppositions
+  </figcaption>
 </figure>
 
-<p>Due to Mars&rsquo;s elliptical orbit, every 15.8 years (on average) the distance between Mars and Earth at opposition reaches a minimum when it coincides with Mars perihelion, which is the point in Mars&rsquo;s orbit when it&rsquo;s closest to the Sun. This is called a <i>perihelic opposition</i>. The graph below shows the distance between Earth and Mars at opposition; the minima in 2003, 2018 and 2035 are the perihelic oppositions, and, as the graph shows, Mars is less than 60 Gm from Earth at those times (that&rsquo;s about 40% of the distance between Earth and the Sun).</p>
+<p>Due to Mars’s elliptical orbit, every 15.8 years (on average) the distance between Mars and Earth
+  at opposition reaches a minimum when it coincides with Mars perihelion, which is the point in
+  Mars’s orbit when it’s closest to the Sun. This is called a <i>perihelic opposition</i>. The graph
+  below shows the distance between Earth and Mars at opposition; the minima in 2003, 2018 and 2035
+  are the perihelic oppositions, and, as the graph shows, Mars is less than 60 Gm from Earth at
+  those times (that’s about 40% of the distance between Earth and the Sun).</p>
 
-<figure><img alt="Distance between Earth and Mars at solar opposition" src="/sites/default/media/images/distance-to-Mars.png" />
-	<figcaption>Distance between Earth and Mars at solar opposition (Credit: Jürgen Giesen)</figcaption>
+<figure><img alt="Distance between Earth and Mars at solar opposition"
+  src="/sites/default/media/images/distance-to-Mars.png"/>
+  <figcaption>Distance between Earth and Mars at solar opposition (Credit: Jürgen Giesen)
+  </figcaption>
 </figure>
 
-<p>Travelling to Mars at perihelic opposition minimises the trip time even more effectively because Mars is at its closest to Earth, not only within the 26-month synodic period, but within the 15.8-year cycle of oppositions.</p>
+<p>Travelling to Mars at perihelic opposition minimises the trip time even more effectively because
+  Mars is at its closest to Earth, not only within the 26-month synodic period, but within the
+  15.8-year cycle of oppositions.</p>
 
-<p>The next perihelic opposition is in 2018, which is therefore a popular choice for a trip to Mars, especially since this will be close to the next solar minimum: the point in the 11-year solar cycle when sunspot and solar flare activity is at a minimum and therefore risk of a CME is correspondingly lower. This is why the Inspiration Mars flyby mission is planned for 2018.</p>
+<p>The next perihelic opposition is in 2018, which is therefore a popular choice for a trip to Mars,
+  especially since this will be close to the next solar minimum: the point in the 11-year solar
+  cycle when sunspot and solar flare activity is at a minimum and therefore risk of a CME is
+  correspondingly lower. This is why the Inspiration Mars flyby mission is planned for 2018.</p>
 
-<p>To minimise the amount of time spent in space, and the amount of propellant required to get from Earth to Mars and back, the first crew (Alfa Crew) could be sent to Mars in 2018 and brought back in 2020. However, this is unrealistically soon, and the subsequent perihelic opposition is more practical. Sending them in 2033 and bringing them back in 2035 will achieve these things while also allowing sufficient time to build support for the mission, develop the international partnership, improve the TRL of the hardware, and run precursor missions.</p>
+<p>To minimise the amount of time spent in space, and the amount of propellant required to get from
+  Earth to Mars and back, the first crew (Alfa Crew) could be sent to Mars in 2018 and brought back
+  in 2020. However, this is unrealistically soon, and the subsequent perihelic opposition is more
+  practical. Sending them in 2033 and bringing them back in 2035 will achieve these things while
+  also allowing sufficient time to build support for the mission, develop the international
+  partnership, improve the TRL of the hardware, and run precursor missions.</p>
 
-<p>There&rsquo;s no strict requirement to travel when Mars is close to perihelion; it would simply be advantageous for the first mission. Subsequent crews will spend longer in space (assuming equivalent propulsion systems) until the next perihelic opposition; however, those crews will benefit from the experience gained in previous missions, plus improvements made to the architecture and hardware. The first human mission is the most risky, during which astronauts and mission planners will have the least experience, and therefore it needs to be optimised for safety; hence, for that mission, the launch opportunity that will result in the shortest possible space element, and shortest overall mission duration, is preferred.</p>
+<p>There’s no strict requirement to travel when Mars is close to perihelion; it would simply be
+  advantageous for the first mission. Subsequent crews will spend longer in space (assuming
+  equivalent propulsion systems) until the next perihelic opposition; however, those crews will
+  benefit from the experience gained in previous missions, plus improvements made to the
+  architecture and hardware. The first human mission is the most risky, during which astronauts and
+  mission planners will have the least experience, and therefore it needs to be optimised for
+  safety; hence, for that mission, the launch opportunity that will result in the shortest possible
+  space element, and shortest overall mission duration, is preferred.</p>
 
-<p>Therefore, the plan is that Alfa Crew will travel in 2033 (with predeployment in late 2030 - early 2031), Bravo Crew will travel in 2035, Charlie Crew in 2037, and so on.</p>
+<p>Therefore, the plan is that Alfa Crew will travel in 2033 (with predeployment in late 2030 -
+  early 2031), Bravo Crew will travel in 2035, Charlie Crew in 2037, and so on.</p>
 
 <h2 id="section5-3">5.3. Schedule</h2>
 
-<p>Knowing the mission duration and timing gives an approximate schedule for the first three IMRS missions:</p>
+<p>Knowing the mission duration and timing gives an approximate schedule for the first three IMRS
+  missions:</p>
 
 <table id="program-schedule">
-	<thead>
-		<tr class="head">
-			<th width="12%">Year</th>
-			<th width="22%">Program</th>
-			<th width="22%">Alfa<br />
-				Mission</th>
-			<th width="22%">Bravo<br />
-				Mission</th>
-			<th width="22%">Charlie<br />
-				Mission</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>2015-2020</th>
-			<th>Planning and design. Engage international and commercial partners. Develop collaboration frameworks.</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-		</tr>
-		<tr>
-			<th>2020-2030</th>
-			<th>Precursor missions. Improve TRL of mission hardware. Select and train astronauts.</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-		</tr>
-		<tr>
-			<th>2031</th>
-			<th>&nbsp;</th>
-			<th>Predeploy supplies, MAV-1, SHAB-1, CAMPER-1, satellites.</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-		</tr>
-		<tr>
-			<th>2032</th>
-			<th>&nbsp;</th>
-			<th>Construct <i>Adeona</i>.</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-		</tr>
-		<tr>
-			<th>2033</th>
-			<th>&nbsp;</th>
-			<th>Crew outbound in <i>Adeona</i>.</th>
-			<th>Predeploy supplies, MAV-2, SHAB-2, CAMPER-2, greenhouse-1.</th>
-			<th>&nbsp;</th>
-		</tr>
-		<tr>
-			<th>2034</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>Construct MTV-2.</th>
-			<th>&nbsp;</th>
-		</tr>
-		<tr>
-			<th>2035</th>
-			<th>&nbsp;</th>
-			<th>Crew return. <i>Adeona</i> parked on orbit.</th>
-			<th>Crew outbound in MTV-2.</th>
-			<th>Predeploy supplies, MAV-3, greenhouse-2, additional base components.</th>
-		</tr>
-		<tr>
-			<th>2036</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>Refurbish <i>Adeona</i> and refill with propellant.</th>
-		</tr>
-		<tr>
-			<th>2037</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>Crew return. MTV-2 parked on orbit.</th>
-			<th>Crew outbound in <i>Adeona</i>.</th>
-		</tr>
-		<tr>
-			<th>2039</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>Crew return. <i>Adeona</i> parked on orbit.</th>
-		</tr>
-		<tr>
-			<th>2040-2100</th>
-			<th>Further missions and ongoing development and operation of the IMRS.</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-			<th>&nbsp;</th>
-		</tr>
-	</tbody>
+  <thead>
+  <tr class="head">
+    <th width="12%">Year</th>
+    <th width="22%">Program</th>
+    <th width="22%">Alfa<br/> Mission</th>
+    <th width="22%">Bravo<br/> Mission</th>
+    <th width="22%">Charlie<br/> Mission</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th>2015-2020</th>
+    <th>Planning and design. Engage international and commercial partners. Develop collaboration
+      frameworks.
+    </th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
+  <tr>
+    <th>2020-2030</th>
+    <th>Precursor missions. Improve TRL of mission hardware. Select and train astronauts.</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
+  <tr>
+    <th>2031</th>
+    <th>&nbsp;</th>
+    <th>Predeploy supplies, MAV-1, SHAB-1, CAMPER-1, satellites.</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
+  <tr>
+    <th>2032</th>
+    <th>&nbsp;</th>
+    <th>Construct <i>Adeona</i>.</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
+  <tr>
+    <th>2033</th>
+    <th>&nbsp;</th>
+    <th>Crew outbound in <i>Adeona</i>.</th>
+    <th>Predeploy supplies, MAV-2, SHAB-2, CAMPER-2, greenhouse-1.</th>
+    <th>&nbsp;</th>
+  </tr>
+  <tr>
+    <th>2034</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>Construct MTV-2.</th>
+    <th>&nbsp;</th>
+  </tr>
+  <tr>
+    <th>2035</th>
+    <th>&nbsp;</th>
+    <th>Crew return. <i>Adeona</i> parked on orbit.</th>
+    <th>Crew outbound in MTV-2.</th>
+    <th>Predeploy supplies, MAV-3, greenhouse-2, additional base components.</th>
+  </tr>
+  <tr>
+    <th>2036</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>Refurbish <i>Adeona</i> and refill with propellant.</th>
+  </tr>
+  <tr>
+    <th>2037</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>Crew return. MTV-2 parked on orbit.</th>
+    <th>Crew outbound in <i>Adeona</i>.</th>
+  </tr>
+  <tr>
+    <th>2039</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>Crew return. <i>Adeona</i> parked on orbit.</th>
+  </tr>
+  <tr>
+    <th>2040-2100</th>
+    <th>Further missions and ongoing development and operation of the IMRS.</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
+  </tbody>
 </table>
 
 <h2 id="section5-4">5.4. Timekeeping</h2>
 
-<p>Timekeeping during IMRS missions will be based on Martian <i>sols</i> rather than Earthian days. A sol is the Martian diurnal (day-night) cycle. The length of a sol, about 24 hours and 40 minutes, is similar enough to a Earthian day that the crew, as well as mission controllers on Earth, can operate on a Martian diurnal cycle.</p>
+<p>Timekeeping during IMRS missions will be based on Martian <i>sols</i> rather than Earthian days.
+  A sol is the Martian diurnal (day-night) cycle. The length of a sol, about 24 hours and 40
+  minutes, is similar enough to a Earthian day that the crew, as well as mission controllers on
+  Earth, can operate on a Martian diurnal cycle.</p>
 
-<p>While on the surface of Mars the crew will live and work in harmony with the Martian diurnal cycle. This will be much easier and more energy-efficient than trying to implement an artificial diurnal cycle as will be necessary elsewhere in the Universe.</p>
+<p>While on the surface of Mars the crew will live and work in harmony with the Martian diurnal
+  cycle. This will be much easier and more energy-efficient than trying to implement an artificial
+  diurnal cycle as will be necessary elsewhere in the Universe.</p>
 
-<p>By also using sols instead of days while living in <i>Adeona</i> during the outbound trip to Mars, the crew can be spared any additional adaptation stresses on arrival in addition to the need to adapt to Mars&rsquo;s gravity. By the time they arrive at Mars, the crew will be used to the slightly longer day. In addition, by synchronising <i>Adeona</i>&rsquo;s clocks with the diurnal cycle at IMRS, the crew will not experience &ldquo;rocket lag&rdquo; post-arrival.</p>
+<p>By also using sols instead of days while living in <i>Adeona</i> during the outbound trip to
+  Mars, the crew can be spared any additional adaptation stresses on arrival in addition to the need
+  to adapt to Mars’s gravity. By the time they arrive at Mars, the crew will be used to the slightly
+  longer day. In addition, by synchronising <i>Adeona</i>’s clocks with the diurnal cycle at IMRS,
+  the crew will not experience “rocket lag” post-arrival.</p>
 
-<p>For the return trip, the same rationale applies. By continuing to live in harmony with Mars&rsquo;s cycle instead of Earth&rsquo;s, the crew will be spared the stress of adaptation to a shorter diurnal period while simultaneously readapting to microgravity. Using the same onboard clock from the start of the mission to the end is also obviously simpler.</p>
+<p>For the return trip, the same rationale applies. By continuing to live in harmony with Mars’s
+  cycle instead of Earth’s, the crew will be spared the stress of adaptation to a shorter diurnal
+  period while simultaneously readapting to microgravity. Using the same onboard clock from the
+  start of the mission to the end is also obviously simpler.</p>
 
-<p>On arrival back at Earth the crew will need to readapt to the comparatively shorter Earthian day in addition to Earth&rsquo;s comparatively high gravity and thick, warm air. However, abundant medical personnel and equipment, as well as friends and family, will be available to help them readjust to Earth.</p>
+<p>On arrival back at Earth the crew will need to readapt to the comparatively shorter Earthian day
+  in addition to Earth’s comparatively high gravity and thick, warm air. However, abundant medical
+  personnel and equipment, as well as friends and family, will be available to help them readjust to
+  Earth.</p>
 
-<p>Living on Mars time has been done before. Mission planners working on the MER (Mars Exploration Rover) missions (<i>Spirit</i> and <i>Opportunity</i>) had special watches that operated on Mars time, and therefore, despite being still firmly on <i>terra firma</i>, began each day 40 minutes later than the one before.</p>
+<p>Living on Mars time has been done before. Mission planners working on the MER (Mars Exploration
+  Rover) missions (<i>Spirit</i> and <i>Opportunity</i>) had special watches that operated on Mars
+  time, and therefore, despite being still firmly on <i>terra firma</i>, began each day 40 minutes
+  later than the one before.</p>
 
-<p>Mission controllers will use clocks and watches synchronised with the diurnal cycle at IMRS. This is an additional advantage to focusing on a single location, as different clocks will not be needed for different locations on Mars. This will be important if they choose to live and work on Mars time like the MER mission controllers did.</p>
+<p>Mission controllers will use clocks and watches synchronised with the diurnal cycle at IMRS. This
+  is an additional advantage to focusing on a single location, as different clocks will not be
+  needed for different locations on Mars. This will be important if they choose to live and work on
+  Mars time like the MER mission controllers did.</p>
 
-<p>A convenient unit for referring to time periods less than 1 sol is the <i>millisol</i> (abbreviated &ldquo;msol&rdquo;). Some convenient, approximate conversion factors:</p>
+<p>A convenient unit for referring to time periods less than 1 sol is the <i>millisol</i>
+  (abbreviated “msol”). Some convenient, approximate conversion factors:</p>
 
 <table class="equations">
-	<tbody>
-		<tr>
-			<th>1 sol</th>
-			<th>= 1.0275 d</th>
-		</tr>
-		<tr>
-			<th>&nbsp;</th>
-			<th>= 24 h 40 min</th>
-		</tr>
-		<tr>
-			<th>40 msol</th>
-			<th>= 1 h</th>
-		</tr>
-		<tr>
-			<th>10 msol</th>
-			<th>= 15 min</th>
-		</tr>
-		<tr>
-			<th>1 msol</th>
-			<th>= 90 s</th>
-		</tr>
-	</tbody>
+  <tbody>
+  <tr>
+    <th>1 sol</th>
+    <th>= 1.0275 d</th>
+  </tr>
+  <tr>
+    <th>&nbsp;</th>
+    <th>= 24 h 40 min</th>
+  </tr>
+  <tr>
+    <th>40 msol</th>
+    <th>= 1 h</th>
+  </tr>
+  <tr>
+    <th>10 msol</th>
+    <th>= 15 min</th>
+  </tr>
+  <tr>
+    <th>1 msol</th>
+    <th>= 90 s</th>
+  </tr>
+  </tbody>
 </table>
 
 <p>Converting the nominal mission schedule from days to sols:</p>
 
 <table>
-	<tbody>
-		<tr>
-			<th>Outbound flight</th>
-			<th class="right">180 d</th>
-			<th class="right">175 sol</th>
-		</tr>
-		<tr>
-			<th>Surface mission</th>
-			<th class="right">550 d</th>
-			<th class="right">535 sol</th>
-		</tr>
-		<tr>
-			<th>Return flight</th>
-			<th class="right">180 d</th>
-			<th class="right">175 sol</th>
-		</tr>
-		<tr class="total">
-			<th>Total</th>
-			<th class="right">910 d</th>
-			<th class="right">885 sol</th>
-		</tr>
-		<tr class="head">
-			<th>Total time in space</th>
-			<th class="right">360 d</th>
-			<th class="right">350 sol</th>
-		</tr>
-	</tbody>
+  <tbody>
+  <tr>
+    <th>Outbound flight</th>
+    <th class="right">180 d</th>
+    <th class="right">175 sol</th>
+  </tr>
+  <tr>
+    <th>Surface mission</th>
+    <th class="right">550 d</th>
+    <th class="right">535 sol</th>
+  </tr>
+  <tr>
+    <th>Return flight</th>
+    <th class="right">180 d</th>
+    <th class="right">175 sol</th>
+  </tr>
+  <tr class="total">
+    <th>Total</th>
+    <th class="right">910 d</th>
+    <th class="right">885 sol</th>
+  </tr>
+  <tr class="head">
+    <th>Total time in space</th>
+    <th class="right">360 d</th>
+    <th class="right">350 sol</th>
+  </tr>
+  </tbody>
 </table>

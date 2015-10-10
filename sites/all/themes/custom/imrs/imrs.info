@@ -17,6 +17,7 @@ stylesheets[all][] = css/imrs.no-query.css
 ; Scripts
 ; ========================================
 scripts[] = js/imrs.behaviors.js
+scripts[] = js/imrs.video.js
 
 ; ========================================
 ; Regions

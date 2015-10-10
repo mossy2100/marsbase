@@ -1,290 +1,559 @@
-<p>Blue Dragon has been inspired by the emergence of new space hardware that is both more advanced and cheaper than what has previously been available. Most of this is being developed by a new breed of space companies that are more agile and ambitious than their predecessors. This new style of space company, as well as the general shift in focus within the space industry from the public to private sector, is sometimes referred to as &ldquo;NewSpace&rdquo;.</p>
+<p>Blue Dragon has been inspired by the emergence of new space hardware that is both more advanced
+  and cheaper than what has previously been available. Most of this is being developed by a new
+  breed of space companies that are more agile and ambitious than their predecessors. This new style
+  of space company, as well as the general shift in focus within the space industry from the public
+  to private sector, is sometimes referred to as “NewSpace”.</p>
 
-<p>Although much of the required hardware is available from commercial vendors, some key components necessary for HMMs still need to be developed. However, in some cases they can be at least partly assembled or developed from existing available components.</p>
+<p>Although much of the required hardware is available from commercial vendors, some key components
+  necessary for HMMs still need to be developed. However, in some cases they can be at least partly
+  assembled or developed from existing available components.</p>
 
 <h2 id="section2-1">2.1. Commercial Hardware</h2>
 
-<p>The most important goals of IMRS are to reduce costs and increase safety and the likelihood of success compared with existing proposals. These goals are all arguably made more achievable through utilisation of primarily COTS hardware.</p>
+<p>The most important goals of IMRS are to reduce costs and increase safety and the likelihood of
+  success compared with existing proposals. These goals are all arguably made more achievable
+  through utilisation of primarily COTS hardware.</p>
 
-<p>The current era is different to any in which a HMM has been developed before. The private space sector is experiencing a revolution characterised by an exponential growth in entrepreneurial startups. This is somewhat related to, and reminiscent of, the IT sector during the past three decades. Numerous companies are now developing commercial space hardware and providing a wide range of space-related services, including launch services; space station and spacecraft components; satellites; space suits; ECLSS (Environment Control and Life Support System) hardware; space electronics; robotics; and other miscellaneous space products and services.</p>
+<p>The current era is different to any in which a HMM has been developed before. The private space
+  sector is experiencing a revolution characterised by an exponential growth in entrepreneurial
+  startups. This is somewhat related to, and reminiscent of, the IT sector during the past three
+  decades. Numerous companies are now developing commercial space hardware and providing a wide
+  range of space-related services, including launch services; space station and spacecraft
+  components; satellites; space suits; ECLSS (Environment Control and Life Support System) hardware;
+  space electronics; robotics; and other miscellaneous space products and services.</p>
 
-<p>The cost of purchasing these items from commercial suppliers is much less than developing them from scratch. By taking advantage of this proliferation of commercial products and services, the cost of transporting people and equipment to Mars can be significantly lower than previous estimates. As the design for the IMRS evolves, the intention is to leverage new developments in COTS hardware where possible in order to further improve the architecture.</p>
+<p>The cost of purchasing these items from commercial suppliers is much less than developing them
+  from scratch. By taking advantage of this proliferation of commercial products and services, the
+  cost of transporting people and equipment to Mars can be significantly lower than previous
+  estimates. As the design for the IMRS evolves, the intention is to leverage new developments in
+  COTS hardware where possible in order to further improve the architecture.</p>
 
-<p>Rather than having a collection of one-off custom-built components that only a few specialist engineers understand, using COTS components gives several advantages:</p>
+<p>Rather than having a collection of one-off custom-built components that only a few specialist
+  engineers understand, using COTS components gives several advantages:</p>
 
 <ul>
-	<li>COTS components often have a greater operational maturity and a higher TRL (Technology Readiness Level) than custom-built hardware. They may have been used many times in multiple real-life applications, which has enabled refinement and improved understanding of the design. This drastically improves confidence in the technology and reduces the likelihood that unanticipated design flaws will manifest during use.</li>
-	<li>COTS hardware is usually understood by a larger number of people, including engineers, customers and others who&rsquo;ve used or studied it, especially if the product is popular or has been in use for some time. This makes problem identification and resolution quicker, easier and more likely to be correct.</li>
-	<li>COTS hardware is usually cheaper than purpose-built hardware because with each successive production run optimisations are made in the product design, supply chain and manufacturing processes.</li>
-	<li>The efficiency of mass production means that components produced in quantity can often be orders of magnitude cheaper than custom-built items.</li>
+  <li>COTS components often have a greater operational maturity and a higher TRL (Technology
+    Readiness Level) than custom-built hardware. They may have been used many times in multiple
+    real-life applications, which has enabled refinement and improved understanding of the design.
+    This drastically improves confidence in the technology and reduces the likelihood that
+    unanticipated design flaws will manifest during use.
+  </li>
+  <li>COTS hardware is usually understood by a larger number of people, including engineers,
+    customers and others who’ve used or studied it, especially if the product is popular or has been
+    in use for some time. This makes problem identification and resolution quicker, easier and more
+    likely to be correct.
+  </li>
+  <li>COTS hardware is usually cheaper than purpose-built hardware because with each successive
+    production run optimisations are made in the product design, supply chain and manufacturing
+    processes.
+  </li>
+  <li>The efficiency of mass production means that components produced in quantity can often be
+    orders of magnitude cheaper than custom-built items.
+  </li>
 </ul>
 
-<p>It&rsquo;s always more expensive to build a prototype than a reproduction, because creating a prototype requires numerous iterations, modifications and redesigns, and several usually need to be made before the final version is considered ready for reproduction. When using COTS hardware, that work has already been completed and paid for, saving both time and money.</p>
+<p>It’s always more expensive to build a prototype than a reproduction, because creating a prototype
+  requires numerous iterations, modifications and redesigns, and several usually need to be made
+  before the final version is considered ready for reproduction. When using COTS hardware, that work
+  has already been completed and paid for, saving both time and money.</p>
 
-<p>The total lifecycle cost of any hardware component in a space mission may be calculated using the following formula:</p>
+<p>The total lifecycle cost of any hardware component in a space mission may be calculated using the
+  following formula:</p>
 
-<p class="indent2"><span class="lhs">C<sub>total</sub></span>= C<sub>dev</sub> + C<sub>man</sub> + C<sub>trans</sub> + C<sub>op</sub> + C<sub>dec</sub></p>
+<p class="indent2"><span class="lhs">C<sub>total</sub></span>= C<sub>dev</sub> + C<sub>man</sub> + C<sub>trans</sub>
+  + C<sub>op</sub> + C<sub>dec</sub></p>
 
 <p>where:</p>
 
-<p class="indent2"><span class="lhs">C<sub>total</sub></span>= the total lifecycle cost of the item</p>
+<p class="indent2"><span class="lhs">C<sub>total</sub></span>= the total lifecycle cost of the item
+</p>
 
 <p class="indent2"><span class="lhs">C<sub>dev</sub></span>= the cost of development</p>
 
 <p class="indent2"><span class="lhs">C<sub>man</sub></span>= the cost of manufacture</p>
 
-<p class="indent2"><span class="lhs">C<sub>trans</sub></span>= the cost of transportation and installation</p>
+<p class="indent2"><span class="lhs">C<sub>trans</sub></span>= the cost of transportation and
+  installation</p>
 
 <p class="indent2"><span class="lhs">C<sub>op</sub></span>= the cost of operation</p>
 
 <p class="indent2"><span class="lhs">C<sub>dec</sub></span>= the cost of decommissioning</p>
 
-<p>In a traditional space program C<sub>dev</sub> is a major expense, potentially on the order of billions of dollars, depending on the item. The main benefit of using COTS hardware is that this value is considerably lower per item because it&rsquo;s recovered across multiple sales, and shrinks towards zero over time.</p>
+<p>In a traditional space program C<sub>dev</sub> is a major expense, potentially on the order of
+  billions of dollars, depending on the item. The main benefit of using COTS hardware is that this
+  value is considerably lower per item because it’s recovered across multiple sales, and shrinks
+  towards zero over time.</p>
 
-<p>In addition, C<sub>man</sub> is often lower due to the cost benefits of mass production. Even C<sub>trans</sub>, which is the total transportation cost from the manufacturer to the final destination (in this case, Mars), may be lower if a transport system designed especially for the item is available, such as is the case with the SpaceX Falcon rocket family and the Dragon capsule. C<sub>op</sub> and C<sub>dec</sub> may also have been optimised during the history of the component&rsquo;s usage.</p>
+<p>In addition, C<sub>man</sub> is often lower due to the cost benefits of mass production. Even
+  C<sub>trans</sub>, which is the total transportation cost from the manufacturer to the final
+  destination (in this case, Mars), may be lower if a transport system designed especially for the
+  item is available, such as is the case with the SpaceX Falcon rocket family and the Dragon
+  capsule. C<sub>op</sub> and C<sub>dec</sub> may also have been optimised during the history of the
+  component’s usage.</p>
 
-<p>COTS hardware suppliers sometimes collaborate in ways that support the assembly of mission architectures. For example, SpaceX and Bigelow Aerospace will both use the NDS (NASA Docking System), which will enable Dragon capsules to dock with Bigelow&rsquo;s inflatable space station modules for delivery of cargo and crew. This will be a valuable design feature that will reduce development costs.</p>
+<p>COTS hardware suppliers sometimes collaborate in ways that support the assembly of mission
+  architectures. For example, SpaceX and Bigelow Aerospace will both use the NDS (NASA Docking
+  System), which will enable Dragon capsules to dock with Bigelow’s inflatable space station modules
+  for delivery of cargo and crew. This will be a valuable design feature that will reduce
+  development costs.</p>
 
-<p>Although a relatively new company, SpaceX is a fundamental player in the IMRS plan because their hardware is more advanced yet comparatively cheap. Focusing on a single technology (Dragon capsules) for crew transport to and from space, and using fundamentally the same tech to deliver cargo, reduces mission complexity and cost. Of course, when reusable rockets and capsules that can land on solid ground are developed by other companies or space agencies, these could be substituted in the architecture.</p>
+<p>Although a relatively new company, SpaceX is a fundamental player in the IMRS plan because their
+  hardware is more advanced yet comparatively cheap. Focusing on a single technology (Dragon
+  capsules) for crew transport to and from space, and using fundamentally the same tech to deliver
+  cargo, reduces mission complexity and cost. Of course, when reusable rockets and capsules that can
+  land on solid ground are developed by other companies or space agencies, these could be
+  substituted in the architecture.</p>
 
-<p>It&rsquo;s likely that major space agencies such as NASA, Roscosmos and CNSA will want their own hardware, particularly spacecraft, to be used in the missions, thereby justifying the investment made in development of those items and accentuating their importance. Although this could potentially inflate the overall cost of the program, it may be necessary for political reasons. Satisfying all partners will require successfully and diplomatically balancing their desires with practical cost and safety considerations, and it will be important for them all to understand that a decision to use hardware from any one supplier is not intended to deliberately favour that supplier&rsquo;s country, but simply to ensure that the program is affordable, viable and successful.</p>
+<p>It’s likely that major space agencies such as NASA, Roscosmos and CNSA will want their own
+  hardware, particularly spacecraft, to be used in the missions, thereby justifying the investment
+  made in development of those items and accentuating their importance. Although this could
+  potentially inflate the overall cost of the program, it may be necessary for political reasons.
+  Satisfying all partners will require successfully and diplomatically balancing their desires with
+  practical cost and safety considerations, and it will be important for them all to understand that
+  a decision to use hardware from any one supplier is not intended to deliberately favour that
+  supplier’s country, but simply to ensure that the program is affordable, viable and
+  successful.</p>
 
 <h2 id="section2-2">2.2. Rockets</h2>
 
-<figure><img alt="Launch vehicles for IMRS" class="size-6" src="/sites/default/media/images/Falcon-rockets-with-SLS.png" />
-	<figcaption>Launch vehicles for IMRS</figcaption>
+<figure><img alt="Launch vehicles for IMRS" class="size-6"
+  src="/sites/default/media/images/Falcon-rockets-with-SLS.png"/>
+  <figcaption>Launch vehicles for IMRS</figcaption>
 </figure>
 
 <h3 id="section2-2-1">2.2.1. SpaceX Falcon Rockets</h3>
 
-<p>Space Exploration Technologies Corporation, more commonly known as SpaceX, is one of the best known NewSpace companies. They&rsquo;re currently developing a new family of rockets called Falcon, powered by rocket engines of their own design called Merlin, which run on RP-1 (Rocket Propellant-1). SpaceX is also currently working on a new methalox engine named &ldquo;Raptor&rdquo;, which will power the Falcon upper stages and become the main engines for a much larger vehicle: the Mars Colonial Transporter.</p>
+<p>Space Exploration Technologies Corporation, more commonly known as SpaceX, is one of the best
+  known NewSpace companies. They’re currently developing a new family of rockets called Falcon,
+  powered by rocket engines of their own design called Merlin, which run on RP-1 (Rocket
+  Propellant-1). SpaceX is also currently working on a new methalox engine named “Raptor”, which
+  will power the Falcon upper stages and become the main engines for a much larger vehicle: the Mars
+  Colonial Transporter.</p>
 
-<p>The Falcon 9 rocket (so named for its 9 engines) has flown 8 times successfully so far, and has an impressive schedule of launches in its upcoming manifest. One of the Falcon 9&rsquo;s most attractive features is its price, with a cost (as at January 2015) of only $61.2 million per launch. It&rsquo;s the first rocket to be designed and manufactured entirely in the 21<sup>st</sup> century.</p>
+<p>The Falcon 9 rocket (so named for its 9 engines) has flown 8 times successfully so far, and has
+  an impressive schedule of launches in its upcoming manifest. One of the Falcon 9’s most attractive
+  features is its price, with a cost (as at January 2015) of only $61.2 million per launch. It’s the
+  first rocket to be designed and manufactured entirely in the 21<sup>st</sup> century.</p>
 
-<figure><img alt="Launch of a Falcon 9" src="/sites/default/media/images/liftoff_of_upgraded_falcon_9.jpg" />
-	<figcaption>Launch of a Falcon 9 (Credit: SpaceX)</figcaption>
+<figure><img alt="Launch of a Falcon 9"
+  src="/sites/default/media/images/liftoff_of_upgraded_falcon_9.jpg"/>
+  <figcaption>Launch of a Falcon 9 (Credit: SpaceX)</figcaption>
 </figure>
 
-<p>The Falcon Heavy is currently in development and will start flying late 2014 or early 2015. It&rsquo;s essentially a Falcon 9 with two additional cores, for a total of 27 engines, and will be capable of delivering 53 tonnes of payload to LEO (Low Earth Orbit) or 13 tonnes to the surface of Mars. This will make it the most powerful rocket available, and the most powerful since the Saturn V, which carried astronauts to the Moon. The price of a Falcon Heavy (as at January 2015) is $85 million per launch.</p>
+<p>The Falcon Heavy is currently in development and will start flying late 2014 or early 2015. It’s
+  essentially a Falcon 9 with two additional cores, for a total of 27 engines, and will be capable
+  of delivering 53 tonnes of payload to LEO (Low Earth Orbit) or 13 tonnes to the surface of Mars.
+  This will make it the most powerful rocket available, and the most powerful since the Saturn V,
+  which carried astronauts to the Moon. The price of a Falcon Heavy (as at January 2015) is $85
+  million per launch.</p>
 
-<p>SpaceX&rsquo;s modern processes and standards have produced launch vehicles that are significantly lower in price, yet more advanced than those of its competitors. Most importantly, SpaceX have begun making its rockets reusable. The recent &ldquo;Grasshopper&rdquo; test showed a reusable first stage ascending to a height of several hundred metres before smoothly descending and gently landing on its tail.</p>
+<p>SpaceX’s modern processes and standards have produced launch vehicles that are significantly
+  lower in price, yet more advanced than those of its competitors. Most importantly, SpaceX have
+  begun making its rockets reusable. The recent “Grasshopper” test showed a reusable first stage
+  ascending to a height of several hundred metres before smoothly descending and gently landing on
+  its tail.</p>
 
-<figure><img alt="The “Grasshopper” Falcon first stage landing on its tail" src="/sites/default/media/images/grasshopper-landing.jpg" />
-	<figcaption>The &ldquo;Grasshopper&rdquo; Falcon first stage landing on its tail (Credit: SpaceX)</figcaption>
+<figure><img alt="The “Grasshopper” Falcon first stage landing on its tail"
+  src="/sites/default/media/images/grasshopper-landing.jpg"/>
+  <figcaption>The “Grasshopper” Falcon first stage landing on its tail (Credit: SpaceX)
+  </figcaption>
 </figure>
 
-<p>According to Elon Musk, CEO (Chief Executive Officer) of SpaceX, rapidly reusable rockets will reduce the cost per kilogram of sending material into space by a factor of approximately 100. Whether this is achievable or not remains to be seen, but it&rsquo;s obvious that reusability will have a significant effect on launch prices.</p>
+<p>According to Elon Musk, CEO (Chief Executive Officer) of SpaceX, rapidly reusable rockets will
+  reduce the cost per kilogram of sending material into space by a factor of approximately 100.
+  Whether this is achievable or not remains to be seen, but it’s obvious that reusability will have
+  a significant effect on launch prices.</p>
 
-<p>Thus, there are two main reasons why the SpaceX Falcon rockets are likely to be the best choice for this architecture:</p>
+<p>Thus, there are two main reasons why the SpaceX Falcon rockets are likely to be the best choice
+  for this architecture:</p>
 
 <ul>
-	<li>They&rsquo;re designed to carry Dragon capsules, which are fundamental to the architecture.</li>
-	<li>They will be reusable, which will make them much cheaper.</li>
+  <li>They’re designed to carry Dragon capsules, which are fundamental to the architecture.
+  </li>
+  <li>They will be reusable, which will make them much cheaper.</li>
 </ul>
 
-<p>SpaceX is also designing a much larger, super-heavy-lift vehicle called the Mars Colonial Transporter, which will be capable of delivering 100 tonnes to the surface of Mars. IMRS is not currently designed to take advantage of the MCT, as, at the time of writing, this is only a fairly recent development and few details are available.</p>
+<p>SpaceX is also designing a much larger, super-heavy-lift vehicle called the Mars Colonial
+  Transporter, which will be capable of delivering 100 tonnes to the surface of Mars. IMRS is not
+  currently designed to take advantage of the MCT, as, at the time of writing, this is only a fairly
+  recent development and few details are available.</p>
 
 <p>Instead, the architecture employs the SLS (Space Launch System).</p>
 
 <h3 id="section2-2-2">2.2.2. NASA Space Launch System</h3>
 
-<p>The SLS is a new family of SHLLVs currently in development at NASA, which has been developed within the following basic constraints:</p>
+<p>The SLS is a new family of SHLLVs currently in development at NASA, which has been developed
+  within the following basic constraints:</p>
 
 <ul>
-	<li>Capable of supporting human missions to Near Earth Asteroids, Earth-Moon Lagrange points, the Moon and Mars.</li>
-	<li>Derived from tried-and-tested Shuttle components in order to reduce development costs and gain maximum leverage from existing infrastructure and material and human resources.</li>
+  <li>Capable of supporting human missions to Near Earth Asteroids, Earth-Moon Lagrange points, the
+    Moon and Mars.
+  </li>
+  <li>Derived from tried-and-tested Shuttle components in order to reduce development costs and gain
+    maximum leverage from existing infrastructure and material and human resources.
+  </li>
 </ul>
 
-<p>There are three planned configurations of the vehicle, referred to by the mass they can deliver to LEO: 70t (70 tonnes), 105t or 130t. The 105t and 130t versions support both crew and cargo modes.</p>
+<p>There are three planned configurations of the vehicle, referred to by the mass they can deliver
+  to LEO: 70t (70 tonnes), 105t or 130t. The 105t and 130t versions support both crew and cargo
+  modes.</p>
 
-<figure><img alt="SLS vehicle configurations" class="size-7" src="/sites/default/media/images/SLS_configurations(metric).png" />
-	<figcaption>SLS vehicle configurations (Credit: NASA)</figcaption>
+<figure><img alt="SLS vehicle configurations" class="size-7"
+  src="/sites/default/media/images/SLS_configurations(metric).png"/>
+  <figcaption>SLS vehicle configurations (Credit: NASA)</figcaption>
 </figure>
 
-<p>The SLS 130t Cargo will probably be the first launch vehicle capable of delivering 20-30 tonne payloads to Mars, making it suitable for delivering the SHAB and MAV to Mars.</p>
+<p>The SLS 130t Cargo will probably be the first launch vehicle capable of delivering 20-30 tonne
+  payloads to Mars, making it suitable for delivering the SHAB and MAV to Mars.</p>
 
-<p>Considerable work is currently being done on the SLS at NASA, and contractors such as Alliant Techsystems and Boeing have been engaged to develop components. Other SHLLVs are currently being studied at CNSA and Roscosmos, which may possibly be substituted in the architecture for the SLS if practical.</p>
+<p>Considerable work is currently being done on the SLS at NASA, and contractors such as Alliant
+  Techsystems and Boeing have been engaged to develop components. Other SHLLVs are currently being
+  studied at CNSA and Roscosmos, which may possibly be substituted in the architecture for the SLS
+  if practical.</p>
 
 <h2 id="section2-3">2.3. SpaceX Dragon Capsule</h2>
 
-<p>SpaceX have developed a space capsule known as Dragon, as part of NASA&rsquo;s Commercial Resupply Services program. Its primary purpose is for transporting cargo to and from the ISS. SpaceX made history in 2012 when the Dragon became the first commercial spacecraft ever to dock with the ISS.</p>
+<p>SpaceX have developed a space capsule known as Dragon, as part of NASA’s Commercial Resupply
+  Services program. Its primary purpose is for transporting cargo to and from the ISS. SpaceX made
+  history in 2012 when the Dragon became the first commercial spacecraft ever to dock with the
+  ISS.</p>
 
-<p>Dragon capsules are designed to be carried by SpaceX&rsquo;s Falcon 9 and Heavy rockets. The current version of the Dragon is designed to splash down in water, like those used in NASA&rsquo;s Mercury, Gemini and Apollo programs and like NASA&rsquo;s new Orion capsule. However, the latest version of the Dragon capsule, known as Dragon V2, is capable of landing on solid ground.</p>
+<p>Dragon capsules are designed to be carried by SpaceX’s Falcon 9 and Heavy rockets. The current
+  version of the Dragon is designed to splash down in water, like those used in NASA’s Mercury,
+  Gemini and Apollo programs and like NASA’s new Orion capsule. However, the latest version of the
+  Dragon capsule, known as Dragon V2, is capable of landing on solid ground.</p>
 
-<figure><img alt="Elon Musk with the Dragon V2" class="size-7" src="/sites/default/media/images/DragonV2-Elon.jpg" />
-	<figcaption>Elon Musk with the Dragon V2 (Credit: SpaceX)</figcaption>
+<figure><img alt="Elon Musk with the Dragon V2" class="size-7"
+  src="/sites/default/media/images/DragonV2-Elon.jpg"/>
+  <figcaption>Elon Musk with the Dragon V2 (Credit: SpaceX)</figcaption>
 </figure>
 
-<p>The Dragon V2 features eight SuperDraco&nbsp;engines, which are a powerful new variant of the Draco engines used by the Dragon&rsquo;s RCS (Reaction Control System). Like the Draco, the SuperDraco engines use non-cryogenic propellant, namely monomethyl hydrazine fuel and nitrogen tetroxide oxidiser. However, they&rsquo;re about 200 times as powerful, capable of delivering about 67 kN of axial thrust for a total of about 534 kN. The SuperDraco engine is the first ever rocket engine with 3D printed parts.</p>
+<p>The Dragon V2 features eight SuperDraco engines, which are a powerful new variant of the
+  Draco engines used by the Dragon’s RCS (Reaction Control System). Like the Draco, the SuperDraco
+  engines use non-cryogenic propellant, namely monomethyl hydrazine fuel and nitrogen tetroxide
+  oxidiser. However, they’re about 200 times as powerful, capable of delivering about 67 kN of axial
+  thrust for a total of about 534 kN. The SuperDraco engine is the first ever rocket engine with 3D
+  printed parts.</p>
 
-<figure><img alt="SpaceX SuperDraco engines" src="/sites/default/media/images/superdraco_jetpack.jpg" />
-	<figcaption>SpaceX SuperDraco engines (Credit: SpaceX)</figcaption>
+<figure><img alt="SpaceX SuperDraco engines"
+  src="/sites/default/media/images/superdraco_jetpack.jpg"/>
+  <figcaption>SpaceX SuperDraco engines (Credit: SpaceX)</figcaption>
 </figure>
 
-<p>The SuperDraco engines enable the Dragon V2 to land propulsively on solid ground, thus saving the time and expense of water recovery. On Earth the capsules will usually land at the original launch pad, but they can also land on the Moon, Mars, or other worlds with solid surfaces. This is in alignment with Musk&rsquo;s vision of establishing settlements on Mars.</p>
+<p>The SuperDraco engines enable the Dragon V2 to land propulsively on solid ground, thus saving the
+  time and expense of water recovery. On Earth the capsules will usually land at the original launch
+  pad, but they can also land on the Moon, Mars, or other worlds with solid surfaces. This is in
+  alignment with Musk’s vision of establishing settlements on Mars.</p>
 
-<p>The Dragon V2 can accommodate up to seven astronauts, and will be used for transporting crew between Earth and the ISS in the near future, as part of the NASA Commercial Crew Program.</p>
+<p>The Dragon V2 can accommodate up to seven astronauts, and will be used for transporting crew
+  between Earth and the ISS in the near future, as part of the NASA Commercial Crew Program.</p>
 
-<p>In Blue Dragon, which is designed for a crew of six, the intention is to replace the lower centre seat with a container for cargo. On the way to Mars, this may include last minute supplies; on the way back, samples from Mars. All three crew Dragons in the architecture will be modified in this way to accommodate six people plus storage.</p>
+<p>In Blue Dragon, which is designed for a crew of six, the intention is to replace the lower centre
+  seat with a container for cargo. On the way to Mars, this may include last minute supplies; on the
+  way back, samples from Mars. All three crew Dragons in the architecture will be modified in this
+  way to accommodate six people plus storage.</p>
 
-<figure><img alt="Interior of the Dragon V2" src="/sites/default/media/images/DragonV2-interior-2700.jpg" />
-	<figcaption>Interior of the Dragon V2 (Credit: SpaceX)</figcaption>
+<figure><img alt="Interior of the Dragon V2"
+  src="/sites/default/media/images/DragonV2-interior-2700.jpg"/>
+  <figcaption>Interior of the Dragon V2 (Credit: SpaceX)</figcaption>
 </figure>
 
-<figure><img alt="Dragon V2 control panel" src="/sites/default/media/images/DragonV2-control-panel-2700.jpg" />
-	<figcaption>Dragon V2 control panel (Credit: SpaceX)</figcaption>
+<figure><img alt="Dragon V2 control panel"
+  src="/sites/default/media/images/DragonV2-control-panel-2700.jpg"/>
+  <figcaption>Dragon V2 control panel (Credit: SpaceX)</figcaption>
 </figure>
 
 <h4>Red Dragons</h4>
 
-<p>NASA has begun researching a Mars lander called&nbsp;Red Dragon, which is a proposed variant of the SpaceX Dragon capsule that will provide a comparatively low cost technology for delivering payloads to the surface of Mars (Karcz et al. 2012).</p>
+<p>NASA has begun researching a Mars lander called Red Dragon, which is a proposed variant of
+  the SpaceX Dragon capsule that will provide a comparatively low cost technology for delivering
+  payloads to the surface of Mars (Karcz et al. 2012).</p>
 
-<figure><img alt="Red Dragon landing on Mars" src="/sites/default/media/images/red-dragon-landing-mars-2700.jpg" />
-	<figcaption>Red Dragon landing on Mars (Credit: SpaceX)</figcaption>
+<figure><img alt="Red Dragon landing on Mars"
+  src="/sites/default/media/images/red-dragon-landing-mars-2700.jpg"/>
+  <figcaption>Red Dragon landing on Mars (Credit: SpaceX)</figcaption>
 </figure>
 
-<p>Red Dragon will also be configured with SuperDraco engines, which are powerful enough for landing propulsively on Mars. In addition, Red Dragon will incorporate several modifications necessary for EDL on Mars, including:</p>
+<p>Red Dragon will also be configured with SuperDraco engines, which are powerful enough for landing
+  propulsively on Mars. In addition, Red Dragon will incorporate several modifications necessary for
+  EDL on Mars, including:</p>
 
 <ul>
-	<li>Removal of systems unique to LEO missions, such as berthing hardware.</li>
-	<li>Addition of deep space communications.</li>
-	<li>Modifications to suit the Martian environment.</li>
-	<li>Algorithms and avionics for pinpoint landing on Mars.</li>
+  <li>Removal of systems unique to LEO missions, such as berthing hardware.</li>
+  <li>Addition of deep space communications.</li>
+  <li>Modifications to suit the Martian environment.</li>
+  <li>Algorithms and avionics for pinpoint landing on Mars.</li>
 </ul>
 
-<p>The gravity on Mars is much lower than on Earth, which means the acceleration of the capsule towards Mars is comparatively lower. However, in the case of direct entry, the capsule will be approaching from interplanetary space at a much higher velocity than if it were descending to the surface of Earth from Earth orbit. Mars&rsquo;s atmosphere is much thinner (less than 1%) than Earth&rsquo;s, and will play less of a role in reducing spacecraft velocity during EDL; for the same reason, the effect of atmospheric friction will be less. These different conditions will affect the forces experienced by the spacecraft during EDL, which will necessitate changes to thrusters, heat shield, avionics and other parts of the spacecraft.</p>
+<p>The gravity on Mars is much lower than on Earth, which means the acceleration of the capsule
+  towards Mars is comparatively lower. However, in the case of direct entry, the capsule will be
+  approaching from interplanetary space at a much higher velocity than if it were descending to the
+  surface of Earth from Earth orbit. Mars’s atmosphere is much thinner (less than 1%) than Earth’s,
+  and will play less of a role in reducing spacecraft velocity during EDL; for the same reason, the
+  effect of atmospheric friction will be less. These different conditions will affect the forces
+  experienced by the spacecraft during EDL, which will necessitate changes to thrusters, heat
+  shield, avionics and other parts of the spacecraft.</p>
 
-<p>A Red Dragon capsule is estimated to be capable of delivering payloads of up to about 1.9 metric tonnes to the surface of Mars. This delivery mechanism has been receiving increasing attention from NASA, being considerably simpler and cheaper than existing landing techniques; for example, the sky crane method used to deliver the Curiosity rover. Not only will it be cheaper per kilogram of payload mass, but cheaper overall.</p>
+<p>A Red Dragon capsule is estimated to be capable of delivering payloads of up to about 1.9 metric
+  tonnes to the surface of Mars. This delivery mechanism has been receiving increasing attention
+  from NASA, being considerably simpler and cheaper than existing landing techniques; for example,
+  the sky crane method used to deliver the Curiosity rover. Not only will it be cheaper per kilogram
+  of payload mass, but cheaper overall.</p>
 
-<p>With human missions, another advantage is that a landed Dragon capsule can be repurposed as a storage unit, laboratory, shelter or mini-habitat.</p>
+<p>With human missions, another advantage is that a landed Dragon capsule can be repurposed as a
+  storage unit, laboratory, shelter or mini-habitat.</p>
 
-<p>Once the Red Dragon technology has been proven as a reliable mechanism for delivery of cargo, this approach may be used to deliver up to seven crew members to Mars surface by using a Dragon V2 modified in the same way.</p>
+<p>Once the Red Dragon technology has been proven as a reliable mechanism for delivery of cargo,
+  this approach may be used to deliver up to seven crew members to Mars surface by using a Dragon V2
+  modified in the same way.</p>
 
-<p>Red Dragons represent near term technology that can enable comparatively inexpensive and functional Mars missions. They are fundamental to Blue Dragon.</p>
+<p>Red Dragons represent near term technology that can enable comparatively inexpensive and
+  functional Mars missions. They are fundamental to Blue Dragon.</p>
 
-<p>The Dragon V2 capsules are being designed to land with a high degree of accuracy. From the SpaceX website:</p>
+<p>The Dragon V2 capsules are being designed to land with a high degree of accuracy. From the SpaceX
+  website:</p>
 
-<blockquote>SuperDraco engines will power a revolutionary launch escape system that will make Dragon the safest spacecraft in history and enable it to land propulsively on Earth or another planet with pinpoint accuracy.</blockquote>
+<blockquote>SuperDraco engines will power a revolutionary launch escape system that will make Dragon
+  the safest spacecraft in history and enable it to land propulsively on Earth or another planet
+  with pinpoint accuracy.
+</blockquote>
 
-<p>This ability to land &ldquo;with pinpoint accuracy&rdquo; is provided by the Dragon&rsquo;s GNC (Guidance, Navigation and Control) system. Due to the lack of GPS (Global Positioning System) on Mars, high-accuracy landings must be achieved using alternate methods. This problem has effectively been solved. For example, ESA have been developing a system known as LION (Landing with Inertial and Optical Navigation) that will enable pinpoint landing on the Moon, Mars and asteroids using image recognition of major landmarks (Delaune et al. 2012).</p>
+<p>This ability to land “with pinpoint accuracy” is provided by the Dragon’s GNC (Guidance,
+  Navigation and Control) system. Due to the lack of GPS (Global Positioning System) on Mars,
+  high-accuracy landings must be achieved using alternate methods. This problem has effectively been
+  solved. For example, ESA have been developing a system known as LION (Landing with Inertial and
+  Optical Navigation) that will enable pinpoint landing on the Moon, Mars and asteroids using image
+  recognition of major landmarks (Delaune et al. 2012).</p>
 
-<p>Another important development is the Fuel Optimal Large Divert Guidance (G-FOLD) algorithm (Acikmese, Casoliva &amp; Carson 2012), able to autonomously calculate landing trajectories in real-time. This was recently tested successfully with Masten Space System&rsquo;s Xombie VTOL (Vertical Take-Off and Landing) experimental rocket, with the vehicle making a 750 metre course correction in real time.</p>
+<p>Another important development is the Fuel Optimal Large Divert Guidance (G-FOLD) algorithm
+  (Acikmese, Casoliva &amp; Carson 2012), able to autonomously calculate landing trajectories in
+  real-time. This was recently tested successfully with Masten Space System’s Xombie VTOL (Vertical
+  Take-Off and Landing) experimental rocket, with the vehicle making a 750 metre course correction
+  in real time.</p>
 
-<p>Using these or similar technologies, the Red Dragons will be capable of pinpoint landings on Mars, and, because the position of landed base components can be known with precision, a neat, safe and optimised layout of the base can be planned.</p>
+<p>Using these or similar technologies, the Red Dragons will be capable of pinpoint landings on
+  Mars, and, because the position of landed base components can be known with precision, a neat,
+  safe and optimised layout of the base can be planned.</p>
 
-<p>These capsules potentially represent a mechanism for delivering cargo or crew to the surface of Mars that is not only repeatable, but affordable. It may soon be possible to deliver a payload to Mars for under $200 million, which is extremely cheap in terms of space missions.</p>
+<p>These capsules potentially represent a mechanism for delivering cargo or crew to the surface of
+  Mars that is not only repeatable, but affordable. It may soon be possible to deliver a payload to
+  Mars for under $200 million, which is extremely cheap in terms of space missions.</p>
 
 <h4>Ice Dragon</h4>
 
-<p>NASA commenced studies of a mission to Mars based on the Red Dragon landing system, named &ldquo;Ice Dragon&rdquo; (Stoker et al. 2012). It was being developed in collaboration with SpaceX, and would have delivered a science package to Mars including a drill to penetrate up to two metres into the permafrost to investigate environmental conditions suitable for past or extant life. Despite being a highly valuable, practical and affordable mission, Ice Dragon was rejected by NASA in favour of the Mars 2020 Rover.</p>
+<p>NASA commenced studies of a mission to Mars based on the Red Dragon landing system, named “Ice
+  Dragon” (Stoker et al. 2012). It was being developed in collaboration with SpaceX, and would have
+  delivered a science package to Mars including a drill to penetrate up to two metres into the
+  permafrost to investigate environmental conditions suitable for past or extant life. Despite being
+  a highly valuable, practical and affordable mission, Ice Dragon was rejected by NASA in favour of
+  the Mars 2020 Rover.</p>
 
-<figure><img alt="Ice Dragon mission" class="size-6" src="/sites/default/media/images/ice-dragon.png" />
-	<figcaption>Ice Dragon mission (Credit: NASA)</figcaption>
+<figure><img alt="Ice Dragon mission" class="size-6"
+  src="/sites/default/media/images/ice-dragon.png"/>
+  <figcaption>Ice Dragon mission (Credit: NASA)</figcaption>
 </figure>
 
 <p>The Ice Dragon mission was designed to address three main questions:</p>
 
 <ol>
-	<li>Is there life on Mars?</li>
-	<li>Are there viable and accessible resources for humans?</li>
-	<li>Is it safe to land humans on Mars?</li>
+  <li>Is there life on Mars?</li>
+  <li>Are there viable and accessible resources for humans?</li>
+  <li>Is it safe to land humans on Mars?</li>
 </ol>
 
-<p>The mission proposed to answer questions 1 and 2 by studying subsurface ground ice, and question 3 by testing the Red Dragon landing system. The value of investigating subsurface ice is described as follows:</p>
+<p>The mission proposed to answer questions 1 and 2 by studying subsurface ground ice, and question
+  3 by testing the Red Dragon landing system. The value of investigating subsurface ice is described
+  as follows:</p>
 
-<blockquote>The subsurface environment provides protection from radiation to shield organic and biologic compounds from destruction. The ice-rich substrate is also ideal for preserving organic and biologic molecules and provides a source of H<sub>2</sub>O for any biologic activity. Examination of martian ground ice can test the hypotheses of whether ground ice supports habitable conditions, that ground ice can preserve and accumulate organic compounds, and that ice contains biomolecules that show past or present biological activity on Mars. Furthermore, water on Mars, in the form of ground ice and hydrated minerals may provide a valuable resource to enable long-term human exploration. Water can provide the raw materials for rocket propellant, other chemicals and materials, and life support consumables for future human Mars missions.</blockquote>
+<blockquote>The subsurface environment provides protection from radiation to shield organic and
+  biologic compounds from destruction. The ice-rich substrate is also ideal for preserving organic
+  and biologic molecules and provides a source of H<sub>2</sub>O for any biologic activity.
+  Examination of martian ground ice can test the hypotheses of whether ground ice supports habitable
+  conditions, that ground ice can preserve and accumulate organic compounds, and that ice contains
+  biomolecules that show past or present biological activity on Mars. Furthermore, water on Mars, in
+  the form of ground ice and hydrated minerals may provide a valuable resource to enable long-term
+  human exploration. Water can provide the raw materials for rocket propellant, other chemicals and
+  materials, and life support consumables for future human Mars missions.
+</blockquote>
 
-<p>Besides the scientific outcomes of the mission, which would have been of tremendous value to human missions, one of the most important contributions of Ice Dragon would have been demonstration of the EDL capabilities of the Red Dragon capsule.</p>
+<p>Besides the scientific outcomes of the mission, which would have been of tremendous value to
+  human missions, one of the most important contributions of Ice Dragon would have been
+  demonstration of the EDL capabilities of the Red Dragon capsule.</p>
 
 <h4>Larger capsules</h4>
 
-<p>Dragon capsules have a diameter of 3.7 metres. However, the architecture for the Mars One mission, which proposes to send 24-40 astronauts on a one-way mission to Mars, proposes to rely on a larger, 5-metre-diameter variant of the Dragon capsule for habitat modules. Although these are yet be to be built or demonstrated, Mars One&rsquo;s plan is to land the first two of these on Mars in 2020, which is only 7 years from the time of writing.</p>
+<p>Dragon capsules have a diameter of 3.7 metres. However, the architecture for the Mars One
+  mission, which proposes to send 24-40 astronauts on a one-way mission to Mars, proposes to rely on
+  a larger, 5-metre-diameter variant of the Dragon capsule for habitat modules. Although these are
+  yet be to be built or demonstrated, Mars One’s plan is to land the first two of these on Mars in
+  2020, which is only 7 years from the time of writing.</p>
 
-<figure><img alt="Mars One habitat capsules" src="/sites/default/media/images/Mars-One-capsules-2700.jpg" />
-	<figcaption>Mars One habitat capsules (Credit: Mars One, Bryan Versteeg)</figcaption>
+<figure><img alt="Mars One habitat capsules"
+  src="/sites/default/media/images/Mars-One-capsules-2700.jpg"/>
+  <figcaption>Mars One habitat capsules (Credit: Mars One, Bryan Versteeg)</figcaption>
 </figure>
 
-<p>SpaceX and Mars One do not have a formal association, and SpaceX have not announced the development of larger Dragon capsules. Therefore, Blue Dragon does not presently include them.</p>
+<p>SpaceX and Mars One do not have a formal association, and SpaceX have not announced the
+  development of larger Dragon capsules. Therefore, Blue Dragon does not presently include them.</p>
 
 <h2 id="section2-4">2.4. Bigelow Aerospace B330</h2>
 
-<p>The B330 module from Bigelow Aerospace is an inflatable space habitat slated to become available from about 2017. The B330s are designed for use in space stations, interplanetary vehicles, or surface habitats on the Moon or Mars, and include an ECLSS designed to safely support a crew of six long-term.</p>
+<p>The B330 module from Bigelow Aerospace is an inflatable space habitat slated to become available
+  from about 2017. The B330s are designed for use in space stations, interplanetary vehicles, or
+  surface habitats on the Moon or Mars, and include an ECLSS designed to safely support a crew of
+  six long-term.</p>
 
-<p>The structure of the B330 is essentially a solid central core surrounded by an inflatable, thick-walled &ldquo;bubble&rdquo;. The core contains the ECLSS, bathroom, and possibly also food storage, air tanks and a solar storm shelter. At each end of the central core is a docking port and airlock. One end of the module has two large solar panel arrays and two thermal radiators.</p>
+<p>The structure of the B330 is essentially a solid central core surrounded by an inflatable,
+  thick-walled “bubble”. The core contains the ECLSS, bathroom, and possibly also food storage, air
+  tanks and a solar storm shelter. At each end of the central core is a docking port and airlock.
+  One end of the module has two large solar panel arrays and two thermal radiators.</p>
 
-<figure><img alt="B330 interior showing the central core" src="/sites/default/media/images/B330-interior.jpg" />
-	<figcaption>B330 interior showing the central core (Credit: Bigelow Aerospace)</figcaption>
+<figure><img alt="B330 interior showing the central core"
+  src="/sites/default/media/images/B330-interior.jpg"/>
+  <figcaption>B330 interior showing the central core (Credit: Bigelow Aerospace)</figcaption>
 </figure>
 
-<p>Aside from the basic dimensions and performance characteristics, few other details about the B330 are currently available.</p>
+<p>Aside from the basic dimensions and performance characteristics, few other details about the B330
+  are currently available.</p>
 
-<p>The B330 modules may be launched in a deflated state, thus permitting them to be launched within a smaller diameter payload fairing, reducing launch costs. They may be connected together to form larger structures; for example, below is shown Bigelow Aerospace&rsquo;s concept for their &ldquo;Alpha Station&rdquo;, which shows four connected B330 modules with three SpaceX Dragon capsules attached:</p>
+<p>The B330 modules may be launched in a deflated state, thus permitting them to be launched within
+  a smaller diameter payload fairing, reducing launch costs. They may be connected together to form
+  larger structures; for example, below is shown Bigelow Aerospace’s concept for their “Alpha
+  Station”, which shows four connected B330 modules with three SpaceX Dragon capsules attached:</p>
 
-<figure><img alt="Alpha Space Station concept" src="/sites/default/media/images/Bigelow-space-station-Alpha-w-Dragons-2700.jpg" />
-	<figcaption>Alpha Space Station concept (Credit: Bigelow Aerospace)</figcaption>
+<figure><img alt="Alpha Space Station concept"
+  src="/sites/default/media/images/Bigelow-space-station-Alpha-w-Dragons-2700.jpg"/>
+  <figcaption>Alpha Space Station concept (Credit: Bigelow Aerospace)</figcaption>
 </figure>
 
-<p>B330 modules will use the NDS, which has been developed for the Orion Crew Vehicle and Commercial Crew Vehicles. SpaceX&rsquo;s Dragon capsules also use the NDS, and can therefore dock with B330 modules.</p>
+<p>B330 modules will use the NDS, which has been developed for the Orion Crew Vehicle and Commercial
+  Crew Vehicles. SpaceX’s Dragon capsules also use the NDS, and can therefore dock with B330
+  modules.</p>
 
-<p>Bigelow Aerospace and SpaceX have already agreed to cooperate on interoperability between Dragon capsules and B330 modules.</p>
+<p>Bigelow Aerospace and SpaceX have already agreed to cooperate on interoperability between Dragon
+  capsules and B330 modules.</p>
 
-<p>The skin of a B330 is comprised of 24-36 layers for ballistic, thermal and radiation protection. The B330&rsquo;s radiation protection is approximately equal to that of the ISS, however, its ballistic protection is superior.</p>
+<p>The skin of a B330 is comprised of 24-36 layers for ballistic, thermal and radiation protection.
+  The B330’s radiation protection is approximately equal to that of the ISS, however, its ballistic
+  protection is superior.</p>
 
-<figure><img alt="B330 cutaway" class="size-7" src="/sites/default/media/images/B330-vertical-cutaway.jpg" />
-	<figcaption>B330 cutaway (Credit: Bigelow Aerospace)</figcaption>
+<figure><img alt="B330 cutaway" class="size-7"
+  src="/sites/default/media/images/B330-vertical-cutaway.jpg"/>
+  <figcaption>B330 cutaway (Credit: Bigelow Aerospace)</figcaption>
 </figure>
 
 <h4>Internal Volume</h4>
 
-<p>The B330 modules have&nbsp;an internal volume of approximately 330 m<sup>3</sup> (hence the name), which is ample for a crew of six, including storage for consumables. The bare minimum free volume required per person is generally considered to be 10 m<sup>3</sup>, although the preferred minimum is considered to be about 19 m<sup>3</sup>. In the B330, even if half the available volume is devoted to supplies and equipment there will still be 27.5 m<sup>3</sup> free volume per person, which is quite spacious compared with previous crewed spacecraft and space stations.</p>
+<p>The B330 modules have an internal volume of approximately 330 m<sup>3</sup> (hence the
+  name), which is ample for a crew of six, including storage for consumables. The bare minimum free
+  volume required per person is generally considered to be 10 m<sup>3</sup>, although the preferred
+  minimum is considered to be about 19 m<sup>3</sup>. In the B330, even if half the available volume
+  is devoted to supplies and equipment there will still be 27.5 m<sup>3</sup> free volume per
+  person, which is quite spacious compared with previous crewed spacecraft and space stations.</p>
 
-<p>B330s are comparatively much less dense than ISS modules and past space habitats. A B330 weighs about 20 tonnes, yet has approximately three times the internal volume of the ISS Destiny module, which weighs about 15 tonnes. This benefit, in addition to the fact that they can be launched in a deflated state, means that the B330 modules represent a greatly reduced cost per cubic metre of space habitat.</p>
+<p>B330s are comparatively much less dense than ISS modules and past space habitats. A B330 weighs
+  about 20 tonnes, yet has approximately three times the internal volume of the ISS Destiny module,
+  which weighs about 15 tonnes. This benefit, in addition to the fact that they can be launched in a
+  deflated state, means that the B330 modules represent a greatly reduced cost per cubic metre of
+  space habitat.</p>
 
 <h4>Versions</h4>
 
 <p>The base model B330 is designed for Earth orbit.</p>
 
-<figure><img alt="B330 on orbit" src="/sites/default/media/images/B330-w-Moon.jpg" />
-	<figcaption>B330 on orbit (Credit: Bigelow Aerospace)</figcaption>
+<figure><img alt="B330 on orbit" src="/sites/default/media/images/B330-w-Moon.jpg"/>
+  <figcaption>B330 on orbit (Credit: Bigelow Aerospace)</figcaption>
 </figure>
 
-<p>Bigelow Aerospace have said they will also provide a &ldquo;Deep Space&rdquo; version of the B330 optimised for interplanetary space, in additions to versions optimised for the surfaces of the Moon and Mars. The Deep Space version provides water storage in the form of &ldquo;water tiles&rdquo;, which are thick, square containers of water, lining the interior of the habitat. As water is one of the most effective substances for absorbing radiation, this provides additional protection for the crew (Cohen, Flynn &amp; Matossian 2012).</p>
+<p>Bigelow Aerospace have said they will also provide a “Deep Space” version of the B330 optimised
+  for interplanetary space, in additions to versions optimised for the surfaces of the Moon and
+  Mars. The Deep Space version provides water storage in the form of “water tiles”, which are thick,
+  square containers of water, lining the interior of the habitat. As water is one of the most
+  effective substances for absorbing radiation, this provides additional protection for the crew
+  (Cohen, Flynn &amp; Matossian 2012).</p>
 
-<figure><img alt="B330 on Mars orbit" src="/sites/default/media/images/B330-Mars.jpg" />
-	<figcaption>B330 on Mars orbit (Credit: Bigelow Aerospace)</figcaption>
+<figure><img alt="B330 on Mars orbit" src="/sites/default/media/images/B330-Mars.jpg"/>
+  <figcaption>B330 on Mars orbit (Credit: Bigelow Aerospace)</figcaption>
 </figure>
 
 <h4>Launching the B330</h4>
 
-<p>A B330 has a mass of approximately 20-23 tonnes, length of 14 metres, an inflated diameter of 6.7 metres, and an estimated deflated diameter of about 3.5 metres. The rocket currently under consideration by Bigelow Aerospace for launching these to orbit is the Atlas V. However, the only Atlas V configuration that could launch a B330 is probably the Heavy (HLV DEC/5H2), which can deliver 29.4 tonnes to LEO. As yet the Atlas V Heavy is yet to be built or flown, and it&rsquo;s estimated that preparing one would take about 30 months.</p>
+<p>A B330 has a mass of approximately 20-23 tonnes, length of 14 metres, an inflated diameter of 6.7
+  metres, and an estimated deflated diameter of about 3.5 metres. The rocket currently under
+  consideration by Bigelow Aerospace for launching these to orbit is the Atlas V. However, the only
+  Atlas V configuration that could launch a B330 is probably the Heavy (HLV DEC/5H2), which can
+  deliver 29.4 tonnes to LEO. As yet the Atlas V Heavy is yet to be built or flown, and it’s
+  estimated that preparing one would take about 30 months.</p>
 
-<p>The Atlas V Heavy has a payload diameter of either 5.4 m and a payload length of 16 m, which is sufficiently large to launch a deflated B330. However, a Heavy may not be required, as the Atlas V is a flexible vehicle with a range of payload configurations, including diameters of 4 m or 5.4 m, and lengths ranging from 9 m to 16 m or even more, and it&rsquo;s possible that an alternative configuration may be developed specifically to suit the B330.</p>
+<p>The Atlas V Heavy has a payload diameter of either 5.4 m and a payload length of 16 m, which is
+  sufficiently large to launch a deflated B330. However, a Heavy may not be required, as the Atlas V
+  is a flexible vehicle with a range of payload configurations, including diameters of 4 m or 5.4 m,
+  and lengths ranging from 9 m to 16 m or even more, and it’s possible that an alternative
+  configuration may be developed specifically to suit the B330.</p>
 
-<p>Another option could be the SpaceX Falcon Heavy. However, its 11.4 metre payload fairing would need to be extended, and the B330 would need to be launched in a deflated state to fit within the 4.6 metre diameter fairing.</p>
+<p>Another option could be the SpaceX Falcon Heavy. However, its 11.4 metre payload fairing would
+  need to be extended, and the B330 would need to be launched in a deflated state to fit within the
+  4.6 metre diameter fairing.</p>
 
-<p>Two B330 modules are required by the architecture: the THAB (Transit HABitat) and the SHAB. Although one of the main advantages of inflatable habitats is that they can be launched by smaller rockets in a deflated state, it may be preferable for this architecture to launch both habitats inflated and already fitted out, as this will enable many systems to be tested on Earth where engineers are available to make repairs and enhancements. It will enable training missions to be conducted on the ground, and the crew to become familiar with the equipment and the interior of their actual habitats (rather than mockups or prototypes) before the mission.</p>
+<p>Two B330 modules are required by the architecture: the THAB (Transit HABitat) and the SHAB.
+  Although one of the main advantages of inflatable habitats is that they can be launched by smaller
+  rockets in a deflated state, it may be preferable for this architecture to launch both habitats
+  inflated and already fitted out, as this will enable many systems to be tested on Earth where
+  engineers are available to make repairs and enhancements. It will enable training missions to be
+  conducted on the ground, and the crew to become familiar with the equipment and the interior of
+  their actual habitats (rather than mockups or prototypes) before the mission.</p>
 
-<p>If the THAB is launched deflated, it will be necessary for one or more fit-out crews to visit it via Dragon capsule, which will be risky, expensive, time-consuming, and inconvenient. If the SHAB is sent to Mars deflated, it will not be in a habitable state when the crew arrive. After having spent 6 months in microgravity, it will not be practical for them to immediately have to begin assembling furniture and setting up equipment. It will be much better if everything is ready for them on arrival. This will also enable more of the habitats&rsquo; systems to be remotely tested before the crew leave Earth.</p>
+<p>If the THAB is launched deflated, it will be necessary for one or more fit-out crews to visit it
+  via Dragon capsule, which will be risky, expensive, time-consuming, and inconvenient. If the SHAB
+  is sent to Mars deflated, it will not be in a habitable state when the crew arrive. After having
+  spent 6 months in microgravity, it will not be practical for them to immediately have to begin
+  assembling furniture and setting up equipment. It will be much better if everything is ready for
+  them on arrival. This will also enable more of the habitats’ systems to be remotely tested before
+  the crew leave Earth.</p>
 
-<p>With these things in mind, and considering the critical importance of the habitats to the mission, the additional cost associated with launching the habitats in an inflated state and fitted out is justified.</p>
+<p>With these things in mind, and considering the critical importance of the habitats to the
+  mission, the additional cost associated with launching the habitats in an inflated state and
+  fitted out is justified.</p>
 
-<p>With its payload fairing of 8.4 m, the only vehicle likely to be available in the near future capable of launching a fully inflated B330 is the SLS. For launching the THAB the most suitable variant may be the SLS 105t Cargo. Its payload capacity of 105 tonnes is more than quadruple the mass of an empty B330, which means the THAB can be launched fully stocked with supplies, together with a section of <i>Adeona</i> (see <a href="/section9#section9-7">On-Orbit Assembly</a>).</p>
+<p>With its payload fairing of 8.4 m, the only vehicle likely to be available in the near future
+  capable of launching a fully inflated B330 is the SLS. For launching the THAB the most suitable
+  variant may be the SLS 105t Cargo. Its payload capacity of 105 tonnes is more than quadruple the
+  mass of an empty B330, which means the THAB can be launched fully stocked with supplies, together
+  with a section of <i>Adeona</i> (see <a href="/section9#section9-7">On-Orbit Assembly</a>).</p>
 
-<p>An SLS 130t Cargo is necessary for delivering the SHAB to Mars, which should be able to deliver in the range of 20-30 tonnes to the surface of Mars.</p>
+<p>An SLS 130t Cargo is necessary for delivering the SHAB to Mars, which should be able to deliver
+  in the range of 20-30 tonnes to the surface of Mars.</p>
 
 <h2 id="section2-5">2.5. Hardware Development</h2>
 
-<p>Components unavailable from commercial suppliers must still be developed, and this will probably require a substantial investment. However, current trends indicate this cost will decrease as more commercial space hardware suppliers and components become available, and as the space industry becomes increasingly confident in its own evolution and the expansion of the market. Technologies such as 3D printing and nanostructured materials are also driving down the cost of manufacturing, while simultaneously enabling superior designs.</p>
+<p>Components unavailable from commercial suppliers must still be developed, and this will probably
+  require a substantial investment. However, current trends indicate this cost will decrease as more
+  commercial space hardware suppliers and components become available, and as the space industry
+  becomes increasingly confident in its own evolution and the expansion of the market. Technologies
+  such as 3D printing and nanostructured materials are also driving down the cost of manufacturing,
+  while simultaneously enabling superior designs.</p>
 
-<p>Considering the vast range of technical services now available in the global space community, it should be possible to develop any remaining requirements within more modest time frames and budgets than have previously been considered. The development of any major component should begin with a comprehensive survey of products and services available from commercial suppliers.</p>
+<p>Considering the vast range of technical services now available in the global space community, it
+  should be possible to develop any remaining requirements within more modest time frames and
+  budgets than have previously been considered. The development of any major component should begin
+  with a comprehensive survey of products and services available from commercial suppliers.</p>
 
 <p>Examples of technological components that still need to be developed include:</p>
 
 <ul>
-	<li>A reliable EDL system for delivering 20-30 tonne payloads to the surface of Mars.</li>
-	<li>A reliable vehicle for transporting a crew from Mars surface to Mars orbit (i.e. a Mars Ascent Vehicle).</li>
-	<li>Proven technology for producing propellant, breathable air and potable water from the local Martian environment.</li>
-	<li>Effective techniques and technologies for dealing with radiation and Martian dust.</li>
+  <li>A reliable EDL system for delivering 20-30 tonne payloads to the surface of Mars.</li>
+  <li>A reliable vehicle for transporting a crew from Mars surface to Mars orbit (i.e. a Mars Ascent
+    Vehicle).
+  </li>
+  <li>Proven technology for producing propellant, breathable air and potable water from the local
+    Martian environment.
+  </li>
+  <li>Effective techniques and technologies for dealing with radiation and Martian dust.</li>
 </ul>
 
-<p>The expense of developing these components is not necessarily a sunk cost. There&rsquo;s a clear desire in the world population for settlement of Mars, and initiatives such as Inspiration Mars, Mars One and IMRS will surely be followed up by other human exploration and settlement programs, both public and private. As these technologies will be of value to any human mission, they could potentially be licensed, sold, or developed into new COTS products, providing opportunities to recover the initial investment and make a profit.</p>
+<p>The expense of developing these components is not necessarily a sunk cost. There’s a clear desire
+  in the world population for settlement of Mars, and initiatives such as Inspiration Mars, Mars One
+  and IMRS will surely be followed up by other human exploration and settlement programs, both
+  public and private. As these technologies will be of value to any human mission, they could
+  potentially be licensed, sold, or developed into new COTS products, providing opportunities to
+  recover the initial investment and make a profit.</p>
