@@ -8,7 +8,10 @@
     text-align: justify;
   }
 
-  body.title-page h1,
+  .title-page h1 {
+    margin: 2em 0;
+  }
+
   h2, h3, h4, h5 {
     margin: 2em 0 0;
   }
@@ -77,8 +80,13 @@
     margin-left: 3em;
   }
 
+  blockquote,
+  .quote {
+    margin: 2em;
+    color: royalblue;
+  }
+
   blockquote {
-    margin: 1em 0 1em 2em;
     font-style: italic;
   }
 
