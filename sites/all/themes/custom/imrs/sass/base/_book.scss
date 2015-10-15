@@ -83,7 +83,7 @@
   blockquote,
   .quote {
     margin: 2em;
-    color: #777;
+    color: $quote;
   }
 
   blockquote {
@@ -103,7 +103,7 @@
   }
 
   .highlight {
-    background-color: #fff753
+    background-color: $highlight;
   }
 
   /******************************************************************************/
