@@ -292,7 +292,7 @@ p#outside-us {
   .field--name-field-html-editor blockquote,
   .field--name-field-html-editor .quote {
     margin: 2em;
-    color: royalblue; }
+    color: #777; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/SPACE\/MARS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000389}}
   .field--name-field-html-editor blockquote {
     font-style: italic; }
