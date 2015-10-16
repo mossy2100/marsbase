@@ -905,16 +905,16 @@ span.highlight {
     margin: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/SPACE\/MARS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003166}}
-#where-to-buy {
+.node--page table {
   width: 500px;
   max-width: 100%;
   margin: auto;
   border-collapse: collapse; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/SPACE\/MARS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003172}}
-  #where-to-buy th {
+  .node--page table th {
     background-color: #dfedff;
     text-align: center; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Dropbox\/PROJECTS\/SPACE\/MARS\/IMRS\/marsbase\.org\/www\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003177}}
-  #where-to-buy td, #where-to-buy th {
+  .node--page table td, .node--page table th {
     padding: 5px;
     border: solid 1px #80b6ff; }
