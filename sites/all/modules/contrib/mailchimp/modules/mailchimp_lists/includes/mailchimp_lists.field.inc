@@ -325,7 +325,7 @@ function mailchimp_lists_field_widget_form(&$form, &$form_state, $field, $instan
   if (isset($element['#entity'])) {
     $email = mailchimp_lists_load_email($instance, $element['#entity'], FALSE);
     if ($email) {
-      $default = mailchimp_is_subscribed($field['settings']['mc_list_id'], $email);
+      $default = mailchimp_is_subscribed($field['settings']['mc_list_id'], $email, $field['settings']['double_opt_in']);
     }
   }
   $element += array(
@@ -461,7 +461,8 @@ function mailchimp_lists_field_formatter_settings_summary($field, $instance, $vi
  */
 function mailchimp_lists_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
   $element = array();
-  $mc_list = mailchimp_get_list($field['settings']['mc_list_id']);
+  $use_interest_groups = ($instance['settings']['show_interest_groups'] && $display['settings']['show_interest_groups']);
+  $mc_list = mailchimp_get_list($field['settings']['mc_list_id'], $use_interest_groups);
   $email = mailchimp_lists_load_email($instance, $entity, FALSE);
 
   // Display subscription form if accessible.
@@ -491,31 +492,29 @@ function mailchimp_lists_field_formatter_view($entity_type, $entity, $field, $in
       '#markup' => $status,
       '#description' => t('@mc_list_description', array('@mc_list_description' => $instance['description'])),
     );
-    if ($instance['settings']['show_interest_groups'] && $display['settings']['show_interest_groups']) {
-      if (!empty($mc_list->intgroups)) {
+    if ($use_interest_groups && !empty($mc_list->intgroups)) {
 
-        $element['interest_groups'] = array(
-          '#type' => 'fieldset',
-          '#title' => t('Interest Groups'),
-          '#weight' => 100,
-        );
+      $element['interest_groups'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('Interest Groups'),
+        '#weight' => 100,
+      );
 
-        foreach ($mc_list->intgroups as $interest_group) {
-          $items = array();
-          foreach ($interest_group->interests as $interest) {
-            if (isset($member_info->interests->{$interest->id}) && ($member_info->interests->{$interest->id} === TRUE)) {
-              $items[] = $interest->name;
-            }
+      foreach ($mc_list->intgroups as $interest_group) {
+        $items = array();
+        foreach ($interest_group->interests as $interest) {
+          if (isset($member_info->interests->{$interest->id}) && ($member_info->interests->{$interest->id} === TRUE)) {
+            $items[] = $interest->name;
           }
+        }
 
-          if (count($items) > 0) {
-            $element['interest_groups'][$interest_group->id] = array(
-              '#title' => $interest_group->title,
-              '#theme' => 'item_list',
-              '#items' => $items,
-              '#type' => 'ul',
-            );
-          }
+        if (count($items) > 0) {
+          $element['interest_groups'][$interest_group->id] = array(
+            '#title' => $interest_group->title,
+            '#theme' => 'item_list',
+            '#items' => $items,
+            '#type' => 'ul',
+          );
         }
       }
     }
@@ -643,7 +642,11 @@ function _mailchimp_lists_field_postsave($entity_type, $entity, $field, $instanc
     }
 
     // Check if the field is empty or is set by the system via field_get_default_value().
-    if (empty($items[0]) || !empty($item[0]['is_default'])) {
+    if (empty($items[0])) {
+      // user_save() was called without our field in its $edit
+      return;
+    }
+    else if (!empty($items[0]['is_default'])) {
       // Check if this email is already subscribed.
       $email = mailchimp_lists_load_email($instance, $entity);
       $list_id = $field['settings']['mc_list_id'];

@@ -7,9 +7,8 @@ configure = admin/config/system/mailsystem
 dependencies[] = filter
 files[] = MailsystemDelegateMailSystem.inc
 
-; Information added by drupal.org packaging script on 2012-06-08
-version = "7.x-3.0-alpha1"
+; Information added by Drupal.org packaging script on 2018-07-12
+version = "7.x-3.0-alpha2"
 core = "7.x"
 project = "mailsystem"
-datestamp = "1339183878"
-
+datestamp = "1531389225"

@@ -88,21 +88,21 @@ Installation Notes
 MailChimp Library Installation
 --------------------------------------------------------------------------------
 
-    If you are using Libraries module for MailChimp version 7.x-4.x:
+    # For MailChimp version 7.x-4.x
 
-    The library has dependencies managed by Composer. If you would prefer
-    not to use Composer, you can download the pre-built library package:
-    https://github.com/thinkshout/mailchimp-api-php/releases/download/v1.0.5/v1.0.5-package.zip
+    To use the Libraries module:
 
-    To use Composer:
+      - Install the Libraries module:
+        https://www.drupal.org/project/libraries
 
-      - Download Composer if you don't already have it installed:
-        https://getcomposer.org/download/
+      - Download the current release of the MailChimp library:
+        https://github.com/thinkshout/mailchimp-api-php/files/1361112/v1.0.8-package.zip
 
-      - Download the most recent release of the v3 API library:
-        https://github.com/thinkshout/mailchimp-api-php/releases
+      - Locate your libraries directory. Usually:
+        /sites/all/libraries/
 
-      - Extract the library archive to libraries/mailchimp
+      - Extract the archive to:
+        libraries/mailchimp
 
       - Ensure the directory structure looks like this:
 
@@ -115,13 +115,15 @@ MailChimp Library Installation
               - MailchimpLists.php
               - MailchimpReports.php
               - MailchimpTemplates.php
+            - vendor/
+              - autoload.php
+              - composer/
+              - guzzlehttp/
+              - psr/
             - composer.json
             - README.md
 
-      - In the mailchimp library directory, run:
-        composer install
-
-    If you are using Composer Manager for MailChimp version 7.x-4.x:
+    To use Composer Manager:
 
       - Download Composer if you don't already have it installed:
         https://getcomposer.org/download/
@@ -136,7 +138,7 @@ MailChimp Library Installation
         drush composer-manager update --no-dev
 
 
-    For MailChimp version 7.x-2.x and 7.x-3.x:
+    # For MailChimp version 7.x-2.x and 7.x-3.x:
 
       - Download version 2.0.6 of the v2 API library:
         https://bitbucket.org/mailchimp/mailchimp-api-php/downloads
