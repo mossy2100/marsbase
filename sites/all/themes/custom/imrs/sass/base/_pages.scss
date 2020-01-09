@@ -179,3 +179,8 @@ span.highlight {
     border: solid 1px $table-border;
   }
 }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
