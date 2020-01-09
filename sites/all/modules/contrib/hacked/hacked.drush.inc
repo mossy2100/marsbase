@@ -21,6 +21,7 @@ function hacked_load_drush_dependencies() {
     require_once __DIR__ . '/includes/hackedFileIncludeEndingsHasher.inc';
     require_once __DIR__ . '/includes/hackedProject.inc';
     require_once __DIR__ . '/includes/hackedProjectWebDownloader.inc';
+    require_once __DIR__ . '/includes/hackedProjectWebDevDownloader.inc';
     require_once __DIR__ . '/includes/hackedProjectWebCVSDownloader.inc';
     require_once __DIR__ . '/includes/hackedProjectWebFilesDownloader.inc';
     require_once __DIR__ . '/hacked.report.inc';

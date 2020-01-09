@@ -49,11 +49,11 @@ function mailsystem_admin_settings() {
     }
   }
   $form['mailsystem']['mailsystem_theme'] = array(
-      '#type' => 'select',
-      '#title' => t('Theme to render the emails'),
-      '#description' => t('Select the theme that will be used to render the emails. This can be either the current theme, the default theme, the domain theme or any active theme.'),
-      '#options' => $theme_options,
-      '#default_value' => variable_get('mailsystem_theme', 'current'),
+    '#type' => 'select',
+    '#title' => t('Theme to render the emails'),
+    '#description' => t('Select the theme that will be used to render the emails. This can be either the current theme, the default theme, the domain theme or any active theme.'),
+    '#options' => $theme_options,
+    '#default_value' => variable_get('mailsystem_theme', 'current'),
   );
 
   $form['mailsystem'][mailsystem_default_id()] = array(
@@ -167,7 +167,7 @@ function mailsystem_admin_add_setting_validate($fieldset, &$form_state) {
   $id = $module;
   if (!empty($key)) {
     $id .= '_' . $key;
-   }
+  }
 
   $mail_system = mailsystem_get();
   if (isset($mail_system[$id])) {
@@ -195,8 +195,10 @@ function mailsystem_admin_add_setting_submit($form, &$form_state) {
  */
 function mailsystem_admin_remove_setting_submit($form, &$form_state) {
   $parents = $form_state['triggering_element']['#parents'];
-  array_pop($parents); // submit
-  $id = array_pop($parents); // fieldset
+  // Submit.
+  array_pop($parents);
+  // Fieldset.
+  $id = array_pop($parents);
 
   mailsystem_clear(array($id => $id));
 
@@ -220,7 +222,6 @@ function mailsystem_admin_settings_submit($form, &$form_state) {
 
   drupal_set_message(t('Saved settings for mailsystem'));
 }
-
 
 /**
  * Helper function. Writes the setting values for a given mail-id.
