@@ -126,8 +126,8 @@ function plural($str, $n = 0, $returnNum = FALSE) {
   else {
     // find plural form:
     $len = strlen($str);
-    $lastCh = $str{$len - 1};
-    $secondLastCh = $str{$len - 2};
+    $lastCh = $str[$len - 1];
+    $secondLastCh = $str[$len - 2];
     $last2Chars = $lastCh.$secondLastCh;
     if ($lastCh == ".")
     {
@@ -739,10 +739,10 @@ function editDistance($s, $t) {
 
   // Step 3
   for ($i = 1; $i <= $n; $i++) {
-    $s_i = $s{$i - 1};  // the $i'th character of $s
+    $s_i = $s[$i - 1];  // the $i'th character of $s
     // Step 4
     for ($j = 1; $j <= $m; $j++) {
-      $t_j = $t{$j - 1}; // the $j'th character of $t
+      $t_j = $t[$j - 1]; // the $j'th character of $t
 
       // Step 5
       $cost = $s_i == $t_j ? 0 : 1;
@@ -765,7 +765,7 @@ function editDistance($s, $t) {
 function makeDomainWord($str) {
   $out = "";
   for ($i = 0; $i < strlen($str); $i++) {
-    $ch = $str{$i};
+    $ch = $str[$i];
     if (ctype_alnum($ch) || ($ch == '-' && $out != ''))
       $out .= $ch;
   }
@@ -810,7 +810,7 @@ function trim_break_tags($text) {
 /**
  * Convert a variable to a string, usually for output to the browser.
  * A bit nicer than PHP's default var_dump(), var_export() or serialize().
- * 
+ *
  * @param mixed $value
  * @return string
  */
@@ -870,8 +870,8 @@ function format_json($json) {
         // Are we inside a quoted string?
         if ($char == '"' && $prevChar != '\\') {
             $outOfQuotes = !$outOfQuotes;
-        
-        // If this character is the end of an element, 
+
+        // If this character is the end of an element,
         // output a new line and indent the next line.
         }
         elseif (($char == '}' || $char == ']') && $outOfQuotes) {
@@ -881,23 +881,23 @@ function format_json($json) {
                 $result .= $indentStr;
             }
         }
-        
+
         // Add the character to the result string.
         $result .= $char;
 
-        // If the last character was the beginning of an element, 
+        // If the last character was the beginning of an element,
         // output a new line and indent the next line.
         if (($char == ',' || $char == '{' || $char == '[') && $outOfQuotes) {
             $result .= $newLine;
             if ($char == '{' || $char == '[') {
                 $pos ++;
             }
-            
+
             for ($j = 0; $j < $pos; $j++) {
                 $result .= $indentStr;
             }
         }
-        
+
         $prevChar = $char;
     }
 
