@@ -184,3 +184,32 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline dotted;
 }
+
+div.has-sidebar-second div.l-content,
+div.has-sidebar-second aside.l-region--sidebar-second {
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 44em) {
+  div.has-sidebar-second div.l-content {
+    width: calc(66.6% - 15px);
+    margin-right: 5px;
+  }
+
+  div.has-sidebar-second aside.l-region--sidebar-second {
+    width: calc(33.3% - 15px);
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 70em) {
+  div.has-sidebar-second div.l-content {
+    width: calc(75% - 15px);
+  }
+
+  div.has-sidebar-second aside.l-region--sidebar-second {
+    width: calc(25% - 15px);
+  }
+}

@@ -230,7 +230,7 @@ p#outside-us {
     margin: 2em 0 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000319}}
   .field--name-field-html-editor h1, .field--name-field-html-editor h2, .field--name-field-html-editor h3, .field--name-field-html-editor h4, .field--name-field-html-editor h5, .field--name-field-html-editor h6 {
-    font-family: Museo, Verdana, Arial, Helvetica; }
+    font-family: Museo, Verdana, Arial, Helvetica, sans-serif; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000323}}
   .field--name-field-html-editor sub, .field--name-field-html-editor sup {
     line-height: 0; }
@@ -498,7 +498,7 @@ p#outside-us {
       margin: 0;
       padding: 0;
       font-size: 10pt;
-      font-family: Arial, Helvetica; }
+      font-family: Arial, Helvetica, sans-serif; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003392}}
     .field--name-field-html-editor a {
       color: #000; }
@@ -630,7 +630,7 @@ p#outside-us {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003533}}
 h1 {
-  font-family: Museo, Verdana, Arial, Helvetica; }
+  font-family: Museo, Verdana, Arial, Helvetica, sans-serif; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\000031}}
 .form-submit {
@@ -931,4 +931,29 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline dotted; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003188}}
+div.has-sidebar-second div.l-content,
+div.has-sidebar-second aside.l-region--sidebar-second {
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+@media (min-width: 44em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003196}}
+  div.has-sidebar-second div.l-content {
+    width: calc(66.6% - 15px);
+    margin-right: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003201}}
+  div.has-sidebar-second aside.l-region--sidebar-second {
+    width: calc(33.3% - 15px);
+    margin-left: 5px; } }
+@media (min-width: 70em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003208}}
+  div.has-sidebar-second div.l-content {
+    width: calc(75% - 15px); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003212}}
+  div.has-sidebar-second aside.l-region--sidebar-second {
+    width: calc(25% - 15px); } }
 /* No files to import found in components/**\/* */
