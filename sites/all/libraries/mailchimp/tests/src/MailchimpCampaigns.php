@@ -12,8 +12,8 @@ class MailchimpCampaigns extends \Mailchimp\MailchimpCampaigns {
   /**
    * @inheritdoc
    */
-  public function __construct($api_key = 'apikey', $api_user = 'apikey', $timeout = 60) {
-    $this->client = new Client();
+  public function __construct($api_key = 'apikey', $api_user = 'apikey', $http_options = []) {
+    $this->client = new MailchimpTestHttpClient();
   }
 
   public function getClient() {
