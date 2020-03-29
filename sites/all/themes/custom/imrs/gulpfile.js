@@ -23,7 +23,7 @@ const compileScss = () => {
       project: __dirname,
       css: 'css',
       sass: 'sass',
-      debug: true,
+      // debug: true,
       environment: 'development'
     }))
     .pipe(sourcemaps.write('.'))
@@ -31,7 +31,7 @@ const compileScss = () => {
 };
 
 const watch = () => {
-   gulp.watch('./sass/**/*.scss', ['compileScss']);
+   return gulp.watch('./sass/**/*.scss', compileScss);
 };
 
 exports.default = gulp.series(deleteCssFiles, compileScss);
