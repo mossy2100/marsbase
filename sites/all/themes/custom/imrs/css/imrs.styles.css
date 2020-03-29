@@ -1,15 +1,12 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\000037}}
 aside.l-region--sidebar-first,
 aside.l-region--sidebar-second {
   float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000311}}
   aside.l-region--sidebar-first div.block,
   aside.l-region--sidebar-first nav.block,
   aside.l-region--sidebar-second div.block,
   aside.l-region--sidebar-second nav.block {
     margin-bottom: 1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000320}}
 #book-block-menu-1 ul.menu,
 #block-system-navigation ul.menu,
 #block-system-main-menu ul.menu {
@@ -17,7 +14,6 @@ aside.l-region--sidebar-second {
   list-style-image: none;
   margin: 0 0 0 0px;
   padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000326}}
   #book-block-menu-1 ul.menu li,
   #block-system-navigation ul.menu li,
   #block-system-main-menu ul.menu li {
@@ -25,7 +21,6 @@ aside.l-region--sidebar-second {
     list-style-image: none;
     padding: 0;
     margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000332}}
     #book-block-menu-1 ul.menu li a,
     #block-system-navigation ul.menu li a,
     #block-system-main-menu ul.menu li a {
@@ -49,7 +44,6 @@ aside.l-region--sidebar-second {
       margin: 0 0 5px 0;
       text-decoration: none;
       font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000339}}
       #book-block-menu-1 ul.menu li a.active, #book-block-menu-1 ul.menu li a:hover,
       #block-system-navigation ul.menu li a.active,
       #block-system-navigation ul.menu li a:hover,
@@ -64,30 +58,24 @@ aside.l-region--sidebar-second {
         border: solid 1px #cc1425;
         color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000348}}
 #block-search-form {
   height: 25px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000354}}
 #block-system-navigation h2,
 #block-system-main-menu h2 {
   display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000359}}
 #block-block-2 {
   text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000362}}
   #block-block-2 p {
     margin-top: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000368}}
 #block-block-3 h2 {
   font-size: 22px;
   margin-top: 0;
   font-style: italic;
   text-shadow: 1px 1px 2px #222; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000376}}
 #block-block-4 {
   background-color: #80b6ff;
   color: white;
@@ -96,15 +84,12 @@ aside.l-region--sidebar-second {
   border-radius: 5px;
   padding: 10px;
   text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000381}}
   #block-block-4 p {
     margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000385}}
   #block-block-4 img {
     width: auto;
     margin-top: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000391}}
 #block-block-5 {
   background-color: #80b6ff;
   color: white;
@@ -113,13 +98,10 @@ aside.l-region--sidebar-second {
   border-radius: 5px;
   padding: 10px;
   text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\0000396}}
   #block-block-5 h2 {
     margin-top: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003100}}
   #block-block-5 p {
     margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003104}}
   #block-block-5 .block__content {
     background-color: white;
     padding: 10px;
@@ -127,7 +109,6 @@ aside.l-region--sidebar-second {
     -webkit-border-radius: 5px;
     border-radius: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003111}}
 #block-imrs-misc-contents {
   background-color: white;
   padding: 10px;
@@ -137,11 +118,9 @@ aside.l-region--sidebar-second {
   border: solid 1px black;
   color: black;
   font-size: 13px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003119}}
   #block-imrs-misc-contents h2 {
     margin: 3px 0 7px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003124}}
 #block-mailchimp-lists-imrs-news {
   background-color: #80b6ff;
   color: white;
@@ -150,37 +129,28 @@ aside.l-region--sidebar-second {
   border-radius: 5px;
   color: black;
   padding: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003129}}
   #block-mailchimp-lists-imrs-news h2 {
     margin: 0 0 5px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003133}}
   #block-mailchimp-lists-imrs-news h2.block__title {
     color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003137}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-EMAIL,
   #block-mailchimp-lists-imrs-news #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-email {
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003142}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME {
     display: inline-block;
     float: left;
     width: 48%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003147}}
     #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-fname {
       width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003152}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-LNAME {
     display: inline-block;
     float: right;
     width: 50%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003157}}
     #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-LNAME #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-lname {
       width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003163}}
   #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-subscribe .description {
     margin-top: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003169}}
 p#outside-us {
   margin-top: 10px;
   color: black;
@@ -191,14 +161,11 @@ p#outside-us {
   -webkit-border-radius: 3px;
   border-radius: 3px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003178}}
 #contact-icons {
   margin: 20px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_blocks\.scss}line{font-family:\00003181}}
   #contact-icons img {
     margin-right: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\000031}}
 .field--name-field-html-editor {
   /******************************************************************************/
   /* Base styles */
@@ -218,280 +185,198 @@ p#outside-us {
   /* Equations */
   /******************************************************************************/
   /* Figures/images */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\000036}}
   .field--name-field-html-editor p {
     margin: 1em 0;
     text-align: justify; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000311}}
   .field--name-field-html-editor .title-page h1 {
     margin: 2em 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000315}}
   .field--name-field-html-editor h2, .field--name-field-html-editor h3, .field--name-field-html-editor h4, .field--name-field-html-editor h5 {
     margin: 2em 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000319}}
   .field--name-field-html-editor h1, .field--name-field-html-editor h2, .field--name-field-html-editor h3, .field--name-field-html-editor h4, .field--name-field-html-editor h5, .field--name-field-html-editor h6 {
     font-family: Museo, Verdana, Arial, Helvetica, sans-serif; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000323}}
   .field--name-field-html-editor sub, .field--name-field-html-editor sup {
     line-height: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000327}}
   .field--name-field-html-editor sub, .field--name-field-html-editor sup, .field--name-field-html-editor small, .field--name-field-html-editor .small {
     font-size: 75%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000331}}
   .field--name-field-html-editor h4 {
     font-size: 125%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000335}}
   .field--name-field-html-editor h3 {
     font-size: 150%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000339}}
   .field--name-field-html-editor h2 {
     font-size: 175%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000343}}
   .field--name-field-html-editor h1 {
     font-size: 200%;
     margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000348}}
   .field--name-field-html-editor big, .field--name-field-html-editor .big {
     font-size: 300%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000352}}
   .field--name-field-html-editor th h1, .field--name-field-html-editor th h2, .field--name-field-html-editor th h3, .field--name-field-html-editor th h4 {
     margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000356}}
   .field--name-field-html-editor a {
     color: royalblue;
     text-decoration: underline; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000361}}
   .field--name-field-html-editor p, .field--name-field-html-editor blockquote, .field--name-field-html-editor li, .field--name-field-html-editor h1, .field--name-field-html-editor h2, .field--name-field-html-editor h3, .field--name-field-html-editor h4, .field--name-field-html-editor h5 {
     line-height: 1.25em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000367}}
   .field--name-field-html-editor .nomargin {
     margin: 0 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000371}}
   .field--name-field-html-editor .indent1 {
     margin-left: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000375}}
   .field--name-field-html-editor .indent2 {
     margin-left: 2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000379}}
   .field--name-field-html-editor .indent3 {
     margin-left: 3em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000383}}
   .field--name-field-html-editor blockquote,
   .field--name-field-html-editor .quote {
     margin: 2em;
     color: #777; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000389}}
   .field--name-field-html-editor blockquote {
     font-style: italic; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000393}}
   .field--name-field-html-editor .center {
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\0000397}}
   .field--name-field-html-editor .italic {
     font-style: italic; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003101}}
   .field--name-field-html-editor .bold {
     font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003105}}
   .field--name-field-html-editor .highlight {
     background-color: #fff753; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003112}}
   .field--name-field-html-editor table {
     border-collapse: collapse;
     margin: 1em auto;
     width: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003118}}
   .field--name-field-html-editor caption {
     font-style: italic;
     margin-bottom: 0.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003123}}
   .field--name-field-html-editor tr:nth-child(odd) {
     background-color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003127}}
   .field--name-field-html-editor tr:nth-child(even) {
     background-color: #eee; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003131}}
   .field--name-field-html-editor tr.head, .field--name-field-html-editor th.head {
     background-color: #dfedff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003135}}
   .field--name-field-html-editor tr.total, .field--name-field-html-editor th.total {
     background-color: #FFE1BF; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003139}}
   .field--name-field-html-editor tr.subtitle th, .field--name-field-html-editor th.subtitle {
     background-color: #fff;
     font-weight: bold;
     padding-top: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003145}}
   .field--name-field-html-editor tr.bg-silver, .field--name-field-html-editor th.bg-silver {
     background-color: #eee; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003149}}
   .field--name-field-html-editor th {
     background: none;
     border: solid 1px #77a;
     padding: 0.5em;
     text-align: left;
     font-weight: normal; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003157}}
   .field--name-field-html-editor tr.head th,
   .field--name-field-html-editor tr.total th {
     font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003162}}
   .field--name-field-html-editor th.right {
     text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003166}}
   .field--name-field-html-editor th p,
   .field--name-field-html-editor td p {
     margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003171}}
   .field--name-field-html-editor table.equations {
     border: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003175}}
   .field--name-field-html-editor table.equations tr {
     background: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003179}}
   .field--name-field-html-editor table.equations th {
     border: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003183}}
   .field--name-field-html-editor th.selected {
     background-color: #d1ffd5; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003190}}
   .field--name-field-html-editor #crew-slots h4 {
     margin-top: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003194}}
   .field--name-field-html-editor #crew-slots h5 {
     margin-bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003198}}
   .field--name-field-html-editor #crew-slots th {
     vertical-align: middle;
     height: 2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003203}}
   .field--name-field-html-editor #crew-slots th.head {
     height: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003207}}
   .field--name-field-html-editor #crew-slots-3-missions th {
     height: 2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003211}}
   .field--name-field-html-editor #crew-slots-3-missions tr.brave {
     background-color: #ddd; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003218}}
   .field--name-field-html-editor tr.launch-vehicles {
     background-color: #fefcd4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003222}}
   .field--name-field-html-editor tr.space-vehicles {
     background-color: #fed3ed; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003226}}
   .field--name-field-html-editor tr.surface-vehicles {
     background-color: #c9dafe; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003230}}
   .field--name-field-html-editor tr.capsules {
     background-color: #e0ffdb; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003234}}
   .field--name-field-html-editor tr.habitats {
     background-color: #c2ffff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003238}}
   .field--name-field-html-editor tr.satellites {
     background-color: #fee8ca; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003245}}
   .field--name-field-html-editor #crew-roles th {
     height: 2.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003249}}
   .field--name-field-html-editor #crew-roles th.head {
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003253}}
   .field--name-field-html-editor .crew-colour {
     padding: 3px 5px 1px;
     border: solid 1px #000;
     display: inline-block;
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003260}}
   .field--name-field-html-editor .crew-white {
     background-color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003264}}
   .field--name-field-html-editor .crew-blue {
     background-color: #4ba2ff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003268}}
   .field--name-field-html-editor .crew-purple {
     background-color: #df98fb; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003272}}
   .field--name-field-html-editor .crew-red {
     background-color: #fe6158; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003276}}
   .field--name-field-html-editor .crew-green {
     background-color: #99d865; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003280}}
   .field--name-field-html-editor .crew-yellow {
     background-color: #fff500; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003287}}
   .field--name-field-html-editor ol, .field--name-field-html-editor ul, .field--name-field-html-editor li {
     margin: 1em 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003291}}
   .field--name-field-html-editor ol, .field--name-field-html-editor ul {
     padding-left: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003295}}
   .field--name-field-html-editor li {
     margin-left: 0;
     text-align: justify; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003300}}
   .field--name-field-html-editor ol {
     list-style-type: decimal; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003304}}
   .field--name-field-html-editor ol.lower-alpha {
     list-style-type: lower-alpha; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003308}}
   .field--name-field-html-editor ol.upper-alpha {
     list-style-type: upper-alpha; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003312}}
   .field--name-field-html-editor ul {
     list-style-type: disc; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003319}}
   .field--name-field-html-editor .lhs {
     display: inline-block;
     width: 3em;
     margin-right: 0.2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003328}}
   .field--name-field-html-editor figure {
     width: auto;
     margin: 2em auto;
     text-align: center;
     page-break-inside: avoid; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003335}}
   .field--name-field-html-editor img {
     width: 100%;
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003340}}
   .field--name-field-html-editor img.size-9 {
     width: 90%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003344}}
   .field--name-field-html-editor img.size-8 {
     width: 80%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003348}}
   .field--name-field-html-editor img.size-7 {
     width: 70%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003352}}
   .field--name-field-html-editor img.size-6 {
     width: 60%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003356}}
   .field--name-field-html-editor img.size-5 {
     width: 50%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003360}}
   .field--name-field-html-editor img.size-4 {
     width: 40%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003364}}
   .field--name-field-html-editor img.size-3 {
     width: 30%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003368}}
   .field--name-field-html-editor img.size-2 {
     width: 20%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003372}}
   .field--name-field-html-editor img.size-1 {
     width: 10%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003376}}
   .field--name-field-html-editor figcaption {
     font-style: italic;
     margin-top: 0.2em;
     text-align: center; }
   @media print {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003383}}
     .field--name-field-html-editor body {
       /* To get colours printing correctly from Chrome. */
       -webkit-print-color-adjust: exact;
@@ -499,99 +384,68 @@ p#outside-us {
       padding: 0;
       font-size: 10pt;
       font-family: Arial, Helvetica, sans-serif; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003392}}
     .field--name-field-html-editor a {
       color: #000; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003396}}
     .field--name-field-html-editor body.contents a {
       text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003400}}
     .field--name-field-html-editor body.contents p {
       line-height: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003404}}
     .field--name-field-html-editor sub, .field--name-field-html-editor sup, .field--name-field-html-editor small, .field--name-field-html-editor .small,
     .field--name-field-html-editor table.abbrev th, .field--name-field-html-editor body.references {
       font-size: 7.5pt; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003409}}
     .field--name-field-html-editor table.abbrev th sub {
       font-size: 6pt; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003413}}
     .field--name-field-html-editor table, .field--name-field-html-editor tr {
       page-break-inside: avoid; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003417}}
     .field--name-field-html-editor .new-page {
       page-break-before: always; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003421}}
     .field--name-field-html-editor h4 {
       font-size: 12.5pt; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003425}}
     .field--name-field-html-editor h3 {
       font-size: 15pt; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003429}}
     .field--name-field-html-editor h2 {
       font-size: 17.5pt; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003433}}
     .field--name-field-html-editor h1 {
       font-size: 20pt; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003437}}
     .field--name-field-html-editor big, .field--name-field-html-editor .big {
       font-size: 25pt; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003441}}
     .field--name-field-html-editor figure {
       margin: 24px auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003445}}
     .field--name-field-html-editor img {
       width: 5in; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003449}}
     .field--name-field-html-editor img.size-9 {
       width: 4.5in; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003453}}
     .field--name-field-html-editor img.size-8 {
       width: 4in; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003457}}
     .field--name-field-html-editor img.size-7 {
       width: 3.5in; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003461}}
     .field--name-field-html-editor img.size-6 {
       width: 3in; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003465}}
     .field--name-field-html-editor img.size-5 {
       width: 2.5in; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003469}}
     .field--name-field-html-editor img.size-4 {
       width: 2in; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003473}}
     .field--name-field-html-editor img.size-3 {
       width: 1.5in; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003477}}
     .field--name-field-html-editor img.size-2 {
       width: 1in; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003481}}
     .field--name-field-html-editor img.size-1, .field--name-field-html-editor img.flag {
       width: 0.5in; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003487}}
 .book-navigation {
   margin-bottom: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003490}}
   .book-navigation ul.menu {
     display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003494}}
   .book-navigation table {
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003498}}
   .book-navigation td {
     width: 33%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003501}}
     .book-navigation td.td-book-navigation__previous {
       text-align: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003505}}
     .book-navigation td.td-book-navigation__up {
       text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003509}}
     .book-navigation td.td-book-navigation__next {
       text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003513}}
     .book-navigation td a {
       background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZDBhMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmOTkzMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
       background-size: 100%;
@@ -613,7 +467,6 @@ p#outside-us {
       width: auto;
       text-decoration: none;
       display: inline; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003520}}
       .book-navigation td a:hover {
         background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMDAwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NjMTQyNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
         background-size: 100%;
@@ -624,15 +477,12 @@ p#outside-us {
         border: solid 1px #cc1425;
         color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003528}}
 .section-acknowledgements .td-book-navigation__up {
   display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_book\.scss}line{font-family:\00003533}}
 h1 {
   font-family: Museo, Verdana, Arial, Helvetica, sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\000031}}
 .form-submit {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZDBhMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmOTkzMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -650,7 +500,6 @@ h1 {
   border-radius: 3px;
   font-size: 14px;
   padding: 5px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\000034}}
   .form-submit:hover {
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMDAwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NjMTQyNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
     background-size: 100%;
@@ -661,7 +510,6 @@ h1 {
     border: solid 1px #cc1425;
     color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\000039}}
 input[type=text],
 input.form-text {
   -moz-box-sizing: border-box;
@@ -670,7 +518,6 @@ input.form-text {
   height: 25px;
   padding: 1px 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000316}}
 input[type=text],
 input.form-text,
 textarea,
@@ -681,12 +528,10 @@ select {
   -webkit-border-radius: 3px;
   border-radius: 3px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000325}}
 .form-item .description,
 .form-actions .description {
   font-size: 12px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000331}}
 form#search-block-form div.form-item-search-block-form {
   display: inline-block;
   float: left;
@@ -694,13 +539,11 @@ form#search-block-form div.form-item-search-block-form {
   height: 25px;
   margin: 0;
   position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000339}}
   form#search-block-form div.form-item-search-block-form #edit-search-block-form--2 {
     width: 99%;
     vertical-align: baseline;
     position: absolute;
     top: 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000347}}
 form#search-block-form .form-actions {
   display: inline-block;
   float: right;
@@ -708,7 +551,6 @@ form#search-block-form .form-actions {
   height: 25px;
   margin: 0;
   position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000355}}
   form#search-block-form .form-actions .form-submit {
     width: 99%;
     height: 25px;
@@ -717,124 +559,99 @@ form#search-block-form .form-actions {
     top: 0px;
     right: 0px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000366}}
 #mailchimp-lists-user-subscribe-form-imrs-news {
   background-color: white;
   padding: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000371}}
   #mailchimp-lists-user-subscribe-form-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-EMAIL {
     margin-bottom: 5px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000375}}
   #mailchimp-lists-user-subscribe-form-imrs-news .form-submit {
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000381}}
   #mailchimp-lists-user-subscribe-form-imrs-news .mailchimp-newsletter-wrapper .form-type-checkbox label {
     font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000388}}
 #edit-mailchimp-lists-mailchimp-imrs-news-title {
   font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000391}}
   #edit-mailchimp-lists-mailchimp-imrs-news-title .description {
     font-weight: normal; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\0000396}}
 #social-icons {
   margin: 15px 0 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_forms\.scss}line{font-family:\00003100}}
 #social-icons img {
   width: 50px;
   height: 50px;
   margin-top: 5px;
   vertical-align: bottom; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_links\.scss}line{font-family:\000031}}
 a,
 a:link,
 a:visited {
   color: #1957c7;
   text-decoration: underline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_links\.scss}line{font-family:\000038}}
 a:focus,
 a:active,
 a.active {
   color: #ff9933; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_links\.scss}line{font-family:\0000314}}
 a:hover {
   color: #ff0000; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_media\.scss}line{font-family:\000031}}
 img, media {
   max-width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_media\.scss}line{font-family:\000035}}
 #book-cover {
   float: right;
   margin: 0 0 10px 10px; }
 
 @media all and (max-width: 500px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_media\.scss}line{font-family:\0000311}}
   #book-cover {
     float: none;
     text-align: center; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\000031}}
 html {
   background: #f6d0a1 url("../images/mars-landscape.jpg") repeat-x scroll bottom center;
   color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\000036}}
 body {
   background: transparent url("../images/martian-sky.jpg") repeat-x scroll top center;
   font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
   font-size: 14px;
-  line-height: 20px; }
+  line-height: 20px;
+  margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000313}}
 * {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000319}}
 div.l-main {
   margin-bottom: 1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000323}}
 header.l-header {
   height: 20px;
   margin-top: 0;
   margin-bottom: 1em;
   padding-top: 15px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000329}}
   header.l-header .l-branding {
     width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000332}}
     header.l-header .l-branding a.site-logo {
       float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000336}}
     header.l-header .l-branding h1.site-name {
       text-align: center;
       font-size: 40px;
       display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000341}}
       header.l-header .l-branding h1.site-name a {
         color: white;
         text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000347}}
     header.l-header .l-branding h2.site-slogan {
       display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000353}}
 .element-invisible {
   margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000357}}
 div.l-content {
   background-color: white;
   color: black;
@@ -844,94 +661,74 @@ div.l-content {
   border: solid 1px black;
   padding: 10px;
   margin-bottom: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000365}}
   div.l-content ul.breadcrumb {
     padding: 0;
     margin: 5px 0 15px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000369}}
     div.l-content ul.breadcrumb li {
       display: inline;
       margin: 0 5px 0 0;
       padding: 0 0 0 15px;
       background: url(../images/right-guillemet.png) no-repeat 0 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000377}}
   div.l-content p.submitted {
     color: #999;
     font-size: 12px;
     font-style: italic; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000385}}
   div.l-content .field--name-body table.timeline, div.l-content .field--name-body table.timeline td, div.l-content .field--name-body table.timeline th {
     border: solid 1px #ddd; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000389}}
   div.l-content .field--name-body table.timeline td, div.l-content .field--name-body table.timeline th {
     padding: 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\0000395}}
   div.l-content h1 {
     margin-top: 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003100}}
 footer.l-footer {
   margin-bottom: 0;
   height: 100px;
   background: transparent url("../images/mars-base.jpg") no-repeat scroll bottom center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003105}}
   footer.l-footer #block-block-1 {
     display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003130}}
 .book-navigation {
   margin-top: 30px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003134}}
 .ui-tooltip {
   font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
   font-size: 14px;
   line-height: 14px;
   max-width: 500px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003141}}
 div.ui-tooltip {
   background-color: #cc1425;
   color: white;
   background-image: none;
   border-color: #ff9933; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003148}}
 div.ui-tooltip-content {
   background-color: transparent; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003152}}
 span.highlight {
   background-color: yellow; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003157}}
 .node--book--full .field li {
   margin: 1em 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003160}}
   .node--book--full .field li p {
     margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003166}}
 .node--page table {
   width: 500px;
   max-width: 100%;
   margin: auto;
   border-collapse: collapse; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003172}}
   .node--page table th {
     background-color: #dfedff;
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003177}}
   .node--page table td, .node--page table th {
     padding: 5px;
     border: solid 1px #80b6ff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003183}}
 abbr[title] {
   border-bottom: none;
   text-decoration: underline dotted; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003188}}
 div.has-sidebar-second div.l-content,
 div.has-sidebar-second aside.l-region--sidebar-second {
   box-sizing: border-box;
@@ -939,21 +736,17 @@ div.has-sidebar-second aside.l-region--sidebar-second {
   margin-right: 10px; }
 
 @media (min-width: 44em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003196}}
   div.has-sidebar-second div.l-content {
     width: calc(66.6% - 15px);
     margin-right: 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003201}}
   div.has-sidebar-second aside.l-region--sidebar-second {
     width: calc(33.3% - 15px);
     margin-left: 5px; } }
 @media (min-width: 70em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003208}}
   div.has-sidebar-second div.l-content {
     width: calc(75% - 15px); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/base\/_pages\.scss}line{font-family:\00003212}}
   div.has-sidebar-second aside.l-region--sidebar-second {
     width: calc(25% - 15px); } }
 
