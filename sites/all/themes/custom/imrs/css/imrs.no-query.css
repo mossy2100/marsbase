@@ -227,7 +227,9 @@ p#outside-us {
   .field--name-field-html-editor blockquote,
   .field--name-field-html-editor .quote {
     margin: 2em;
-    color: #777; }
+    color: #aaa;
+    font-size: 1.5rem;
+    line-height: 1.5; }
   .field--name-field-html-editor blockquote {
     font-style: italic; }
   .field--name-field-html-editor .center {
@@ -621,11 +623,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   margin: 0; }
-
-* {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit; }
 
 div.l-main {
   margin-bottom: 1em; }
