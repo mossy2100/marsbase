@@ -1,12 +1,14 @@
 @media all and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/imrs\.hacks\.scss}line{font-family:\000033}}
+  /* line 3, ../sass/imrs.hacks.scss */
   #toolbar, #admin-menu {
     display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/imrs\.hacks\.scss}line{font-family:\000038}}
+  /* line 8, ../sass/imrs.hacks.scss */
   html body.toolbar, html body.admin-menu {
     padding-top: 0 !important;
     margin-top: 0 !important; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/shaun\/Sites\/marsbase\.org\/htdocs\/sites\/all\/themes\/custom\/imrs\/sass\/imrs\.hacks\.scss}line{font-family:\0000315}}
+/* line 15, ../sass/imrs.hacks.scss */
 #cboxLoadedContent img {
   max-width: none; }
+
+/*# sourceMappingURL=imrs.hacks.css.map */

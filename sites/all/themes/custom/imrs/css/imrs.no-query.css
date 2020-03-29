@@ -1,77 +1,960 @@
-/*
-Error: File to import not found or unreadable: compass.
-       Load paths:
-         /Users/shaun/Sites/marsbase.org/htdocs/sites/all/themes/custom/imrs/sass
-         Compass::SpriteImporter
-         /Users/shaun/Sites/marsbase.org/htdocs/sites/all/themes/custom/imrs/sass
-         /Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets
-         /Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/compass-normalize-1.5/stylesheets
-         /Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/susy-2.2.14/sass
-         /Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/compass-rgbapng-0.2.1/lib/stylesheets
-         /Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/toolkit-2.10.2/stylesheets
-         Sass::Globbing::Importer
-        on line 2 of /Users/shaun/Sites/marsbase.org/htdocs/sites/all/themes/custom/imrs/sass/imrs.styles.scss
-        from line 5 of /Users/shaun/Sites/marsbase.org/htdocs/sites/all/themes/custom/imrs/sass/imrs.no-query.scss
+/* line 7, ../sass/base/_blocks.scss */
+aside.l-region--sidebar-first,
+aside.l-region--sidebar-second {
+  float: left; }
+  /* line 11, ../sass/base/_blocks.scss */
+  aside.l-region--sidebar-first div.block,
+  aside.l-region--sidebar-first nav.block,
+  aside.l-region--sidebar-second div.block,
+  aside.l-region--sidebar-second nav.block {
+    margin-bottom: 1em; }
 
-1: $breakpoint-no-queries: true;
-2: $breakpoint-no-query-fallbacks: true;
-3: 
-4: // Re-render everything from styles.scss but without media queries.
-5: @import "imrs.styles";
+/* line 20, ../sass/base/_blocks.scss */
+#book-block-menu-1 ul.menu,
+#block-system-navigation ul.menu,
+#block-system-main-menu ul.menu {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0 0 0 0px;
+  padding: 0; }
+  /* line 26, ../sass/base/_blocks.scss */
+  #book-block-menu-1 ul.menu li,
+  #block-system-navigation ul.menu li,
+  #block-system-main-menu ul.menu li {
+    list-style-type: none;
+    list-style-image: none;
+    padding: 0;
+    margin: 0; }
+    /* line 32, ../sass/base/_blocks.scss */
+    #book-block-menu-1 ul.menu li a,
+    #block-system-navigation ul.menu li a,
+    #block-system-main-menu ul.menu li a {
+      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZDBhMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmOTkzMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+      background-size: 100%;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6d0a1), color-stop(100%, #ff9933));
+      background-image: -moz-linear-gradient(#f6d0a1, #ff9933);
+      background-image: -webkit-linear-gradient(#f6d0a1, #ff9933);
+      background-image: linear-gradient(#f6d0a1, #ff9933);
+      color: black;
+      border: solid 1px #ff9933;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      font-size: 14px;
+      padding: 5px 10px;
+      display: block;
+      margin: 0 0 5px 0;
+      text-decoration: none;
+      font-weight: bold; }
+      /* line 39, ../sass/base/_blocks.scss */
+      #book-block-menu-1 ul.menu li a.active, #book-block-menu-1 ul.menu li a:hover,
+      #block-system-navigation ul.menu li a.active,
+      #block-system-navigation ul.menu li a:hover,
+      #block-system-main-menu ul.menu li a.active,
+      #block-system-main-menu ul.menu li a:hover {
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMDAwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NjMTQyNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+        background-size: 100%;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #cc1425));
+        background-image: -moz-linear-gradient(#ff0000, #cc1425);
+        background-image: -webkit-linear-gradient(#ff0000, #cc1425);
+        background-image: linear-gradient(#ff0000, #cc1425);
+        border: solid 1px #cc1425;
+        color: white; }
 
-Backtrace:
-/Users/shaun/Sites/marsbase.org/htdocs/sites/all/themes/custom/imrs/sass/imrs.styles.scss:2
-/Users/shaun/Sites/marsbase.org/htdocs/sites/all/themes/custom/imrs/sass/imrs.no-query.scss:5
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `map'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass.\A        Load paths:\A          /Users/shaun/Sites/marsbase.org/htdocs/sites/all/themes/custom/imrs/sass\A          Compass::SpriteImporter\A          /Users/shaun/Sites/marsbase.org/htdocs/sites/all/themes/custom/imrs/sass\A          /Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets\A          /Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/compass-normalize-1.5/stylesheets\A          /Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/susy-2.2.14/sass\A          /Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/compass-rgbapng-0.2.1/lib/stylesheets\A          /Applications/MAMP/Library/lib/ruby/gems/2.3.0/gems/toolkit-2.10.2/stylesheets\A          Sass::Globbing::Importer\A         on line 2 of /Users/shaun/Sites/marsbase.org/htdocs/sites/all/themes/custom/imrs/sass/imrs.styles.scss\A         from line 5 of /Users/shaun/Sites/marsbase.org/htdocs/sites/all/themes/custom/imrs/sass/imrs.no-query.scss\A \A 1: $breakpoint-no-queries: true;\A 2: $breakpoint-no-query-fallbacks: true;\A 3: \A 4: // Re-render everything from styles.scss but without media queries.\A 5: @import \"imrs.styles\";"; }
+/* line 48, ../sass/base/_blocks.scss */
+#block-search-form {
+  height: 25px; }
+
+/* line 54, ../sass/base/_blocks.scss */
+#block-system-navigation h2,
+#block-system-main-menu h2 {
+  display: none; }
+
+/* line 59, ../sass/base/_blocks.scss */
+#block-block-2 {
+  text-align: center; }
+  /* line 62, ../sass/base/_blocks.scss */
+  #block-block-2 p {
+    margin-top: 0; }
+
+/* line 68, ../sass/base/_blocks.scss */
+#block-block-3 h2 {
+  font-size: 22px;
+  margin-top: 0;
+  font-style: italic;
+  text-shadow: 1px 1px 2px #222; }
+
+/* line 76, ../sass/base/_blocks.scss */
+#block-block-4 {
+  background-color: #80b6ff;
+  color: white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center; }
+  /* line 81, ../sass/base/_blocks.scss */
+  #block-block-4 p {
+    margin: 0; }
+  /* line 85, ../sass/base/_blocks.scss */
+  #block-block-4 img {
+    width: auto;
+    margin-top: 5px; }
+
+/* line 91, ../sass/base/_blocks.scss */
+#block-block-5 {
+  background-color: #80b6ff;
+  color: white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center; }
+  /* line 96, ../sass/base/_blocks.scss */
+  #block-block-5 h2 {
+    margin-top: 0; }
+  /* line 100, ../sass/base/_blocks.scss */
+  #block-block-5 p {
+    margin: 0; }
+  /* line 104, ../sass/base/_blocks.scss */
+  #block-block-5 .block__content {
+    background-color: white;
+    padding: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+
+/* line 111, ../sass/base/_blocks.scss */
+#block-imrs-misc-contents {
+  background-color: white;
+  padding: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: solid 1px black;
+  color: black;
+  font-size: 13px; }
+  /* line 119, ../sass/base/_blocks.scss */
+  #block-imrs-misc-contents h2 {
+    margin: 3px 0 7px; }
+
+/* line 124, ../sass/base/_blocks.scss */
+#block-mailchimp-lists-imrs-news {
+  background-color: #80b6ff;
+  color: white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: black;
+  padding: 10px; }
+  /* line 129, ../sass/base/_blocks.scss */
+  #block-mailchimp-lists-imrs-news h2 {
+    margin: 0 0 5px 0; }
+  /* line 133, ../sass/base/_blocks.scss */
+  #block-mailchimp-lists-imrs-news h2.block__title {
+    color: white; }
+  /* line 137, ../sass/base/_blocks.scss */
+  #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-EMAIL,
+  #block-mailchimp-lists-imrs-news #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-email {
+    width: 100%; }
+  /* line 142, ../sass/base/_blocks.scss */
+  #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME {
+    display: inline-block;
+    float: left;
+    width: 48%; }
+    /* line 147, ../sass/base/_blocks.scss */
+    #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-FNAME #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-fname {
+      width: 100%; }
+  /* line 152, ../sass/base/_blocks.scss */
+  #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-LNAME {
+    display: inline-block;
+    float: right;
+    width: 50%; }
+    /* line 157, ../sass/base/_blocks.scss */
+    #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-LNAME #edit-mailchimp-lists-mailchimp-imrs-news-mergevars-lname {
+      width: 100%; }
+  /* line 163, ../sass/base/_blocks.scss */
+  #block-mailchimp-lists-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-subscribe .description {
+    margin-top: 5px; }
+
+/* line 169, ../sass/base/_blocks.scss */
+p#outside-us {
+  margin-top: 10px;
+  color: black;
+  font-style: italic;
+  background-color: #eee;
+  padding: 5px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 178, ../sass/base/_blocks.scss */
+#contact-icons {
+  margin: 20px 0; }
+  /* line 181, ../sass/base/_blocks.scss */
+  #contact-icons img {
+    margin-right: 5px; }
+
+/* line 1, ../sass/base/_book.scss */
+.field--name-field-html-editor {
+  /******************************************************************************/
+  /* Base styles */
+  /******************************************************************************/
+  /* Misc useful styles */
+  /******************************************************************************/
+  /* Table styles */
+  /******************************************************************************/
+  /* Crew slots table */
+  /******************************************************************************/
+  /* Primary components table */
+  /******************************************************************************/
+  /* Crew roles and colours */
+  /******************************************************************************/
+  /* Lists */
+  /******************************************************************************/
+  /* Equations */
+  /******************************************************************************/
+  /* Figures/images */ }
+  /* line 6, ../sass/base/_book.scss */
+  .field--name-field-html-editor p {
+    margin: 1em 0;
+    text-align: justify; }
+  /* line 11, ../sass/base/_book.scss */
+  .field--name-field-html-editor .title-page h1 {
+    margin: 2em 0; }
+  /* line 15, ../sass/base/_book.scss */
+  .field--name-field-html-editor h2, .field--name-field-html-editor h3, .field--name-field-html-editor h4, .field--name-field-html-editor h5 {
+    margin: 2em 0 0; }
+  /* line 19, ../sass/base/_book.scss */
+  .field--name-field-html-editor h1, .field--name-field-html-editor h2, .field--name-field-html-editor h3, .field--name-field-html-editor h4, .field--name-field-html-editor h5, .field--name-field-html-editor h6 {
+    font-family: Museo, Verdana, Arial, Helvetica, sans-serif; }
+  /* line 23, ../sass/base/_book.scss */
+  .field--name-field-html-editor sub, .field--name-field-html-editor sup {
+    line-height: 0; }
+  /* line 27, ../sass/base/_book.scss */
+  .field--name-field-html-editor sub, .field--name-field-html-editor sup, .field--name-field-html-editor small, .field--name-field-html-editor .small {
+    font-size: 75%; }
+  /* line 31, ../sass/base/_book.scss */
+  .field--name-field-html-editor h4 {
+    font-size: 125%; }
+  /* line 35, ../sass/base/_book.scss */
+  .field--name-field-html-editor h3 {
+    font-size: 150%; }
+  /* line 39, ../sass/base/_book.scss */
+  .field--name-field-html-editor h2 {
+    font-size: 175%; }
+  /* line 43, ../sass/base/_book.scss */
+  .field--name-field-html-editor h1 {
+    font-size: 200%;
+    margin: 0; }
+  /* line 48, ../sass/base/_book.scss */
+  .field--name-field-html-editor big, .field--name-field-html-editor .big {
+    font-size: 300%; }
+  /* line 52, ../sass/base/_book.scss */
+  .field--name-field-html-editor th h1, .field--name-field-html-editor th h2, .field--name-field-html-editor th h3, .field--name-field-html-editor th h4 {
+    margin: 0; }
+  /* line 56, ../sass/base/_book.scss */
+  .field--name-field-html-editor a {
+    color: royalblue;
+    text-decoration: underline; }
+  /* line 61, ../sass/base/_book.scss */
+  .field--name-field-html-editor p, .field--name-field-html-editor blockquote, .field--name-field-html-editor li, .field--name-field-html-editor h1, .field--name-field-html-editor h2, .field--name-field-html-editor h3, .field--name-field-html-editor h4, .field--name-field-html-editor h5 {
+    line-height: 1.25em; }
+  /* line 67, ../sass/base/_book.scss */
+  .field--name-field-html-editor .nomargin {
+    margin: 0 0; }
+  /* line 71, ../sass/base/_book.scss */
+  .field--name-field-html-editor .indent1 {
+    margin-left: 1em; }
+  /* line 75, ../sass/base/_book.scss */
+  .field--name-field-html-editor .indent2 {
+    margin-left: 2em; }
+  /* line 79, ../sass/base/_book.scss */
+  .field--name-field-html-editor .indent3 {
+    margin-left: 3em; }
+  /* line 83, ../sass/base/_book.scss */
+  .field--name-field-html-editor blockquote,
+  .field--name-field-html-editor .quote {
+    margin: 2em;
+    color: #777; }
+  /* line 89, ../sass/base/_book.scss */
+  .field--name-field-html-editor blockquote {
+    font-style: italic; }
+  /* line 93, ../sass/base/_book.scss */
+  .field--name-field-html-editor .center {
+    text-align: center; }
+  /* line 97, ../sass/base/_book.scss */
+  .field--name-field-html-editor .italic {
+    font-style: italic; }
+  /* line 101, ../sass/base/_book.scss */
+  .field--name-field-html-editor .bold {
+    font-weight: bold; }
+  /* line 105, ../sass/base/_book.scss */
+  .field--name-field-html-editor .highlight {
+    background-color: #fff753; }
+  /* line 112, ../sass/base/_book.scss */
+  .field--name-field-html-editor table {
+    border-collapse: collapse;
+    margin: 1em auto;
+    width: auto; }
+  /* line 118, ../sass/base/_book.scss */
+  .field--name-field-html-editor caption {
+    font-style: italic;
+    margin-bottom: 0.5em; }
+  /* line 123, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr:nth-child(odd) {
+    background-color: #fff; }
+  /* line 127, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr:nth-child(even) {
+    background-color: #eee; }
+  /* line 131, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr.head, .field--name-field-html-editor th.head {
+    background-color: #dfedff; }
+  /* line 135, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr.total, .field--name-field-html-editor th.total {
+    background-color: #FFE1BF; }
+  /* line 139, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr.subtitle th, .field--name-field-html-editor th.subtitle {
+    background-color: #fff;
+    font-weight: bold;
+    padding-top: 1em; }
+  /* line 145, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr.bg-silver, .field--name-field-html-editor th.bg-silver {
+    background-color: #eee; }
+  /* line 149, ../sass/base/_book.scss */
+  .field--name-field-html-editor th {
+    background: none;
+    border: solid 1px #77a;
+    padding: 0.5em;
+    text-align: left;
+    font-weight: normal; }
+  /* line 157, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr.head th,
+  .field--name-field-html-editor tr.total th {
+    font-weight: bold; }
+  /* line 162, ../sass/base/_book.scss */
+  .field--name-field-html-editor th.right {
+    text-align: right; }
+  /* line 166, ../sass/base/_book.scss */
+  .field--name-field-html-editor th p,
+  .field--name-field-html-editor td p {
+    margin: 0; }
+  /* line 171, ../sass/base/_book.scss */
+  .field--name-field-html-editor table.equations {
+    border: none; }
+  /* line 175, ../sass/base/_book.scss */
+  .field--name-field-html-editor table.equations tr {
+    background: none; }
+  /* line 179, ../sass/base/_book.scss */
+  .field--name-field-html-editor table.equations th {
+    border: none; }
+  /* line 183, ../sass/base/_book.scss */
+  .field--name-field-html-editor th.selected {
+    background-color: #d1ffd5; }
+  /* line 190, ../sass/base/_book.scss */
+  .field--name-field-html-editor #crew-slots h4 {
+    margin-top: 0; }
+  /* line 194, ../sass/base/_book.scss */
+  .field--name-field-html-editor #crew-slots h5 {
+    margin-bottom: 0; }
+  /* line 198, ../sass/base/_book.scss */
+  .field--name-field-html-editor #crew-slots th {
+    vertical-align: middle;
+    height: 2em; }
+  /* line 203, ../sass/base/_book.scss */
+  .field--name-field-html-editor #crew-slots th.head {
+    height: auto; }
+  /* line 207, ../sass/base/_book.scss */
+  .field--name-field-html-editor #crew-slots-3-missions th {
+    height: 2em; }
+  /* line 211, ../sass/base/_book.scss */
+  .field--name-field-html-editor #crew-slots-3-missions tr.brave {
+    background-color: #ddd; }
+  /* line 218, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr.launch-vehicles {
+    background-color: #fefcd4; }
+  /* line 222, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr.space-vehicles {
+    background-color: #fed3ed; }
+  /* line 226, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr.surface-vehicles {
+    background-color: #c9dafe; }
+  /* line 230, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr.capsules {
+    background-color: #e0ffdb; }
+  /* line 234, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr.habitats {
+    background-color: #c2ffff; }
+  /* line 238, ../sass/base/_book.scss */
+  .field--name-field-html-editor tr.satellites {
+    background-color: #fee8ca; }
+  /* line 245, ../sass/base/_book.scss */
+  .field--name-field-html-editor #crew-roles th {
+    height: 2.5em; }
+  /* line 249, ../sass/base/_book.scss */
+  .field--name-field-html-editor #crew-roles th.head {
+    text-align: center; }
+  /* line 253, ../sass/base/_book.scss */
+  .field--name-field-html-editor .crew-colour {
+    padding: 3px 5px 1px;
+    border: solid 1px #000;
+    display: inline-block;
+    text-align: center; }
+  /* line 260, ../sass/base/_book.scss */
+  .field--name-field-html-editor .crew-white {
+    background-color: #fff; }
+  /* line 264, ../sass/base/_book.scss */
+  .field--name-field-html-editor .crew-blue {
+    background-color: #4ba2ff; }
+  /* line 268, ../sass/base/_book.scss */
+  .field--name-field-html-editor .crew-purple {
+    background-color: #df98fb; }
+  /* line 272, ../sass/base/_book.scss */
+  .field--name-field-html-editor .crew-red {
+    background-color: #fe6158; }
+  /* line 276, ../sass/base/_book.scss */
+  .field--name-field-html-editor .crew-green {
+    background-color: #99d865; }
+  /* line 280, ../sass/base/_book.scss */
+  .field--name-field-html-editor .crew-yellow {
+    background-color: #fff500; }
+  /* line 287, ../sass/base/_book.scss */
+  .field--name-field-html-editor ol, .field--name-field-html-editor ul, .field--name-field-html-editor li {
+    margin: 1em 0; }
+  /* line 291, ../sass/base/_book.scss */
+  .field--name-field-html-editor ol, .field--name-field-html-editor ul {
+    padding-left: 30px; }
+  /* line 295, ../sass/base/_book.scss */
+  .field--name-field-html-editor li {
+    margin-left: 0;
+    text-align: justify; }
+  /* line 300, ../sass/base/_book.scss */
+  .field--name-field-html-editor ol {
+    list-style-type: decimal; }
+  /* line 304, ../sass/base/_book.scss */
+  .field--name-field-html-editor ol.lower-alpha {
+    list-style-type: lower-alpha; }
+  /* line 308, ../sass/base/_book.scss */
+  .field--name-field-html-editor ol.upper-alpha {
+    list-style-type: upper-alpha; }
+  /* line 312, ../sass/base/_book.scss */
+  .field--name-field-html-editor ul {
+    list-style-type: disc; }
+  /* line 319, ../sass/base/_book.scss */
+  .field--name-field-html-editor .lhs {
+    display: inline-block;
+    width: 3em;
+    margin-right: 0.2em; }
+  /* line 328, ../sass/base/_book.scss */
+  .field--name-field-html-editor figure {
+    width: auto;
+    margin: 2em auto;
+    text-align: center;
+    page-break-inside: avoid; }
+  /* line 335, ../sass/base/_book.scss */
+  .field--name-field-html-editor img {
+    width: 100%;
+    text-align: center; }
+  /* line 340, ../sass/base/_book.scss */
+  .field--name-field-html-editor img.size-9 {
+    width: 90%; }
+  /* line 344, ../sass/base/_book.scss */
+  .field--name-field-html-editor img.size-8 {
+    width: 80%; }
+  /* line 348, ../sass/base/_book.scss */
+  .field--name-field-html-editor img.size-7 {
+    width: 70%; }
+  /* line 352, ../sass/base/_book.scss */
+  .field--name-field-html-editor img.size-6 {
+    width: 60%; }
+  /* line 356, ../sass/base/_book.scss */
+  .field--name-field-html-editor img.size-5 {
+    width: 50%; }
+  /* line 360, ../sass/base/_book.scss */
+  .field--name-field-html-editor img.size-4 {
+    width: 40%; }
+  /* line 364, ../sass/base/_book.scss */
+  .field--name-field-html-editor img.size-3 {
+    width: 30%; }
+  /* line 368, ../sass/base/_book.scss */
+  .field--name-field-html-editor img.size-2 {
+    width: 20%; }
+  /* line 372, ../sass/base/_book.scss */
+  .field--name-field-html-editor img.size-1 {
+    width: 10%; }
+  /* line 376, ../sass/base/_book.scss */
+  .field--name-field-html-editor figcaption {
+    font-style: italic;
+    margin-top: 0.2em;
+    text-align: center; }
+  @media print {
+    /* line 383, ../sass/base/_book.scss */
+    .field--name-field-html-editor body {
+      /* To get colours printing correctly from Chrome. */
+      -webkit-print-color-adjust: exact;
+      margin: 0;
+      padding: 0;
+      font-size: 10pt;
+      font-family: Arial, Helvetica, sans-serif; }
+    /* line 392, ../sass/base/_book.scss */
+    .field--name-field-html-editor a {
+      color: #000; }
+    /* line 396, ../sass/base/_book.scss */
+    .field--name-field-html-editor body.contents a {
+      text-decoration: none; }
+    /* line 400, ../sass/base/_book.scss */
+    .field--name-field-html-editor body.contents p {
+      line-height: 1em; }
+    /* line 404, ../sass/base/_book.scss */
+    .field--name-field-html-editor sub, .field--name-field-html-editor sup, .field--name-field-html-editor small, .field--name-field-html-editor .small,
+    .field--name-field-html-editor table.abbrev th, .field--name-field-html-editor body.references {
+      font-size: 7.5pt; }
+    /* line 409, ../sass/base/_book.scss */
+    .field--name-field-html-editor table.abbrev th sub {
+      font-size: 6pt; }
+    /* line 413, ../sass/base/_book.scss */
+    .field--name-field-html-editor table, .field--name-field-html-editor tr {
+      page-break-inside: avoid; }
+    /* line 417, ../sass/base/_book.scss */
+    .field--name-field-html-editor .new-page {
+      page-break-before: always; }
+    /* line 421, ../sass/base/_book.scss */
+    .field--name-field-html-editor h4 {
+      font-size: 12.5pt; }
+    /* line 425, ../sass/base/_book.scss */
+    .field--name-field-html-editor h3 {
+      font-size: 15pt; }
+    /* line 429, ../sass/base/_book.scss */
+    .field--name-field-html-editor h2 {
+      font-size: 17.5pt; }
+    /* line 433, ../sass/base/_book.scss */
+    .field--name-field-html-editor h1 {
+      font-size: 20pt; }
+    /* line 437, ../sass/base/_book.scss */
+    .field--name-field-html-editor big, .field--name-field-html-editor .big {
+      font-size: 25pt; }
+    /* line 441, ../sass/base/_book.scss */
+    .field--name-field-html-editor figure {
+      margin: 24px auto; }
+    /* line 445, ../sass/base/_book.scss */
+    .field--name-field-html-editor img {
+      width: 5in; }
+    /* line 449, ../sass/base/_book.scss */
+    .field--name-field-html-editor img.size-9 {
+      width: 4.5in; }
+    /* line 453, ../sass/base/_book.scss */
+    .field--name-field-html-editor img.size-8 {
+      width: 4in; }
+    /* line 457, ../sass/base/_book.scss */
+    .field--name-field-html-editor img.size-7 {
+      width: 3.5in; }
+    /* line 461, ../sass/base/_book.scss */
+    .field--name-field-html-editor img.size-6 {
+      width: 3in; }
+    /* line 465, ../sass/base/_book.scss */
+    .field--name-field-html-editor img.size-5 {
+      width: 2.5in; }
+    /* line 469, ../sass/base/_book.scss */
+    .field--name-field-html-editor img.size-4 {
+      width: 2in; }
+    /* line 473, ../sass/base/_book.scss */
+    .field--name-field-html-editor img.size-3 {
+      width: 1.5in; }
+    /* line 477, ../sass/base/_book.scss */
+    .field--name-field-html-editor img.size-2 {
+      width: 1in; }
+    /* line 481, ../sass/base/_book.scss */
+    .field--name-field-html-editor img.size-1, .field--name-field-html-editor img.flag {
+      width: 0.5in; } }
+
+/* line 487, ../sass/base/_book.scss */
+.book-navigation {
+  margin-bottom: 10px; }
+  /* line 490, ../sass/base/_book.scss */
+  .book-navigation ul.menu {
+    display: none; }
+  /* line 494, ../sass/base/_book.scss */
+  .book-navigation table {
+    width: 100%; }
+  /* line 498, ../sass/base/_book.scss */
+  .book-navigation td {
+    width: 33%; }
+    /* line 501, ../sass/base/_book.scss */
+    .book-navigation td.td-book-navigation__previous {
+      text-align: left; }
+    /* line 505, ../sass/base/_book.scss */
+    .book-navigation td.td-book-navigation__up {
+      text-align: center; }
+    /* line 509, ../sass/base/_book.scss */
+    .book-navigation td.td-book-navigation__next {
+      text-align: right; }
+    /* line 513, ../sass/base/_book.scss */
+    .book-navigation td a {
+      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZDBhMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmOTkzMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+      background-size: 100%;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6d0a1), color-stop(100%, #ff9933));
+      background-image: -moz-linear-gradient(#f6d0a1, #ff9933);
+      background-image: -webkit-linear-gradient(#f6d0a1, #ff9933);
+      background-image: linear-gradient(#f6d0a1, #ff9933);
+      color: black;
+      border: solid 1px #ff9933;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      font-size: 14px;
+      padding: 5px 10px;
+      float: none;
+      width: auto;
+      text-decoration: none;
+      display: inline; }
+      /* line 520, ../sass/base/_book.scss */
+      .book-navigation td a:hover {
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMDAwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NjMTQyNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+        background-size: 100%;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #cc1425));
+        background-image: -moz-linear-gradient(#ff0000, #cc1425);
+        background-image: -webkit-linear-gradient(#ff0000, #cc1425);
+        background-image: linear-gradient(#ff0000, #cc1425);
+        border: solid 1px #cc1425;
+        color: white; }
+
+/* line 528, ../sass/base/_book.scss */
+.section-acknowledgements .td-book-navigation__up {
+  display: none; }
+
+/* line 533, ../sass/base/_book.scss */
+h1 {
+  font-family: Museo, Verdana, Arial, Helvetica, sans-serif; }
+
+/* line 1, ../sass/base/_forms.scss */
+.form-submit {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZDBhMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmOTkzMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6d0a1), color-stop(100%, #ff9933));
+  background-image: -moz-linear-gradient(#f6d0a1, #ff9933);
+  background-image: -webkit-linear-gradient(#f6d0a1, #ff9933);
+  background-image: linear-gradient(#f6d0a1, #ff9933);
+  color: black;
+  border: solid 1px #ff9933;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px 10px; }
+  /* line 4, ../sass/base/_forms.scss */
+  .form-submit:hover {
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMDAwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NjMTQyNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #cc1425));
+    background-image: -moz-linear-gradient(#ff0000, #cc1425);
+    background-image: -webkit-linear-gradient(#ff0000, #cc1425);
+    background-image: linear-gradient(#ff0000, #cc1425);
+    border: solid 1px #cc1425;
+    color: white; }
+
+/* line 9, ../sass/base/_forms.scss */
+input[type=text],
+input.form-text {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 25px;
+  padding: 1px 5px; }
+
+/* line 16, ../sass/base/_forms.scss */
+input[type=text],
+input.form-text,
+textarea,
+select {
+  border: solid 1px #80b6ff;
+  background-color: #dfedff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 25, ../sass/base/_forms.scss */
+.form-item .description,
+.form-actions .description {
+  font-size: 12px; }
+
+/* line 31, ../sass/base/_forms.scss */
+form#search-block-form div.form-item-search-block-form {
+  display: inline-block;
+  float: left;
+  width: 70%;
+  height: 25px;
+  margin: 0;
+  position: relative; }
+  /* line 39, ../sass/base/_forms.scss */
+  form#search-block-form div.form-item-search-block-form #edit-search-block-form--2 {
+    width: 99%;
+    vertical-align: baseline;
+    position: absolute;
+    top: 0px; }
+/* line 47, ../sass/base/_forms.scss */
+form#search-block-form .form-actions {
+  display: inline-block;
+  float: right;
+  width: 30%;
+  height: 25px;
+  margin: 0;
+  position: relative; }
+  /* line 55, ../sass/base/_forms.scss */
+  form#search-block-form .form-actions .form-submit {
+    width: 99%;
+    height: 25px;
+    vertical-align: baseline;
+    position: absolute;
+    top: 0px;
+    right: 0px; }
+
+/* line 66, ../sass/base/_forms.scss */
+#mailchimp-lists-user-subscribe-form-imrs-news {
+  background-color: white;
+  padding: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+  /* line 71, ../sass/base/_forms.scss */
+  #mailchimp-lists-user-subscribe-form-imrs-news .form-item-mailchimp-lists-mailchimp-imrs-news-mergevars-EMAIL {
+    margin-bottom: 5px; }
+  /* line 75, ../sass/base/_forms.scss */
+  #mailchimp-lists-user-subscribe-form-imrs-news .form-submit {
+    width: 100%; }
+  /* line 81, ../sass/base/_forms.scss */
+  #mailchimp-lists-user-subscribe-form-imrs-news .mailchimp-newsletter-wrapper .form-type-checkbox label {
+    font-weight: bold; }
+
+/* line 88, ../sass/base/_forms.scss */
+#edit-mailchimp-lists-mailchimp-imrs-news-title {
+  font-weight: bold; }
+  /* line 91, ../sass/base/_forms.scss */
+  #edit-mailchimp-lists-mailchimp-imrs-news-title .description {
+    font-weight: normal; }
+
+/* line 96, ../sass/base/_forms.scss */
+#social-icons {
+  margin: 15px 0 20px; }
+
+/* line 100, ../sass/base/_forms.scss */
+#social-icons img {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  vertical-align: bottom; }
+
+/* line 1, ../sass/base/_links.scss */
+a,
+a:link,
+a:visited {
+  color: #1957c7;
+  text-decoration: underline; }
+
+/* line 8, ../sass/base/_links.scss */
+a:focus,
+a:active,
+a.active {
+  color: #ff9933; }
+
+/* line 14, ../sass/base/_links.scss */
+a:hover {
+  color: #ff0000; }
+
+/* line 1, ../sass/base/_media.scss */
+img, media {
+  max-width: 100%; }
+
+/* line 5, ../sass/base/_media.scss */
+#book-cover {
+  float: right;
+  margin: 0 0 10px 10px; }
+
+@media all and (max-width: 500px) {
+  /* line 11, ../sass/base/_media.scss */
+  #book-cover {
+    float: none;
+    text-align: center; } }
+/* line 1, ../sass/base/_pages.scss */
+html {
+  background: #f6d0a1 url("../images/mars-landscape.jpg") repeat-x scroll bottom center;
+  color: white; }
+
+/* line 6, ../sass/base/_pages.scss */
+body {
+  background: transparent url("../images/martian-sky.jpg") repeat-x scroll top center;
+  font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 20px; }
+
+/* line 13, ../sass/base/_pages.scss */
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+/* line 19, ../sass/base/_pages.scss */
+div.l-main {
+  margin-bottom: 1em; }
+
+/* line 23, ../sass/base/_pages.scss */
+header.l-header {
+  height: 20px;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-top: 15px; }
+  /* line 29, ../sass/base/_pages.scss */
+  header.l-header .l-branding {
+    width: 100%; }
+    /* line 32, ../sass/base/_pages.scss */
+    header.l-header .l-branding a.site-logo {
+      float: left; }
+    /* line 36, ../sass/base/_pages.scss */
+    header.l-header .l-branding h1.site-name {
+      text-align: center;
+      font-size: 40px;
+      display: none; }
+      /* line 41, ../sass/base/_pages.scss */
+      header.l-header .l-branding h1.site-name a {
+        color: white;
+        text-decoration: none; }
+    /* line 47, ../sass/base/_pages.scss */
+    header.l-header .l-branding h2.site-slogan {
+      display: none; }
+
+/* line 53, ../sass/base/_pages.scss */
+.element-invisible {
+  margin: 0; }
+
+/* line 57, ../sass/base/_pages.scss */
+div.l-content {
+  background-color: white;
+  color: black;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: solid 1px black;
+  padding: 10px;
+  margin-bottom: 1em; }
+  /* line 65, ../sass/base/_pages.scss */
+  div.l-content ul.breadcrumb {
+    padding: 0;
+    margin: 5px 0 15px; }
+    /* line 69, ../sass/base/_pages.scss */
+    div.l-content ul.breadcrumb li {
+      display: inline;
+      margin: 0 5px 0 0;
+      padding: 0 0 0 15px;
+      background: url(../images/right-guillemet.png) no-repeat 0 3px; }
+  /* line 77, ../sass/base/_pages.scss */
+  div.l-content p.submitted {
+    color: #999;
+    font-size: 12px;
+    font-style: italic; }
+  /* line 85, ../sass/base/_pages.scss */
+  div.l-content .field--name-body table.timeline, div.l-content .field--name-body table.timeline td, div.l-content .field--name-body table.timeline th {
+    border: solid 1px #ddd; }
+  /* line 89, ../sass/base/_pages.scss */
+  div.l-content .field--name-body table.timeline td, div.l-content .field--name-body table.timeline th {
+    padding: 3px; }
+  /* line 95, ../sass/base/_pages.scss */
+  div.l-content h1 {
+    margin-top: 10px; }
+
+/* line 100, ../sass/base/_pages.scss */
+footer.l-footer {
+  margin-bottom: 0;
+  height: 100px;
+  background: transparent url("../images/mars-base.jpg") no-repeat scroll bottom center; }
+  /* line 105, ../sass/base/_pages.scss */
+  footer.l-footer #block-block-1 {
+    display: none; }
+
+/* line 130, ../sass/base/_pages.scss */
+.book-navigation {
+  margin-top: 30px; }
+
+/* line 134, ../sass/base/_pages.scss */
+.ui-tooltip {
+  font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  max-width: 500px; }
+
+/* line 141, ../sass/base/_pages.scss */
+div.ui-tooltip {
+  background-color: #cc1425;
+  color: white;
+  background-image: none;
+  border-color: #ff9933; }
+
+/* line 148, ../sass/base/_pages.scss */
+div.ui-tooltip-content {
+  background-color: transparent; }
+
+/* line 152, ../sass/base/_pages.scss */
+span.highlight {
+  background-color: yellow; }
+
+/* line 157, ../sass/base/_pages.scss */
+.node--book--full .field li {
+  margin: 1em 0; }
+  /* line 160, ../sass/base/_pages.scss */
+  .node--book--full .field li p {
+    margin: 0; }
+
+/* line 166, ../sass/base/_pages.scss */
+.node--page table {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  border-collapse: collapse; }
+  /* line 172, ../sass/base/_pages.scss */
+  .node--page table th {
+    background-color: #dfedff;
+    text-align: center; }
+  /* line 177, ../sass/base/_pages.scss */
+  .node--page table td, .node--page table th {
+    padding: 5px;
+    border: solid 1px #80b6ff; }
+
+/* line 183, ../sass/base/_pages.scss */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted; }
+
+/* line 188, ../sass/base/_pages.scss */
+div.has-sidebar-second div.l-content,
+div.has-sidebar-second aside.l-region--sidebar-second {
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+@media (min-width: 44em) {
+  /* line 196, ../sass/base/_pages.scss */
+  div.has-sidebar-second div.l-content {
+    width: calc(66.6% - 15px);
+    margin-right: 5px; }
+
+  /* line 201, ../sass/base/_pages.scss */
+  div.has-sidebar-second aside.l-region--sidebar-second {
+    width: calc(33.3% - 15px);
+    margin-left: 5px; } }
+@media (min-width: 70em) {
+  /* line 208, ../sass/base/_pages.scss */
+  div.has-sidebar-second div.l-content {
+    width: calc(75% - 15px); }
+
+  /* line 212, ../sass/base/_pages.scss */
+  div.has-sidebar-second aside.l-region--sidebar-second {
+    width: calc(25% - 15px); } }
+
+/*# sourceMappingURL=imrs.no-query.css.map */

@@ -1,0 +1,3 @@
+To find out how to install the Ruby requirements and how to compile SCSS:
+https://www.drupal.org/node/2172619
+

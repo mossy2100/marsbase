@@ -1,16 +1,21 @@
 {
   "name": "imrs",
   "version": "1.0.0",
+  "scripts": {
+    "sass:dev": "./node_modules/.bin/gulp",
+    "sass:prod": "./node_modules/.bin/gulp sass:prod"
+  },
   "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.0",
-    "grunt-contrib-watch": "~0.4.3",
-    "grunt-contrib-compass": "~0.2.0",
-    "grunt-contrib-jshint": "~0.1.1",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-shell": "~0.3.1"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1"
   },
-  "engines": {
-    "node": ">=0.8.0"
-  }
+  "browserslist": [
+    "defaults"
+  ]
 }
